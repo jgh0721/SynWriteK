@@ -1,0 +1,38 @@
+[L]
+VIcons=アイコン(&I)
+VList=一覧表示(&L)
+VDet=詳細表示(&D)
+VThum=サムネイル(&U)
+
+ShowDrv=ドライブバーを表示(&V)
+ShowTree=ツリーを表示(&R)
+ShowPath=コンボボックスにパスを表示(&P)
+ShowFilter=コンボボックスにフィルターを表示(&F)
+ShowStatus=ステータスバーを表示(&T)
+HorzSplit=水平スプリッタ(&O)
+Font=フォント(&N)
+
+AutoRefr=自動更新を有効(&A)
+ShowHid=隠し属性項目を表示(&H)
+AddFav=現在のフォルダをお気に入りへ追加
+
+hGoUp=ひとつ上に移動
+hNewDir=新規フォルダを作成
+hRefr=パネルを更新
+hFocus=現在編集中のファイル名にフォーカス(ファイル一覧)
+hFilter=ファイルフィルター - マスクは ";" 区切りで入力
+
+lvEmpty=フォルダは空です
+lvMore=詳細設定...
+lvColSett=列の設定
+lvColCheck=フォルダ内の可視化したい項目にチェックを入れてください    (列の順序はドラッグドロップで変更可能)
+lvColShoud="選択された列の幅: "
+lvColPix=ピクセル幅
+lvLiveUpd=自動的に更新
+
+bOk=OK
+bCancel=キャンセル
+
+StrOverwr=ファイルは既に存在します、既存ファイルに上書きしますか?
+StrErr=エラー
+StrNewDir=新規フォルダ

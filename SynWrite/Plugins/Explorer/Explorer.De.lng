@@ -1,0 +1,38 @@
+[L]
+VIcons=Symbole
+VList=Liste
+VDet=Details
+VThum=Miniaturansicht
+
+ShowDrv=Zeige Laufwerksleiste
+ShowTree=Zeige Baum
+ShowPath=Zeige Ordnerliste
+ShowFilter=Zeige Filterleiste
+ShowStatus=Zeige Statusleiste
+HorzSplit=Horizontale Anordnung
+Font=Schriftart...
+
+AutoRefr=Automatisch aktualisieren
+ShowHid=Versteckte Dateien anzeigen
+AddFav=Ordner zu Favoriten hinzufügen
+
+hGoUp=Einen Ordner nach oben
+hNewDir=Neuen Ordner erstellen
+hRefr=Aktualisieren
+hFocus=Im Editor geöffnete Datei im Explorer finden
+hFilter=Filter setzen - Semikolon ";" als Trennzeichen verwenden
+
+lvEmpty=Dieser Ordner ist leer.
+lvMore=Weitere...
+lvColSett=Details auswählen
+lvColCheck=Markierte Spalten sind in Liste sichtbar. Die Reihenfolge kann mit der Maus verändert werden.
+lvColShoud="Breite der ausgewählten Spalte:"
+lvColPix=Pixel
+lvLiveUpd=Sofort aktualisieren (sonst OK Button benötigt)
+
+bOk=OK
+bCancel=Abbrechen
+
+StrOverwr=Datei existiert bereits. Überschreiben?
+StrErr=Fehler
+StrNewDir=Neuer Ordner

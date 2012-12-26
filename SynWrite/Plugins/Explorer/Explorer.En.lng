@@ -1,0 +1,38 @@
+[L]
+VIcons=Icons
+VList=List
+VDet=Details
+VThum=Thumbnails
+
+ShowDrv=Show drives bar
+ShowTree=Show tree
+ShowPath=Show path combobox
+ShowFilter=Show filter combobox
+ShowStatus=Show status bar
+HorzSplit=Horizontal splitter
+Font=Font...
+
+AutoRefr=Enable auto-refresh
+ShowHid=Show hidden items
+AddFav=Add current folder to Favorites
+
+hGoUp=Go up one level
+hNewDir=Create new folder
+hRefr=Refresh panels
+hFocus=Focus current editor's filename in files list
+hFilter=Files filter - file masks separated with ";"
+
+lvEmpty=Folder is empty
+lvMore=More...
+lvColSett=Column settings
+lvColCheck=Check the columns you would like to make visible in this folder. Drag and Drop to reorder the columns.
+lvColShoud="Selected column should be "
+lvColPix=pixels wide
+lvLiveUpd=Auto-update
+
+bOk=OK
+bCancel=Cancel
+
+StrOverwr=File already exists. Overwrite existing file?
+StrErr=Error
+StrNewDir=New Folder

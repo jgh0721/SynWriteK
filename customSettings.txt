@@ -1,0 +1,32 @@
+사용자 설정값
+
+Tab Indent = 4
+Tab Mode = Spaces
+
+Color Settings = Black
+
+Language = Korean
+
+
+단축키 설정
+
+F9, 옵션 창
+
+Enter,\r\n
+BkSp,마지막 글자 삭제
+Del,커서 위치 글자 삭제
+Up,커서를 한 줄 위로
+Down,커서를 한 줄 아래로
+Right,커서를 한글자 만큼 오른쪽으로
+Left,커서를 한글자 만큼 왼쪽으로
+Home,커서가 위치한 줄의 첫 글자로
+End,커서가 위치한 줄의 마지막 글자로
+
+Ctrl+N,새 파일
+
+ 
+
+기본글꼴
+  나눔고딕코딩
+  
+  

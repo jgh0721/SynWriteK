@@ -1,0 +1,38 @@
+[L]
+VIcons=Iconos
+VList=Lista
+VDet=Detalles
+VThum=Miniaturas
+
+ShowDrv=Mostrar barra de unidades
+ShowTree=Mostrar árbol
+ShowPath=Mostrar cuadro cominado de ruta
+ShowFilter=Mostrar cuadro combinado de filtro
+ShowStatus=Mostrar barra de estado
+HorzSplit=Divisor horizontal
+Font=Fuente...
+
+AutoRefr=Habilitar auto-refrescado
+ShowHid=Mostrar elementos ocultos
+AddFav=Añadir carpeta actual a Favoritos
+
+hGoUp=Subir un nivel
+hNewDir=Crear nueva carpeta
+hRefr=Refrescar paneles
+hFocus=Enfocar nombres de archivos del editor actual en la lista de archivos
+hFilter=Filtro de archivos - máscaras de archivos separados con  ";"
+
+lvEmpty=La carpeta está vacía
+lvMore=Más...
+lvColSett=Configuración de columnas
+lvColCheck=Marque las columnas que le gustaría hacer visibles en esta carpeta. Arrastre y suelte para reordenar las columnas.
+lvColShoud="La columna seleccionada debería ser "
+lvColPix=Ancho de píxeles
+lvLiveUpd=Auto actualizar
+
+bOk=Aceptar
+bCancel=Cancelar
+
+StrOverwr=El archivo ya existe. ¿Sobrescribir el archivo existente?
+StrErr=Error
+StrNewDir=Nueva carpeta

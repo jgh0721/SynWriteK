@@ -1,0 +1,980 @@
+Legend:
+ + added
+ - fixed
+ * changed
+  
+4.6.550
++ new plugins type: Command plugins. They add items to "Plugins" menu. See Wiki for details.
++ plugins API extended: many actions are added. See Wiki.
++ command "Options -- Advanced -- Open SynPlugins.ini file"
++ lexer PHP: increased Auto-complete list (100+ items added, all PHP5 funcs)
++ lexer "SynWrite ACP files"
+- fix: Markdown lexer comments
+- fix: Emmet expansion of "html:5"
+- fix: focusing editor after Find dialog closing
+ 
+4.6.510
++ plugins:
+  + FTP/SFTP plugin. Made by Notepad++ ftp plugin author Harry, big thanks to him! 
+  + new plugins type: FindID plugins. "Find id declaration" code for Pascal lexer is now plugin.
+  + help topic "SynFTP plugin"
+  * change: plugins ini file is SynPlugins.ini
++ ability to hide unneeded context/main menu items. See help topic "Misc -- Hiding menu items".
++ options: color "Non-printable chars BG" (used when "Show CR/LF chars" on)
++ option "Offset of search result from horizontal edge"
+ 
+4.5.420
++ "Tabs" pane (near Structure/Project panes)
++ hotkeys "Jump over MixedCaseName left/right"
++ hotkey "Cancel selection"
++ hotkey "Center lines" (also in "Edit--Blank operations")
++ Emmet: profiles list is read from "Tools\emmet.txt" file; 2 more profiles: "line" + "xml_zen" (like "xml" but with new-line for leaf nodes)
+
+4.5.392
++ Emmet support (it's new version of Zen Coding)
++ options: "Editor 2" tab: "Block staples" can be hidden
+ 
+4.5.370
++ horizontal scrolling by Shift+ Mouse wheel
++ editor popup menu command "Paste, keep position"
++ help: "Plugins" topic
++ Rexx lexer
++ ext-tool output preset for ooRexx
+- fix: regex hiliting in Perl lexer
+- fix: projects: file now can't be added twice to same folder
+- fix: projects: sort mode wasn't considered for upper folder
+
+4.5.355
++ "Micro-map" feature, inactive by default - the vertical bar near editor scrollbar which shows line states. Option "Editor 2 -- Show micro-map".
++ "Find in all tabs" button in Find dialog, integrated with "Find results" pane
+* changed: "Editor 2 -- Overrides" dialog is now separate tab inside options dialog
++ ext-tool output preset for TypeScript
+
+4.5.330
++ Panel plugins are supported. You can find all info about plugins at SynWrite Wiki. https://sourceforge.net/p/synwrite/wiki/Home/
++ "Explorer" panel plugin (its tab is near Tree/Project)
++ "FTP_Fake" panel plugin (for demo purpose; not active by default). https://sourceforge.net/p/synwrite/wiki/FTP_Fake/
+
+4.4.260
++ Markdown lexer
++ Stylus lexer
++ CSScomb can be integrated: http://synwrite.sourceforge.net/forums/viewtopic.php?f=3&t=108
++ CSS Lint can be integrated: http://synwrite.sourceforge.net/forums/viewtopic.php?f=3&t=121
++ JSHint can be integrated: http://synwrite.sourceforge.net/forums/viewtopic.php?f=3&t=118
++ JS Lint can be integrated: http://synwrite.sourceforge.net/forums/viewtopic.php?f=3&t=117
++ JSMinifier (Closure Compiler) can be integrated: http://synwrite.sourceforge.net/forums/viewtopic.php?f=3&t=120
++ command "Edit -- Indents -- Indent like 1st line"
++ command "View -- Column markers" 
++ hotkeys "Jump to column marker left/right"
++ lexer library can be changed. In "Lexer library" dialog you can open different library file name, it will be used on restart. Note: for portable SW only filename in <SynWrite>\HL subfolder is allowed.
++ drop-down menu near "New file" toolbar button
++ non-existing filename can be entered in "Open file"/"Open session"/"Open project" dialogs
++ Find in files: button "Browse for file" allows to append filename to field
++ option "History -- Save window position"
+
+4.3.220
++ new coding helper "portable bookmarks": see help topic about it
++ tabs can have custom color: see context menu of tab header; option "Tabs -- Tabs colors"
++ command "File -- Rename"
++ command "Run -- Numeric converter"
++ Prefixr.com can be integrated. http://synwrite.sourceforge.net/forums/viewtopic.php?f=3&t=77
++ text clips: hotkeys Ins, Shift+Del
++ text clips: items can have hotkeys: save item name with "[N]" substring, where N is a character hotkey
++ text clips: "HTML - Color names", "HTML - Color names+values"  
++ external tools: param macros {SelectionFileName}, {SelectionFileNameAnsi}, {FileName2}, {FileDir2}, {FileExt2}
++ external tools: output type "Replace selection or document"
+* change: "Project options" + "Spell checker" dlg integrated into main options
++ "Goto bookmark" dialog is resizable
++ Diff lexer
++ XSLT lexer (in Readme\RarelyNeededLexers.rar)
++ hotkey "Options -- Toggle smart highlighting"
++ option color "Line state - unset"
++ if you right-click panels captions, hint appears in statusbar
+                        
+4.2.150
++ options dlg rearranged 
++ toolbar themes: "Office Blue", "Office Green", "Office Metall", "Office Black"
++ replace: slow regex replace is interruptable now
++ projects: adding huge folders is interruptable now
++ projects: option "Files sorting" - if set to "none" then huge folders are added much faster
++ projects: warning about big added folder sorting
++ projects: warning about opening in editor >10 files
++ Php lexer: tree shows "$this->names"; nearest ( ) brackets hilited
++ Php lexer: tree shows abstract funcs
++ Properties lexer: tree for *.conf
+* changed: "View - R/O" menu item hidden in exe; "R/O at startup" option disabled in exe 
+ 
+4.1.100
++ Text Clips pane. See help topic "Misc -- Text Clips".
++ options "History -- Save/Restore last project"
++ project tree uses same color/font as syntax tree
++ project Open/Save dialogs use their own last folder
++ macro dialog: possibility to run macro till end of file
++ recent colors menu: items "Open", "Save"
++ most of blank operations show progress bar
++ command-line parameter "/reg" for installer
+- fix: slow replace on huge replace counts (not fixed for Regex or backward replace)
+- fix: URL hiliter
+- fix: PL/SQL lexer
+- fix: option "Open all as UTF8" caused redundant message for UTF8-with-BOM
+
+4.0.010
++ Project manager (you can call it by button "Project" below the syntax tree). Help topic for it.
++ Favorites can remember projects
+
++ color picker: recent colors menu, see help topic "Coding helpers -- Color picker"
++ color picker: both colors are previewed if string "color:#aaa; background-color:#bbb;" is hovered
++ entire color token #AABBCC is selected by dbl-click
++ HTML Tidy: items "tag to uppercase/ lowercase"
++ Lister plugin: RedirectSection for TC's ini supported
+
+3.10.1750
++ Favorites ("File" menu)
++ "wrapped line" mark on gutter + option ("Editor 2" tab)
++ option "Tabs -- Allow drag&drop"
++ option "Tabs -- Close by dbl-click"
++ option "Tabs -- Maximal caption length"
++ option "History -- Save/Restore last session" split into 2 separate
++ smart highlight: number of found words shown in status
+- fix http://www.ghisler.ch/board/viewtopic.php?p=255412#255412
+
+3.10.1720
++ easy bookmarks jump: command "Search -- Go to bookmark"
++ file-history now stores 10 any bookmarks (numbered + unnumbered) per file
++ Lorem Ipsum generator ("Run" menu)
++ color picker: "Copy" button, Ctrl+C and Enter shortcuts
++ options color list is hilighted
++ hotkey "Toggle views splitter horz/vert"
++ hotkey "Toggle master/slave splitter horz/vert"
+* change: files opened from sessions are not added to Recents
+* change: spell checker default state is OFF
+
+3.9.1680
++ new coding helper: see help topic "Coding helpers -- Inserting image props"
++ single file view can be splitted vertically (call popup menu on horizontal splitter)
++ options "Auto-close quotes", "Skip escaped" added near "Auto-close brackets"
++ commands "Help for HTML4 tag", "Help for HTML5 tag" in "Run" menu
++ command "View -- Ruler" + hotkey
++ command "Delete adjacent duplicates" shows progress
++ command "Split lines" asks for margin value
++ macro <date:nnnnnn> added to Code Templates extended syntax
++ hotkey "Options -- Toggle slave view (same file splitting)"
++ hotkey "Focusing -- Toggle editor master/slave focus"
++ help: topic "Encodings" added
++ help: topic "Auto-completion" rewritten
++ help: topic "External tools" has more info
+- fix: app didn't release folders of opened/closed files
+- fix: files now added to the Recent list *after* they have been closed
+- fix http://www.econtrol.ru/mantis/view.php?id=501
+- fix http://www.econtrol.ru/mantis/view.php?id=425
+- fix http://www.econtrol.ru/mantis/view.php?id=465
+
+
+3.9.1640
++ some editor options can be overriden for needed lexers - see btn "Editor 2 -- Overrides" in options dialog
++ statusbar info can be customized: see help topic "Misc -- Customizing Status Line"
++ option "Auto-close HTML/XML tags"
++ option "Auto-close brackets () [] {}"
++ external tools: output type "Replace current word"
++ Clipboard History: more items in popup menu
++ Find in files: option "Sort files"
++ hotkey "Replace all occurences of selected string with clipboard text"
++ hotkey "Reread Output panel from file" (file is %temp%\SynWr$$.txt)
++ Haml lexer (no folding)
++ WinBuilder lexer
++ help: FAQ item "How to export/import lexers?"
++ help: topics "Auto-complete", "Auto-closing", "SyncEditing", "File Templates"
+- fix http://www.econtrol.ru/mantis/view.php?id=419
+- fix http://www.econtrol.ru/mantis/view.php?id=483
+- fix http://www.econtrol.ru/mantis/view.php?id=493
+
+3.8.1590
++ SCSS lexer
++ Euphoria lexer
++ Forth lexer
++ "Text Russian detector" lexer
++ autocomplete for LESS, SCSS, Fortran
++ bigger autocomplete list for C++ (has most Win32 API ids)
++ code templates for Java, JS, R, Latex
++ opt color "Collapsed mark"
++ opt hotkey "Move caret to selection start/end"
+- fix: keys Left/Rt with selection and option "Persistent selection"
+- fix: window didn't update on holding PgUp/Dn, on dragging scroll thumb (big files)
+- fix: temp file was created in current dir
+
+3.8.1550
++ ext. tools: console tools can also send output to new document, to clipboard, can replace selection, etc: option "Output type" added
++ ext. tools: option "Encoding" added
++ ext. tools: macros added: {FileNameNoExt}, {FileExt}, {CurrentLine}
+* opt "Minimap color" moved to Colors tab, saved in color presets
+* opt "Misc - Zen Coding line breaks": added "XHTML" variant
++ LESS lexer has tweaks of CSS (same autocomplete chars, Zen Coding)
+
+3.7.1520
++ color picker: command "Edit - Select color"
++ color preview for HTML/CSS: see help topic "Color code preview"
++ code templates: option "Use Tab key to expand code templates" in "Auto-complete" group
++ code templates: auto-inserting of single matching item, opt in "Auto-complete" group
++ options - colors: color list reordered
++ option color "bookmarked line BG"
++ lexer "Text Russian detector", packed in "Readme\RarelyNeededLexers.rar"
+- updated: "Find ID" add-on (Tools\FindID.exe)
+* changed: options dlg tabs order
+- fix: sessions with portable version
+
+3.7.1475
++ command "File - Properties"
++ shortcuts are shown in all context menus
+* hovering over tab: filename is shown in statusbar intelligently-shortened
+* Quick search: now always has "Wrap search" flag
+- fix: 0-sized files now not backup'ed
+
+3.7.1460
+* Now portable mode is inited by presence of empty "Portable.ini" in the Synwrite folder. Settings tab about portability removed. Option "[Syn2] Ini" in lsplugin.ini is not used.
++ new tab switcher (Ctrl+Tab key): option "Interface - New tab switcher".
++ option "Auto-complete - Auto insert single matching item"
++ Find Results pane: popup menu item "Copy selected node". Ctrl+C assigned to it.
++ C# lexer: brace auto-closing
++ hotkey "Misc - Select current token", command in Search menu
++ hotkeys group "Syntax tree" with 3 new commands: go to parent/ next-brother/ prev-brother node.
++ hotkey "Markers - Go to last marker"
++ hotkey "Run - Open in default application"
++ selection is restored after command "Replace all in selection"
+
+3.7.1410
++ VHDL lexer (not finished)
++ hidden option: Syn.ini [Setup] Pascal=<..comma-separated list of Pascal lexers for Find ID feature...>
++ option "History - Save history for %Temp% files"
+- fixes in CSS autocomplete
+
+3.7.1400
++ new cool SmartTagTabbing feature for HTML. Option added in "Auto-complete" tab. Added help topic about it.
++ command in popup menu "Find ID declaration"; currently for Pascal lexer.
++ hotkeys "Move caret left/right/up/down by <N> chars" + option for <N>
+* changed ini section for Search options
+* changed ini section for Auto-complete options
+- fix: Find in files: progress window is shown only once, not multiple times (which is irritating)
+- fix: FoxPro lexer
++ option "Misc - Show panels' tooltips"
++ "Insert text" dlg: added Counter option (active when no selection is made)
++ "Insert text" dlg: "Prefix" field added
++ "Insert text" dlg: entire operation undoes at 1 step
++ auto-reload: option "Misc - Follow tail on reload"
++ auto-reload: confirmation on modified file
++ Tab key works in Template popup
++ dbl-clicking Tree node: caret centered on screen (if needed)
+
+3.6.1340
++ "Project options" dlg: hint about recursive folder search
++ FoxPro lexer auto-complete
++ fix: C# lexer tree
+
+3.6.1330
++ "Search results" pane:
+  + pane redone. Now it's tree (files are nodes, found lines are subnodes). All searches ("Find/replace in files") are added into 1 pane.
+  + context menu has new commands
+  + keys: Ctrl+C: copy to clipbd, Ctrl+Del: clear
+  + option "Search - Expand result tree on progress"
+
++ options group "Auto-save"
++ option "Interface - Show tabs numbers"
++ Find in files: option "Append results list"
+* Esc pressing in panels -> focus editor
++ statusbar msg about deleted lines count ("Delete duplicates" etc)
++ "Repeat last edit cmd": same commands (e.g. chars "aaaa") are accumulated, repeated at once
+- fix: "Integer overflow" while searching in 30M file
++ cmd "Open file by selection" accepts line number: "file.ext(NNN)"
++ maximum 30 macros can have hotkeys (was: 9)
++ Macros dialog rearranged
+- fix: D lexer
+- fix: FoxPro lexer
++ Find-in-files results: format of lines now " file.ext(NNN): ......"
++ views splitter relative position is keeped on Tree/ClipHistory/Minimap toggling
++ Replace dlg: Ctrl+Down in edit fields: copy text "Search for"-> "Replace with"
++ option "Search - Suggest selection as search text" (was only: "Suggest current word")
++ listboxes (Output, Find results, Validate, Clipboard history) are searchable now like Tree.
++ cmd "Help - Show keyboard map"
+- fix: ruler zoom bug
+- fix: line states now cleared on Reopen
+
+3.5.1207
++ keys options: "Clear filter" button
++ keys options: confirmation when overriding a key
++ Find dlg: when pasting text with RegEx flag on, EOL's replaced with \z
+- fix: CSS auto-complete: "-" is word char
+
+3.5.1200
++ Find dialog: "Extend selection" option
++ Goto dialog: reworked, relative jump allowed, "Goto bookmark" added, "Extend selection" added
+- fix: "Toggle bookmark" uses column number now
++ "Make files" lexer: Tab mode is fixed to "Tab chars" (needed for this lexer)
++ lexer properties dlg: "Extensions" list may have filenames. Example - in "Make files" lexer.
++ option "Misc - Allow beep sound" (some beeps may be left)
++ option colors "Tab caption", "Tab caption - unsaved"
++ mouse over tab caption -> filename shown in statusbar
++ hotkeys "Find next/previous and extend selection"
++ hotkeys "Move cursor and select to word end", "Move cursor to word end"
++ hotkeys "Activate right view tab #1..#10"
++ hotkeys "Move views splitter to left/right"
++ hotkey "Select paragraph"
++ hotkeys "Next/Previous blank line"
++ cmd "Edit - Blank operations - Reduce blank lines"
++ Erlang lexer
++ C# lexer: tree improved
++ saved last folder of "Open/Save session" dialogs
+- "Join lines": more correct when Space/Tab at lines edge
+- "Remove dup spaces": dup Tabs also removed
++ sessions: if session file is in the same folder as all tabbed files,
+  this folder can be moved and session still opens
++ alternate color for modified tab's caption
++ Output listbox: horz. scrollbar added
++ Find/Replace dialog: Ctrl+V in edit field escapes special chars in multi-line text
+  (when "Regex" or "Special chars" option is on)
++ hotkeys "Tree - select next/previous node"
+- fix: keys Ctrl+A, Ctrl+C, Ctrl+X in Find/Replace dlg
+- fix: D lexer
+- fixes
+
+3.5.1100
++ Mini-map feature: Ctrl+F10. Map is configurable, see "Misc" tab in options.
++ Find/Replace: option "Wrap search"; dialog rearranged.
++ Search in Tree
++ option "Interface - Show tabs at bottom"
++ options "Editor 2 - Block staples: offset/ style"
++ keys list filtering
++ Windows menu: items for all panels
++ Eiffel lexer
++ LESS lexer
++ C# lexer: tree improved
++ help topic "Code templates"
+* chged behaviour of "Replace next", "Replace all" hotkeys
+* status shows caret column #, not string position
+- fix: Default styles of all lexers cleared (to fix ruler bug)
+- fixes
+
+3.4.1035
++ Find in files: list scrolled to end on update
++ File - New: templates grouped
+* color templates format changed (*.colors updated)
+
+3.4.1030
++ cmd "Edit - Repeat last edit command"
++ cmd "Macros - Play last played macro"
++ opt "Misc - Disable lexer if file size bigger than"
++ Auto-complete from current file: words w/dot (like "Name.and.more") allowed
++ Find in files: found matches progress is shown in "Find results" pane
++ ext.tools: macros {InteractiveFile}, {InteractiveDir}, {Interactive}
++ rclick-menu for misspelled word: items Cut/Copy/Paste added
++ hotkeys "Tabs - Split views NN/NN"
++ PostScript lexer (by Matthias030)
++ Latex lexer: redone, +folding
++ Find in files: Find/Replace can be called
++ Window menu shows hotkeys
+- fix: cmd "Find next/prev" didn't record in macro
+- fixes
+
+3.4.980
++ dynamic templates system: templates can be placed in folder Template\newdoc
+  and are handled automatically by menu "File - Create". If a filename has
+  "_UTF8" then "UTF-8 no BOM" is used for template. 10+ templates added.
+
++ named sessions system:
+  + current session name is remembered/saved
+  + session name is shown in the app caption: "{Session} file.ext - Synwrite"
+  + cmd "File - Save session" renamed:"Save session as..."
+  + cmd "File - Save session" added
+  + cmd "File - Recent sessions"
+  + cmd "File - Close session"
+
++ opt hotkey "Find string from clipboard"
++ opt colors for gutter's "Line changed" indicator
++ drag&Drop for tabs (not between views)
++ commands "Edit - Blank operations - ......"
+* Left/Right keys on selection: work like in other text-eds
++ Find in files: button "Browse for file"
++ Find in files: filemask containing space can be entered quoted
++ hotkeys "Tabs -- Activate tab #1...#10"
++ auto-complete files (HL\*.acp) may have "#chars" directive:
+  it specifies word chars for ACP file (used in C#, Java, PHP, AHK)
++ Output pane can be docked to the right/left
++ status bar shows selected column count
++ Scheme lexer: tree, folding
++ ext. tool preset for C#
+- fix: SynSpell.ini was in wrong folder
+- fix: Find in files: root dir "N:" can be entered
+- fix: Find dlg: Alt+Down, Ctrl+Z work now
+- fix: horz-ruler for C/C++ lexers
+- fix: FoxPro lexer tree
+- fix: duplicates now removed from tool's output only for Pascal
+
+3.3.900
++ French translation
++ Asm lexer: tree
+- fix: %Appdata% access when run using "Run as..." cmd
+- fix: warning when R/O file backup'ed
+
+3.3.895
++ commands "Run -- HTML Tidy -- ......"
++ commands "Edit -- Copy to clipboard -- Copy/Cut current line"
++ command "Edit -- Sort -- Remove adjacent duplicates"
+* when ext-tool doesn't return output, no annoying msg shown
++ Modelica lexer
+- fix: "Delphi resources" lexer
+- fix: Ada lexer tree
+
+3.3.865
++ "Find/Replace in files": options "Search also in OEM/ UTF-8/ UTF-16"
++ hotkey to toggle 1st/2nd view (Ctrl+F11)
++ NFO files better support (no line spacing, Lucida font)
++ RC lexer autocomplete
+* statusbar 1st panel shows total lines number
+- fix: "full screen" state must not be saved
+
+3.3.845
++ unnumbered bookmarks system:
+  + gutter clicking now sets unnumb. bookmarks
+  + many commands (with shortcuts) added to Bookmarks menu: Toggle bkmk,
+    Next/Previous bkmk, Copy/Cut/Paste/Delete bkmked lines, Invert bkmks.
+  + opt "Bookmark results" in Find/Replace dlg for "Find all" command.
+  + opt "Editor 2 -- Allow Undo for massive strings deletion".
+
++ edit "How many times to run macro" in macros dlg
++ autocomplete: C# (more items), CMake, JavaScript, Lisp, NSIS, Ruby
+- fix: C# lexer tree
+* removed: menu of "Go to" toolbar button
+
+3.2.780
++ Macros menu - keyboard macros supported
++ command "Run -- Browsers -- Preview HTML code" (Alt+F6)
++ btn "Current file" in "Find/Replace in files" dlg
++ Factor lexer: tree added
+
+3.1.730
++ CMake lexer
++ Factor lexer
++ help: added info to FAQ "How to adjust app colors?"
+- fix: CSS, PowerShell lexers
+- fix: window focusing on Win7
+- fix: creation of %AppData%\SynWrite\Backup
+- fix: showing of msg "Not found" below progress-bar window
+
+3.1.710
++ T-SQL lexer + auto-complete
++ Scheme lexer
++ commands "Edit -- Line operations -- Join/Split lines"
+
+3.1.680
++ Caml lexer + auto-complete
++ R auto-complete (thanks to NppToR author)
+- fix: tree in Java lexer
+- fix: Inno lexer
+- fix: ActionScript auto-complete
+- fix: JSP lexer (part of HTML)
+
+3.1.660
+lexers:
+  + PowerShell lexer
+  + R lexer
+  + Properties lexer
+  + Groovy lang support (by Java lexer)
+  + Java lexer: funcs in tree (not 100% correct)
+  * lexer renamed: "Apache config" -> "Properties"
+
+3.1.630
++ opt "Search -- Show msgbox for no results" returned back
++ opt "Search -- same for 'Find/Replace in files' dialog"
+- fix: dlg "Find/Replace", "Extract strings" for 120 DPI screen.
+* dlg "Extract string" made non-resizable.
+
+3.1.620
++ Spell checking:
+  - cmd "Options -- Spell checking"
+  - cmd "View -- Spell checking -- ..."
+  - hotkeys: F7 (live spelling), Alt+F7 (spell check)
++ opt "Interface -- Esc key" (checkbox "Esc closes editor" removed)
++ hotkey "Toggle find results focus" (Ctrl+F7)
++ cmd "Stream comment" toggles comment
++ cmd "Stream comment" works specially for: AutoIt, Latex, Matlab, Ruby.
++ AviSynth lexer
+- fix: Java lexer
+* rarely used lexers moved into archive "Readme\RarelyNeededLexers.rar"
+
+3.0.560
++ new homepage
++ command "Help -- Donate"
++ command "Stream comment" (Alt+/)
++ commands "Edit -- Copy path"
++ hotkey "Toggle block comment" (Ctrl+Alt+/)
++ hotkey "Toggle Output focus" (Ctrl+F8)
++ hotkey "Create backup copy" (no default key)
++ "Insert date/time" format can be changed (opt "Misc -- Date/time format")
++ CSS autocomplete: update for CSS3
++ SynStyles.ini contains also "code templates" list (e.g. for HTML lexer)
+* new bookmark icons
+* removed lexers: CRF, TekSoft
+- fixes
+
+3.0.520
++ UTF-8 content detection (code by C.Ghisler)
++ CR/LF can be shown like in Scintilla (opt "Edit 2 -- Show CR/LF chars")
++ Zen Coding support:
+  + cmd "Edit -- Zen-Coding"
+  + cmd "Help -- Zen-abbreviations"
+  + opt "Misc -- Zen Coding line breaks"
+  + help topic "Zen Coding"
++ Opt dlg: Keys tab - "Jump to category" edit
++ Find dlg: edit color shows is it Regex
++ Find dlg: "?" button
++ help rearranged by Matthias030
+* gutter column added, other columns shifted. You may need to reset columns
+  colors (items 5, 8 in colors list).
+- fix: Autocomplete not working in PHP's HTML or CSS part
+- fix: JS, PHP (dev) lexer
+
+2.9.462
++ JSON lexer
++ option "View -- Tree -- Double-click action"
++ Find in files: opt "Show filenames only", "Show results in tab"
++ tree panel: hotkey Ctrl+F12 "Toggle Tree focus"; Enter works
++ clipbrd panel: hotkey Ctrl+F6 "Toggle Clipbrd focus"; Enter/Ctrl+C work
+* renamed lexers: ActionScript, Java, JavaScript
++ TC plugin: file Readme/PluginOptions.txt
+- Ini lexer: keys shown in tree w/o value
+- JS lexer: more items in tree
+- PHP lexer: no reserved funcs in tree, +vars in tree
+- history not saved for %Temp% files
+
+2.9.420
++ cmd "Options -- Restore lexer styles". See description text in dlg.
++ FAQ Q8.
++ plugin only: Quick-view context-menu item "Customize"
+- fix: Auto-complete now doesn't show typed word
+- fix: Oberon lexer
+
+2.9.400
++ MatLab lexer
++ ability to set .HLP file as external tool. HLP topic for selected word is opened.
++ Pascal autocomplete: func parameters added, types/var/const added
++ ColdFusion autocomplete
+
+2.9.380
++ command line: a) param /N=### to goto line number, b) param /RO=1 changed to /RO
++ hint (statusbar) for most encodings
++ KiXtart lexer
++ auto-completion with words from current file (option)
++ search progress shown: for big files (>120Kb), for "Find in files" text-search step
++ dlg "External tools": option "Show in context menu"
++ dlg "Edit -- Insert text"
++ ability to set CHM file as external tool. CHM index page will open for current word or selection.
++ cmd "File -- Send to Email"
++ cmd "Open <...>" in context menu to open selected filename
++ dlg "Project options"
++ cmd "Comment/Uncomment lines": move cursor down after it
++ cmd "Edit -- Fill block" to fill column blocks
+
+2.8.304
++ cmd "View -- Always on top"
+- fixes
+* Find dlg: Count result shown as red line
+* removed: opt "Editor - Read-only"
+* removed: opt "Read-only at startup: as set for previous session"
+
+2.8.290
++ tab popup menu: "Move to other view" cmd.
+  Now 2 files can be splitted vertically.
+  Many commands changed to work with 2 views (Close all, Save all, etc).
++ tab popup menu: "Copy ... to clipboard" items.
++ commands "Sync horizontal/vertical scrolling" for 2 views.
++ dialog "Shell integration".
+* changed folders for *.colors, *.tool, default.* files.
++ help: FAQ Q7.
++ Find in files: progress cancel btn.
++ max items in history: 50
++ opt "Interface -- Show main form on top"
+
+2.7.245
++ Search/Replace:
+  a. dialog now non-modal
+  b. opt "Transparency"
+  c. "Origin" disabled when "Selection" checked
+  d. opt "Interface -- Show search dialog on top"
++ cmd "Full sreen" (F11)
++ dragging of mult. files from Explorer
++ saving-as:
+  a. suggested dialog filter is got from Lexer
+  b. actual ext is got from current dialog filter
++ YAML lexer
+- fixes
+
+2.7.216
++ saving of new file: suggested name is "Untitled##.<Lexer-ext>"
++ hotkey for "Toggle SyncEdit"
+- fix: Ctrl-Shift-Left/Right then Shift-Left/Right
+- fix: "Dup line" cmd on last line
+
+2.7.210
++ cmd "Go to matching bracket" works w/o lexer too.
++ cmd "Duplicate line" works with selected text too.
++ cmd "File -- Load/Add session".
++ cmd "Move word left/right" work like in NP++.
++ opt "Editor 2 -- Hilight pair brackets" (def: On), opt colors for it.
+  Note: bracket BG color works only when active line not hilited.
++ opt "Editor 2 -- Copy column blocks with extra spaces".
++ opt "Misc -- Create backup"
++ opt "History -- Folder of Open/Save dialogs"
++ opt "Strip HTML tags" in ext. tool dlg.
++ opt hotkeys for "Load/Save/Add session"
++ Txt lexer
++ new PHP lexer
++ Ada lexer
++ IDL lexer
++ AHK autocomplete
+- Verilog lexer fix
+
+2.7.150
++ cmd "Search -- Next/Previous mass search result"
++ cmd "Edit -- Toggle SyncEditing"
++ option "Misc -- Open in UTF-8 file extensions"
++ Read-only indicator in caption
++ Find in files: selecting string on result opening
+* default folder of ext. tool is file's dir.
+* default of "Ask to overwrite RO files": On
+- C/C++ lexer fix
+- Perl lexer fix
+- AHK lexer fix
+- cmd "File -- Exit" fix
+
+2.7.120
++ "Clipboard history" panel
++ options dlg: "Load color preset", "Save color preset" btns;
+  some color presets
++ cmd "Sentence case"
++ status indicator "Zoom"
++ codepage RUSCII
+- inf. loop on replacing regex "$"
+
+2.7.080
++ new codepages support code. *Lot* of codepages added. See CP.cfg.
+
+2.7.050
++ cmd "Search - Extract strings"
+
+2.7.042
++ cmd "Options - Customize lexer styles"
++ lexers: Verilog, Lua, Lisp, Smalltalk, OneC (1C), Oberon, Haskell, TCL, IDL, BNF
++ plugin: option to use TC's search history (needs TC 8.0)
++ help: FAQ Q6
++ language: Italian
+- some issues fixed (EControl upd.)
+
+2.7.020
++ Ruby lexer (by Matthias030/Alextp)
++ xml UTF-8 detection
++ Inno/Ruby presets for ext. tools
+- flicker on closing
+- plugin QView bug
+
+2.7.010
++ "External tools" feature redone. Dialog redone.
+  Console compilers' output can be catched and shown in Output panel.
+  Compilers output errors hilighted, navigatable.
++ help: "Capture Output feature".
++ "Find in files" cmd: enabled in "Find/replace in files" dlg.
+  Uses Output panel.
+* "Replace in files" shows results in Output panel.
++ "Autocomplete dropdown count" opt.
++ "Search - Goto matching bracket" cmd.
++ "File - New ******" items added.
++ colors opt. added.
+
+2.6.900
++ popup menu: Copy-Append, Cut-Append, Copy as HTML, Copy as RTF items
++ Goto dlg: Column field
++ Office2003 theme
++ 12 ext. tools allowed
++ closing speedup
+* "Run" menu submenus
+* gutter collapse icons
+
+2.6.884
++ middle click scrolling
++ new icons in Preview
+- Pascal lexer fix
+
+2.6.877
++ command "Find -- Replace in files"
++ opt. "Editor 2 -- Smart hilighting"
++ opt.: colors for search marks
+* lex. lib. dialog: some columns hidden
++ help: FAQ #0
++ saving before opening in Firefox/IE/etc.
+* default opt.: Undo after save: off; Group redo: on
+
+2.5.850
++ NSL lexer (by V. Emmanuel)
+- NSIS lexer: fixed
+- Inno lexer: fixed
+- Autoit lexer: fixed
++ FoxPro lexer: fixed; tree added
+
+2.5.845
++ Logfiles lexer (by Matthias030)
+* TrVLog lexer removed
+- lexer with 1st lowercase letter was not selectable
++ PHP lexer: more correct tree
++ HTML lexer: hilighting of tag pairs
++ VB Script lexer: renamed; fixed; autocomplete added
++ NSIS lexer
+- C++ lexer: hilighting of "\""
+- Clipper lexer: function blocks
+
+2.5.835
++ opt "Show multiple tab lines"
++ middle click / dbl-click: closes tab
+- bug with Ctrl-F4
+
+2.5.830
++ lexer for AutoHotkey
++ "Open" dlg: saving of filter/ folder.
++ "Go to line" dlg: saving of history during session.
++ opt "Misc2 - Save/restore last session".
++ install: overwrite prompt for lexer lib.
+- bug with tab drawing; x64.
+- bug with enabling Save action.
+- issue with "Load session".
+
+2.5.815
++ Replace dlg: "Find next" (skip) button.
++ option "Misc 2/ Show icons in context menu"
++ usage w/out lexer library
++ command "File/ Close and delete"
+
+2.5.800
+* app: default location of ini files is %Appdata% now. To move ini to program
+  folder; use Options dlg - Misc - "Move files" button.
+* 2 dialogs: Find; Replace
+* Find/Replace: behaviour of btn "Find"/"Replace" like in Notepad/Wordpad
++ Replace: opt "Prompt on replace"
++ Replace: btn "Replace in all tabs"
++ Find: btn "Count all"
++ Run - MSDN search
++ File - Open: multi-select
+* opt "Close by Esc" made separate for plug/app
+- Find next: need 2 times to press "find prev" for prev match
+
+2.4.760
+* name SynWrite
++ menu "Run"
++ menu "Encoding"
++ menu item "X" near "Help"
++ opt "New document: encoding/line-endings/lexer"
++ opt "Create .bak files"
++ opt "Close by Esc"
++ FAQ question "How to speed-up program?"
++ FAQ question "What monospaced fonts are good?"
++ opt "Cleanup recent file list on start"
++ opt "Replace tabs with spaces on file opening"
++ tools opt: {FileDir}; {sel}
++ handling of mult. cmdline arguments
+- Enter/Shift+Enter in QSearch
+
+2.3.720
++ tabs.
++ quick search.
++ opt "Run single instance only".
++ lexers C++/PHP/HTML/Ini code templates. See lexer dialog - Code templates; to use: Ctrl+J.
++ autocomplete: AdobeScript/AutoIT/C/C#/C++/Batch Files/Java/Pascal/Perl/Python/SQL/Visual Basic (by Matthias030).
++ lexer/autocomplete: Bash Shellscript (by Matthias030).
++ lexer: AutoIT.
++ autocomplete for C++/AdobeScript.
++ command: File/ New HTML page.
++ command: File/ Save/Load session.
++ command: Edit/ Convert encoding to. Only changes encoding w/o reloading file.
++ command: Edit/ Insert date/time.
++ opt: "Autocomplete starting RegEx".
++ opt: more colors in list.
++ reload prompt: "Yes to all"/"No to all" btn in exe.
+
+2.2.660
++ 4 user tools allowed.
++ "Open text files only" opt.
++ "Keep caret in screen" opt.
++ zoom saved.
++ menu cmd "Zoom in/out/original"; "Add/Collect/Swap marker".
++ opt History/ "Save caret position"/"Save encoding".
++ actions "Menu - encodings"; "Menu - lexers"; "Lister find prev".
++ plugin: ListLoadW support.
+- fixes.
+
+2.2.600
++ languages: Rus; Ger; Spa; etc.
++ cmd Options/ Configure tools. File/ Run external tool.
++ writin of Hidden/Sys files.
+- page setup not saved.
+
+2.2.550
++ upper menu (option).
++ opt Misc/"Save plugin settings near lsplugin.ini".
++ showing of lines in bookmarks menu.
++ keys for enc. KOI8/Mac/UTF8-no-BOM.
+
+2.1.510
++ Unicode names support.
++ Unicode search.
++ search in selection (not for column blocks).
++ Alt+Up/Down: can move blocks.
++ lexer menu: no disabled lexers.
++ lexer menu: opt "Group lexers".
++ lexer library: list sorted.
++ autocompl.: Ctrl+Enter inserts tag with ">".
++ char table: ext hint.
++ char table: selecting current char.
++ opt: font for ruler/ACP.
++ status char info: OEM/Unicode info.
+- resize flicker
+- fixes
+
+2.1.440
++ opt Misc/"Open in OEM encoding"
++ opt Intf/"Suggest current word as search text"
++ opt Editor2/"Draw current line BG"
++ opt Editor2/"Show horiz. ruler"
++ opt: Keys/ button "Search"
+- fixes
+
+2.1.410
++ options
++ Bookmark commands in Goto toolmenu.
++ "Save as": detecting lexer.
++ "Open": sorting filters.
+
+2.1.380
++ more icon sets. Thanks Matthias030.
++ exe: shows '*' in caption for modified file.
++ command "Character table" (Ctrl+.)
++ items "Find next/Find prev/.." in Find menu.
+
++ exe: redone; all new code.
++ exe: "New window" action.
++ "Ins" status info.
+* About dlg.
+- missed prompts to save changes.
+- "Keep trailing blanks" opt.
+
++ Preview dlg: Esc closes.
++ Scroll up/dn commands: cursor remains in screen.
+- exe: opt dlg: Alt key vanishes all.
+- QView desn't need themes.
+
+- save prompt shown twice.
+- Undo/Redo btn update.
+
+2.1.340
++ command "New file".
+* commands "Sort asc./desc." moved into submenu.
++ exe: installer.
++ exe: 48x48 icon.
+- autocompl. for CSS: crash.
++ autocompl. for HTML: popup for </tags>.
++ more toolbar themes.
++ themed statusbar.
++ pale icon "not RO".
+- "copy Url" when cursor not on Url.
+
+2.1.300
++ encoding "UTF-8 w/o BOM" (not autodetected).
++ exe: commandline key /RO; see Readme\CommandLn.html.
++ Find: "Spec. chars" option for \n \r \t.
+* Find: "Clear marks" button moved out of dlg.
+- changes lost if new file is opened via Open dialog.
+- autocomplete for HTML.
+- issue with long lines scrolling / RO / wrap.
++ autocompl.: click chooses item; Up/Dn keys.
++ autocompl.: chars '/\.; +()*' close popup.
+- autocompl. crash on css.
+
+2.1.260
++ ECtl update (2.60). Many issues fixed. Lexers added.
++ lexers menu split to letters (A..Z)
++ opt "Show msgbox about empty search result"
+- KOI8 codepage font
+- RO change: text cursor doesn't hide
+- ctrl-P now calls Print dialog
+- Print Preview shortcut
+
+2.1.240
++ sorting of lexers list
++ opt "Interface. Toolbar icons"; more icons
++ opt "Misc. Show full path in caption" (exe)
++ opt "Misc. Add Explorer context menu item" (exe)
+- crash on Win7; QView
+
+2.1.220
++ exe icon
++ opt "RO at startup"
+- search: \t in regex
+- issue with Wrap
+
+2.1.210
++ exe: start w/o filename!
+- "Copy"/"Cut" btns not updated; DblClick
+- "Clear sel" btn not updated
++ opt "Show 'char at cursor' info"
+
+2.1.192
+- "Ask to overwrite RO files" didn't work
+- "Copy URL" didn't work
+- file deletion outside: error
+
+2.1.186
++ search help on RegEx
+- search bug
++ search: special chars; Help btn
++ Opt "Watch for changes"
++ readme: Syn.html
+- exe: recent history
+- exe: exit confirmation appears twice
+- QView: crash with modif. file
++ Opt: actions "Lister find"/"Lister find next"
+
+2.1.150
++ F3 doesn't show dlg
++ Search dlg: "Direction"
++ dialogs appear- same monitor
++ exe: Open dialog shows "All files (*.*)"
++ Opt: "File-Reopen" action
++ Opt: "Use custom search dlg"
+- keys for "Toggle lines num"; "Toggle ..."
+- flicker of toolbar
+
+2.1.122
+- QView crash(on dir)
+- QV focus
+
+2.1.120
+  * no cursor info(status) when no cursor
+  + Opt: tab saved
+  * Opt: when setting "Word wrap at margin"; "Margin" is set
+  + Opt saved *not* on close
+  + sync "Word wrap" btn with Opt dialog
+  + exe: msg for new file
+  - exe: flicker(start)
+  * Opt "Save win position" disabled in Lister
+
+
+2.1.110
+  * lexer config moved into Opt menu
+  + keys for encoding
+  + Find word next/prior
+  + msg when change encoding with modif. file
+  * Home/End in RO like Lister
+  * About
+
+2.1.101
+  + "Selection as search text" opt
+  - theme reset on applying options
+  - Hotkey dlg: "Clear" can show error
+  * Opt dialog: edits changed to SpinEdits
+  - RO mode: PageUp/Pgdn/Home/End
+  - Alt+up/Alt+dn: setting 'Modified'
+

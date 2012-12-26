@@ -1,0 +1,38 @@
+[L]
+VIcons=Icônes
+VList=Liste
+VDet=Détails
+VThum=Miniatures
+
+ShowDrv=Afficher barre des lecteurs
+ShowTree=Afficher arbre
+ShowPath=Afficher champ chemin
+ShowFilter=Afficher champ filtre
+ShowStatus=Afficher barre d'état
+HorzSplit=Séparateur horizontal
+Font=Police...
+
+AutoRefr=Activer actualisation auto.
+ShowHid=Afficher éléments cachés
+AddFav=Ajouter dossier actuel aux favoris
+
+hGoUp=Monter d'un niveau
+hNewDir=Créer nouveau dossier
+hRefr=Actualiser panneaux
+hFocus=Sélectionner le fichier en cours dans liste des fichiers
+hFilter=Filtrage de fichiers - masques de fichier séparés par ";"
+
+lvEmpty=Le dossier est vide
+lvMore=Plus...
+lvColSett=Paramétrage des colonnes
+lvColCheck=Cochez les colonnes que vous voulez rendre visibles dans ce dossier. Réordonnez les colonnes par glisser-déposer.
+lvColShoud="La colonne sélectionnée doit avoir "
+lvColPix= pixels en largeur
+lvLiveUpd=Mise à jour automatique
+
+bOk=OK
+bCancel=Annuler
+
+StrOverwr=Le fichier existe déjà. Écraser le fichier actuel?
+StrErr=Erreur
+StrNewDir=Nouveau dossier

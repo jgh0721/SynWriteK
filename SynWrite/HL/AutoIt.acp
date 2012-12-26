@@ -1,0 +1,540 @@
+#chars #@
+
+Keyword #comments-start |Specify that an entire section of script should be commented out.
+Keyword #include |Includes a file in the current script.
+Keyword #include-once |Specifies that the current file may only be included once.
+Keyword #NoAutoIt3Execute |Specifies that the current compiled script cannot run with /AutoIt3ExecuteLine or /AutoIt3ExecuteScript switch.
+Keyword #NoTrayIcon |Indicates that the AutoIt tray icon will not be shown when the script starts.
+Keyword #OnAutoItStartRegister |Registers a function to be called when AutoIt starts.
+Keyword #RequireAdmin |Specifies that the current script requires full administrator rights to run.
+Keyword Case |
+Keyword Const |Declare a variable, a constant, or create an array.
+Keyword ContinueCase |Abort the current case and continue a case into the next case in a Select or Switch block.
+Keyword ContinueLoop |Continue a While/Do/For loop.
+Keyword Default |Keyword value use in function call.
+Keyword Dim |Declare a variable, a constant, or create an array.
+Keyword Do |Loop based on an expression.
+Keyword Else |
+Keyword ElseIf |
+Keyword EndFunc |
+Keyword EndIf |
+Keyword EndSelect |
+Keyword EndSwitch |
+Keyword EndWith |
+Keyword Enum |Enumerates constants.
+Keyword Exit |Terminates the script.
+Keyword ExitLoop |Terminate a While/Do/For loop.
+Keyword False |Boolean values for use in logical expressions.
+Keyword For |Loop based on an expression.
+Keyword Func |Defines a user-defined function that takes zero or more arguments and optionally returns a result.
+Keyword Global |Declare a variable, a constant, or create an array.
+Keyword If |Conditionally run statements.
+Keyword In |
+Keyword Local |Declare a variable, a constant, or create an array.
+Keyword Next |
+Keyword ReDim |Resize an existing array
+Keyword Return |
+Keyword Select |Conditionally run statements.
+Keyword Static |Declare a static variable or create a static array.
+Keyword Switch |Conditionally run statements.
+Keyword Then |
+Keyword True |Boolean values for use in logical expressions.
+Keyword Until |
+Keyword WEnd |
+Keyword While |Loop based on an expression.
+Keyword With |Used to reduce long references to object type variables
+Function Abs |Calculates the absolute value of a number.
+Function ACos |Calculates the arcCosine of a number.
+Function AdlibRegister |Registers an Adlib function.
+Function AdlibUnRegister |Unregisters an adlib function.
+Function Asc |Returns the ASCII code of a character.
+Function AscW |Returns the unicode code of a character.
+Function ASin |Calculates the arcsine of a number.
+Function Assign |Assigns a variable by name with the data.
+Function ATan |Calculates the arctangent of a number.
+Function AutoItSetOption |Changes the operation of various AutoIt functions/parameters.
+Function AutoItWinGetTitle |Retrieves the title of the AutoIt window.
+Function AutoItWinSetTitle |Changes the title of the AutoIt window.
+Function Beep |Plays back a beep to the user.
+Function Binary |Returns the binary representation of an expression.
+Function BinaryLen |Returns the number of bytes in a binary variant.
+Function BinaryMid |Extracts a number of bytes from a binary variant.
+Function BinaryToString |Converts a binary variant into a string.
+Function BitAND |Performs a bitwise AND operation.
+Function BitNOT |Performs a bitwise NOT operation.
+Function BitOR |Performs a bitwise OR operation.
+Function BitRotate |Performs a bit shifting operation, with rotation.
+Function BitShift |Performs a bit shifting operation.
+Function BitXOR |Performs a bitwise exclusive OR (XOR) operation.
+Function BlockInput |Disable/enable the mouse and keyboard.
+Function Break |Enables or disables the users' ability to exit a script from the tray icon menu.
+Function Call |Calls a user-defined function contained in a string parameter.
+Function CDTray |Opens or closes the CD tray.
+Function Ceiling |Returns a number rounded up to the next integer.
+Function Chr |Returns a character corresponding to an ASCII code.
+Function ChrW |Returns a character corresponding to a unicode code.
+Function ClipGet |Retrieves text from the clipboard.
+Function ClipPut |Writes text to the clipboard.
+Function ConsoleRead |Read from the STDIN stream of the AutoIt script process.
+Function ConsoleWrite |Writes data to the STDOUT stream. Some text editors can read this stream as can other programs which may be expecting data on this stream.
+Function ConsoleWriteError |Writes data to the STDERR stream. Some text editors can read this stream as can other programs which may be expecting data on this stream.
+Function ControlClick |Sends a mouse click command to a given control.
+Function ControlCommand |Sends a command to a control.
+Function ControlDisable |Disables or "grays-out" a control.
+Function ControlEnable |Enables a "grayed-out" control.
+Function ControlFocus |Sets input focus to a given control on a window.
+Function ControlGetFocus |Returns the ControlRef# of the control that has keyboard focus within a specified window.
+Function ControlGetHandle |Retrieves the internal handle of a control.
+Function ControlGetPos |Retrieves the position and size of a control relative to it's window.
+Function ControlGetText |Retrieves text from a control.
+Function ControlHide |Hides a control.
+Function ControlListView |Sends a command to a ListView32 control.
+Function ControlMove |Moves a control within a window.
+Function ControlSend |Sends a string of characters to a control.
+Function ControlSetText |Sets text of a control.
+Function ControlShow |Shows a control that was hidden.
+Function ControlTreeView |Sends a command to a TreeView32 control.
+Function Cos |Calculates the cosine of a number.
+Function Dec |Returns a numeric representation of a hexadecimal string.
+Function DirCopy |Copies a directory and all sub-directories and files (Similar to xcopy).
+Function DirCreate |Creates a directory/folder.
+Function DirGetSize |Returns the size in bytes of a given directory.
+Function DirMove |Moves a directory and all sub-directories and files.
+Function DirRemove |Deletes a directory/folder.
+Function DllCall |Dynamically calls a function in a DLL.
+Function DllCallbackFree |Frees a previously created handle created with DllCallbackRegister.
+Function DllCallbackGetPtr |Returns the pointer to a callback function that can be passed to the Win32 API.
+Function DllCallbackRegister |Creates a user-defined DLL Callback function.
+Function DllClose |Closes a previously opened DLL.
+Function DllOpen |Opens a DLL file for use in DllCall.
+Function DllStructCreate |Creates a C/C++ style structure to be used in DllCall.
+Function DllStructGetData |Returns the data of an element of the struct.
+Function DllStructGetPtr |Returns the pointer to the struct or an element in the struct.
+Function DllStructGetSize |Returns the size of the struct in bytes.
+Function DllStructSetData |Sets the data in of an element in the struct.
+Function DriveGetDrive |Returns an array containing the enumerated drives.
+Function DriveGetFileSystem |Returns File System Type of a drive.
+Function DriveGetLabel |Returns Volume Label of a drive, if it has one.
+Function DriveGetSerial |Returns Serial Number of a drive.
+Function DriveGetType |Returns drive type.
+Function DriveMapAdd |Maps a network drive.
+Function DriveMapDel |Disconnects a network drive.
+Function DriveMapGet |Retrieves the details of a mapped drive.
+Function DriveSetLabel |Sets the Volume Label of a drive.
+Function DriveSpaceFree |Returns the free disk space of a path in Megabytes.
+Function DriveSpaceTotal |Returns the total disk space of a path in Megabytes.
+Function DriveStatus |Returns the status of the drive as a string.
+Function EnvGet |Retrieves an environment variable.
+Function EnvSet |Writes an environment variable.
+Function EnvUpdate |Refreshes the OS environment.
+Function Eval |Return the value of the variable defined by an string.
+Function Execute |Execute an expression.
+Function Exp |Calculates e to the power of a number.
+Function FileChangeDir |Changes the current working directory.
+Function FileClose |Closes a previously opened text file.
+Function FileCopy |Copies one or more files.
+Function FileCreateNTFSLink |Creates an NTFS hardlink to a file or a directory
+Function FileCreateShortcut |Creates a shortcut (.lnk) to a file.
+Function FileDelete |Delete one or more files.
+Function FileExists |Checks if a file or directory exists.
+Function FileFindFirstFile |Returns a search "handle" according to file search string.
+Function FileFindNextFile |Returns a filename according to a previous call to FileFindFirstFile.
+Function FileFlush |Flushes the file's buffer to disk.
+Function FileGetAttrib |Returns a code string representing a file's attributes.
+Function FileGetEncoding |Determines the text encoding used in a file.
+Function FileGetLongName |Returns the long path+name of the path+name passed.
+Function FileGetPos |Retrieves the current file position.
+Function FileGetShortcut |Retrieves details about a shortcut.
+Function FileGetShortName |Returns the 8.3 short path+name of the path+name passed.
+Function FileGetSize |Returns the size of a file in bytes.
+Function FileGetTime |Returns the time and date information for a file.
+Function FileGetVersion |Returns the "File" version information.
+Function FileInstall |Include and install a file with the compiled script.
+Function FileMove |Moves one or more files
+Function FileOpen |Opens a text file for reading or writing.
+Function FileOpenDialog |Initiates a Open File Dialog.
+Function FileRead |Read in a number of characters from a previously opened text file.
+Function FileReadLine |Read in a line of text from a previously opened text file.
+Function FileRecycle |Sends a file or directory to the recycle bin.
+Function FileRecycleEmpty |Empties the recycle bin.
+Function FileSaveDialog |Initiates a Save File Dialog.
+Function FileSelectFolder |Initiates a Browse For Folder dialog.
+Function FileSetAttrib |Sets the attributes of one or more files.
+Function FileSetPos |Sets the current file position.
+Function FileSetTime |Sets the timestamp of one of more files.
+Function FileWrite |Append a text/data to the end of a previously opened file.
+Function FileWriteLine |Append a line of text to the end of a previously opened text file.
+Function Floor |Returns a number rounded down to the closest integer.
+Function FtpSetProxy |Sets the internet proxy to use for ftp access.
+Function GUICreate |Create a GUI window.
+Function GUICtrlCreateAvi |Creates an AVI video control for the GUI.
+Function GUICtrlCreateButton |Creates a Button control for the GUI.
+Function GUICtrlCreateCheckbox |Creates a Checkbox control for the GUI.
+Function GUICtrlCreateCombo |Creates a ComboBox control for the GUI.
+Function GUICtrlCreateContextMenu |Creates a context menu for a control or entire GUI window.
+Function GUICtrlCreateDate |Creates a date control for the GUI.
+Function GUICtrlCreateDummy |Creates a Dummy control for the GUI.
+Function GUICtrlCreateEdit |Creates an Edit control for the GUI.
+Function GUICtrlCreateGraphic |Creates a Graphic control for the GUI.
+Function GUICtrlCreateGroup |Creates a Group control for the GUI.
+Function GUICtrlCreateIcon |Creates an Icon control for the GUI.
+Function GUICtrlCreateInput |Creates an Input control for the GUI.
+Function GUICtrlCreateLabel |Creates a static Label control for the GUI.
+Function GUICtrlCreateList |Creates a List control for the GUI.
+Function GUICtrlCreateListView |Creates a ListView control for the GUI.
+Function GUICtrlCreateListViewItem |Creates a ListView item.
+Function GUICtrlCreateMenu |Creates a Menu control for the GUI.
+Function GUICtrlCreateMenuItem |Creates a MenuItem control for the GUI.
+Function GUICtrlCreateMonthCal |Creates a month calendar control for the GUI.
+Function GUICtrlCreateObj |Creates an ActiveX control in the GUI.
+Function GUICtrlCreatePic |Creates a Picture control for the GUI.
+Function GUICtrlCreateProgress |Creates a Progress control for the GUI.
+Function GUICtrlCreateRadio |Creates a Radio button control for the GUI.
+Function GUICtrlCreateSlider |Creates a Slider control for the GUI.
+Function GUICtrlCreateTab |Creates a Tab control for the GUI.
+Function GUICtrlCreateTabItem |Creates a TabItem control for the GUI.
+Function GUICtrlCreateTreeView |Creates a TreeView control for the GUI.
+Function GUICtrlCreateTreeViewItem |Creates a TreeViewItem control for the GUI.
+Function GUICtrlCreateUpdown |Creates an UpDown control for the GUI.
+Function GUICtrlDelete |Deletes a control.
+Function GUICtrlGetHandle |Returns the handle for a control and some special (item) handles (Menu, ContextMenu, TreeViewItem).
+Function GUICtrlGetState |Gets the current state of a control
+Function GUICtrlRead |Read state or data of a control.
+Function GUICtrlRecvMsg |Send a message to a control and retrieve information in lParam.
+Function GUICtrlRegisterListViewSort |Register a user defined function for an internal listview sorting callback function.
+Function GUICtrlSendMsg |Send a message to a control.
+Function GUICtrlSendToDummy |Sends a message to a Dummy control.
+Function GUICtrlSetBkColor |Sets the background color of a control.
+Function GUICtrlSetColor |Sets the text color of a control.
+Function GUICtrlSetCursor |Sets the mouse cursor icon for a particular control.
+Function GUICtrlSetData |Modifies the data for a control.
+Function GUICtrlSetDefBkColor |Sets the default background color of all the controls of the GUI window.
+Function GUICtrlSetDefColor |Sets the default text color of all the controls of the GUI window.
+Function GUICtrlSetFont |Sets the font for a control.
+Function GUICtrlSetGraphic |Modifies the data for a control.
+Function GUICtrlSetImage |Sets the bitmap or icon image to use for a control.
+Function GUICtrlSetLimit |Limits the number of characters/pixels for a control.
+Function GUICtrlSetOnEvent |Defines a user-defined function to be called when a control is clicked.
+Function GUICtrlSetPos |Changes the position of a control within the GUI window.
+Function GUICtrlSetResizing |Defines the resizing method used by a control.
+Function GUICtrlSetState |Changes the state of a control.
+Function GUICtrlSetStyle |Changes the style of a control.
+Function GUICtrlSetTip |Sets the tip text associated with a control.
+Function GUIDelete |Deletes a GUI window and all controls that it contains.
+Function GUIGetCursorInfo |Gets the mouse cursor position relative to GUI window.
+Function GUIGetMsg |Polls the GUI to see if any events have occurred.
+Function GUIGetStyle |Retrieves the styles of a GUI window.
+Function GUIRegisterMsg |Register a user defined function for a known Windows Message ID (WM_MSG).
+Function GUISetAccelerators |Sets the accelerator table to be used in a GUI window.
+Function GUISetBkColor |Sets the background color of the GUI window.
+Function GUISetCoord |Sets absolute coordinates for the next control.
+Function GUISetCursor |Sets the mouse cursor icon for a GUI window.
+Function GUISetFont |Sets the default font for a GUI window.
+Function GUISetHelp |Sets an executable file that will be run when F1 is pressed.
+Function GUISetIcon |Sets the icon used in a GUI window.
+Function GUISetOnEvent |Defines a user function to be called when a system button is clicked.
+Function GUISetState |Changes the state of a GUI window.
+Function GUISetStyle |Changes the styles of a GUI window.
+Function GUIStartGroup |Defines that any subsequent controls that are created will be "grouped" together.
+Function GUISwitch |Switches the current window used for GUI functions.
+Function Hex |Returns a string representation of an integer or of a binary type converted to hexadecimal.
+Function HotKeySet |Sets a hotkey that calls a user function.
+Function HttpSetProxy |Sets the internet proxy to use for http access.
+Function HttpSetUserAgent |Sets the user-agent string sent with InetGet() and InetRead() requests.
+Function HWnd |Converts an expression into an HWND handle.
+Function InetClose |Closes a handle returned from InetGet().
+Function InetGet |Downloads a file from the internet using the HTTP, HTTPS or FTP protocol.
+Function InetGetInfo |Returns detailed data for a handle returned from InetGet().
+Function InetGetSize |Returns the size (in bytes) of a file located on the internet.
+Function InetRead |Downloads a file from the internet using the HTTP, HTTPS or FTP protocol.
+Function IniDelete |Deletes a value from a standard format .ini file.
+Function IniRead |Reads a value from a standard format .ini file.
+Function IniReadSection |Reads all key/value pairs from a section in a standard format .ini file.
+Function IniReadSectionNames |Reads all sections in a standard format .ini file.
+Function IniRenameSection |Renames a section in a standard format .ini file.
+Function IniWrite |Writes a value to a standard format .ini file.
+Function IniWriteSection |Writes a section to a standard format .ini file.
+Function InputBox |Displays an input box to ask the user to enter a string.
+Function Int |Returns the integer (whole number) representation of an expression.
+Function IsAdmin |Checks if the current user has full administrator privileges.
+Function IsArray |Checks if a variable is an array type.
+Function IsBinary |Checks if a variable or expression is a binary type.
+Function IsBool |Checks if a variable's base type is boolean.
+Function IsDeclared |Check if a variable has been declared.
+Function IsDllStruct |Checks if a variable is a DllStruct type.
+Function IsFloat |Checks if a variable or expression is a float-type.
+Function IsHWnd |Checks if a variable's base type is a pointer and window handle.
+Function IsInt |Checks if a variable or expression is an integer type.
+Function IsKeyword |Checks if a variable is a keyword (for example, Default).
+Function IsNumber |Checks if a variable's base type is numeric.
+Function IsObj |Checks if a variable or expression is an object type.
+Function IsPtr |Checks if a variable's base type is a pointer.
+Function IsString |Checks if a variable is a string type.
+Function Log |Calculates the natural logarithm of a number.
+Function MemGetStats |Retrieves memory related information.
+Function Mod |Performs the modulus operation.
+Function MouseClick |Perform a mouse click operation.
+Function MouseClickDrag |Perform a mouse click and drag operation.
+Function MouseDown |Perform a mouse down event at the current mouse position.
+Function MouseGetCursor |Returns the cursor ID Number for the current Mouse Cursor.
+Function MouseGetPos |Retrieves the current position of the mouse cursor.
+Function MouseMove |Moves the mouse pointer.
+Function MouseUp |Perform a mouse up event at the current mouse position.
+Function MouseWheel |Moves the mouse wheel up or down. NT/2000/XP ONLY.
+Function MsgBox |Displays a simple message box with optional timeout.
+Function Number |Returns the numeric representation of an expression.
+Function ObjCreate |Creates a reference to a COM object from the given classname.
+Function ObjEvent |Handles incoming events from the given Object.
+Function ObjGet |Retrieves a reference to a COM object from an existing process or filename.
+Function ObjName |Returns the name or interface description of an Object
+Function OnAutoItExitRegister |Registers a function to be called when AutoIt exits.
+Function OnAutoItExitUnRegister |UnRegisters a function that was called when AutoIt exits.
+Function Ping |Pings a host and returns the roundtrip-time.
+Function PixelChecksum |Generates a checksum for a region of pixels.
+Function PixelGetColor |Returns a pixel color according to x,y pixel coordinates.
+Function PixelSearch |Searches a rectangle of pixels for the pixel color provided.
+Function PluginClose |Close a plugin file
+Function PluginOpen |Open a plugin file.
+Function ProcessClose |Terminates a named process.
+Function ProcessExists |Checks to see if a specified process exists.
+Function ProcessGetStats |Returns an array about Memory or IO infos of a running process.
+Function ProcessList |Returns an array listing the currently running processes (names and PIDs).
+Function ProcessSetPriority |Changes the priority of a process
+Function ProcessWait |Pauses script execution until a given process exists.
+Function ProcessWaitClose |Pauses script execution until a given process does not exist.
+Function ProgressOff |Turns Progress window off.
+Function ProgressOn |Creates a customizable progress bar window.
+Function ProgressSet |Sets the position and/or text of a previously created Progress bar window.
+Function Ptr |Converts an expression into a pointer variant.
+Function Random |Generates a pseudo-random float-type number.
+Function RegDelete |Deletes a key or value from the registry.
+Function RegEnumKey |Reads the name of a subkey according to it's instance.
+Function RegEnumVal |Reads the name of a value according to it's instance.
+Function RegRead |Reads a value from the registry.
+Function RegWrite |Creates a key or value in the registry.
+Function Round |Returns a number rounded to a specified number of decimal places.
+Function Run |Runs an external program.
+Function RunAs |Runs an external program under the context of a different user.
+Function RunAsWait |Runs an external program under the context of a different user and pauses script execution until the program finishes.
+Function RunWait |Runs an external program and pauses script execution until the program finishes.
+Function Send |Sends simulated keystrokes to the active window.
+Function SendKeepActive |Attempts to keep a specified window active during Send().
+Function SetError |Manually set the value of the @error macro.
+Function SetExtended |Manually set the value of the @extended macro.
+Function ShellExecute |Runs an external program using the ShellExecute API.
+Function ShellExecuteWait |Runs an external program using the ShellExecute API and pauses script execution until it finishes.
+Function Shutdown |Shuts down the system.
+Function Sin |Calculates the sine of a number.
+Function Sleep |Pause script execution.
+Function SoundPlay |Play a sound file.
+Function SoundSetWaveVolume |Sets the system wave volume by percent.
+Function SplashImageOn |Creates a customizable image popup window.
+Function SplashOff |Turns SplashText or SplashImage off.
+Function SplashTextOn |Creates a customizable text popup window.
+Function Sqrt |Calculates the square-root of a number.
+Function SRandom |Set Seed for random number generation.
+Function StatusbarGetText |Retrieves the text from a standard status bar control.
+Function StderrRead |Reads from the STDERR stream of a previously run child process.
+Function StdinWrite |Writes a number of characters to the STDIN stream of a previously run child process.
+Function StdioClose |Closes all resources associated with a process previously run with STDIO redirection.
+Function StdoutRead |Reads from the STDOUT stream of a previously run child process.
+Function String |Returns the string representation of an expression.
+Function StringAddCR |Takes a string and prefixes all linefeed characters ( Chr(10) ) with a carriage return character ( Chr(13) ).
+Function StringCompare |Compares two strings with options.
+Function StringFormat |Returns a formatted string (similar to the C sprintf() function).
+Function StringFromASCIIArray |Converts an array of ASCII codes to a string.
+Function StringInStr |Checks if a string contains a given substring.
+Function StringIsAlNum |Checks if a string contains only alphanumeric characters.
+Function StringIsAlpha |Checks if a string contains only alphabetic characters.
+Function StringIsASCII |Checks if a string contains only ASCII characters in the range 0x00 - 0x7f (0 - 127).
+Function StringIsDigit |Checks if a string contains only digit (0-9) characters.
+Function StringIsFloat |Checks if a string is a floating point number.
+Function StringIsInt |Checks if a string is an integer.
+Function StringIsLower |Checks if a string contains only lowercase characters.
+Function StringIsSpace |Checks if a string contains only whitespace characters.
+Function StringIsUpper |Checks if a string contains only uppercase characters.
+Function StringIsXDigit |Checks if a string contains only hexadecimal digit (0-9, A-F) characters.
+Function StringLeft |Returns a number of characters from the left-hand side of a string.
+Function StringLen |Returns the number of characters in a string.
+Function StringLower |Converts a string to lowercase.
+Function StringMid |Extracts a number of characters from a string.
+Function StringRegExp |Check if a string fits a given regular expression pattern.
+Function StringRegExpReplace |Replace text in a string based on regular expressions.
+Function StringReplace |Replaces substrings in a string.
+Function StringRight |Returns a number of characters from the right-hand side of a string.
+Function StringSplit |Splits up a string into substrings depending on the given delimiters.
+Function StringStripCR |Removes all carriage return values ( Chr(13) ) from a string.
+Function StringStripWS |Strips the white space in a string.
+Function StringToASCIIArray |Converts a string to an array containing the ASCII code of each character.
+Function StringToBinary |Converts a string into binary data.
+Function StringTrimLeft |Trims a number of characters from the left hand side of a string.
+Function StringTrimRight |Trims a number of characters from the right hand side of a string.
+Function StringUpper |Converts a string to uppercase.
+Function Tan |Calculates the tangent of a number.
+Function TCPAccept |Permits an incoming connection attempt on a socket.
+Function TCPCloseSocket |Closes a TCP socket.
+Function TCPConnect |Create a socket connected to an existing server.
+Function TCPListen |Creates a socket listening for an incoming connection.
+Function TCPNameToIP |Converts an Internet name to IP address.
+Function TCPRecv |Receives data from a connected socket.
+Function TCPSend |Sends data on a connected socket.
+Function TCPShutdown |Stops TCP services.
+Function TCPStartup |Starts TCP services.
+Function TimerDiff |Returns the difference in time from a previous call to TimerInit().
+Function TimerInit |Returns a timestamp (in milliseconds).
+Function ToolTip |Creates a tooltip anywhere on the screen.
+Function TrayCreateItem |Creates a menuitem control for the tray.
+Function TrayCreateMenu |Creates a menu control for the tray menu.
+Function TrayGetMsg |Polls the tray to see if any events have occurred.
+Function TrayItemDelete |Deletes a menu/item control from the tray menu.
+Function TrayItemGetHandle |Returns the handle for a tray menu(item).
+Function TrayItemGetState |Gets the current state of a control.
+Function TrayItemGetText |Gets the itemtext of a tray menu/item control.
+Function TrayItemSetOnEvent |Defines a user-defined function to be called when a tray item is clicked.
+Function TrayItemSetState |Sets the state of a tray menu/item control.
+Function TrayItemSetText |Sets the itemtext of a tray menu/item control.
+Function TraySetClick |Sets the clickmode of the tray icon - what mouseclicks will display the tray menu.
+Function TraySetIcon |Loads/Sets a specified tray icon.
+Function TraySetOnEvent |Defines a user function to be called when a special tray action happens.
+Function TraySetPauseIcon |Loads/Sets a specified tray pause icon.
+Function TraySetState |Sets the state of the tray icon.
+Function TraySetToolTip |(Re)Sets the tooltip text for the tray icon.
+Function TrayTip |Displays a balloon tip from the AutoIt Icon. (2000/XP only)
+Function UBound |Returns the size of array dimensions.
+Function UDPBind |Create a socket bound to an incoming connection.
+Function UDPCloseSocket |Close a UDP socket.
+Function UDPOpen |Open a socket connected to an existing server .
+Function UDPRecv |Receives data from a opened socket
+Function UDPSend |Sends data on an opened socket
+Function UDPShutdown |Stops UDP services.
+Function UDPStartup |Starts UDP services.
+Function VarGetType |Returns the internal type representation of a variant.
+Function WinActivate |Activates (gives focus to) a window.
+Function WinActive |Checks to see if a specified window exists and is currently active.
+Function WinClose |Closes a window.
+Function WinExists |Checks to see if a specified window exists.
+Function WinFlash |Flashes a window in the taskbar.
+Function WinGetCaretPos |Returns the coordinates of the caret in the foreground window
+Function WinGetClassList |Retrieves the classes from a window.
+Function WinGetClientSize |Retrieves the size of a given window's client area.
+Function WinGetHandle |Retrieves the internal handle of a window.
+Function WinGetPos |Retrieves the position and size of a given window.
+Function WinGetProcess |Retrieves the Process ID (PID) associated with a window.
+Function WinGetState |Retrieves the state of a given window.
+Function WinGetText |Retrieves the text from a window.
+Function WinGetTitle |Retrieves the full title from a window.
+Function WinKill |Forces a window to close.
+Function WinList |Retrieves a list of windows.
+Function WinMenuSelectItem |Invokes a menu item of a window.
+Function WinMinimizeAll |Minimizes all windows.
+Function WinMinimizeAllUndo |Undoes a previous WinMinimizeAll function.
+Function WinMove |Moves and/or resizes a window.
+Function WinSetOnTop |Change a window's "Always On Top" attribute.
+Function WinSetState |Shows, hides, minimizes, maximizes, or restores a window.
+Function WinSetTitle |Changes the title of a window.
+Function WinSetTrans |Sets the transparency of a window. (Windows 2000/XP or later)
+Function WinWait |Pauses execution of the script until the requested window exists.
+Function WinWaitActive |Pauses execution of the script until the requested window is active.
+Function WinWaitClose |Pauses execution of the script until the requested window does not exist.
+Function WinWaitNotActive |Pauses execution of the script until the requested window is not active.
+Macro @AppDataCommonDir |path to Application Data
+Macro @AppDataDir |path to current user's Application Data
+Macro @AutoItExe |The full path and filename of the AutoIt executable currently running. For compiled scripts it is the path of the compiled script.
+Macro @AutoItPID |PID of the process running the script.
+Macro @AutoItVersion |Version number of AutoIt such as 3.0.81.0
+Macro @AutoItX64 |Returns 1 if the script is running under the native x64 version of AutoIt.
+Macro @COM_EventObj |Object the COM event is being fired on. Only valid in a COM event Function.
+Macro @CommonFilesDir |path to Common Files folder
+Macro @Compiled |Returns 1 if script is a compiled executable; otherwise, returns 0.
+Macro @ComputerName |Computer's network name.
+Macro @ComSpec |value of %comspec%, the SPECified secondary COMmand interpreter; Macro primarily for command line uses, e.g.  Run(@ComSpec & " /k help | more")
+Macro @CPUArch |Returns "X86" when the CPU is a 32-bit CPU and "X64" when the CPU is 64-bit.
+Macro @CR |Carriage return, Chr(13); sometimes used for line breaks.
+Macro @CRLF |= @CR & @LF ;occasionally used for line breaks.
+Macro @DesktopCommonDir |path to Desktop
+Macro @DesktopDir |path to current user's Desktop
+Macro @DesktopHeight |Height of the desktop screen in pixels. (vertical resolution)
+Macro @DesktopWidth |Width of the desktop screen in pixels. (horizontal resolution)
+Macro @DesktopDepth |Depth of the desktop screen in bits per pixel.
+Macro @DesktopRefresh |Refresh rate of the desktop screen in hertz.
+Macro @DocumentsCommonDir |path to Documents
+Macro @error |Status of the error flag. See the SetError function.
+Macro @exitCode |Exit code as set by Exit statement.
+Macro @exitMethod |Exit method.  See the Func OnAutoItExitRegister().
+Macro @extended |Extended function return - used in certain functions such as StringReplace.
+Macro @FavoritesCommonDir |path to Favorites
+Macro @FavoritesDir |path to current user's Favorites
+Macro @GUI_CtrlId |Last click control identifier. Only valid in an event Function. See the GUICtrlSetOnEvent function.
+Macro @GUI_CtrlHandle |Last click control handle. Only valid in an event Function. See the GUICtrlSetOnEvent function.
+Macro @GUI_DragId |Drag control identifier. Only valid on Drop Event. See the GUISetOnEvent function.
+Macro @GUI_DragFile |Filename of the file being dropped. Only valid on Drop Event. See the GUISetOnEvent function.
+Macro @GUI_DropId |Drop control identifier. Only valid on Drop Event. See the GUISetOnEvent function.
+Macro @GUI_WinHandle |Last click GUI window handle. Only valid in an event Function. See the GUICtrlSetOnEvent function.
+Macro @HomeDrive |Drive letter of drive containing current user's home directory.
+Macro @HomePath |Directory part of current user's home directory. To get the full path, use in conjunction with @HomeDrive.
+Macro @HomeShare |Server and share name containing current user's home directory.
+Macro @HOUR |Hours value of clock in 24-hour format. Range is 00 to 23
+Macro @HotKeyPressed |Last hotkey pressed. See the HotKeySet function.
+Macro @IPAddress1 |IP address of first network adapter. Tends to return 127.0.0.1 on some computers.
+Macro @IPAddress2 |IP address of second network adapter. Returns 0.0.0.0 if not applicable.
+Macro @IPAddress3 |IP address of third network adapter. Returns 0.0.0.0 if not applicable.
+Macro @IPAddress4 |IP address of fourth network adapter. Returns 0.0.0.0 if not applicable.
+Macro @KBLayout |Returns code denoting Keyboard Layout. See Appendix for possible values.
+Macro @LF |Line feed, Chr(10); typically used for line breaks.
+Macro @LogonDNSDomain |Logon DNS Domain.
+Macro @LogonDomain |Logon Domain.
+Macro @LogonServer |Logon server.
+Macro @MDAY |Current day of month. Range is 01 to 31
+Macro @MIN |Minutes value of clock. Range is 00 to 59
+Macro @MON |Current month. Range is 01 to 12
+Macro @MSEC |Milliseconds value of clock.  Range is 00 to 999
+Macro @MUILang |Returns code denoting Multi Language if available (Vista is OK by default). See Appendix for possible values.
+Macro @MyDocumentsDir |path to My Documents target
+Macro @NumParams |Number of parameters used to call the user functions
+Macro @OSArch |Returns one of the following: "X86", "IA64", "X64" - this is the architecture type of the currently running operating system.
+Macro @OSBuild |Returns the OS build number. For example, Windows 2003 Server returns 3790
+Macro @OSLang |Returns code denoting OS Language.  See Appendix for possible values.
+Macro @OSServicePack |Service pack info in the form of "Service Pack 3".
+Macro @OSType |Returns "WIN32_NT" for NT/2000/XP/2003/Vista/2008/Win7/2008R2.
+Macro @OSVersion |Returns one of the following: "WIN_2008R2", "WIN_7", "WIN_2008", "WIN_VISTA", "WIN_2003", "WIN_XP", "WIN_XPe", "WIN_2000".
+Macro @ProgramFilesDir |path to Program Files folder
+Macro @ProgramsCommonDir |path to Start Menu's Programs folder
+Macro @ProgramsDir |path to current user's Programs (folder on Start Menu)
+Macro @ScriptDir |Directory containing the running script. (Result does not contain a trailing backslash)
+Macro @ScriptFullPath |Equivalent to @ScriptDir & "\" & @ScriptName
+Macro @ScriptLineNumber |Line number of the currently executed script line. Useful for debug statements specially when a function is call you can pass the caller line number. (Not significant in complied script)
+Macro @ScriptName |Long filename of the running script.
+Macro @SEC |Seconds value of clock. Range is 00 to 59
+Macro @StartMenuCommonDir |path to Start Menu folder
+Macro @StartMenuDir |path to current user's Start Menu
+Macro @StartupCommonDir |path to Startup folder
+Macro @StartupDir |current user's Startup folder
+Macro @SW_DISABLE |Disables the window.
+Macro @SW_ENABLE |Enables the window.
+Macro @SW_HIDE |Hides the window and activates another window.
+Macro @SW_LOCK |Lock the window to avoid repainting.
+Macro @SW_MAXIMIZE |Maximizes the specified window.
+Macro @SW_MINIMIZE |Minimizes the specified window and activates the next top-level window in the Z order.
+Macro @SW_RESTORE |Activates and displays the window. If the window is minimized or maximized, the system restores it to its original size and position. An application should specify this flag when restoring a minimized window.
+Macro @SW_SHOW |Activates the window and displays it in its current size and position.
+Macro @SW_SHOWDEFAULT |Sets the show state based on the SW_ value specified by the program that started the application.
+Macro @SW_SHOWMAXIMIZED |Activates the window and displays it as a maximized window.
+Macro @SW_SHOWMINIMIZED |Activates the window and displays it as a minimized window.
+Macro @SW_SHOWMINNOACTIVE |Displays the window as a minimized window. This value is similar to @SW_SHOWMINIMIZED, except the window is not activated.
+Macro @SW_SHOWNA |Displays the window in its current size and position. This value is similar to @SW_SHOW, except the window is not activated.
+Macro @SW_SHOWNOACTIVATE |Displays a window in its most recent size and position. This value is similar to @SW_SHOWNORMAL, except the window is not activated.
+Macro @SW_SHOWNORMAL |Activates and displays a window. If the window is minimized or maximized, the system restores it to its original size and position. An application should specify this flag when displaying the window for the first time.
+Macro @SW_UNLOCK |Unlock windows to allow painting.
+Macro @SystemDir |path to Windows' System (or System32) folder
+Macro @TAB |Tab character, Chr(9)
+Macro @TempDir |Path to the temporary files folder.
+Macro @TRAY_ID |Last clicked item identifier during a TraySet(Item)OnEvent action.
+Macro @TrayIconFlashing |Returns 1 if tray icon is flashing; otherwise, returns 0.
+Macro @TrayIconVisible |Returns 1 if tray icon is visible; otherwise, returns 0.
+Macro @UserProfileDir |Path to current user's Profile folder.
+Macro @UserName |ID of the currently logged on user.
+Macro @WDAY |Numeric day of week. Range is 1 to 7 which corresponds to Sunday through Saturday.
+Macro @WindowsDir |path to Windows folder
+Macro @WorkingDir |Current/active working directory. (Result does not contain a trailing backslash)
+Macro @YDAY |Current day of year. Range is 001 to 366 (or 001 to 365 if not a leap year)
+Macro @YEAR |Current four-digit year

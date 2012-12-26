@@ -1,0 +1,38 @@
+[L]
+VIcons=Icone
+VList=Elenco
+VDet=Dettagli
+VThum=Miniature
+
+ShowDrv=Mostra barra delle unita
+ShowTree=Mostra struttura
+ShowPath=Mostra percorso
+ShowFilter=Mostra filtro
+ShowStatus=Mostra barra di stato
+HorzSplit=Splitter orizzontale
+Font=Carattere...
+
+AutoRefr=Attiva auto-refresh
+ShowHid=Mostra elementi nascosti
+AddFav=Aggiungi cartella attuale ai preferiti
+
+hGoUp=Vai al livello superiore
+hNewDir=Crea nuova cartella
+hRefr=Aggiorna pannelli
+hFocus=Focalizza nome dell'editor nell'elenco dei file
+hFilter=Filtro file - maschere di file separati da ";"
+
+lvEmpty=La cartella è vuota
+lvMore=Altro...
+lvColSett=Impostazioni colonna 
+lvColCheck=Controlla le colonne che si desidera rendere visibili in questa cartella. Drag and Drop per riordinare le colonne.
+lvColShoud="La colonna deve essere selezionata "
+lvColPix=larghezza pixel
+lvLiveUpd=Aggiornamento automatico
+
+bOk=OK
+bCancel=Annulla
+
+StrOverwr=Il file esiste già. Sovrascrivere il file esistente?
+StrErr=Errore
+StrNewDir=Nuova cartella
