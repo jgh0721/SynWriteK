@@ -1,213 +1,213 @@
-keyword abstract |
-keyword and |
-keyword array |
-keyword as |
-keyword asm |
-keyword begin |
-keyword case |
-keyword class |
-keyword const |
-keyword constructor |
-keyword contains |
-keyword destructor |
-keyword dispinterface |
-keyword div |
-keyword do |
-keyword downto |
-keyword dynamic |
-keyword else |
-keyword end |
-keyword except |
-keyword exports |
-keyword file |
-keyword finalization |
-keyword finally |
-keyword for |
-keyword function |
-keyword goto |
-keyword if |
-keyword implementation |
-keyword in |
-keyword index |
-keyword inherited |
-keyword initialization |
-keyword inline |
-keyword interface |
-keyword is |
-keyword label |
-keyword library |
-keyword mod |
-keyword nil |
-keyword not |
-keyword object |
-keyword of |
-keyword on |
-keyword or |
-keyword out |
-keyword overload |
-keyword override |
-keyword package |
-keyword packed |
-keyword pascal |
-keyword private |
-keyword procedure |
-keyword program |
-keyword property |
-keyword protected |
-keyword public |
-keyword published |
-keyword raise |
-keyword read |
-keyword record |
-keyword register |
-keyword repeat |
-keyword requires |
-keyword resourcestring |
-keyword safecall |
-keyword set |
-keyword shl |
-keyword shr |
-keyword stdcall |
-keyword strict |
-keyword then |
-keyword threadvar |
-keyword to |
-keyword try |
-keyword type |
-keyword unit |
-keyword until |
-keyword uses |
-keyword var |
-keyword virtual |
-keyword while |
-keyword with |
-keyword write |
-keyword xor |
+keyword abstract
+keyword and
+keyword array
+keyword as
+keyword asm
+keyword begin
+keyword case
+keyword class
+keyword const
+keyword constructor
+keyword contains
+keyword destructor
+keyword dispinterface
+keyword div
+keyword do
+keyword downto
+keyword dynamic
+keyword else
+keyword end
+keyword except
+keyword exports
+keyword file
+keyword finalization
+keyword finally
+keyword for
+keyword function
+keyword goto
+keyword if
+keyword implementation
+keyword in
+keyword index
+keyword inherited
+keyword initialization
+keyword inline
+keyword interface
+keyword is
+keyword label
+keyword library
+keyword mod
+keyword nil
+keyword not
+keyword object
+keyword of
+keyword on
+keyword or
+keyword out
+keyword overload
+keyword override
+keyword package
+keyword packed
+keyword pascal
+keyword private
+keyword procedure
+keyword program
+keyword property
+keyword protected
+keyword public
+keyword published
+keyword raise
+keyword read
+keyword record
+keyword register
+keyword repeat
+keyword requires
+keyword resourcestring
+keyword safecall
+keyword set
+keyword shl
+keyword shr
+keyword stdcall
+keyword strict
+keyword then
+keyword threadvar
+keyword to
+keyword try
+keyword type
+keyword unit
+keyword until
+keyword uses
+keyword var
+keyword virtual
+keyword while
+keyword with
+keyword write
+keyword xor
 
-type AnsiChar |
-type AnsiString |
-type BOOL |
-type Boolean |
-type Byte |
-type Cardinal |
-type Char |
-type Comp |
-type Currency |
-type Double |
-type DWORD |
-type Extended |
-type HBITMAP |
-type HCURSOR |
-type HMODULE |
-type HPALETTE |
-type HRESULT |
-type HWND |
-type IDispatch |
-type IInterface |
-type Integer |
-type Int64 |
-type IUnknown |
-type LongBool |
-type Longint |
-type LongWord |
-type OleVariant |
-type PAnsiChar |
-type PByte |
-type PChar |
-type PDateTime |
-type PFileInfo |
-type PGUID |
-type Pointer |
-type PPTypeInfo |
-type PShortString |
-type PTypeInfo |
-type PVarData |
-type PWChar |
-type PWideChar |
-type PWord |
-type Real |
-type Real48 |
-type ShortInt |
-type ShortString |
-type SmallInt |
-type Single |
-type string |
-type TBasicAction |
-type TBasicActionClass |
+type AnsiChar
+type AnsiString
+type BOOL
+type Boolean
+type Byte
+type Cardinal
+type Char
+type Comp
+type Currency
+type Double
+type DWORD
+type Extended
+type HBITMAP
+type HCURSOR
+type HMODULE
+type HPALETTE
+type HRESULT
+type HWND
+type IDispatch
+type IInterface
+type Integer
+type Int64
+type IUnknown
+type LongBool
+type Longint
+type LongWord
+type OleVariant
+type PAnsiChar
+type PByte
+type PChar
+type PDateTime
+type PFileInfo
+type PGUID
+type Pointer
+type PPTypeInfo
+type PShortString
+type PTypeInfo
+type PVarData
+type PWChar
+type PWideChar
+type PWord
+type Real
+type Real48
+type ShortInt
+type ShortString
+type SmallInt
+type Single
+type string
+type TBasicAction
+type TBasicActionClass
 type TBooleanToStringRule |(bsrAsIs, bsrLower, bsrUpper)
-type TClass |
-type TCollection |
-type TColor |
-type TComponent |
-type TControl |
-type TDateTime |
-type TEnumActionProc |
-type TFileStream |
-type TFont |
-type TFontCharset |
-type TFormatSettings |
+type TClass
+type TCollection
+type TColor
+type TComponent
+type TControl
+type TDateTime
+type TEnumActionProc
+type TFileStream
+type TFont
+type TFontCharset
+type TFormatSettings
 type TGetStrProc |procedure(const S: string) of object
-type TGUID |
-type THandle |
-type THeapStatus |
-type THelpContext |
-type TIdentMapEntry |
+type TGUID
+type THandle
+type THeapStatus
+type THelpContext
+type TIdentMapEntry
 type TIdentToInt |function(const Ident: string; var Int: Longint): Boolean
 type TIntToIdent |function(Int: Longint; var Ident: string): Boolean
-type TMainMenu |
+type TMainMenu
 type TMbcsByteType |(mbSingleByte, mbLeadByte, mbTrailByte)
-type TMemoryManager |
-type TMenuItem |
-type TMouse |
-type TNotifyEvent |
-type TObject |
-type TPersistent |
-type TPersistentClass |
-type TPoint |
-type TPopupAlignment |
-type TPopupMenu |
-type TPrinter |
-type TProcedure |
-type TRect |
-type TRoundToRange |
-type TScreen |
-type TSearchRec |
-type TShiftState |
-type TShortCut |
-type TSimpleRoundToRange |
-type TSmallPoint |
-type TSQLTimeStamp |
-type TStream |
+type TMemoryManager
+type TMenuItem
+type TMouse
+type TNotifyEvent
+type TObject
+type TPersistent
+type TPersistentClass
+type TPoint
+type TPopupAlignment
+type TPopupMenu
+type TPrinter
+type TProcedure
+type TRect
+type TRoundToRange
+type TScreen
+type TSearchRec
+type TShiftState
+type TShortCut
+type TSimpleRoundToRange
+type TSmallPoint
+type TSQLTimeStamp
+type TStream
 type TStreamOriginalFormat |(sofUnknown, sofBinary, sofText)
-type TStrings |
-type TStringList |
+type TStrings
+type TStringList
 type TStringSearchOption |(soDown, soMatchCase, soWholeWord)
 type TStringSearchOptions |set of TStringSearchOption
-type TSysCharSet |
-type TSysLocale |
-type TSystemTime |
-type TTerminateProc |
+type TSysCharSet
+type TSysLocale
+type TSystemTime
+type TTerminateProc
 type TTextLineBreakStyle |(tlbsLF, tlbsCRLF)
-type TTextRec |
-type TThreadFunc |
-type TTimeStamp |
-type TTypeInfo |
+type TTextRec
+type TThreadFunc
+type TTimeStamp
+type TTypeInfo
 type TTypeKind |(tkUnknown, tkInteger, tkChar, tkEnumeration, tkFloat, tkString, tkSet, tkClass, tkMethod, tkWChar, tkLString, tkWString, tkVariant, tkArray, tkRecord, tkInterface, tkDynArray)
 type TValueSign |-1..1
-type TVarData |
-type TVarDispProc |
+type TVarData
+type TVarDispProc
 type TVariantRelationship |(vrEqual, vrLessThan, vrGreaterThan, vrNotEqual)
-type TVarType |
+type TVarType
 type TWndMethod |procedure(var Message: TMessage) of object
-type TWinControl |
-type UINT |
-type UnicodeString |
-type UTF8String |
-type Variant |
-type WideChar |
-type WideString |
-type Word |
-type WordBool |
+type TWinControl
+type UINT
+type UnicodeString
+type UTF8String
+type Variant
+type WideChar
+type WideString
+type Word
+type WordBool
 
 procedure Abort |Raises a silent exception.
 function Abs(X) |Returns the absolute value of a number.

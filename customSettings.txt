@@ -4,12 +4,26 @@ Tab Indent = 4
 Tab Mode = Spaces
 
 Color Settings = Black
+Font Settings
+    Text = 나눔고딕코딩, 12pt
 
+Tabs
+    항상 탭 보이기
+    탭 번호 보기
+
+Editor
+    가로 눈금자보이기
+    읽기 전용 모드에서도 캐럿 보이기
+    현재 줄에 포커스 표시
+
+철자법 검사
+    실시간 철자법 검사 끔
+        
 Language = Korean
 
-
+								          		
 단축키 설정
-
+                      
 F9, 옵션 창
 
 Enter,\r\n
@@ -21,10 +35,23 @@ Right,커서를 한글자 만큼 오른쪽으로
 Left,커서를 한글자 만큼 왼쪽으로
 Home,커서가 위치한 줄의 첫 글자로
 End,커서가 위치한 줄의 마지막 글자로
+PgDn,
+Pgup,
+Tab,탭 삽입
+Shift+Tab,탭 제거
 
 Ctrl+N,새 파일
+Ctrl+S,저장하기
+Ctrl+O,파일 열기
 
- 
+Ctrl+C
+Ctrl+X
+Ctrl+V
+Ctrl+Z
+Ctrl+Shift+Z
+
+Ctrl+Home,문서의 처음으로 이동
+Ctrl+End,문서의 끝으로 이동 
 
 기본글꼴
   나눔고딕코딩

@@ -1,55 +1,55 @@
-Keyword __asm |
-Keyword __based1 |
-Keyword __cdecl |
-Keyword __declspec |
-Keyword __except |
-Keyword __fastcall |
-Keyword __finally |
-Keyword __inline |
-Keyword __int16 |
-Keyword __int32 |
-Keyword __int64 |
-Keyword __int8 |
-Keyword __leave |
-Keyword __stdcall |
-Keyword __try |
-Keyword auto |
-Keyword break |
-Keyword case |
-Keyword char |
-Keyword const |
-Keyword continue |
-Keyword default |
-Keyword dllexport2 |
-Keyword dllimport2 |
-Keyword do |
-Keyword double |
-Keyword else |
-Keyword enum |
-Keyword extern |
-Keyword float |
-Keyword for |
-Keyword goto |
-Keyword if |
-Keyword include |
-Keyword int |
-Keyword long |
-Keyword long |
-Keyword naked2 |
-Keyword register |
-Keyword return |
-Keyword short |
-Keyword signed |
-Keyword sizeof |
-Keyword static |
-Keyword switch |
-Keyword thread2 |
-Keyword typedef |
-Keyword union |
-Keyword unsigned |
-Keyword void |
-Keyword volatile |
-Keyword while |
+Keyword __asm
+Keyword __based1
+Keyword __cdecl
+Keyword __declspec
+Keyword __except
+Keyword __fastcall
+Keyword __finally
+Keyword __inline
+Keyword __int16
+Keyword __int32
+Keyword __int64
+Keyword __int8
+Keyword __leave
+Keyword __stdcall
+Keyword __try
+Keyword auto
+Keyword break
+Keyword case
+Keyword char
+Keyword const
+Keyword continue
+Keyword default
+Keyword dllexport2
+Keyword dllimport2
+Keyword do
+Keyword double
+Keyword else
+Keyword enum
+Keyword extern
+Keyword float
+Keyword for
+Keyword goto
+Keyword if
+Keyword include
+Keyword int
+Keyword long
+Keyword long
+Keyword naked2
+Keyword register
+Keyword return
+Keyword short
+Keyword signed
+Keyword sizeof
+Keyword static
+Keyword switch
+Keyword thread2
+Keyword typedef
+Keyword union
+Keyword unsigned
+Keyword void
+Keyword volatile
+Keyword while
 Function abort |terminate execution abnormally <stdlib.h>
 Function abs(int) |absolute value of an integer. <stdlib.h>
 Function acos |inverse cosine <math.h>

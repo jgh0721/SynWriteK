@@ -1,10 +1,10 @@
-Keyword if |
-Keyword unless |
-Keyword while |
-Keyword until |
-Keyword when |
-Keyword for |
-Keyword foreach |
+Keyword if
+Keyword unless
+Keyword while
+Keyword until
+Keyword when
+Keyword for
+Keyword foreach
 Function abs |absolute value function
 Function accept |accept an incoming socket connect
 Function alarm |schedule a SIGALRM

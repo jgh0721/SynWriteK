@@ -1,32 +1,32 @@
-Keyword and |
-Keyword del |
-Keyword for |
-Keyword is |
-Keyword raise |
-Keyword assert |
-Keyword elif |
-Keyword from |
-Keyword lambda |
-Keyword return |
-Keyword break |
-Keyword else |
-Keyword global |
-Keyword not |
-Keyword try |
-Keyword class |
-Keyword except |
-Keyword if |
-Keyword or |
-Keyword while |
-Keyword continue |
-Keyword exec |
-Keyword import |
-Keyword pass |
-Keyword yield |
-Keyword def |
-Keyword finally |
-Keyword in |
-Keyword print |
+Keyword and
+Keyword del
+Keyword for
+Keyword is
+Keyword raise
+Keyword assert
+Keyword elif
+Keyword from
+Keyword lambda
+Keyword return
+Keyword break
+Keyword else
+Keyword global
+Keyword not
+Keyword try
+Keyword class
+Keyword except
+Keyword if
+Keyword or
+Keyword while
+Keyword continue
+Keyword exec
+Keyword import
+Keyword pass
+Keyword yield
+Keyword def
+Keyword finally
+Keyword in
+Keyword print
 Function __import__(name[, globals[,locals[,from list]]])  |Imports module within the given context
 Function abs(x)  |Returns the absolute value of the number x.
 Function apply(f, args[, keywords])  |Calls func/method f with arguments args and optional keywords.
@@ -69,9 +69,9 @@ Function list([seq])  |Creates an empty list or a list with same elements as seq
 Function locals()  |Returns a dictionary containing current local variables.
 Function long(x[, base])  |Converts a number or a string to a long integer. Optional base parameter specifies the base from which to convert string values.
 Function map(function, sequence[, sequence, ...])  |Returns a list of the results of applying function to each item from sequence(s). If more than one sequence is given, the function is called with an argument list consisting of the corresponding item of each sequence, substituting None for missing values when not all sequences have the same length. If function is None, returns a list of the items of the sequence (or a list of tuples if more than one sequence). => You might also consider using list comprehensions instead of map().
-Function max(seq) |
+Function max(seq)
 Function max(v1, v2 ...)  |With a single argument seq, returns the largest item of a non-empty sequence (such as a string, tuple or list). With more than one argument, returns the largest of the arguments.
-Function min(seq) |
+Function min(seq)
 Function min(v1, v2 ...)  |With a single argument seq, returns the smallest item of a non-empty sequence (such as a string, tuple or list). With more than one argument, returns the smallest of the arguments.
 Function object()  |Returns a new featureless object. object is the base class for all new style classes, its methods are common to all instances of new style classes.
 Function oct(x)  |Converts a number to an octal string.
@@ -99,4 +99,4 @@ Function unichr(code)  |Returns a unicode string 1 char long with given code.
 Function unicode(string[, encoding[,error]]])  |Creates a Unicode string from a 8-bit string, using the given encoding name and error treatment ('strict', 'ignore',or 'replace'}. For objects which provide a __unicode__() method, it will call this method without arguments to create a Unicode string.
 Function vars([object])  |Without arguments, returns a dictionary corresponding to the current local symbol table. With a module, class or class instance object as argument, returns a dictionary corresponding to the object's symbol table. Useful with the "%" string formatting operator.
 Function xrange(start [, end [, step]])  |Like range(), but doesn't actually store entire list all at once. Good to use in "for" loops when there is a big range and little memory.
-Function zip(seq1[, seq2,...]) |
+Function zip(seq1[, seq2,...])

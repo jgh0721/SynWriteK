@@ -16,6 +16,8 @@ Encoding,인코딩
 
 Bookmark,책갈피
 Marker,위치표식
+Favorites,즐겨찾기
+Customize,사용자정의
 
 Window,창
 
@@ -26,6 +28,36 @@ Find,검색
 Replace,치환,바꾸기
 Edit,편집
 File,파일
+Open,열기
+OK,확인
+Cancel,취소
+Save,저장
 
 Help,도움말
 Run,실행
+
+Comments,주석
+
+Close,닫기
+Session,세션
+
+Macro,매크로
+
+Line-Number,줄번호
+
+Tools,도구
+
+Configure,환경설정
+Numeric converter,수치 변환기
+
+All Files,모든 파일
+Unicode,유니코드
+
+Syntax Highlighting,구문 강조
+Recent File,최근 파일
+Import,가져오기
+Export,내보내기
+Print,인쇄
+Document,문서
+Preview,미리보기
+Applications,어플리케이션
