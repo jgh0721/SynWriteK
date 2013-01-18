@@ -49,7 +49,7 @@ Ctrl+X
 Ctrl+V
 Ctrl+Z
 Ctrl+Shift+Z
-
+Ctrl+F,검색
 Ctrl+Home,문서의 처음으로 이동
 Ctrl+End,문서의 끝으로 이동 
 

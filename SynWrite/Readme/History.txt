@@ -3,6 +3,19 @@ Legend:
  - fixed
  * changed
 
+4.7.650
++ new HTML coding helper "Images preview"; help topic added.  
++ micro-map also shows search marks; help topic added.
++ command "Edit -- Fill block" rebuilt. Now it has a mode which is similar to Notepad++'s "Column Mode" functionality. Added info to FAQ.
++ tab headers: double-click on empty area righter than last tab header - creates a new tab
++ tab headers popup menu is also active for Tabs panel
++ shortcut "Extend selection by line" ("Misc" group)
++ option color "SyncEditing BG"
++ option color "Micro-map search marks BG"
+* change: statusbar shows "Word wrap" state instead of "Selection mode" state
+* change: Lister plugin has menu shown by default
+- fixes (see forum)
+
 4.6.600
 * change: line-ends are shown always when they're inside selection block (to look like other apps, and to show blank selected lines)
 * change: gutter: line-numbers column is now 1st, and bookmarks column is 2nd (to look like other apps)

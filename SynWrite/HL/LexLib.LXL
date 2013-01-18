@@ -49356,12 +49356,30 @@ object SyntaxManager: TSyntaxManager
         Font.Style = []
         BgColor = clYellow
         FormatType = ftColor
+      end
+      item
+        DisplayName = 'Digits'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BgColor = clSilver
+        FormatType = ftColor
       end>
     TokenRules = <
       item
         DisplayName = 'Rus'
         StyleName = 'Rus'
         Expression = '(?r)['#1072'-'#1103#1040'-'#1071#1105#1025']'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Digits'
+        Enabled = False
+        StyleName = 'Digits'
+        Expression = '\d+'
         ColumnFrom = 0
         ColumnTo = 0
       end>

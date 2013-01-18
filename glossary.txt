@@ -61,3 +61,4 @@ Print,인쇄
 Document,문서
 Preview,미리보기
 Applications,어플리케이션
+Output,출력
