@@ -3,6 +3,19 @@ Legend:
  - fixed
  * changed
 
+4.7.685
++ command "Edit -- Sorting -- Sort dialog" (also in toolbar "Sort" dropdown)
++ command "Search -- Select brackets" 
++ command "Run -- Encode HTML spec. chars"
+
+4.7.670
++ project panel: recents dropdown
++ tabs panel: asterisks show modified tabs
++ option "Tabs -- Always show tabs/ Never show/ Show when 2 or more tabs"
++ SynWrite can now replace Notepad.exe, see an add-on in our Files section at SourceForge
+* lexers moved into Readme\*.rar: Factor, Forth, Modelica, C++Builder
+- fixes (forum)
+
 4.7.650
 + new HTML coding helper "Images preview"; help topic added.  
 + micro-map also shows search marks; help topic added.

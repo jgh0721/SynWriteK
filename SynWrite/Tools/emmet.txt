@@ -1,6 +1,6 @@
-xhtml
 html
+xhtml
 xml
 xml_zen
-plain
 line
+plain

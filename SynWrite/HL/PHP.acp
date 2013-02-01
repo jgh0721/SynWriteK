@@ -50,22 +50,56 @@ global $HTTP_SERVER_VARS |Server variables (Deprecated, use $_SERVER)
 global $GLOBALS |Global variables
 global $php_errormsg |The previous error message
 
+keyword as
 keyword break
+keyword case
+keyword catch
+keyword class
+keyword const
 keyword continue
+keyword debugger
 keyword declare
+keyword default
+keyword delete
 keyword do
+keyword do-while
+keyword else
+keyword elseif(expression)
 keyword endfor
 keyword endforeach
 keyword endif
 keyword endswitch
 keyword endwhile
-keyword else
-keyword elseif(expression)
-keyword for(init expr, loop expr, end expr) 
-keyword foreach(array as $k->$v)
-keyword if(expression)
+keyword enum
+keyword export
+keyword extends
+keyword false
+keyword finally
+keyword for(init_expr, loop_expr, end_expr) 
+keyword foreach(array_expr as $value)
+keyword function
+keyword if(expr)
+keyword import
+keyword in
+keyword include
+keyword include_once
+keyword new
+keyword null
+keyword require
+keyword require_once
+keyword return
+keyword super
 keyword switch
+keyword switch-case
+keyword this
+keyword throw
+keyword true
+keyword try
+keyword typeof
+keyword var
+keyword void
 keyword while(expression) 
+keyword with
 
 number abs(mixed $number) |Absolute value (PHP 4, PHP 5)
 float acos(float $arg) |Arc cosine (PHP 4, PHP 5)
