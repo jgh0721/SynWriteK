@@ -15,6 +15,7 @@ Font=字体...
 AutoRefr=启用自动刷新
 ShowHid=显示隐藏项
 AddFav=添加当前文件夹到收藏夹
+LastDir=保存上次的文件夹
 
 hGoUp=向上一层
 hNewDir=创建新文件夹

@@ -1,0 +1,1 @@
+SynFTP source code is located on SynWrite SF.net download page, "Plugins" folder.

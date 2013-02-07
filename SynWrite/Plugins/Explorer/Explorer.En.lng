@@ -15,6 +15,7 @@ Font=Font...
 AutoRefr=Enable auto-refresh
 ShowHid=Show hidden items
 AddFav=Add current folder to Favorites
+LastDir=Save last folder
 
 hGoUp=Go up one level
 hNewDir=Create new folder

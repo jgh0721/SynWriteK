@@ -3,6 +3,21 @@ Legend:
  - fixed
  * changed
 
+4.7.700
++ added status-bar panel "Selection mode", clickable (like in other editors)
+* menu bar allows other toolbars to be docked near it
+* removed option "Editor -- Keep selection mode"
+* removed option "Editor -- Disable selection"
++ option "Editor -- Selection mode"
++ command "Select brackets" enhanced (can work while caret isn't on a bracket; can restore caret position if called twice)
++ option "Use Tab key to expand code templates" has exclusion list
++ Explorer plugin: option "Save last folder"
++ SynFTP plugin: hidden option "menuSplit", see help topic
++ Tcl lexer: added tree+folding
+* change: print options loaded only on printing/previewing/page-configuring
++ translation to Czech
+- fixes (forum)
+
 4.7.685
 + command "Edit -- Sorting -- Sort dialog" (also in toolbar "Sort" dropdown)
 + command "Search -- Select brackets" 

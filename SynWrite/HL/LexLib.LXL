@@ -856,7 +856,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Symbol'
         StyleName = 'Symbol'
         TokenType = 3
-        Expression = '[/\+\-\*:=<>&/\|\^\.!\?]+'
+        Expression = '[/\+\-\*:=<>&/\|\^\.!\?%]+'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -20126,6 +20126,14 @@ object SyntaxManager: TSyntaxManager
           'Current date: <date:dd.mm.yyyy>'
           'Current time: <date:h:mm>')
         Advanced = True
+      end
+      item
+        Name = '_test'
+        Description = 'test'
+        Code.Strings = (
+          'test'
+          'test'
+          'test')
       end>
     SubAnalyzers = <>
     SampleText.Strings = (
@@ -31331,7 +31339,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Comm'
         StyleName = 'Comm'
         TokenType = 1
-        Expression = '\#.*$'
+        Expression = '\#[\s\#].*$'#13#10'| \#\z'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -31606,6 +31614,88 @@ object SyntaxManager: TSyntaxManager
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
+      end
+      item
+        DisplayName = '{'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+            TokenTypes = 8
+          end>
+        BlockEnd = '}'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '}'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 8
+          end>
+        BlockEnd = '{'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'proc namesp'
+        ConditionList = <
+          item
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              ':')
+            TokenTypes = 8
+          end
+          item
+            TagList.Strings = (
+              ':')
+            TokenTypes = 8
+          end
+          item
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              'proc')
+            TokenTypes = 4
+          end>
+        NameFmt = 'proc %s-4'
+        GroupFmt = 'namespace %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        CancelNextRules = True
+        NoEndRule = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'proc'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ':')
+            CondType = tcNotEqual
+            TokenTypes = 8
+          end
+          item
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              'proc')
+            TokenTypes = 4
+          end>
+        NameFmt = 'proc %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        NoEndRule = True
+        IgnoreAsParent = False
       end>
     CodeTemplates = <>
     SubAnalyzers = <>
@@ -31631,15 +31721,19 @@ object SyntaxManager: TSyntaxManager
       'Integer const')
     MarkedBlockStyle = 'Marked block'
     Extentions = 'tcl tk'
-    LexerName = 'TCL'
+    LexerName = 'Tcl'
     SkipSpaces = False
     Notes.Strings = (
       'Author: Matthias030 (SynWrite site admin)'
+      'Tree by: Alex, uvviewsoft.com'
+      ''
+      'Ref:'
+      'http://www.tcl.tk/man/'
       'Not tested but maybe a good idea to test on:'
       
         'http://www.subdude-site.com/WebPages_Local/RefInfo/Computer/TclT' +
         'k/others_tcltkCode/others_tcltkCode.htm')
-    LineComment = '#'
+    LineComment = '# '
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal92: TLibSyntAnalyzer

@@ -15,6 +15,7 @@ Font=Carattere...
 AutoRefr=Attiva auto-refresh
 ShowHid=Mostra elementi nascosti
 AddFav=Aggiungi cartella attuale ai preferiti
+LastDir=Salva ultima cartella
 
 hGoUp=Vai al livello superiore
 hNewDir=Crea nuova cartella

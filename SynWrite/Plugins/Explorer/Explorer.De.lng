@@ -15,6 +15,7 @@ Font=Schriftart...
 AutoRefr=Automatisch aktualisieren
 ShowHid=Versteckte Dateien anzeigen
 AddFav=Ordner zu Favoriten hinzufügen
+LastDir=Ordner beim Beenden merken
 
 hGoUp=Einen Ordner nach oben
 hNewDir=Neuen Ordner erstellen

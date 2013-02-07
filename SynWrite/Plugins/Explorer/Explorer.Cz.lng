@@ -1,0 +1,39 @@
+[L]
+VIcons=Ikony
+VList=Seznam
+VDet=Podrobnosti
+VThum=Miniatury
+
+ShowDrv=Zobrazit lištu s disky
+ShowTree=Zobrazit strom složek
+ShowPath=Zobrazit rozevírací seznam cest
+ShowFilter=Zobrazit rozevírací seznam filtrů
+ShowStatus=Zobrazit stavový řádek
+HorzSplit=Vodorovný rozdělovač
+Font=Písmo...
+
+AutoRefr=Automatická aktualizace zobrazení
+ShowHid=Zobrazit skryté položky
+AddFav=Přidat aktuální složku do Oblíbených položek
+LastDir=Pamatovat poslední složku
+
+hGoUp=Přejít o úroveň výš
+hNewDir=Vytvořit novou složku
+hRefr=Aktualizovat zobrazení
+hFocus=Nastavit fokus v seznamu podle názvu aktuálního souboru
+hFilter=Filtr souborů - masky oddělené středníkem (;)
+
+lvEmpty=Prázdná složka
+lvMore=Další...
+lvColSett=Nastavení sloupců
+lvColCheck=Výběr zobrazovaných sloupců ve složce. Pořadí lze změnit přetažením pomocí myši.
+lvColShoud="Šířka vybraného sloupce: "
+lvColPix=pixelů
+lvLiveUpd=Automatická aktualizace
+
+bOk=OK
+bCancel=Storno
+
+StrOverwr=Soubor již existuje. Chcete přepsat stávající soubor?
+StrErr=Chyba
+StrNewDir=Nová složka
