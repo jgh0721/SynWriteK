@@ -15,6 +15,7 @@ Font=Fuente...
 AutoRefr=Habilitar auto-refrescado
 ShowHid=Mostrar elementos ocultos
 AddFav=Añadir carpeta actual a Favoritos
+LastDir=Guardar última carpeta
 
 hGoUp=Subir un nivel
 hNewDir=Crear nueva carpeta
@@ -27,7 +28,7 @@ lvMore=Más...
 lvColSett=Configuración de columnas
 lvColCheck=Marque las columnas que le gustaría hacer visibles en esta carpeta. Arrastre y suelte para reordenar las columnas.
 lvColShoud="La columna seleccionada debería ser "
-lvColPix=Ancho de píxeles
+lvColPix=Píxeles de ancho
 lvLiveUpd=Auto actualizar
 
 bOk=Aceptar

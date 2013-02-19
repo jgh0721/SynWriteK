@@ -1,0 +1,13 @@
+﻿
+[Ini]
+WorkDir=
+MainFile=
+DefLexer=
+DefLineEnds=0
+DefEnc=0
+SortType=2
+SearchDirs=
+
+[Nodes]
+\{Proj}\customSettings.txt
+\{Proj}\glossary.txt

@@ -3,6 +3,21 @@ Legend:
  - fixed
  * changed
 
+4.8.780
++ Find/Replace dialog: can search+replace in column blocks
++ "selection mode" affects Shift+arrows too
+* spelling: renamed helper dictionary "%Username%.adu" to "Default.adu" 
+* php(dev) lexer: vars grouped in tree
+- fixes regarding 125% font size in OS
+- fixes (forum)
+
+4.8.740
++ Find dialog allows to skip collapsed lines
++ Find dialog allows to search in comments/strings (when lexers active; uses Lexers.cfg) 
++ "Color preview" reworked (shows hint instead of colored menuitem)
++ option "Editor -- Keep caret on paste"
+- fixes (forum)
+
 4.7.700
 + added status-bar panel "Selection mode", clickable (like in other editors)
 * menu bar allows other toolbars to be docked near it

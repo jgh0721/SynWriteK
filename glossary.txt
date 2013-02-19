@@ -4,6 +4,8 @@ Lexer,분석기
 Editor,편집기
 
 Tab,탭
+Tab stops,탭 멈춤
+Tab mode,탭 모드
 
 Fonts,글꼴
 Colors,색상
@@ -44,6 +46,7 @@ Session,세션
 Macro,매크로
 
 Line-Number,줄번호
+Go to, 바로 가기
 
 Tools,도구
 
@@ -62,3 +65,5 @@ Document,문서
 Preview,미리보기
 Applications,어플리케이션
 Output,출력
+
+Line-Spacing,줄 간격

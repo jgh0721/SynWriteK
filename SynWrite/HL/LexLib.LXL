@@ -5914,10 +5914,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Variable'
@@ -16674,10 +16674,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Tag param'
@@ -23601,10 +23601,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = []
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Current'
@@ -23636,16 +23636,15 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = 159
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftColor
+        Font.Style = [fsBold]
       end
       item
         DisplayName = 'Parameter'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 39423
+        Font.Color = 33239
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -23663,16 +23662,15 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 6710886
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        BgColor = 15658734
       end
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 13260
+        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -23764,6 +23762,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Variable'
+        StyleName = 'Variable'
         TokenType = 1
         Expression = '\$\w+'
         ColumnFrom = 0
@@ -28206,25 +28205,23 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Coments'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = cl3DDkShadow
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clSilver
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        BgColor = clInactiveBorder
       end
       item
         DisplayName = 'Digits'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -28232,7 +28229,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Dim'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 55040
+        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -28258,7 +28255,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Singl Simbol'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clFuchsia
+        Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -28266,7 +28263,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -28350,7 +28347,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Integer'
         StyleName = 'Digits'
         TokenType = 2
-        Expression = '\d+'
+        Expression = '0x[\da-f]+ | \d+'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -28479,9 +28476,7 @@ object SyntaxManager: TSyntaxManager
         NameFmt = '%s0 %s-1'
         HighlightPos = cpAny
         DynSelectMin = True
-        DrawStaple = True
         CollapseFmt = '%s0 %s-1'
-        TreeItemStyle = 'Reserved Words'
         TreeItemImage = 5
         IgnoreAsParent = False
       end
@@ -33279,9 +33274,15 @@ object SyntaxManager: TSyntaxManager
           item
             TagList.Strings = (
               '{')
+          end
+          item
+            TagList.Strings = (
+              'else')
+            CondType = tcNotEqual
+            TokenTypes = 2
           end>
         BlockEnd = '}_end'
-        NameFmt = '%sl1'
+        NameFmt = '%sl0'
         RefToCondEnd = True
         DynHighlight = dhBound
         HighlightPos = cpRange
@@ -37244,6 +37245,7 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 256
           end>
         NameFmt = '%s0'
+        GroupFmt = 'var'
         HighlightPos = cpAny
         NoEndRule = True
         IgnoreAsParent = False
@@ -37274,6 +37276,7 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 256
           end>
         NameFmt = '%s0~s-3'
+        GroupFmt = 'var'
         RefToCondEnd = True
         HighlightPos = cpAny
         NoEndRule = True
@@ -37550,6 +37553,8 @@ object SyntaxManager: TSyntaxManager
       '  echo '#39'test'#39'."\\";'
       '  if (a){'
       '  }'
+      '  else {'
+      '  };'
       '}'
       ''
       'class f {'
@@ -48227,14 +48232,6 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
-        DisplayName = 'String Eval'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
