@@ -2,7 +2,7 @@
 <RadialixLocalizerProject>
   <Header FileVersion="19" Guid="{A5F52DDC-9426-4DC4-A2FE-ABAE21D90838}"/>
   <IDESettings ProjectItemPath="0.Syn.dklang (korean.lng).STRINGS.fmSetup" SelectedTable="StringsTabSheet" SelectedVisualDesigner="">
-    <StringTableSettings FocusedValueID="fmSetup.cbBackInd.Caption" SortDirection="0" SortedColumnIndex="-1"/>
+    <StringTableSettings FocusedValueID="fmSetup.Label4.Caption" SortDirection="0" SortedColumnIndex="-1"/>
     <TextTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <AccelTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <ImageTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
@@ -15,14 +15,14 @@
     </Languages>
     <Info>
       <CreatedBy Date="2012-12-26T14-12-03">Radialix Version 3.00.00  Build 486</CreatedBy>
-      <ModifiedBy Date="2013-02-19T18-20-49">Radialix Version 3.00.00  Build 486</ModifiedBy>
+      <ModifiedBy Date="2013-02-21T18-23-23">Radialix Version 3.00.00  Build 486</ModifiedBy>
       <Author>DevTester</Author>
       <Organization/>
       <Comment/>
       <WebSite/>
       <ContactEMail/>
       <Copyright/>
-      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="117" AutoIncrementBuildNumber="1"/>
+      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="140" AutoIncrementBuildNumber="1"/>
     </Info>
     <Publisher>
       <ApplicationName>&lt;Title&gt; &lt;WinCode&gt;</ApplicationName>
@@ -1265,7 +1265,9 @@
           </Vl>
           <Vl Name="TBXSubmenuItemSort.Caption" Class="DKLANG_STRING">
             <Src>Sort</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T13-31-50" Translated="2013-02-20T13-31-50" State="Validated">
+              <cur>정렬</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXSubmenuItemSort.Hint" Class="DKLANG_STRING">
             <Src>Show "Sort lines" dialog</Src>
@@ -1491,11 +1493,15 @@
           </Vl>
           <Vl Name="TBXItemFReopen.Caption" Class="DKLANG_STRING">
             <Src>&amp;Reopen</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T20-35-58" Translated="2013-02-20T20-35-58" State="Validated">
+              <cur>다시열기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemFReopen.Hint" Class="DKLANG_STRING">
             <Src>Reopen file</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T20-36-00" Translated="2013-02-20T20-36-00" State="Validated">
+              <cur>파일 다시열기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemFSave.Caption" Class="DKLANG_STRING">
             <Src>&amp;Save</Src>
@@ -2121,11 +2127,15 @@
           </Vl>
           <Vl Name="fReread.Caption" Class="DKLANG_STRING">
             <Src>Reopen</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T20-35-58" Translated="2013-02-20T20-35-58" State="Validated">
+              <cur>다시열기</cur>
+            </Trg>
           </Vl>
           <Vl Name="fReread.Hint" Class="DKLANG_STRING">
             <Src>Reopen file</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T20-36-00" Translated="2013-02-20T20-36-00" State="Validated">
+              <cur>파일 다시열기</cur>
+            </Trg>
           </Vl>
           <Vl Name="fSave.Caption" Class="DKLANG_STRING">
             <Src>Save</Src>
@@ -6277,7 +6287,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[5].DisplayName" Class="DKLANG_STRING">
             <Src>Reopen file</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T20-36-00" Translated="2013-02-20T20-36-00" State="Validated">
+              <cur>파일 다시열기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[60].Caption" Class="DKLANG_STRING">
             <Src>End of Line</Src>
@@ -8141,7 +8153,9 @@
           </Vl>
           <Vl Name="TBXItemRightMap.Caption" Class="DKLANG_STRING">
             <Src>Minimap</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T17-55-02" Translated="2013-02-20T17-55-02" State="Validated">
+              <cur>미니맵</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemWinMap.Caption" Class="DKLANG_STRING">
             <Src>Mini-map pane</Src>
@@ -8968,11 +8982,15 @@
           </Vl>
           <Vl Name="cbHideCur.Caption" Class="DKLANG_STRING">
             <Src>Hide cursor on typing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T11-00-46" Translated="2013-02-20T11-00-46" State="Validated">
+              <cur>타이핑할 때 커서 숨기기</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbHideCur.Hint" Class="DKLANG_STRING">
             <Src>Hides mouse cursor when you type text and mouse cursor is within client area.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T11-01-09" Translated="2013-02-20T11-01-09" State="Validated">
+              <cur>마우스 커서가 편집기 영역안에 있고 타이핑 중일 때 마우스 커서를 숨깁니다</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbHideD.Caption" Class="DKLANG_STRING">
             <Src>Hide dynamic highlightings</Src>
@@ -9077,11 +9095,15 @@
           </Vl>
           <Vl Name="tabColors.Caption" Class="DKLANG_STRING">
             <Src>Colors</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-21T18-23-23" Translated="2013-02-21T18-23-23" State="Validated">
+              <cur>색상</cur>
+            </Trg>
           </Vl>
           <Vl Name="gColors.Caption" Class="DKLANG_STRING">
             <Src>Colors</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-21T18-23-23" Translated="2013-02-21T18-23-23" State="Validated">
+              <cur>색상</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label4.Caption" Class="DKLANG_STRING">
             <Src>Elements:</Src>
@@ -9601,7 +9623,9 @@
           </Vl>
           <Vl Name="cbACloseBr.Caption" Class="DKLANG_STRING">
             <Src>Auto-close brackets: ( ) [ ] { }</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-21T18-23-10" Translated="2013-02-21T18-23-10" State="Validated">
+              <cur>자동 괄호 닫기: ( ) [ ] { }</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbACloseBrEsc.Caption" Class="DKLANG_STRING">
             <Src>
@@ -10115,7 +10139,9 @@
           </Vl>
           <Vl Name="capClip" Class="DKLANG_STRING">
             <Src>Clipboard History</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T17-57-23" Translated="2013-02-20T17-57-23" State="Validated">
+              <cur>클립보드 기록</cur>
+            </Trg>
           </Vl>
           <Vl Name="capClips" Class="DKLANG_STRING">
             <Src>Text Clips</Src>
@@ -10123,11 +10149,15 @@
           </Vl>
           <Vl Name="capMap" Class="DKLANG_STRING">
             <Src>Minimap</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T17-55-02" Translated="2013-02-20T17-55-02" State="Validated">
+              <cur>미니맵</cur>
+            </Trg>
           </Vl>
           <Vl Name="capProj" Class="DKLANG_STRING">
             <Src>Project Manager</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T17-55-25" Translated="2013-02-20T17-55-25" State="Validated">
+              <cur>프로젝트 관리자</cur>
+            </Trg>
           </Vl>
           <Vl Name="capTabs" Class="DKLANG_STRING">
             <Src>Tabs</Src>
@@ -10185,7 +10215,9 @@
           </Vl>
           <Vl Name="FF0" Class="DKLANG_STRING">
             <Src>No matching files found</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T17-56-01" Translated="2013-02-20T17-56-01" State="Validated">
+              <cur>일치하는 파일을 찾을 수 없습니다</cur>
+            </Trg>
           </Vl>
           <Vl Name="FF0_" Class="DKLANG_STRING">
             <Src>No occurrences found</Src>
@@ -10685,7 +10717,9 @@
           </Vl>
           <Vl Name="sAll" Class="DKLANG_STRING">
             <Src>&amp;All</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T17-57-10" Translated="2013-02-20T17-57-10" State="Validated">
+              <cur>모두(&amp;A)</cur>
+            </Trg>
           </Vl>
           <Vl Name="sCan" Class="DKLANG_STRING">
             <Src>Cancel</Src>
@@ -11922,7 +11956,9 @@
           </Vl>
           <Vl Name="WholePage.Caption" Class="DKLANG_STRING">
             <Src>Whole page</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T22-39-26" Translated="2013-02-20T22-39-26" State="Validated">
+              <cur>전체 페이지</cur>
+            </Trg>
           </Vl>
           <Vl Name="Pagewidth1.Caption" Class="DKLANG_STRING">
             <Src>Page width</Src>
@@ -14187,11 +14223,15 @@
           </Vl>
           <Vl Name="TntLabel5.Caption" Class="DKLANG_STRING">
             <Src>Suffix:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-21T18-22-43" Translated="2013-02-21T18-22-43" State="Validated">
+              <cur>접미어:</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel6.Caption" Class="DKLANG_STRING">
             <Src>Prefix:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-21T18-22-39" Translated="2013-02-21T18-22-39" State="Validated">
+              <cur>접두어:</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntGroupBox3.Caption" Class="DKLANG_STRING">
             <Src>Counter</Src>
@@ -14831,7 +14871,9 @@
           </Vl>
           <Vl Name="TBXItemProjAddFiles.Hint" Class="DKLANG_STRING">
             <Src>Add file(s) to project</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T18-07-10" Translated="2013-02-20T18-07-10" State="Validated">
+              <cur>프로젝트에 파일 추가</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemProjRename.Hint" Class="DKLANG_STRING">
             <Src>Rename current project folder</Src>
@@ -14901,11 +14943,15 @@
           </Vl>
           <Vl Name="TbxItemMnuAddFiles.Caption" Class="DKLANG_STRING">
             <Src>Files...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T18-07-56" Translated="2013-02-20T18-07-56" State="Validated">
+              <cur>파일...</cur>
+            </Trg>
           </Vl>
           <Vl Name="TbxItemMnuAddDir.Caption" Class="DKLANG_STRING">
             <Src>Folder...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T18-08-00" Translated="2013-02-20T18-08-00" State="Validated">
+              <cur>폴더...</cur>
+            </Trg>
           </Vl>
           <Vl Name="TbxItemMnuAddVDir.Caption" Class="DKLANG_STRING">
             <Src>Virtual folder...</Src>
@@ -14937,7 +14983,9 @@
           </Vl>
           <Vl Name="TBXSubmenuItemSort.Caption" Class="DKLANG_STRING">
             <Src>Sort</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T13-31-50" Translated="2013-02-20T13-31-50" State="Validated">
+              <cur>정렬</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuSortByExt.Caption" Class="DKLANG_STRING">
             <Src>By extension</Src>
@@ -14992,7 +15040,9 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Add folder contents to project</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T14-15-06" Translated="2013-02-20T14-15-06" State="Validated">
+              <cur>프로젝트에 폴더 추가</cur>
+            </Trg>
           </Vl>
           <Vl Name="btnOk.Caption" Class="DKLANG_STRING">
             <Src>OK</Src>
@@ -15008,11 +15058,15 @@
           </Vl>
           <Vl Name="Label1.Caption" Class="DKLANG_STRING">
             <Src>Include file extensions, comma-separated (all files if empty):</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T14-14-19" Translated="2013-02-20T14-14-19" State="Validated">
+              <cur>쉼표로 구분된 포함할 파일 확장자( 비어있으면 모든 파일 ):</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label2.Caption" Class="DKLANG_STRING">
             <Src>Exclude file extensions, comma-separated (none if empty):</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-20T14-14-49" Translated="2013-02-20T14-14-49" State="Validated">
+              <cur>쉼표로 구분된 제외할 파일 확장자( 비어있으면 없음 ):</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label3.Caption" Class="DKLANG_STRING">
             <Src>Folder path:</Src>

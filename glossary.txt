@@ -24,6 +24,7 @@ Customize,사용자정의
 Window,창
 
 Clipboard,클립보드
+Clipboard History,클립보드 기록
 
 Search,검색
 Find,검색
@@ -31,6 +32,7 @@ Replace,치환,바꾸기
 Edit,편집
 File,파일
 Open,열기
+Reopen,다시열기
 OK,확인
 Cancel,취소
 Save,저장
@@ -63,7 +65,12 @@ Export,내보내기
 Print,인쇄
 Document,문서
 Preview,미리보기
+Whole Page,전체 페이지
+
 Applications,어플리케이션
 Output,출력
 
 Line-Spacing,줄 간격
+
+Minimap,미니맵
+Project Manager,프로젝트 관리자

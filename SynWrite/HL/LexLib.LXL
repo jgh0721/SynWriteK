@@ -20126,14 +20126,6 @@ object SyntaxManager: TSyntaxManager
           'Current date: <date:dd.mm.yyyy>'
           'Current time: <date:h:mm>')
         Advanced = True
-      end
-      item
-        Name = '_test'
-        Description = 'test'
-        Code.Strings = (
-          'test'
-          'test'
-          'test')
       end>
     SubAnalyzers = <>
     SampleText.Strings = (
@@ -26044,7 +26036,7 @@ object SyntaxManager: TSyntaxManager
         Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = []
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Key words'
@@ -26065,7 +26057,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Echo'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -26192,7 +26184,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotationMarks'
         StyleName = 'QuotMarks'
-        Expression = '("|'#39'|'#180'|`).*?\1'
+        Expression = '("|'#39'|'#180'|`) (\\\1|.)*? \1'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -26527,7 +26519,7 @@ object SyntaxManager: TSyntaxManager
       'while read line  # For as many lines as the input file has...'
       'do'
       '  echo "$line"   # Output the line itself.'
-      '           (ff"'
+      '  test "test\"test" '
       '  len=${#line}'
       '  if [[ "$len" -lt "$MINLEN" && "$line" =~ \[*\.\] ]]'
       '    then echo    #  Add a blank line immediately'
@@ -26547,9 +26539,7 @@ object SyntaxManager: TSyntaxManager
     LexerName = 'Bash Shellscript'
     SkipSpaces = False
     Notes.Strings = (
-      'Author:'
-      'Matthias Eberhardt'
-      'Matthias.Eberhardt@googlemail.com')
+      'Author: Matthias Eberhardt (SynWrite admin)')
     RestartFromLineStart = True
     LineComment = '#'
     Charset = DEFAULT_CHARSET
@@ -28237,7 +28227,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Operators'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = 213
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -28274,7 +28264,7 @@ object SyntaxManager: TSyntaxManager
         Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = []
       end
       item
         DisplayName = 'Reserved Words'
@@ -33274,12 +33264,6 @@ object SyntaxManager: TSyntaxManager
           item
             TagList.Strings = (
               '{')
-          end
-          item
-            TagList.Strings = (
-              'else')
-            CondType = tcNotEqual
-            TokenTypes = 2
           end>
         BlockEnd = '}_end'
         NameFmt = '%sl0'
