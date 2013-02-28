@@ -3,6 +3,12 @@ Legend:
  - fixed
  * changed
 
+4.8.800
++ option "Files -- Suggest to save unicode content in unicode format"
++ option "Misc -- Show recent colors menu"
++ found lines are now uncollapsed
+* plugin API: changed actions GetText, FindID
+
 4.8.780
 + Find/Replace dialog: can find+replace in column blocks
 + "selection mode" affects Shift+arrows too

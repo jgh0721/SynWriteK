@@ -26024,7 +26024,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26041,7 +26041,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -26049,7 +26049,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26083,7 +26083,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clMoneyGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -49173,7 +49173,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Text-Italic'
         StyleName = 'Text-Italic'
         TokenType = 1
-        Expression = '(\*|_).*?(\*|_|$)'
+        Expression = '(\*|_).*?(\*|_)'
         ColumnFrom = 0
         ColumnTo = 0
       end
