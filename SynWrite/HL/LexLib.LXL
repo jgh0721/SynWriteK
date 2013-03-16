@@ -953,6 +953,7 @@ object SyntaxManager: TSyntaxManager
               'return'
               'short'
               'signed'
+              'size_t'
               'sizeof'
               'static'
               'struct'
@@ -978,15 +979,12 @@ object SyntaxManager: TSyntaxManager
         IgnoreAsParent = False
       end
       item
-        DisplayName = 'class begin'
+        DisplayName = 'class begin 2'
         ConditionList = <
           item
             TagList.Strings = (
               '{')
             TokenTypes = 8
-          end
-          item
-            CondType = tcSkip
           end
           item
             TokenTypes = 4
@@ -1000,6 +998,43 @@ object SyntaxManager: TSyntaxManager
         NameFmt = 'class %s-1'
         RefToCondEnd = True
         HighlightPos = cpAny
+        CancelNextRules = True
+        TreeItemImage = 1
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'class begin 1'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+            TokenTypes = 8
+          end
+          item
+            CondType = tcSkip
+          end
+          item
+            CondType = tcSkip
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              ':')
+            TokenTypes = 8
+          end
+          item
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              'class')
+            TokenTypes = 4
+          end>
+        BlockEnd = 'End'
+        NameFmt = 'class %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        CancelNextRules = True
         TreeItemImage = 1
         IgnoreAsParent = False
       end
@@ -1081,12 +1116,17 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'function begin'
-        StrictParent = True
         ConditionList = <
           item
             TagList.Strings = (
               '{')
             TokenTypes = 8
+          end
+          item
+            TagList.Strings = (
+              'const')
+            CondType = tcSkip
+            TokenTypes = 4
           end
           item
             TagList.Strings = (
@@ -1102,6 +1142,10 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 8
           end
           item
+            TagList.Strings = (
+              'else'
+              'if')
+            CondType = tcNotEqual
             TokenTypes = 4
           end
           item
@@ -1494,7 +1538,7 @@ object SyntaxManager: TSyntaxManager
       '#define MAX(a, b)  \'
       '     ((a > b) ? a : b)'
       '     '
-      'class MyTest : public testing::Test {'
+      'class Class1 : public Class2 {'
       '    static int priv;'
       '    const int tot;'
       '    unsigned long fib(unsigned long n) {'
@@ -16647,11 +16691,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        FormatType = ftCustomFont
       end
       item
         DisplayName = 'Text'
@@ -16862,6 +16905,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Tag ident'
+        StyleName = 'Default'
         BlockName = 'Tag begin'
         TokenType = 2
         Expression = '[^\s=>]+'
@@ -23688,7 +23732,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Any name'
         TokenType = 1
-        Expression = '[a-z_]\w*'
+        Expression = '(un\.)? [a-z_]\w*'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -23767,8 +23811,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'function')
-            IgnoreCase = True
+              'Function')
           end>
         BlockEnd = 'FunctionEnd'
         NameFmt = '%s0 %s-1'
@@ -23789,8 +23832,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'functionend')
-            IgnoreCase = True
+              'FunctionEnd')
           end>
         RefToCondEnd = True
         HighlightPos = cpAny
@@ -23811,7 +23853,7 @@ object SyntaxManager: TSyntaxManager
         DynHighlight = dhBound
         HighlightPos = cpBoundTag
         CollapseFmt = '%s0 %s-1'
-        TreeItemImage = 8
+        TreeItemImage = 6
         TreeGroupImage = 1
         IgnoreAsParent = False
         AutoCloseMode = acmCloseNearest
@@ -23836,8 +23878,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'sectiongroup')
-            IgnoreCase = True
+              'SectionGroup')
           end>
         BlockEnd = 'SectionGroupEnd'
         NameFmt = '%s0 %s-1'
@@ -23859,8 +23900,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'sectiongroupend')
-            IgnoreCase = True
+              'SectionGroupEnd')
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
@@ -23871,15 +23911,14 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'section')
-            IgnoreCase = True
+              'Section')
           end>
         BlockEnd = 'SectionEnd'
-        NameFmt = '%s0 %s-1'
+        NameFmt = '%sz0'
         RefToCondEnd = True
         DynHighlight = dhBound
         HighlightPos = cpBoundTag
-        CollapseFmt = '%s0 %s-1'
+        CollapseFmt = '%sz0'
         TreeGroupStyle = 'Tree'
         TreeItemImage = 3
         TreeGroupImage = 1
@@ -23894,8 +23933,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'sectionend')
-            IgnoreCase = True
+              'SectionEnd')
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
@@ -23906,8 +23944,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'pageex')
-            IgnoreCase = True
+              'PageEx')
           end>
         BlockEnd = 'PageExEnd'
         NameFmt = '%s0 %s-1'
@@ -23927,8 +23964,7 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'pageexend')
-            IgnoreCase = True
+              'PageExEnd')
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
@@ -26024,7 +26060,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26041,7 +26077,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -26049,7 +26085,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26083,7 +26119,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMoneyGreen
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -42147,11 +42183,8 @@ object SyntaxManager: TSyntaxManager
       'Keyword')
     MarkedBlockStyle = 'Marked block'
     DefaultStyleName = 'Default'
-    Extentions = 'py pyw'
-    LexerName = 'Python'
+    LexerName = 'Python (no folding)'
     SkipSpaces = False
-    Notes.Strings = (
-      'Fixes by Alex, uvviewsoft.com')
     ParseEndOfLine = True
     LineComment = '#'
     Charset = DEFAULT_CHARSET
@@ -49771,6 +49804,449 @@ object SyntaxManager: TSyntaxManager
     LexerName = 'SynWrite ACP files'
     Notes.Strings = (
       'Author: Alex, uvviewsoft.com')
+    Charset = DEFAULT_CHARSET
+    Left = 144
+    Top = 184
+  end
+  object SyntAnal2: TLibSyntAnalyzer
+    Formats = <
+      item
+        DisplayName = 'Marked block'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clHighlightText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BgColor = clHighlight
+        FormatType = ftColor
+      end
+      item
+        DisplayName = 'Default'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        FormatType = ftBackGround
+      end
+      item
+        DisplayName = 'Symbol'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Number'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'String'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        FormatType = ftColor
+      end
+      item
+        DisplayName = 'Identifier'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        FormatType = ftColor
+      end
+      item
+        DisplayName = 'Reserved word'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Comment'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsItalic]
+      end
+      item
+        DisplayName = 'Current block'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        BgColor = 13369046
+        FormatType = ftColor
+        BorderTypeLeft = blSolid
+        BorderColorLeft = clGray
+        BorderTypeTop = blSolid
+        BorderColorTop = clGray
+        BorderTypeRight = blSolid
+        BorderColorRight = clGray
+        BorderTypeBottom = blSolid
+        BorderColorBottom = clGray
+      end
+      item
+        DisplayName = 'Function'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'function tree'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'class tree'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end>
+    TokenRules = <
+      item
+        DisplayName = 'Word1stTreeItem'
+        StyleName = 'Reserved word'
+        TokenType = 11
+        Expression = '^[\x20\x09]*(def|class)\b'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Word1stKeyword'
+        StyleName = 'Reserved word'
+        TokenType = 10
+        Expression = 
+          '^[\x20\x09]*(if|else|elif|for|while|try|except|finally|switch|ca' +
+          'se)\b'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Word1stId'
+        StyleName = 'Identifier'
+        TokenType = 9
+        Expression = '^[\x20\x09]*\w+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = #39'.*?('#39'|$)'#13#10
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String3'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '(?s)""".*?("""|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String2'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '"(\\"|.)*?("|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Any name'
+        StyleName = 'Identifier'
+        TokenType = 2
+        Expression = '[a-z_]\w*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Integer'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '\d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '\#.*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[/\*,\.;:\(\)=<>\+\-\[\]\{\}\^@!%]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end>
+    BlockRules = <
+      item
+        DisplayName = 'Keywords'
+        StyleName = 'Reserved word'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'and'
+              'assert'
+              'break'
+              'class'
+              'continue'
+              'def'
+              'del'
+              'elif'
+              'else'
+              'except'
+              'exec'
+              'finally'
+              'for'
+              'from'
+              'global'
+              'if'
+              'import'
+              'in'
+              'is'
+              'lambda'
+              'not'
+              'or'
+              'pass'
+              'print'
+              'raise'
+              'return'
+              'try'
+              'while'
+              'yield')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Functions'
+        StyleName = 'Function'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '__future__'
+              '__import__'
+              'abs'
+              'apply'
+              'as'
+              'buffer'
+              'callable'
+              'chr'
+              'cmp'
+              'coerce'
+              'compile'
+              'complex'
+              'delattr'
+              'dict'
+              'dir'
+              'divmod'
+              'eval'
+              'execfile'
+              'False'
+              'file'
+              'filter'
+              'float'
+              'getattr'
+              'globals'
+              'hasattr'
+              'hash'
+              'help'
+              'hex'
+              'id'
+              'input'
+              'int'
+              'intern'
+              'isinstance'
+              'issubclass'
+              'iter'
+              'len'
+              'list'
+              'locals'
+              'long'
+              'map'
+              'max'
+              'min'
+              'None'
+              'NotImplemented'
+              'oct'
+              'open'
+              'ord'
+              'pow'
+              'range'
+              'raw_input'
+              'reduce'
+              'reload'
+              'repr'
+              'round'
+              'self'
+              'setattr'
+              'slice'
+              'str'
+              'True'
+              'tuple'
+              'type'
+              'unichr'
+              'unicode'
+              'vars'
+              'xrange'
+              'zip')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Block comment'
+        BlockName = 'Block comment'
+        NotParent = True
+        AlwaysEnabled = True
+        ConditionList = <
+          item
+            TokenTypes = 2
+          end>
+        BlockEnd = 'Block comment end'
+        DisplayInTree = False
+        HighlightPos = cpBound
+        CollapseFmt = '{ ... }'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Block comment end'
+        BlockName = 'Block comment'
+        StrictParent = True
+        AlwaysEnabled = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            CondType = tcNotEqual
+            TokenTypes = 2
+          end
+          item
+            TokenTypes = 2
+          end>
+        BlockOffset = 2
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'block for tree'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ':')
+            TokenTypes = 8
+          end
+          item
+            CondType = tcSkip
+            TokenTypes = 510
+          end
+          item
+            TokenTypes = 2048
+          end>
+        EndOfTextClose = True
+        NameFmt = '%s0 %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        GroupIndex = 20
+        CollapseFmt = '%s0 %s-1...'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'block begin'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ':')
+            TokenTypes = 8
+          end
+          item
+            CondType = tcSkip
+            TokenTypes = 510
+          end
+          item
+            TokenTypes = 1024
+          end>
+        EndOfTextClose = True
+        DisplayInTree = False
+        NameFmt = '"%s0"'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        GroupIndex = 20
+        CollapseFmt = '%s0 ...'
+        IgnoreAsParent = False
+      end>
+    CodeTemplates = <>
+    SubAnalyzers = <>
+    SampleText.Strings = (
+      '#!/usr/local/bin/python'
+      'import string, sys'
+      '""" multiline '
+      'string """'
+      'if len(sys.argv)==1:'
+      '    print '#39'Usage: celsius temp1 temp2 ...'#39
+      '    sys.exit(0) '
+      '    '
+      '  if aa'
+      '    aa'
+      '    aa'
+      '      if cc:'
+      '        cc'
+      '        cc'
+      '  aa        ')
+    TokenTypeNames.Strings = (
+      'Unknown'
+      'Comment'
+      'Identifier'
+      'Symbol'
+      'String'
+      'Integer const'
+      'Float const'
+      'Hex const'
+      'Char const'
+      '1st word'
+      '1st keyword'
+      '1st word tree')
+    Extentions = 'py pyw'
+    LexerName = 'Python'
+    SkipSpaces = False
+    FullRefreshSize = 80000
+    Notes.Strings = (
+      'New Python lexer, by Alex, uvviewsoft.com'
+      'Special properties must be set for folding to appear:'
+      '- rules group index set to 20'
+      '- parsers needed which take first words with spaces/tabs'
+      '- tokens type names (for new parsers) set to "1nnnnn"')
+    LineComment = '#'
     Charset = DEFAULT_CHARSET
     Left = 144
     Top = 184

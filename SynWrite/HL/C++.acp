@@ -22738,7 +22738,6 @@ Keyword sig_atomic_t
 Keyword signal(int sig, _p_sig_fn_t handler)
 Keyword sin(double x)
 Keyword sinh(double x)
-Keyword size_t
 Keyword small
 Keyword small_array_from_ndr
 Keyword small_from_ndr
@@ -23487,6 +23486,7 @@ Type int
 Type long
 Type short
 Type signed
+Type size_t
 Type struct
 Type unsigned
 Type void

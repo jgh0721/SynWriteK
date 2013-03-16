@@ -3,11 +3,31 @@ Legend:
  - fixed
  * changed
 
-4.8.800
+4.10.880
++ folding in Python lexer (indentation based!)
++ commands "View -- Folding -- Collapse all /Expand all/ Expand current block"
++ tree: when going to a node, editor line should uncollapse
++ SynFTP plugin: master pwd is masked with **
++ SynFTP plugin: cursor keys work in treeview
++ LexerConfig.chm: images added, topic "Indentation-based folding" added
+- fix: line selection didn't work
+   
+4.9.840
++ syntax-aware spell checking - help topic added in "Coding helpers"
++ spelling red marks are shown on micro-map
++ Find dialog: multiline view added, click '»Multiline' or press F2 
++ Find dialog: regex help '»?' reworked
++ Find dialog: help topic added
 + option "Files -- Suggest to save unicode content in unicode format"
 + option "Misc -- Show recent colors menu"
-+ found lines are now uncollapsed
++ option "Editor 2 -- Copy/Cut current line if no selection made"
++ nnCron lexer (in Readme\*.rar)
+* option "Show micro-map" moved to "Interface" tab
+* removed option "Editor 2 -- Keep caret on screen on scrolling"
+* removed option "Editor 2 -- Copy column blocks with extra spaces"
 * plugin API: changed actions GetText, FindID
+- fixed: Explorer "New - Text document" menuitem hides when associating Synwrite with txt files
+- fixes (C++ lexer, NSIS lexer, etc)
 
 4.8.780
 + Find/Replace dialog: can find+replace in column blocks
