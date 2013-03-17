@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <RadialixLocalizerProject>
   <Header FileVersion="19" Guid="{A5F52DDC-9426-4DC4-A2FE-ABAE21D90838}"/>
-  <IDESettings ProjectItemPath="0.Syn.dklang (korean.lng).STRINGS.fmProjProps" SelectedTable="StringsTabSheet" SelectedVisualDesigner="">
-    <StringTableSettings FocusedValueID="fmProjProps.cbEnds.Items" SortDirection="0" SortedColumnIndex="-1"/>
+  <IDESettings ProjectItemPath="0.Syn.dklang (korean.lng).STRINGS.fmProj" SelectedTable="StringsTabSheet" SelectedVisualDesigner="">
+    <StringTableSettings FocusedValueID="fmProj.TBXItemMnuProps.Caption" SortDirection="0" SortedColumnIndex="-1"/>
     <TextTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <AccelTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <ImageTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
@@ -15,14 +15,14 @@
     </Languages>
     <Info>
       <CreatedBy Date="2012-12-26T14-12-03">Radialix Version 3.00.00  Build 486</CreatedBy>
-      <ModifiedBy Date="2013-02-27T23-20-59">Radialix Version 3.00.00  Build 486</ModifiedBy>
+      <ModifiedBy Date="2013-03-17T11-44-16">Radialix Version 3.00.00  Build 486</ModifiedBy>
       <Author>DevTester</Author>
       <Organization/>
       <Comment/>
       <WebSite/>
       <ContactEMail/>
       <Copyright/>
-      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="171" AutoIncrementBuildNumber="1"/>
+      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="271" AutoIncrementBuildNumber="1"/>
     </Info>
     <Publisher>
       <ApplicationName>&lt;Title&gt; &lt;WinCode&gt;</ApplicationName>
@@ -943,7 +943,7 @@
       <DialogUnits>1</DialogUnits>
     </FormSettings>
     <TextTemplates/>
-    <File Name="D:\GitHub\SynWriteK\SynWrite\Readme\Syn.dklang" Parser="dklang" DateTimeStamp="4675913164751365468" FileSize="347288">
+    <File Name="D:\GitHub\SynWriteK\SynWrite\Readme\Syn.dklang" Parser="dklang" DateTimeStamp="4675915844734388450" FileSize="349858">
       <LangSettings/>
       <ExportSettings Current="Glossary">
         <Glossary FileName="" SortData="1" SkipDuplicates="1" RemoveAccelerators="1" RemoveAccelKeys="1" CaseSensitive="0">
@@ -973,7 +973,7 @@
       </ExportSettings>
       <EmbeddedFiles/>
       <ResourceType New="1" Name="STRINGS" Class="DKLangResourceType">
-        <Resource Name="fmMain" Class="DKLangResource" Type="DKLangResource">
+        <Resource Name="fmMain" New="1" Class="DKLangResource" Type="DKLangResource">
           <SourceLanguages>
             <LangID>9</LangID>
           </SourceLanguages>
@@ -1069,8 +1069,8 @@
           </Vl>
           <Vl Name="TBXItemToolPrint.Caption" Class="DKLANG_STRING">
             <Src>Print...</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-17T21-41-48" Translated="2013-01-17T21-41-48" State="Validated">
-              <cur>인쇄(&amp;P)...</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-52-30" Translated="2013-03-17T10-52-30" State="Validated">
+              <cur>인쇄...</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemToolPrint.Hint" Class="DKLANG_STRING">
@@ -1129,7 +1129,9 @@
           </Vl>
           <Vl Name="TBXItemFNext.Caption" Class="DKLANG_STRING">
             <Src>Find next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-52-34" Translated="2013-03-17T10-52-34" State="Validated">
+              <cur>다음 찾기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemFNext.Hint" Class="DKLANG_STRING">
             <Src>Find next occurance of search string</Src>
@@ -1173,23 +1175,33 @@
           </Vl>
           <Vl Name="TBXSubmenuItemTbSetup.Hint" Class="DKLANG_STRING">
             <Src>Show options dialog</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-06" Translated="2013-03-17T11-38-06" State="Validated">
+              <cur>설정 대화상자 표시</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOOLex.Caption" Class="DKLANG_STRING">
             <Src>Customize lexer...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-11" Translated="2013-03-17T11-38-11" State="Validated">
+              <cur>분석기 사용자정의...</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOOLex.Hint" Class="DKLANG_STRING">
             <Src>Customize current lexer</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-16" Translated="2013-03-17T11-38-16" State="Validated">
+              <cur>현재 분석기 사용자정의</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOOLexLib.Caption" Class="DKLANG_STRING">
             <Src>Customize lexer library...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-23" Translated="2013-03-17T11-38-23" State="Validated">
+              <cur>분석기 라이브러리 사용자정의...</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOOLexLib.Hint" Class="DKLANG_STRING">
             <Src>Customize lexers library</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-37" Translated="2013-03-17T11-38-37" State="Validated">
+              <cur>분석기 라이브러리 사용자정의</cur>
+            </Trg>
           </Vl>
           <Vl Name="tbEdit.Caption" Class="DKLANG_STRING">
             <Src>Edit</Src>
@@ -1219,7 +1231,9 @@
           </Vl>
           <Vl Name="TBXItemTbPaste.Caption" Class="DKLANG_STRING">
             <Src>Paste</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-20-15" Translated="2013-03-17T00-20-15" State="Validated">
+              <cur>붙여넣기(&amp;P)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemTbPaste.Hint" Class="DKLANG_STRING">
             <Src>Paste clipboard</Src>
@@ -1291,7 +1305,9 @@
           </Vl>
           <Vl Name="TBXSubmenuCase.Caption" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXSubmenuCase.Hint" Class="DKLANG_STRING">
             <Src>Selection case changing</Src>
@@ -1299,19 +1315,27 @@
           </Vl>
           <Vl Name="TBXItemCCUpper.Caption" Class="DKLANG_STRING">
             <Src>UPPER CASE</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-22" Translated="2013-03-17T10-39-22" State="Validated">
+              <cur>대문자로 변경(&amp;U)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemCCUpper.Hint" Class="DKLANG_STRING">
             <Src>Selection - to upper case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-28" Translated="2013-03-17T10-39-28" State="Validated">
+              <cur>선택항목을 대문자로 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemCCLower.Caption" Class="DKLANG_STRING">
             <Src>lower case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-33" Translated="2013-03-17T10-39-33" State="Validated">
+              <cur>소문자로 변경(&amp;L)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemCCLower.Hint" Class="DKLANG_STRING">
             <Src>Selection - to lower case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-37" Translated="2013-03-17T10-39-37" State="Validated">
+              <cur>선택항목을 소문자로 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemCCTitle.Caption" Class="DKLANG_STRING">
             <Src>Title Case</Src>
@@ -1391,23 +1415,27 @@
           </Vl>
           <Vl Name="TBXItemVInd.Caption" Class="DKLANG_STRING">
             <Src>Indent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-12" Translated="2013-03-17T10-41-12" State="Validated">
+              <cur>들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemVInd.Hint" Class="DKLANG_STRING">
             <Src>Indent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-16" Translated="2013-03-17T10-41-16" State="Validated">
+              <cur>선택항목 들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemVUnind.Caption" Class="DKLANG_STRING">
             <Src>Unindent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-17" Translated="2013-03-17T10-41-17" State="Validated">
+              <cur>내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemVUnind.Hint" Class="DKLANG_STRING">
             <Src>Unindent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
-          <Vl Name="SB2.Panels[10].Hint" Class="DKLANG_STRING">
-            <Src>Macro recording status (red signal means recording)</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-21" Translated="2013-03-17T10-41-21" State="Validated">
+              <cur>선택항목 내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SB2.Panels[1].Hint" Class="DKLANG_STRING">
             <Src>Encoding (click to change)</Src>
@@ -1447,7 +1475,9 @@
           </Vl>
           <Vl Name="tbMenu.Caption" Class="DKLANG_STRING">
             <Src>Menu</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-06" Translated="2013-03-17T10-42-06" State="Validated">
+              <cur>메뉴</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXSubmenuItemFile.Caption" Class="DKLANG_STRING">
             <Src>&amp;File</Src>
@@ -1661,7 +1691,9 @@
           </Vl>
           <Vl Name="TBXItemEPaste.Caption" Class="DKLANG_STRING">
             <Src>&amp;Paste</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-20-15" Translated="2013-03-17T00-20-15" State="Validated">
+              <cur>붙여넣기(&amp;P)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemEPaste.Hint" Class="DKLANG_STRING">
             <Src>Paste clipboard</Src>
@@ -1689,19 +1721,27 @@
           </Vl>
           <Vl Name="TBXItemEInd.Caption" Class="DKLANG_STRING">
             <Src>&amp;Indent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-12" Translated="2013-03-17T10-41-12" State="Validated">
+              <cur>들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemEInd.Hint" Class="DKLANG_STRING">
             <Src>Indent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-16" Translated="2013-03-17T10-41-16" State="Validated">
+              <cur>선택항목 들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemEUnind.Caption" Class="DKLANG_STRING">
             <Src>Unind&amp;ent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-17" Translated="2013-03-17T10-41-17" State="Validated">
+              <cur>내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemEUnind.Hint" Class="DKLANG_STRING">
             <Src>Unindent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-21" Translated="2013-03-17T10-41-21" State="Validated">
+              <cur>선택항목 내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemEDup.Caption" Class="DKLANG_STRING">
             <Src>&amp;Duplicate line</Src>
@@ -1743,23 +1783,33 @@
           </Vl>
           <Vl Name="TBXSubmenuItem20.Caption" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECaseUpper.Caption" Class="DKLANG_STRING">
             <Src>&amp;UPPER CASE</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-22" Translated="2013-03-17T10-39-22" State="Validated">
+              <cur>대문자로 변경(&amp;U)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECaseUpper.Hint" Class="DKLANG_STRING">
             <Src>Selection - to upper case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-28" Translated="2013-03-17T10-39-28" State="Validated">
+              <cur>선택항목을 대문자로 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECaseLower.Caption" Class="DKLANG_STRING">
             <Src>&amp;lower case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-33" Translated="2013-03-17T10-39-33" State="Validated">
+              <cur>소문자로 변경(&amp;L)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECaseLower.Hint" Class="DKLANG_STRING">
             <Src>Selection - to lower case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-37" Translated="2013-03-17T10-39-37" State="Validated">
+              <cur>선택항목을 소문자로 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECaseTitle.Caption" Class="DKLANG_STRING">
             <Src>&amp;Title Case</Src>
@@ -1783,7 +1833,9 @@
           </Vl>
           <Vl Name="TBXItemSNext.Caption" Class="DKLANG_STRING">
             <Src>Find &amp;next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-45" Translated="2013-03-17T00-50-45" State="Validated">
+              <cur>다음 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemSNext.Hint" Class="DKLANG_STRING">
             <Src>Find next occurance of search string</Src>
@@ -1847,8 +1899,8 @@
           </Vl>
           <Vl Name="TBXSubmenuItemBk.Caption" Class="DKLANG_STRING">
             <Src>&amp;Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXSubmenuItemBkSet.Caption" Class="DKLANG_STRING">
@@ -1949,12 +2001,14 @@
           </Vl>
           <Vl Name="TBXSubmenuItemLexer.Caption" Class="DKLANG_STRING">
             <Src>&amp;Lexer</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-35" Translated="2013-03-17T10-42-35" State="Validated">
+              <cur>분석기(&amp;L)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXSubmenuItemOpt.Caption" Class="DKLANG_STRING">
             <Src>&amp;Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemOSetup.Caption" Class="DKLANG_STRING">
@@ -1963,15 +2017,21 @@
           </Vl>
           <Vl Name="TBXItemOSetup.Hint" Class="DKLANG_STRING">
             <Src>Show options dialog</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-06" Translated="2013-03-17T11-38-06" State="Validated">
+              <cur>설정 대화상자 표시</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOLexer.Caption" Class="DKLANG_STRING">
             <Src>Customi&amp;ze lexer...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-11" Translated="2013-03-17T11-38-11" State="Validated">
+              <cur>분석기 사용자정의...</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOLexer.Hint" Class="DKLANG_STRING">
             <Src>Customize current lexer</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-16" Translated="2013-03-17T11-38-16" State="Validated">
+              <cur>현재 분석기 사용자정의</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemOLexerLib.Caption" Class="DKLANG_STRING">
             <Src>Customize &amp;lexers library...</Src>
@@ -1979,7 +2039,9 @@
           </Vl>
           <Vl Name="TBXItemOLexerLib.Hint" Class="DKLANG_STRING">
             <Src>Customize lexers library</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-37" Translated="2013-03-17T11-38-37" State="Validated">
+              <cur>분석기 라이브러리 사용자정의</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemORO.Caption" Class="DKLANG_STRING">
             <Src>Toggle &amp;read-only</Src>
@@ -2205,27 +2267,39 @@
           </Vl>
           <Vl Name="fSetup.Caption" Class="DKLANG_STRING">
             <Src>Setup...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-37-55" Translated="2013-03-17T11-37-55" State="Validated">
+              <cur>설정...</cur>
+            </Trg>
           </Vl>
           <Vl Name="fSetup.Hint" Class="DKLANG_STRING">
             <Src>Show options dialog</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-06" Translated="2013-03-17T11-38-06" State="Validated">
+              <cur>설정 대화상자 표시</cur>
+            </Trg>
           </Vl>
           <Vl Name="fCustomizeLexer.Caption" Class="DKLANG_STRING">
             <Src>Customize lexer...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-11" Translated="2013-03-17T11-38-11" State="Validated">
+              <cur>분석기 사용자정의...</cur>
+            </Trg>
           </Vl>
           <Vl Name="fCustomizeLexer.Hint" Class="DKLANG_STRING">
             <Src>Customize current lexer</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-16" Translated="2013-03-17T11-38-16" State="Validated">
+              <cur>현재 분석기 사용자정의</cur>
+            </Trg>
           </Vl>
           <Vl Name="fCustomizeLexerLib.Caption" Class="DKLANG_STRING">
             <Src>Customize lexer library...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-23" Translated="2013-03-17T11-38-23" State="Validated">
+              <cur>분석기 라이브러리 사용자정의...</cur>
+            </Trg>
           </Vl>
           <Vl Name="fCustomizeLexerLib.Hint" Class="DKLANG_STRING">
             <Src>Customize lexers library</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-37" Translated="2013-03-17T11-38-37" State="Validated">
+              <cur>분석기 라이브러리 사용자정의</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecCopy.Caption" Class="DKLANG_STRING">
             <Src>Copy</Src>
@@ -2249,7 +2323,9 @@
           </Vl>
           <Vl Name="ecPaste.Caption" Class="DKLANG_STRING">
             <Src>Paste</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-20-15" Translated="2013-03-17T00-20-15" State="Validated">
+              <cur>붙여넣기(&amp;P)</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecPaste.Hint" Class="DKLANG_STRING">
             <Src>Paste clipboard</Src>
@@ -2293,27 +2369,39 @@
           </Vl>
           <Vl Name="ecIndent.Caption" Class="DKLANG_STRING">
             <Src>Indent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-12" Translated="2013-03-17T10-41-12" State="Validated">
+              <cur>들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecIndent.Hint" Class="DKLANG_STRING">
             <Src>Indent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-16" Translated="2013-03-17T10-41-16" State="Validated">
+              <cur>선택항목 들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecUnindent.Caption" Class="DKLANG_STRING">
             <Src>Unindent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-17" Translated="2013-03-17T10-41-17" State="Validated">
+              <cur>내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecUnindent.Hint" Class="DKLANG_STRING">
             <Src>Unindent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-21" Translated="2013-03-17T10-41-21" State="Validated">
+              <cur>선택항목 내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecLowerCase.Caption" Class="DKLANG_STRING">
             <Src>Lower case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-33" Translated="2013-03-17T10-39-33" State="Validated">
+              <cur>소문자로 변경(&amp;L)</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecUpperCase.Caption" Class="DKLANG_STRING">
             <Src>Upper case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-22" Translated="2013-03-17T10-39-22" State="Validated">
+              <cur>대문자로 변경(&amp;U)</cur>
+            </Trg>
           </Vl>
           <Vl Name="ecTitleCase.Caption" Class="DKLANG_STRING">
             <Src>Title case</Src>
@@ -2453,7 +2541,9 @@
           </Vl>
           <Vl Name="TBXItemCtxPaste.Caption" Class="DKLANG_STRING">
             <Src>Paste</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-20-15" Translated="2013-03-17T00-20-15" State="Validated">
+              <cur>붙여넣기(&amp;P)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemCtxPaste.Hint" Class="DKLANG_STRING">
             <Src>Paste clipboard</Src>
@@ -2567,7 +2657,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[108].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[108].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll up one line leaving cursor position unchanged</Src>
@@ -2579,7 +2671,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[109].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[109].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll down one line leaving cursor position unchanged</Src>
@@ -2587,13 +2681,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[10].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-51-16" Translated="2013-03-17T10-51-16" State="Validated">
               <cur>옵션</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[10].DisplayName" Class="DKLANG_STRING">
             <Src>"Customize lexers library" dialog</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-51-38" Translated="2013-03-17T10-51-38" State="Validated">
+              <cur>"분석기 라이브러리 사용자정의" 대화상자</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[110].Caption" Class="DKLANG_STRING">
             <Src>Scroll Left</Src>
@@ -2601,7 +2697,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[110].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[110].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll left one char leaving cursor position unchanged</Src>
@@ -2613,7 +2711,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[111].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[111].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll right one char leaving cursor position unchanged</Src>
@@ -2625,7 +2725,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[112].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[112].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll up one page leaving cursor position unchanged</Src>
@@ -2637,7 +2739,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[113].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[113].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll down one page leaving cursor position unchanged</Src>
@@ -2649,7 +2753,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[114].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[114].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll left one screen leaving cursor position unchanged</Src>
@@ -2661,7 +2767,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[115].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[115].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll right one screen leaving cursor position unchanged</Src>
@@ -2673,7 +2781,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[116].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[116].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll to absolute beginning leaving cursor position unchanged</Src>
@@ -2685,7 +2795,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[117].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[117].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll to absolute end leaving cursor position unchanged</Src>
@@ -2697,7 +2809,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[118].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[118].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll to absolute left leaving cursor position unchanged</Src>
@@ -2709,7 +2823,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[119].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-59" Translated="2013-03-17T00-19-59" State="Validated">
+              <cur>스크롤링</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[119].DisplayName" Class="DKLANG_STRING">
             <Src>Scroll to absolute right leaving cursor position unchanged</Src>
@@ -2725,8 +2841,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[120].Caption" Class="DKLANG_STRING">
             <Src>&amp;Copy</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-19T15-17-46" Translated="2013-02-19T15-17-46" State="Validated">
-              <cur>복사</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-52-06" Translated="2013-03-17T10-52-06" State="Validated">
+              <cur>복사(&amp;C)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[120].Category" Class="DKLANG_STRING">
@@ -2753,7 +2869,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[122].Caption" Class="DKLANG_STRING">
             <Src>&amp;Paste</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-20-15" Translated="2013-03-17T00-20-15" State="Validated">
+              <cur>붙여넣기(&amp;P)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[122].Category" Class="DKLANG_STRING">
             <Src>Standard actions</Src>
@@ -2883,7 +3001,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[133].Caption" Class="DKLANG_STRING">
             <Src>&amp;Indent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-12" Translated="2013-03-17T10-41-12" State="Validated">
+              <cur>들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[133].Category" Class="DKLANG_STRING">
             <Src>Indents and Tabs</Src>
@@ -2891,11 +3011,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[133].DisplayName" Class="DKLANG_STRING">
             <Src>Indent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-16" Translated="2013-03-17T10-41-16" State="Validated">
+              <cur>선택항목 들여쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[134].Caption" Class="DKLANG_STRING">
             <Src>&amp;Unindent</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-17" Translated="2013-03-17T10-41-17" State="Validated">
+              <cur>내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[134].Category" Class="DKLANG_STRING">
             <Src>Indents and Tabs</Src>
@@ -2903,7 +3027,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[134].DisplayName" Class="DKLANG_STRING">
             <Src>Unindent selection</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-41-21" Translated="2013-03-17T10-41-21" State="Validated">
+              <cur>선택항목 내어쓰기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[135].Category" Class="DKLANG_STRING">
             <Src>Indents and Tabs</Src>
@@ -3137,7 +3263,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[153].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[153].DisplayName" Class="DKLANG_STRING">
             <Src>Upper case to current or previous word</Src>
@@ -3149,7 +3277,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[154].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[154].DisplayName" Class="DKLANG_STRING">
             <Src>Lower case to current or previous word</Src>
@@ -3161,7 +3291,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[155].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[155].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle case to current or previous word</Src>
@@ -3173,7 +3305,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[156].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[156].DisplayName" Class="DKLANG_STRING">
             <Src>Title case to current or previous word</Src>
@@ -3185,7 +3319,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[157].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[157].DisplayName" Class="DKLANG_STRING">
             <Src>Upper case to current selection or current char</Src>
@@ -3197,7 +3333,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[158].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[158].DisplayName" Class="DKLANG_STRING">
             <Src>Lower case to current selection or current char</Src>
@@ -3209,7 +3347,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[159].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[159].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle case to current selection or current char</Src>
@@ -3229,7 +3369,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[160].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[160].DisplayName" Class="DKLANG_STRING">
             <Src>Title case to current selection</Src>
@@ -3283,9 +3425,9 @@
             <Src>Text folding</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="SyntKeyMapping.Items[164].DisplayName" Class="DKLANG_STRING">
-            <Src>Collapse all blocks in the text</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="SyntKeyMapping.Items[164].DisplayName" Class="DKLANG_STRING">
+            <Src>Collapse all blocks</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[165].Caption" Class="DKLANG_STRING">
             <Src>Full Expand</Src>
@@ -3295,9 +3437,9 @@
             <Src>Text folding</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="SyntKeyMapping.Items[165].DisplayName" Class="DKLANG_STRING">
-            <Src>Expand all collapsed blocks in the text</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="SyntKeyMapping.Items[165].DisplayName" Class="DKLANG_STRING">
+            <Src>Expand all blocks</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[166].Caption" Class="DKLANG_STRING">
             <Src>Collapse Selection</Src>
@@ -3349,8 +3491,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[16].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[16].DisplayName" Class="DKLANG_STRING">
@@ -3365,9 +3507,9 @@
             <Src>Text folding</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="SyntKeyMapping.Items[170].DisplayName" Class="DKLANG_STRING">
-            <Src>Toggle Folding</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="SyntKeyMapping.Items[170].DisplayName" Class="DKLANG_STRING">
+            <Src>Toggle folding</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[171].Caption" Class="DKLANG_STRING">
             <Src>Goto Bookmark 0</Src>
@@ -3377,8 +3519,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[171].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[171].DisplayName" Class="DKLANG_STRING">
@@ -3395,8 +3537,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[172].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[172].DisplayName" Class="DKLANG_STRING">
@@ -3413,8 +3555,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[173].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[173].DisplayName" Class="DKLANG_STRING">
@@ -3431,8 +3573,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[174].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[174].DisplayName" Class="DKLANG_STRING">
@@ -3449,8 +3591,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[175].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[175].DisplayName" Class="DKLANG_STRING">
@@ -3467,8 +3609,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[176].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[176].DisplayName" Class="DKLANG_STRING">
@@ -3485,8 +3627,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[177].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[177].DisplayName" Class="DKLANG_STRING">
@@ -3503,8 +3645,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[178].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[178].DisplayName" Class="DKLANG_STRING">
@@ -3521,8 +3663,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[179].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[179].DisplayName" Class="DKLANG_STRING">
@@ -3533,8 +3675,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[17].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[17].DisplayName" Class="DKLANG_STRING">
@@ -3547,8 +3689,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[180].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[180].DisplayName" Class="DKLANG_STRING">
@@ -3561,8 +3703,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[181].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[181].DisplayName" Class="DKLANG_STRING">
@@ -3575,8 +3717,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[182].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[182].DisplayName" Class="DKLANG_STRING">
@@ -3589,8 +3731,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[183].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[183].DisplayName" Class="DKLANG_STRING">
@@ -3603,8 +3745,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[184].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[184].DisplayName" Class="DKLANG_STRING">
@@ -3617,8 +3759,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[185].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[185].DisplayName" Class="DKLANG_STRING">
@@ -3631,8 +3773,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[186].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[186].DisplayName" Class="DKLANG_STRING">
@@ -3645,8 +3787,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[187].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[187].DisplayName" Class="DKLANG_STRING">
@@ -3659,8 +3801,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[188].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[188].DisplayName" Class="DKLANG_STRING">
@@ -3673,8 +3815,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[189].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[189].DisplayName" Class="DKLANG_STRING">
@@ -3683,8 +3825,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[18].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[18].DisplayName" Class="DKLANG_STRING">
@@ -3697,8 +3839,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[190].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[190].DisplayName" Class="DKLANG_STRING">
@@ -3707,8 +3849,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[191].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[191].DisplayName" Class="DKLANG_STRING">
@@ -3821,8 +3963,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[19].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[19].DisplayName" Class="DKLANG_STRING">
@@ -3937,8 +4079,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[20].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[20].DisplayName" Class="DKLANG_STRING">
@@ -4037,8 +4179,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[21].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[21].DisplayName" Class="DKLANG_STRING">
@@ -4313,8 +4455,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[245].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[245].DisplayName" Class="DKLANG_STRING">
@@ -4331,7 +4473,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[247].Category" Class="DKLANG_STRING">
             <Src>Change case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-39-08" Translated="2013-03-17T10-39-08" State="Validated">
+              <cur>대소문자 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[247].DisplayName" Class="DKLANG_STRING">
             <Src>Sentence case to current selection</Src>
@@ -4339,8 +4483,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[248].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[248].DisplayName" Class="DKLANG_STRING">
@@ -4373,7 +4517,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[251].Category" Class="DKLANG_STRING">
             <Src>Sessions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[251].DisplayName" Class="DKLANG_STRING">
             <Src>Save session as...</Src>
@@ -4381,7 +4527,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[252].Category" Class="DKLANG_STRING">
             <Src>Sessions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[252].DisplayName" Class="DKLANG_STRING">
             <Src>Open session</Src>
@@ -4389,7 +4537,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[253].Category" Class="DKLANG_STRING">
             <Src>Sessions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[253].DisplayName" Class="DKLANG_STRING">
             <Src>Open/Add session</Src>
@@ -4405,8 +4555,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[255].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[255].DisplayName" Class="DKLANG_STRING">
@@ -4441,8 +4591,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[259].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[259].DisplayName" Class="DKLANG_STRING">
@@ -4739,8 +4889,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[289].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[289].DisplayName" Class="DKLANG_STRING">
@@ -4761,8 +4911,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[290].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[290].DisplayName" Class="DKLANG_STRING">
@@ -4773,8 +4923,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[291].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[291].DisplayName" Class="DKLANG_STRING">
@@ -4785,8 +4935,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[292].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[292].DisplayName" Class="DKLANG_STRING">
@@ -4795,8 +4945,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[293].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[293].DisplayName" Class="DKLANG_STRING">
@@ -4805,8 +4955,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[294].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[294].DisplayName" Class="DKLANG_STRING">
@@ -4815,8 +4965,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[295].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[295].DisplayName" Class="DKLANG_STRING">
@@ -4825,8 +4975,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[296].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[296].DisplayName" Class="DKLANG_STRING">
@@ -4835,8 +4985,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[297].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[297].DisplayName" Class="DKLANG_STRING">
@@ -5055,7 +5205,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[315].Category" Class="DKLANG_STRING">
             <Src>Sessions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[315].DisplayName" Class="DKLANG_STRING">
             <Src>Save session</Src>
@@ -5063,7 +5215,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[316].Category" Class="DKLANG_STRING">
             <Src>Sessions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[316].DisplayName" Class="DKLANG_STRING">
             <Src>Close session</Src>
@@ -5909,8 +6063,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[397].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[397].DisplayName" Class="DKLANG_STRING">
@@ -5937,7 +6091,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[39].Caption" Class="DKLANG_STRING">
             <Src>Find All</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-37" Translated="2013-03-17T10-58-37" State="Validated">
+              <cur>모두 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[39].Category" Class="DKLANG_STRING">
             <Src>Search &amp; Replace</Src>
@@ -5977,8 +6133,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[401].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[401].DisplayName" Class="DKLANG_STRING">
@@ -5987,8 +6143,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[402].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[402].DisplayName" Class="DKLANG_STRING">
@@ -5997,8 +6153,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[403].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[403].DisplayName" Class="DKLANG_STRING">
@@ -6007,8 +6163,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[404].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[404].DisplayName" Class="DKLANG_STRING">
@@ -6053,8 +6209,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[409].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[409].DisplayName" Class="DKLANG_STRING">
@@ -6075,8 +6231,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[410].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[410].DisplayName" Class="DKLANG_STRING">
@@ -6085,8 +6241,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[411].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T23-05-55" Translated="2013-02-27T23-05-55" State="Validated">
-              <cur>책갈피</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-01" Translated="2013-03-17T10-43-01" State="Validated">
+              <cur>책갈피(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[411].DisplayName" Class="DKLANG_STRING">
@@ -6163,7 +6319,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[41].Caption" Class="DKLANG_STRING">
             <Src>Find Next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-45" Translated="2013-03-17T00-50-45" State="Validated">
+              <cur>다음 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[41].Category" Class="DKLANG_STRING">
             <Src>Search &amp; Replace</Src>
@@ -6171,7 +6329,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[41].DisplayName" Class="DKLANG_STRING">
             <Src>Find next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-45" Translated="2013-03-17T00-50-45" State="Validated">
+              <cur>다음 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[420].Category" Class="DKLANG_STRING">
             <Src>Search &amp; Replace</Src>
@@ -6238,6 +6398,22 @@
           <Vl Name="SyntKeyMapping.Items[427].DisplayName" Class="DKLANG_STRING">
             <Src>Select brackets</Src>
             <Trg Created="2013-02-19T11-23-01"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[428].Category" Class="DKLANG_STRING">
+            <Src>Text folding</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[428].DisplayName" Class="DKLANG_STRING">
+            <Src>Collapse parent block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[429].Category" Class="DKLANG_STRING">
+            <Src>Text folding</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[429].DisplayName" Class="DKLANG_STRING">
+            <Src>Collapse/Expand current block with nested blocks</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[42].Caption" Class="DKLANG_STRING">
             <Src>Find Dialog</Src>
@@ -6759,14 +6935,14 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[8].Caption" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[8].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[8].DisplayName" Class="DKLANG_STRING">
@@ -6859,8 +7035,8 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[9].Category" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[9].DisplayName" Class="DKLANG_STRING">
@@ -6883,33 +7059,21 @@
             <Src>Remove all bookmarks in current file</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="TBXSubmenuItem23.Caption" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuItemZoom.Caption" Class="DKLANG_STRING">
             <Src>&amp;Zoom</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="TBXItemZIn.Caption" Class="DKLANG_STRING">
             <Src>Zoom &amp;in</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
-          <Vl Name="TBXItemZIn.Hint" Class="DKLANG_STRING">
-            <Src>Zoom in</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
           <Vl Name="TBXItemZOut.Caption" Class="DKLANG_STRING">
             <Src>Zoom &amp;out</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="TBXItemZOut.Hint" Class="DKLANG_STRING">
-            <Src>Zoom out</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
-          <Vl Name="TBXItemZ0.Caption" Class="DKLANG_STRING">
-            <Src>&amp;Restore default</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
-          <Vl Name="TBXItemZ0.Hint" Class="DKLANG_STRING">
-            <Src>Zoom to original size</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="TBXItemZ0.Caption" Class="DKLANG_STRING">
+            <Src>&amp;Original size</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="TBXItemMarkSwap.Caption" Class="DKLANG_STRING">
             <Src>&amp;Swap marker</Src>
@@ -6953,7 +7117,9 @@
           </Vl>
           <Vl Name="TBXItemFFNext.Hint" Class="DKLANG_STRING">
             <Src>Find next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-45" Translated="2013-03-17T00-50-45" State="Validated">
+              <cur>다음 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemFFPrev.Caption" Class="DKLANG_STRING">
             <Src>Previous</Src>
@@ -6963,9 +7129,9 @@
             <Src>Find previous</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="TBXSubmenuItem24.Caption" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuItemToolbars.Caption" Class="DKLANG_STRING">
             <Src>Tool&amp;bars</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="TBXItemTQs.Caption" Class="DKLANG_STRING">
             <Src>Quick search</Src>
@@ -7029,7 +7195,9 @@
           </Vl>
           <Vl Name="cbWord.Caption" Class="DKLANG_STRING">
             <Src>Whole words</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-02" Translated="2013-03-17T10-58-02" State="Validated">
+              <cur>전체 단어(&amp;W)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbWord.Hint" Class="DKLANG_STRING">
             <Src>Whole words only</Src>
@@ -7255,27 +7423,33 @@
           </Vl>
           <Vl Name="TBXSubmenuItemEnc.Caption" Class="DKLANG_STRING">
             <Src>E&amp;ncoding</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-41-35" Translated="2013-03-16T23-41-35" State="Validated">
+              <cur>인코딩(&amp;N)</cur>
+            </Trg>
           </Vl>
-          <Vl Name="TBXSubmenuItem21.Caption" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuLineEnds.Caption" Class="DKLANG_STRING">
             <Src>Change &amp;line endings</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27" Changed="2013-03-16T23-42-17" Translated="2013-03-16T23-42-17" State="Validated">
+              <cur>줄 넘김 변경(&amp;L)</cur>
+            </Trg>
           </Vl>
-          <Vl Name="TBXItemEnc.Caption" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuEnc.Caption" Class="DKLANG_STRING">
             <Src>&amp;Change encoding</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27" Changed="2013-03-16T23-42-26" Translated="2013-03-16T23-42-26" State="Validated">
+              <cur>인코딩 변경(&amp;C)</cur>
+            </Trg>
           </Vl>
-          <Vl Name="TBXItemEnc.Hint" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuEnc.Hint" Class="DKLANG_STRING">
             <Src>Reload file in other encoding or change current encoding</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
-          <Vl Name="TBXItemEnc2.Caption" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuEnc2.Caption" Class="DKLANG_STRING">
             <Src>Con&amp;vert encoding to</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
-          <Vl Name="TBXItemEnc2.Hint" Class="DKLANG_STRING">
+          <Vl New="1" Name="TBXSubmenuEnc2.Hint" Class="DKLANG_STRING">
             <Src>Change current encoding w/o reloading the file</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl ReadOnly="1" Name="TBXItemTbClose.Caption" Class="DKLANG_STRING">
             <Src>-</Src>
@@ -8241,7 +8415,9 @@
           </Vl>
           <Vl Name="TBXSubmenuItem2.Caption" Class="DKLANG_STRING">
             <Src>Sess&amp;ions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl ReadOnly="1" Name="TBXItemSp50.Caption" Class="DKLANG_STRING">
             <Src>50/50</Src>
@@ -8427,9 +8603,9 @@
             <Src>Launch current file using Windows Explorer association</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="TBXItemSSelToken.Caption" Class="DKLANG_STRING">
-            <Src>Select current token</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="TBXItemSSelToken.Caption" Class="DKLANG_STRING">
+            <Src>Select token</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="TBXItemSSelToken.Hint" Class="DKLANG_STRING">
             <Src>Select entire token at current caret position</Src>
@@ -8547,7 +8723,9 @@
           </Vl>
           <Vl Name="TBXItemFavManage.Hint" Class="DKLANG_STRING">
             <Src>Manage favorites list</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-37" Translated="2013-03-17T10-43-37" State="Validated">
+              <cur>즐겨찾기 목록 관리</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXMnuRecentColors.Hint" Class="DKLANG_STRING">
             <Src>Recent colors menu</Src>
@@ -8743,7 +8921,9 @@
           </Vl>
           <Vl Name="ListTabs.Columns[1].Caption" Class="DKLANG_STRING">
             <Src>Path</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-43-22" Translated="2013-03-17T10-43-22" State="Validated">
+              <cur>경로</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemLeftTabs.Caption" Class="DKLANG_STRING">
             <Src>Tabs</Src>
@@ -8821,6 +9001,82 @@
             <Src>Select from current bracket to the matching one</Src>
             <Trg Created="2013-02-19T11-23-01"/>
           </Vl>
+          <Vl New="1" Name="TBXSubmenuFolding.Caption" Class="DKLANG_STRING">
+            <Src>Folding</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemUnfoldLine.Caption" Class="DKLANG_STRING">
+            <Src>Expand current block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemUnfoldAll.Caption" Class="DKLANG_STRING">
+            <Src>Expand all</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemFoldAll.Caption" Class="DKLANG_STRING">
+            <Src>Collapse all</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemFoldParent.Caption" Class="DKLANG_STRING">
+            <Src>Collapse parent block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemFoldWithNested.Caption" Class="DKLANG_STRING">
+            <Src>Collapse/expand current and nested blocks</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemFoldNearestBlock.Caption" Class="DKLANG_STRING">
+            <Src>Collapse/expand nearest block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="TBXItemFoldSelBlock.Caption" Class="DKLANG_STRING">
+            <Src>Collapse selection</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl Deleted="1" Name="SB2.Panels[10].Hint" Class="DKLANG_STRING">
+            <Src>Macro recording status (red signal means recording)</Src>
+            <Trg Created="2013-02-19T11-23-01"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXSubmenuItem23.Caption" Class="DKLANG_STRING">
+            <Src>&amp;Zoom</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemZIn.Hint" Class="DKLANG_STRING">
+            <Src>Zoom in</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemZOut.Hint" Class="DKLANG_STRING">
+            <Src>Zoom out</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemZ0.Hint" Class="DKLANG_STRING">
+            <Src>Zoom to original size</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXSubmenuItem24.Caption" Class="DKLANG_STRING">
+            <Src>Tool&amp;bars</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXSubmenuItem21.Caption" Class="DKLANG_STRING">
+            <Src>Change &amp;line endings</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemEnc.Caption" Class="DKLANG_STRING">
+            <Src>&amp;Change encoding</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemEnc.Hint" Class="DKLANG_STRING">
+            <Src>Reload file in other encoding or change current encoding</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemEnc2.Caption" Class="DKLANG_STRING">
+            <Src>Con&amp;vert encoding to</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="TBXItemEnc2.Hint" Class="DKLANG_STRING">
+            <Src>Change current encoding w/o reloading the file</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
           <Vl Deleted="1" Name="TBXSubmenuItem26.Caption" Class="DKLANG_STRING">
             <Src>more</Src>
             <Trg Created="2012-12-26T14-19-02"/>
@@ -8868,8 +9124,8 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="tabEd.Caption" Class="DKLANG_STRING">
@@ -9936,7 +10192,9 @@
           </Vl>
           <Vl Name="b6.Caption" Class="DKLANG_STRING">
             <Src>Output panel</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-37-35" Translated="2013-03-17T10-37-35" State="Validated">
+              <cur>출력 패널</cur>
+            </Trg>
           </Vl>
           <Vl Name="tabSyntTree.Caption" Class="DKLANG_STRING">
             <Src>Tree/Map</Src>
@@ -9985,35 +10243,51 @@
           </Vl>
           <Vl Name="tabSess.Caption" Class="DKLANG_STRING">
             <Src>Sessions/Projects</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-37-27" Translated="2013-03-17T10-37-27" State="Validated">
+              <cur>세션/프로젝트</cur>
+            </Trg>
           </Vl>
           <Vl Name="boxSess.Caption" Class="DKLANG_STRING">
             <Src>Sessions</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-48" Translated="2013-03-17T00-51-48" State="Validated">
+              <cur>세션</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSessDef.Caption" Class="DKLANG_STRING">
             <Src>Save "default" session on exit, not current one</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-37-22" Translated="2013-03-17T10-37-22" State="Validated">
+              <cur>종료할 때 현재 세션이 아닌 "default" 세션에 저장</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSessLoad.Caption" Class="DKLANG_STRING">
             <Src>Restore last session on startup</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-35-43" Translated="2013-03-17T10-35-43" State="Validated">
+              <cur>시작할 때 마지막 세션 복구</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSessSave.Caption" Class="DKLANG_STRING">
             <Src>Save last session on exit</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-33-34" Translated="2013-03-17T10-33-34" State="Validated">
+              <cur>종료할 때 마시작 세션 저장</cur>
+            </Trg>
           </Vl>
           <Vl Name="boxProj.Caption" Class="DKLANG_STRING">
             <Src>Projects</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-52-34" Translated="2013-03-17T00-52-34" State="Validated">
+              <cur>프로젝트</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbProjLoad.Caption" Class="DKLANG_STRING">
             <Src>Restore last project on startup</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-35-26" Translated="2013-03-17T10-35-26" State="Validated">
+              <cur>시작할 때 마지막 프로젝트 복구</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbProjSave.Caption" Class="DKLANG_STRING">
             <Src>Save current project on exit</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-35-33" Translated="2013-03-17T10-35-33" State="Validated">
+              <cur>종료할 때 현재 프로젝트 저장</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntGroupBox1.Caption" Class="DKLANG_STRING">
             <Src>Mini-map</Src>
@@ -10025,15 +10299,21 @@
           </Vl>
           <Vl Name="cbMapHScroll.Caption" Class="DKLANG_STRING">
             <Src>Horz. scrollbar</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-27" Translated="2013-03-17T00-51-27" State="Validated">
+              <cur>가로 스크롤바</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbMapVScroll.Caption" Class="DKLANG_STRING">
             <Src>Vert. scrollbar</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-36" Translated="2013-03-17T00-51-36" State="Validated">
+              <cur>세로 스크롤바</cur>
+            </Trg>
           </Vl>
           <Vl Name="boxFGroup.Caption" Class="DKLANG_STRING">
             <Src>File groups</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-40" Translated="2013-03-17T00-51-40" State="Validated">
+              <cur>파일 그룹</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel1.Caption" Class="DKLANG_STRING">
             <Src>Non-text files:</Src>
@@ -10213,14 +10493,6 @@
             <Src>Save last window position</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="cbMicroMap.Caption" Class="DKLANG_STRING">
-            <Src>Show micro-map bar</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
-          <Vl Name="cbMicroMap.Hint" Class="DKLANG_STRING">
-            <Src>Show vertical "micro-map" bar near editor scrollbar</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
           <Vl Name="tabOvr.Caption" Class="DKLANG_STRING">
             <Src>Editor overrides</Src>
             <Trg Created="2012-12-26T14-19-02"/>
@@ -10237,9 +10509,9 @@
             <Src>Date/time format for plugins log</Src>
             <Trg Created="2013-01-14T18-22-48"/>
           </Vl>
-          <Vl Name="cbColorOnEmpty.Caption" Class="DKLANG_STRING">
-            <Src>Colorize selection BG with white space</Src>
-            <Trg Created="2013-01-14T18-22-48"/>
+          <Vl New="1" Name="cbColorOnEmpty.Caption" Class="DKLANG_STRING">
+            <Src>Colorize selection BG including white space</Src>
+            <Trg Created="2013-01-14T18-22-48" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="cbColorOnEmpty.Hint" Class="DKLANG_STRING">
             <Src>Colorize selected lines background with white space after line ends</Src>
@@ -10271,17 +10543,21 @@
           </Vl>
           <Vl Name="cbKeepPaste.Caption" Class="DKLANG_STRING">
             <Src>Keep caret on paste</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T10-55-09" Translated="2013-03-17T10-55-09" State="Validated">
+              <cur>붙여넣기 할 때 캐럿 유지</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbKeepPaste.Hint" Class="DKLANG_STRING">
             <Src>Don't change caret position when performing Paste action.</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T10-55-23" Translated="2013-03-17T10-55-23" State="Validated">
+              <cur>붙여넣기 동작을 수행할 때 캐럿위치 변경안함</cur>
+            </Trg>
           </Vl>
-          <Vl New="1" Name="TntLabel36.Caption" Class="DKLANG_STRING">
+          <Vl Name="TntLabel36.Caption" Class="DKLANG_STRING">
             <Src>Suggest to save Unicode content in Unicode encoding:</Src>
             <Trg Created="2013-02-27T22-56-09"/>
           </Vl>
-          <Vl New="1" Name="cbUniNeed.Items" Class="DKLANG_STRING">
+          <Vl Name="cbUniNeed.Items" Class="DKLANG_STRING">
             <Src>
               <Data>Don't suggest\r\n</Data>
               <Data>Prompt to save as UTF-8\r\n</Data>
@@ -10295,17 +10571,39 @@
             </Src>
             <Trg Created="2013-02-27T22-56-09"/>
           </Vl>
-          <Vl New="1" Name="cbRecColors.Items" Class="DKLANG_STRING">
+          <Vl Name="cbRecColors.Items" Class="DKLANG_STRING">
             <Src>
               <Data>Auto-hide\r\n</Data>
               <Data>Always show\r\n</Data>
               <Data>Always hide\r\n</Data>
             </Src>
-            <Trg Created="2013-02-27T22-56-09"/>
+            <Trg Created="2013-02-27T22-56-09" Changed="2013-03-17T10-54-56" Translated="2013-03-17T10-54-56" State="Validated">
+              <cur>
+                <Data>자동 숨김\r\n</Data>
+                <Data>항상 표시\r\n</Data>
+                <Data>항상 숨김\r\n</Data>
+              </cur>
+            </Trg>
           </Vl>
-          <Vl New="1" Name="TntLabel37.Caption" Class="DKLANG_STRING">
+          <Vl Name="TntLabel37.Caption" Class="DKLANG_STRING">
             <Src>Show recent colors menu</Src>
             <Trg Created="2013-02-27T22-56-09"/>
+          </Vl>
+          <Vl New="1" Name="cbCopyLineNSel.Caption" Class="DKLANG_STRING">
+            <Src>Copy/Cut current line if no selection made</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="cbCopyLineNSel.Hint" Class="DKLANG_STRING">
+            <Src>Copy/Cut operations will take current line, if no selection is made in editor.</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl Name="cbMicroMap.Caption" Class="DKLANG_STRING">
+            <Src>Show micro-map bar</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="cbMicroMap.Hint" Class="DKLANG_STRING">
+            <Src>Show vertical "micro-map" bar near editor scrollbar</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
           <Vl Deleted="1" Name="cbKeepSel.Caption" Class="DKLANG_STRING">
             <Src>Keep selection mode</Src>
@@ -10344,7 +10642,9 @@
           </Vl>
           <Vl Name="AllL" Class="DKLANG_STRING">
             <Src>(For all lexers)</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-51-01" Translated="2013-03-17T00-51-01" State="Validated">
+              <cur>(모든 분석기)</cur>
+            </Trg>
           </Vl>
           <Vl Name="Appn" Class="DKLANG_STRING">
             <Src>Cannot write ini file(s)</Src>
@@ -10397,7 +10697,9 @@
           </Vl>
           <Vl Name="capTree" Class="DKLANG_STRING">
             <Src>Tree Structure</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-54-08" Translated="2013-03-17T10-54-08" State="Validated">
+              <cur>트리 구조</cur>
+            </Trg>
           </Vl>
           <Vl Name="cmdIDir" Class="DKLANG_STRING">
             <Src>Choose folder for external tool</Src>
@@ -10431,7 +10733,9 @@
           </Vl>
           <Vl Name="cpN" Class="DKLANG_STRING">
             <Src>Codepage: %d</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-18-06" Translated="2013-03-17T00-18-06" State="Validated">
+              <cur>코드페이지: %d</cur>
+            </Trg>
           </Vl>
           <Vl Name="cpUnicode" Class="DKLANG_STRING">
             <Src>Unicode</Src>
@@ -10441,8 +10745,8 @@
           </Vl>
           <Vl Name="cpUTF8no" Class="DKLANG_STRING">
             <Src>\0x20no BOM</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-27T22-56-42" Translated="2013-02-27T22-56-42" State="Validated">
-              <cur>BOM 없음</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-52-46" Translated="2013-03-17T10-52-46" State="Validated">
+              <cur>\0x20BOM 없음</cur>
             </Trg>
           </Vl>
           <Vl Name="FF0" Class="DKLANG_STRING">
@@ -10506,7 +10810,9 @@
           </Vl>
           <Vl Name="fnR" Class="DKLANG_STRING">
             <Src>Replace</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-21" Translated="2013-03-17T11-31-21" State="Validated">
+              <cur>바꾸기</cur>
+            </Trg>
           </Vl>
           <Vl Name="fn_f" Class="DKLANG_STRING">
             <Src>(in %d files)</Src>
@@ -10518,11 +10824,11 @@
           </Vl>
           <Vl Name="Key1" Class="DKLANG_STRING">
             <Src>Key 1</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2013-03-17T11-39-40" State="Validated"/>
           </Vl>
           <Vl Name="Key2" Class="DKLANG_STRING">
             <Src>Key 2</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2013-03-17T11-39-41" State="Validated"/>
           </Vl>
           <Vl Name="KeyNUsed" Class="DKLANG_STRING">
             <Src>Key is not used</Src>
@@ -10538,15 +10844,21 @@
           </Vl>
           <Vl Name="macItem" Class="DKLANG_STRING">
             <Src>Run macro %s</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-39-57" Translated="2013-03-17T11-39-57" State="Validated">
+              <cur>매크로 %s 실행</cur>
+            </Trg>
           </Vl>
           <Vl Name="macName" Class="DKLANG_STRING">
             <Src>Macro name</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-39-48" Translated="2013-03-17T11-39-48" State="Validated">
+              <cur>매크로 이름</cur>
+            </Trg>
           </Vl>
           <Vl Name="macName2" Class="DKLANG_STRING">
             <Src>Enter macro name:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-40-00" Translated="2013-03-17T11-40-00" State="Validated">
+              <cur>매크로 이름 입력:</cur>
+            </Trg>
           </Vl>
           <Vl Name="macRep" Class="DKLANG_STRING">
             <Src>Play &amp;last played macro</Src>
@@ -10581,6 +10893,14 @@
           <Vl Name="MBk" Class="DKLANG_STRING">
             <Src>Clear all bookmarks?</Src>
             <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl New="1" Name="MBusyIco" Class="DKLANG_STRING">
+            <Src>
+              <Data>Program busy status\r\n</Data>
+              <Data>Red signal - macro is recording\r\n</Data>
+              <Data>Blue signal - spell checking is active</Data>
+            </Src>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="MCfmTb" Class="DKLANG_STRING">
             <Src>Are you sure you want to perform replace in all tabs?</Src>
@@ -10647,12 +10967,12 @@
             <Src>You should also specify name for tool "%s"</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="MNCmt" Class="DKLANG_STRING">
+          <Vl New="1" Name="MNCmt" Class="DKLANG_STRING">
             <Src>
               <Data>There're no stream comment chars defined for lexer "%s".\r\n</Data>
-              <Data>See file "Comment.cfg" in SynWrite folder.</Data>
+              <Data>See file "Lexers.cfg" in SynWrite folder.</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="MNCreate" Class="DKLANG_STRING">
             <Src>Cannot create file:</Src>
@@ -10756,19 +11076,6 @@
             <Src>Save current session "%s"?</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="MSr" Class="DKLANG_STRING">
-            <Src>
-              <Data>You can use special characters:\r\n</Data>
-              <Data>\\r - CR (#13)\r\n</Data>
-              <Data>\\n - LF (#10)\r\n</Data>
-              <Data>\\t - Tab (#9)\r\n</Data>
-              <Data>\\0 - zero (#0)\r\n</Data>
-              <Data>\\\\ - backslash\r\n</Data>
-              <Data>\r\n</Data>
-              <Data>Show help on regular expressions?</Data>
-            </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
-          </Vl>
           <Vl Name="MZen" Class="DKLANG_STRING">
             <Src>
               <Data>Could not expand abbreviation:\r\n</Data>
@@ -10782,11 +11089,15 @@
           </Vl>
           <Vl Name="nlex" Class="DKLANG_STRING">
             <Src>(No lexers)</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-18-30" Translated="2013-03-17T00-18-30" State="Validated">
+              <cur>(분석기 없음)</cur>
+            </Trg>
           </Vl>
           <Vl Name="None" Class="DKLANG_STRING">
             <Src>(None)</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-18-23" Translated="2013-03-17T00-18-23" State="Validated">
+              <cur>(없음)</cur>
+            </Trg>
           </Vl>
           <Vl Name="None2" Class="DKLANG_STRING">
             <Src>(no command)</Src>
@@ -10867,29 +11178,69 @@
             <Src>Replace this occurence?</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
+          <Vl New="1" Name="re_0or" Class="DKLANG_STRING">
+            <Src>zero or more of the preceding block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_0or1" Class="DKLANG_STRING">
+            <Src>zero or one of the preceding block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_1or" Class="DKLANG_STRING">
+            <Src>one or more of the preceding block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_as_neg_a" Class="DKLANG_STRING">
+            <Src>negative lookahead assertion</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_as_neg_b" Class="DKLANG_STRING">
+            <Src>negative lookbehind assertion</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_as_pos_a" Class="DKLANG_STRING">
+            <Src>positive lookahead assertion</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_as_pos_b" Class="DKLANG_STRING">
+            <Src>positive lookbehind assertion</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
           <Vl Name="re_b" Class="DKLANG_STRING">
             <Src>word boundary</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
           <Vl Name="re_D" Class="DKLANG_STRING">
             <Src>digit 0..9</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-18-44" Translated="2013-03-17T00-18-44" State="Validated">
+              <cur>숫자 0..9</cur>
+            </Trg>
           </Vl>
           <Vl Name="re_Diap" Class="DKLANG_STRING">
             <Src>b and 0..9</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
+          <Vl New="1" Name="re_dot" Class="DKLANG_STRING">
+            <Src>any character except a newline</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
           <Vl Name="re_end" Class="DKLANG_STRING">
             <Src>end of line</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="re_hex" Class="DKLANG_STRING">
-            <Src>hexadecimal char</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="re_group" Class="DKLANG_STRING">
+            <Src>the contents of the group of the given number</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
-          <Vl Name="re_n" Class="DKLANG_STRING">
-            <Src>new line</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="re_hex" Class="DKLANG_STRING">
+            <Src>char with specified hex code</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_n" Class="DKLANG_STRING">
+            <Src>
+              <Data>newline (\\x0A)</Data>
+            </Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="re_nb" Class="DKLANG_STRING">
             <Src>non-(word boundary)</Src>
@@ -10907,13 +11258,23 @@
             <Src>non-whitespace</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="re_ntim" Class="DKLANG_STRING">
-            <Src>string repeated n times</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="re_ntim" Class="DKLANG_STRING">
+            <Src>'n' copies of the preceding block</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_ntim2" Class="DKLANG_STRING">
+            <Src>'n' to 'm' copies of the preceding block</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="re_NW" Class="DKLANG_STRING">
             <Src>non-alphanumeric char</Src>
             <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl New="1" Name="re_r" Class="DKLANG_STRING">
+            <Src>
+              <Data>car. return (\\x0D)</Data>
+            </Src>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="re_S" Class="DKLANG_STRING">
             <Src>whitespace</Src>
@@ -10931,17 +11292,29 @@
             <Src>subexpression</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="re_t" Class="DKLANG_STRING">
-            <Src>tab</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="re_t" Class="DKLANG_STRING">
+            <Src>
+              <Data>tab char (\\x09)</Data>
+            </Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_text_a" Class="DKLANG_STRING">
+            <Src>start of text</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="re_text_z" Class="DKLANG_STRING">
+            <Src>end of text</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="re_W" Class="DKLANG_STRING">
             <Src>any alphanumeric char</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="re_z" Class="DKLANG_STRING">
-            <Src>\0x20any format</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+          <Vl New="1" Name="re_z" Class="DKLANG_STRING">
+            <Src>
+              <Data>\0x20any format (\\x0D, \\x0A, \\x0D\\x0A)</Data>
+            </Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="RO" Class="DKLANG_STRING">
             <Src>[READ ONLY]</Src>
@@ -10976,11 +11349,15 @@
           </Vl>
           <Vl Name="sn" Class="DKLANG_STRING">
             <Src>&amp;No</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-13" Translated="2013-03-17T00-19-13" State="Validated">
+              <cur>아니오(&amp;N)</cur>
+            </Trg>
           </Vl>
           <Vl Name="sNAll" Class="DKLANG_STRING">
             <Src>N&amp;o to All</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-18-58" Translated="2013-03-17T00-18-58" State="Validated">
+              <cur>모두 아니오(&amp;O)</cur>
+            </Trg>
           </Vl>
           <Vl Name="sOk" Class="DKLANG_STRING">
             <Src>OK</Src>
@@ -11042,11 +11419,15 @@
           </Vl>
           <Vl Name="sy" Class="DKLANG_STRING">
             <Src>&amp;Yes</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-07" Translated="2013-03-17T00-19-07" State="Validated">
+              <cur>예(&amp;Y)</cur>
+            </Trg>
           </Vl>
           <Vl Name="sYAll" Class="DKLANG_STRING">
             <Src>Yes to &amp;All</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-20" Translated="2013-03-17T00-19-20" State="Validated">
+              <cur>모두 예(&amp;A)</cur>
+            </Trg>
           </Vl>
           <Vl Name="Sync" Class="DKLANG_STRING">
             <Src>Create sync range</Src>
@@ -11058,7 +11439,9 @@
           </Vl>
           <Vl Name="Tab" Class="DKLANG_STRING">
             <Src>Tab</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-19-35" Translated="2013-03-17T00-19-35" State="Validated">
+              <cur>탭</cur>
+            </Trg>
           </Vl>
           <Vl Name="typed" Class="DKLANG_STRING">
             <Src>typed word</Src>
@@ -11180,7 +11563,15 @@
             </Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl New="1" Name="zMUniNeed" Class="DKLANG_STRING">
+          <Vl New="1" Name="zMSpell" Class="DKLANG_STRING">
+            <Src>--- Spell checker ---</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl New="1" Name="zMSpellDone" Class="DKLANG_STRING">
+            <Src>The spelling check is complete</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl Name="zMUniNeed" Class="DKLANG_STRING">
             <Src>
               <Data>Text contains Unicode characters.\r\n</Data>
               <Data>Would you like to save text in "%s" format?</Data>
@@ -11435,7 +11826,9 @@
           </Vl>
           <Vl Name="zzsort_date" Class="DKLANG_STRING">
             <Src>By date</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-44-16" Translated="2013-03-17T11-44-16" State="Validated">
+              <cur>날짜순으로</cur>
+            </Trg>
           </Vl>
           <Vl Name="zzsort_date2" Class="DKLANG_STRING">
             <Src>\0x20desc.</Src>
@@ -11471,6 +11864,19 @@
           </Vl>
           <Vl Name="zztyp_toPanel" Class="DKLANG_STRING">
             <Src>Send to Output panel</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl Deleted="1" Name="MSr" Class="DKLANG_STRING">
+            <Src>
+              <Data>You can use special characters:\r\n</Data>
+              <Data>\\r - CR (#13)\r\n</Data>
+              <Data>\\n - LF (#10)\r\n</Data>
+              <Data>\\t - Tab (#9)\r\n</Data>
+              <Data>\\0 - zero (#0)\r\n</Data>
+              <Data>\\\\ - backslash\r\n</Data>
+              <Data>\r\n</Data>
+              <Data>Show help on regular expressions?</Data>
+            </Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
           <Vl Deleted="1" Name="EClosing" Class="DKLANG_STRING">
@@ -11569,32 +11975,42 @@
           </Vl>
           <Vl Name="Button2.Caption" Class="DKLANG_STRING">
             <Src>Change encoding for the modified file</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-48-43" Translated="2013-03-17T10-48-43" State="Validated">
+              <cur>변경된 파일의 인코딩 변경</cur>
+            </Trg>
           </Vl>
           <Vl Name="StaticText1.Caption" Class="DKLANG_STRING">
             <Src>The encoding is changed, and file is currently modified.   What would you like to do?</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
         </Resource>
-        <Resource Name="fmSR" Class="DKLangResource" Type="DKLangResource">
+        <Resource Name="fmSR" New="1" Class="DKLangResource" Type="DKLangResource">
           <SourceLanguages>
             <LangID>9</LangID>
           </SourceLanguages>
           <Vl Name="labEd1.Caption" Class="DKLANG_STRING">
             <Src>&amp;Search for:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-56-47" Translated="2013-03-17T10-56-47" State="Validated">
+              <cur>찾을 문자열(&amp;S):</cur>
+            </Trg>
           </Vl>
           <Vl Name="labEd2.Caption" Class="DKLANG_STRING">
             <Src>&amp;Replace with:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-56-53" Translated="2013-03-17T10-56-53" State="Validated">
+              <cur>바꿀 문자열(&amp;R):</cur>
+            </Trg>
           </Vl>
           <Vl Name="bFindNext.Caption" Class="DKLANG_STRING">
             <Src>&amp;Find next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-45" Translated="2013-03-17T00-50-45" State="Validated">
+              <cur>다음 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bRepNext.Caption" Class="DKLANG_STRING">
             <Src>R&amp;eplace</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-21" Translated="2013-03-17T11-31-21" State="Validated">
+              <cur>바꾸기(&amp;E)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bRepAll.Caption" Class="DKLANG_STRING">
             <Src>Repl&amp;ace all</Src>
@@ -11610,7 +12026,7 @@
           </Vl>
           <Vl Name="gOp.Caption" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-35-25" Translated="2013-03-17T11-35-25" State="Validated">
               <cur>옵션</cur>
             </Trg>
           </Vl>
@@ -11628,13 +12044,19 @@
           </Vl>
           <Vl Name="cbWords.Caption" Class="DKLANG_STRING">
             <Src>&amp;Whole words</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-02" Translated="2013-03-17T10-58-02" State="Validated">
+              <cur>전체 단어(&amp;W)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSpec.Caption" Class="DKLANG_STRING">
             <Src>
               <Data>S&amp;pecial chars (\\n \\r \\t...)</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-04-15" Translated="2013-03-17T11-04-15" State="Validated">
+              <cur>
+                <Data>특수 문자(&amp;P) (\\n \\r \\t...)</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="bFindAll.Caption" Class="DKLANG_STRING">
             <Src>Find all / &amp;mark</Src>
@@ -11642,19 +12064,27 @@
           </Vl>
           <Vl Name="gScop.Caption" Class="DKLANG_STRING">
             <Src>Scope</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-28" Translated="2013-03-17T11-31-28" State="Validated">
+              <cur>범위</cur>
+            </Trg>
           </Vl>
           <Vl Name="gDir.Caption" Class="DKLANG_STRING">
             <Src>Direction</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-30" Translated="2013-03-17T11-31-30" State="Validated">
+              <cur>방향</cur>
+            </Trg>
           </Vl>
           <Vl Name="bFor.Caption" Class="DKLANG_STRING">
             <Src>Forwar&amp;d</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-33" Translated="2013-03-17T11-31-33" State="Validated">
+              <cur>앞으로(&amp;D)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bBack.Caption" Class="DKLANG_STRING">
             <Src>&amp;Backward</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-34" Translated="2013-03-17T11-31-34" State="Validated">
+              <cur>뒤로(&amp;B)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bHelp.Caption" Class="DKLANG_STRING">
             <Src>Help</Src>
@@ -11664,7 +12094,9 @@
           </Vl>
           <Vl Name="cbCfm.Caption" Class="DKLANG_STRING">
             <Src>Pro&amp;mpt on replace</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-40" Translated="2013-03-17T11-31-40" State="Validated">
+              <cur>바꿀 때 묻기(&amp;G)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bCount.Caption" Class="DKLANG_STRING">
             <Src>Cou&amp;nt all</Src>
@@ -11672,15 +12104,19 @@
           </Vl>
           <Vl Name="bRepInTabs.Caption" Class="DKLANG_STRING">
             <Src>Rep&amp;lace all in all tabs</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-34-49" Translated="2013-03-17T11-34-49" State="Validated">
+              <cur>모든 탭에서 바꾸기(&amp;L)</cur>
+            </Trg>
           </Vl>
-          <Vl Name="LabelRes.Caption" Class="DKLANG_STRING">
+          <Vl New="1" Name="labRes.Caption" Class="DKLANG_STRING">
             <Src>String was not found...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2013-03-16T23-05-27"/>
           </Vl>
           <Vl Name="bSkip.Caption" Class="DKLANG_STRING">
             <Src>&amp;Find next</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-45" Translated="2013-03-17T00-50-45" State="Validated">
+              <cur>다음 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="labTr.Caption" Class="DKLANG_STRING">
             <Src>Transparenc&amp;y:</Src>
@@ -11692,7 +12128,9 @@
           </Vl>
           <Vl Name="cbBk.Caption" Class="DKLANG_STRING">
             <Src>Boo&amp;kmark results</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-37-16" Translated="2013-03-17T11-37-16" State="Validated">
+              <cur>결과 책갈피로 설정(&amp;K)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSel.Caption" Class="DKLANG_STRING">
             <Src>Search in selec&amp;tion</Src>
@@ -11700,7 +12138,9 @@
           </Vl>
           <Vl Name="cbFromCur.Caption" Class="DKLANG_STRING">
             <Src>Search from c&amp;ursor</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-41-17" Translated="2013-03-17T11-41-17" State="Validated">
+              <cur>커서에서부터 찾기(&amp;U)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbWrap.Caption" Class="DKLANG_STRING">
             <Src>Wrap searc&amp;h</Src>
@@ -11708,17 +12148,21 @@
           </Vl>
           <Vl Name="cbExtSel.Caption" Class="DKLANG_STRING">
             <Src>Extend selecti&amp;on</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-19T15-26-08" Translated="2013-02-19T15-26-08" State="Validated">
-              <cur>확장 선택(&amp;X)</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-35-09" Translated="2013-03-17T11-35-09" State="Validated">
+              <cur>확장 선택(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="bFindInTabs.Caption" Class="DKLANG_STRING">
             <Src>Find in all tabs</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-35-01" Translated="2013-03-17T11-35-01" State="Validated">
+              <cur>모든 탭에서 찾기</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSkipCol.Caption" Class="DKLANG_STRING">
             <Src>Skip collapsed</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T11-36-22" Translated="2013-03-17T11-36-22" State="Validated">
+              <cur>접은 곳 무시</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbTokens.Items" Class="DKLANG_STRING">
             <Src>
@@ -11728,7 +12172,23 @@
               <Data>Comments and strings\r\n</Data>
               <Data>Except comments/strings\r\n</Data>
             </Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T11-36-59" Translated="2013-03-17T11-36-59" State="Validated">
+              <cur>
+                <Data>전체 텍스트\r\n</Data>
+                <Data>주석\r\n</Data>
+                <Data>문자열\r\n</Data>
+                <Data>주석과 문자열\r\n</Data>
+                <Data>주석/문자열 제외\r\n</Data>
+              </cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="labMultiline.Caption" Class="DKLANG_STRING">
+            <Src>»Multiline</Src>
+            <Trg Created="2013-03-16T23-05-27"/>
+          </Vl>
+          <Vl Deleted="1" Name="LabelRes.Caption" Class="DKLANG_STRING">
+            <Src>String was not found...</Src>
+            <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
         </Resource>
         <Resource Name="fmTools" Class="DKLangResource" Type="DKLangResource">
@@ -11737,23 +12197,33 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>External tools</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-04-47" Translated="2013-03-16T23-04-47" State="Validated">
+              <cur>외부 도구</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntGroupBox1.Caption" Class="DKLANG_STRING">
             <Src>Tool properties</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-04-43" Translated="2013-03-16T23-04-43" State="Validated">
+              <cur>도구 등록정보</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel1.Caption" Class="DKLANG_STRING">
             <Src>&amp;File name:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-04-36" Translated="2013-03-16T23-04-36" State="Validated">
+              <cur>파일이름(&amp;F):</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel2.Caption" Class="DKLANG_STRING">
             <Src>&amp;Parameters:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-04-30" Translated="2013-03-16T23-04-30" State="Validated">
+              <cur>매개변수(&amp;P):</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel3.Caption" Class="DKLANG_STRING">
             <Src>&amp;Initial folder:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-00" Translated="2013-03-16T23-05-00" State="Validated">
+              <cur>시작 폴더(&amp;I):</cur>
+            </Trg>
           </Vl>
           <Vl Name="bBr.Caption" Class="DKLANG_STRING">
             <Src>&amp;Browse...</Src>
@@ -11775,7 +12245,9 @@
           </Vl>
           <Vl Name="TntGroupBox2.Caption" Class="DKLANG_STRING">
             <Src>Tools</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-05-01" Translated="2013-03-16T23-05-01" State="Validated">
+              <cur>도구</cur>
+            </Trg>
           </Vl>
           <Vl Name="List.Columns[0].Caption" Class="DKLANG_STRING">
             <Src>Name</Src>
@@ -11811,7 +12283,9 @@
           </Vl>
           <Vl Name="TntLabel4.Caption" Class="DKLANG_STRING">
             <Src>&amp;Name:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-41-07" Translated="2013-03-16T23-41-07" State="Validated">
+              <cur>이름(&amp;N):</cur>
+            </Trg>
           </Vl>
           <Vl Name="bClr.Caption" Class="DKLANG_STRING">
             <Src>Cl&amp;ear</Src>
@@ -12276,7 +12750,9 @@
           </Vl>
           <Vl Name="Label7.Caption" Class="DKLANG_STRING">
             <Src>C&amp;olors:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-53-03" Translated="2013-03-17T10-53-03" State="Validated">
+              <cur>색상(&amp;O):</cur>
+            </Trg>
           </Vl>
           <Vl Name="CBUnits.Items" Class="DKLANG_STRING">
             <Src>
@@ -12285,12 +12761,12 @@
               <Data>Inch\r\n</Data>
               <Data>0.001 Inch\r\n</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2013-03-17T10-52-55" State="Validated"/>
           </Vl>
           <Vl Name="GroupBox1.Caption" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="ComboBox1.Items" Class="DKLANG_STRING">
@@ -12298,7 +12774,12 @@
               <Data>Portrait\r\n</Data>
               <Data>Landscape\r\n</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-53-16" Translated="2013-03-17T10-53-16" State="Validated">
+              <cur>
+                <Data>세로\r\n</Data>
+                <Data>사로\r\n</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="Button1.Caption" Class="DKLANG_STRING">
             <Src>&amp;OK</Src>
@@ -12318,7 +12799,13 @@
               <Data>Gray Scale\r\n</Data>
               <Data>Black-and-white\r\n</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-53-34" Translated="2013-03-17T10-53-34" State="Validated">
+              <cur>
+                <Data>RGB\r\n</Data>
+                <Data>회색계조\r\n</Data>
+                <Data>흑백\r\n</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="GroupBox2.Caption" Class="DKLANG_STRING">
             <Src>Header</Src>
@@ -12393,7 +12880,9 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Syntax Lexer</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-50-32" Translated="2013-03-17T00-50-32" State="Validated">
+              <cur>구문 분석기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TabSheet5.Caption" Class="DKLANG_STRING">
             <Src>Common</Src>
@@ -13353,7 +13842,9 @@
           </Vl>
           <Vl Name="SyntCodeTemplFrame1.LV.Columns[1].Caption" Class="DKLANG_STRING">
             <Src>Description</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-45-16" Translated="2013-03-17T10-45-16" State="Validated">
+              <cur>설명</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntCodeTemplFrame1.Button4.Caption" Class="DKLANG_STRING">
             <Src>&amp;Add</Src>
@@ -13739,23 +14230,33 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Find/Replace in files</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-56-11" Translated="2013-03-17T10-56-11" State="Validated">
+              <cur>파일에서 찾기/바꾸기</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label2.Caption" Class="DKLANG_STRING">
             <Src>&amp;Search for:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-56-47" Translated="2013-03-17T10-56-47" State="Validated">
+              <cur>찾을 문자열(&amp;S):</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label4.Caption" Class="DKLANG_STRING">
             <Src>&amp;Replace with:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-56-53" Translated="2013-03-17T10-56-53" State="Validated">
+              <cur>바꿀 문자열(&amp;R):</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel1.Caption" Class="DKLANG_STRING">
             <Src>Search in f&amp;older:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-57-35" Translated="2013-03-17T10-57-35" State="Validated">
+              <cur>찾을 폴더(&amp;O):</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel2.Caption" Class="DKLANG_STRING">
             <Src>File mas&amp;k(s), space separated:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-02-53" Translated="2013-03-17T11-02-53" State="Validated">
+              <cur>파일 마스크, 공백 구분 (&amp;K):</cur>
+            </Trg>
           </Vl>
           <Vl Name="bHelp.Caption" Class="DKLANG_STRING">
             <Src>Help</Src>
@@ -13771,7 +14272,9 @@
           </Vl>
           <Vl Name="gOp.Caption" Class="DKLANG_STRING">
             <Src>Options for text search</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-57-48" Translated="2013-03-17T10-57-48" State="Validated">
+              <cur>문자열 검색 옵션</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbRE.Caption" Class="DKLANG_STRING">
             <Src>Regular e&amp;xpressions</Src>
@@ -13787,67 +14290,97 @@
           </Vl>
           <Vl Name="cbWords.Caption" Class="DKLANG_STRING">
             <Src>&amp;Whole words</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-02" Translated="2013-03-17T10-58-02" State="Validated">
+              <cur>전체 단어(&amp;W)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbSpec.Caption" Class="DKLANG_STRING">
             <Src>
               <Data>S&amp;pecial chars (\\n \\r \\t...)</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-04-15" Translated="2013-03-17T11-04-15" State="Validated">
+              <cur>
+                <Data>특수 문자(&amp;P) (\\n \\r \\t...)</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="bRAll.Caption" Class="DKLANG_STRING">
             <Src>Replace all</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-02-19T11-23-20" Translated="2013-02-19T11-23-20" State="Validated">
-              <cur>모두 바꾸기(&amp;A)</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-20" Translated="2013-03-17T10-58-20" State="Validated">
+              <cur>모두 바꾸기</cur>
             </Trg>
           </Vl>
           <Vl Name="cbSubDir.Caption" Class="DKLANG_STRING">
             <Src>With all s&amp;ubfolders</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-52" Translated="2013-03-17T10-58-52" State="Validated">
+              <cur>모든 하위폴더 포함(&amp;U)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bBrowseDir.Caption" Class="DKLANG_STRING">
             <Src>&amp;Browse for folder...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-32" Translated="2013-03-17T10-58-32" State="Validated">
+              <cur>폴더 찾아보기(&amp;B)...</cur>
+            </Trg>
           </Vl>
           <Vl Name="bFAll.Caption" Class="DKLANG_STRING">
             <Src>&amp;Find all</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-37" Translated="2013-03-17T10-58-37" State="Validated">
+              <cur>모두 찾기(&amp;F)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bCurrDir.Caption" Class="DKLANG_STRING">
             <Src>Curre&amp;nt folder</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-41" Translated="2013-03-17T10-58-41" State="Validated">
+              <cur>현재 폴더(&amp;N)</cur>
+            </Trg>
           </Vl>
           <Vl Name="gFile.Caption" Class="DKLANG_STRING">
             <Src>Options for files search</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-59-13" Translated="2013-03-17T10-59-13" State="Validated">
+              <cur>파일 검색 옵션</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbNoBin.Caption" Class="DKLANG_STRING">
             <Src>Skip b&amp;inary files</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-00-10" Translated="2013-03-17T11-00-10" State="Validated">
+              <cur>이진 파일 생략(&amp;L)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbNoRO.Caption" Class="DKLANG_STRING">
             <Src>Skip r&amp;ead-only files</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-04-28" Translated="2013-03-17T11-04-28" State="Validated">
+              <cur>읽기 전용 파일 생략(&amp;E)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbNoHid.Caption" Class="DKLANG_STRING">
             <Src>Skip &amp;hidden files</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-00-24" Translated="2013-03-17T11-00-24" State="Validated">
+              <cur>숨김 파일 생략(&amp;H)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbNoHid2.Caption" Class="DKLANG_STRING">
             <Src>Skip hi&amp;dden folders</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-00-28" Translated="2013-03-17T11-00-28" State="Validated">
+              <cur>숨김 폴더 생략(&amp;D)</cur>
+            </Trg>
           </Vl>
           <Vl Name="gRes.Caption" Class="DKLANG_STRING">
             <Src>Result list</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-00-32" Translated="2013-03-17T11-00-32" State="Validated">
+              <cur>결과 목록</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbFnOnly.Caption" Class="DKLANG_STRING">
             <Src>Show filenames onl&amp;y</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-03-50" Translated="2013-03-17T11-03-50" State="Validated">
+              <cur>파일 이름만 표시(&amp;Y)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbOutTab.Caption" Class="DKLANG_STRING">
             <Src>Show results in edi&amp;tor tab</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-00-53" Translated="2013-03-17T11-00-53" State="Validated">
+              <cur>편집 탭에 결과 표시(&amp;T)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bCurFile.Caption" Class="DKLANG_STRING">
             <Src>Current file</Src>
@@ -13857,27 +14390,39 @@
           </Vl>
           <Vl Name="cbInOEM.Caption" Class="DKLANG_STRING">
             <Src>Search also in OE&amp;M</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-01-14" Translated="2013-03-17T11-01-14" State="Validated">
+              <cur>OEM 으로도 검색(&amp;M)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbInUTF8.Caption" Class="DKLANG_STRING">
             <Src>Search also in UTF-&amp;8</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-01-40" Translated="2013-03-17T11-01-40" State="Validated">
+              <cur>UTF-8 로도 검색(&amp;8)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbInUTF16.Caption" Class="DKLANG_STRING">
             <Src>Search also in UTF-1&amp;6</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-01-51" Translated="2013-03-17T11-01-51" State="Validated">
+              <cur>UTF-16 로도 검색(&amp;6)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bBrowseFile.Caption" Class="DKLANG_STRING">
             <Src>Browse for fi&amp;le...</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-01-55" Translated="2013-03-17T11-01-55" State="Validated">
+              <cur>파일 찾아보기...(&amp;G)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbOutAppend.Caption" Class="DKLANG_STRING">
             <Src>&amp;Append results list</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-02-09" Translated="2013-03-17T11-03-27" State="Validated">
+              <cur>결과 목록에 추가(&amp;A)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel3.Caption" Class="DKLANG_STRING">
             <Src>Sort files:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-02-17" Translated="2013-03-17T11-02-17" State="Validated">
+              <cur>파일 정렬:</cur>
+            </Trg>
           </Vl>
         </Resource>
         <Resource Name="fmRepRpt" Class="DKLangResource" Type="DKLangResource">
@@ -14015,7 +14560,9 @@
           </Vl>
           <Vl Name="Label1.Caption" Class="DKLANG_STRING">
             <Src>&amp;Element</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-38-56" Translated="2013-03-17T11-38-56" State="Validated">
+              <cur>요소(&amp;E)</cur>
+            </Trg>
           </Vl>
           <Vl Name="Button2.Caption" Class="DKLANG_STRING">
             <Src>&amp;Ok</Src>
@@ -14368,7 +14915,9 @@
           </Vl>
           <Vl Name="bCur.Caption" Class="DKLANG_STRING">
             <Src>Search from cursor</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-41-17" Translated="2013-03-17T11-41-17" State="Validated">
+              <cur>커서에서부터 찾기</cur>
+            </Trg>
           </Vl>
           <Vl Name="labNot.Caption" Class="DKLANG_STRING">
             <Src>Not found...</Src>
@@ -14472,8 +15021,8 @@
           </Vl>
           <Vl Name="TntGroupBox2.Caption" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
-              <cur>옵션</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-42-39" Translated="2013-03-17T10-42-39" State="Validated">
+              <cur>옵션(&amp;O)</cur>
             </Trg>
           </Vl>
           <Vl Name="TntLabel8.Caption" Class="DKLANG_STRING">
@@ -14543,15 +15092,21 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Restore lexer styles</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-45-32" Translated="2013-03-16T23-45-32" State="Validated">
+              <cur>분석기 스타일 복구</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label1.Caption" Class="DKLANG_STRING">
             <Src>Using this dialog you can restore your own lexer styles, after SynWrite reinstallation. This feature works like this. Lexer styles are automatically backed up in the file "SynStyles.ini", on each OK button pressing in Lexer properties dialog(s). Then you can reinstall SynWrite (with "LexLib.lxl" library replacement), and call this dialog. Here you can restore backed up styles from "SynStyles.ini" file back to the "LexLib.lxl" lexer library file.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-16-40" Translated="2013-03-17T00-16-40" State="Validated">
+              <cur>이 대화상자를 사용하여 SynWrite 를 재설치한 후 자신만의 분석기 스타일을 복구할 수 있습니다. 이 기능은 다음과 같은 방식으로 동작합니다. 분석기 스타일은 분석기 등록정보 대화상자에서 확인 버튼을 누를 때 "SynStyles.ini" 파일에 자동적으로 백업됩니다. 다음, SynWrite 를 재설치한 후 이 대화상자를 호출합니다. 여기서 백업한 "SynStyles.ini" 파일로부터 스타일을 "LexLib.lxl" 분석기 라이브러리 파일로 복구할 수 있습니다.\0x20</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntGroupBox1.Caption" Class="DKLANG_STRING">
             <Src>Choose which saved styles you want to restore</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-44-17" Translated="2013-03-16T23-44-17" State="Validated">
+              <cur>복구하길 원하는 저장된 스타일을 선택하세요</cur>
+            </Trg>
           </Vl>
           <Vl Name="bSAll.Caption" Class="DKLANG_STRING">
             <Src>Select all</Src>
@@ -14561,11 +15116,15 @@
           </Vl>
           <Vl Name="bSNone.Caption" Class="DKLANG_STRING">
             <Src>Select none</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-43-39" Translated="2013-03-16T23-43-39" State="Validated">
+              <cur>선택 안 함</cur>
+            </Trg>
           </Vl>
           <Vl Name="bRem.Caption" Class="DKLANG_STRING">
             <Src>Remove selected</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-45-23" Translated="2013-03-16T23-45-23" State="Validated">
+              <cur>선택항목 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="bOk.Caption" Class="DKLANG_STRING">
             <Src>OK</Src>
@@ -14586,27 +15145,35 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Select macro command</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-45-30" Translated="2013-03-17T10-45-30" State="Validated">
+              <cur>매크로 명령 선택</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label1.Caption" Class="DKLANG_STRING">
             <Src>C&amp;ommand:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-45-26" Translated="2013-03-17T10-45-26" State="Validated">
+              <cur>명령(&amp;O):</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label2.Caption" Class="DKLANG_STRING">
             <Src>&amp;Data:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-45-21" Translated="2013-03-17T10-45-21" State="Validated">
+              <cur>데이터(&amp;D):</cur>
+            </Trg>
           </Vl>
           <Vl Name="List.Columns[0].Caption" Class="DKLANG_STRING">
             <Src>ID</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2013-03-17T10-45-31" State="Validated"/>
           </Vl>
           <Vl Name="List.Columns[1].Caption" Class="DKLANG_STRING">
             <Src>Description</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-45-16" Translated="2013-03-17T10-45-16" State="Validated">
+              <cur>설명</cur>
+            </Trg>
           </Vl>
           <Vl Name="DataEdit.Text" Class="DKLANG_STRING">
             <Src>DataEdit</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2013-03-17T10-45-34" State="Validated"/>
           </Vl>
           <Vl Name="Button1.Caption" Class="DKLANG_STRING">
             <Src>&amp;OK</Src>
@@ -14679,7 +15246,7 @@
           </Vl>
           <Vl Name="CmdList.Columns[0].Caption" Class="DKLANG_STRING">
             <Src>ID</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2013-03-17T10-45-31" State="Validated"/>
           </Vl>
           <Vl Name="CmdList.Columns[1].Caption" Class="DKLANG_STRING">
             <Src>Data</Src>
@@ -14792,7 +15359,9 @@
           </Vl>
           <Vl Name="cbPos.Caption" Class="DKLANG_STRING">
             <Src>&amp;Go to line/column</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-22-36" Translated="2013-03-17T00-22-36" State="Validated">
+              <cur>행/열로 이동(&amp;G)</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbPrev.Caption" Class="DKLANG_STRING">
             <Src>Go to &amp;previous bookmark</Src>
@@ -14808,11 +15377,15 @@
           </Vl>
           <Vl Name="cbNum.Caption" Class="DKLANG_STRING">
             <Src>Go to n&amp;umbered bookmark:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-44-05" Translated="2013-03-17T10-44-05" State="Validated">
+              <cur>번호 책갈피로 이동(&amp;U)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel1.Caption" Class="DKLANG_STRING">
             <Src>Relative values are allowed: specify + or - sign before the number.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-44-42" Translated="2013-03-17T10-44-42" State="Validated">
+              <cur>상대 번호 허용 : 번호 앞에 + 또는 - 기호를 통해 지정</cur>
+            </Trg>
           </Vl>
         </Resource>
         <Resource Name="fmSRTree" Class="DKLangResource" Type="DKLangResource">
@@ -14821,15 +15394,19 @@
           </SourceLanguages>
           <Vl Name="Caption" Class="DKLANG_STRING">
             <Src>Search in tree/list</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-40-18" Translated="2013-03-17T11-40-18" State="Validated">
+              <cur>트리/목록 에서 찾기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel1.Caption" Class="DKLANG_STRING">
             <Src>Search for:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-56-47" Translated="2013-03-17T10-56-47" State="Validated">
+              <cur>찾을 문자열(&amp;S):</cur>
+            </Trg>
           </Vl>
           <Vl Name="gOp.Caption" Class="DKLANG_STRING">
             <Src>Options</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-01-15T10-55-18" Translated="2013-01-15T10-55-18" State="Validated">
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-40-20" Translated="2013-03-17T11-40-20" State="Validated">
               <cur>옵션</cur>
             </Trg>
           </Vl>
@@ -14847,27 +15424,39 @@
           </Vl>
           <Vl Name="cbWords.Caption" Class="DKLANG_STRING">
             <Src>&amp;Whole words</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T10-58-02" Translated="2013-03-17T10-58-02" State="Validated">
+              <cur>전체 단어(&amp;W)</cur>
+            </Trg>
           </Vl>
           <Vl Name="gDir.Caption" Class="DKLANG_STRING">
             <Src>Direction</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-30" Translated="2013-03-17T11-31-30" State="Validated">
+              <cur>방향</cur>
+            </Trg>
           </Vl>
           <Vl Name="bFor.Caption" Class="DKLANG_STRING">
             <Src>Forwar&amp;d</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-33" Translated="2013-03-17T11-31-33" State="Validated">
+              <cur>앞으로(&amp;D)</cur>
+            </Trg>
           </Vl>
           <Vl Name="bBack.Caption" Class="DKLANG_STRING">
             <Src>&amp;Backward</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-34" Translated="2013-03-17T11-31-34" State="Validated">
+              <cur>뒤로(&amp;B)</cur>
+            </Trg>
           </Vl>
           <Vl Name="gScop.Caption" Class="DKLANG_STRING">
             <Src>Scope</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-31-28" Translated="2013-03-17T11-31-28" State="Validated">
+              <cur>범위</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbFromCur.Caption" Class="DKLANG_STRING">
             <Src>Search from cursor</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-41-17" Translated="2013-03-17T11-41-17" State="Validated">
+              <cur>커서에서부터 찾기</cur>
+            </Trg>
           </Vl>
           <Vl Name="bFNext.Caption" Class="DKLANG_STRING">
             <Src>&amp;Find</Src>
@@ -15156,7 +15745,9 @@
           </Vl>
           <Vl Name="TBXItemProjAddVirtDir.Hint" Class="DKLANG_STRING">
             <Src>Add virtual folder to project</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T00-23-04" Translated="2013-03-17T00-23-04" State="Validated">
+              <cur>프로젝트에 가상 폴더 추가</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemProjAddFilesDir.Hint" Class="DKLANG_STRING">
             <Src>Add disk folder's contents to project</Src>
@@ -15278,7 +15869,9 @@
           </Vl>
           <Vl Name="TBXItemMnuOpenFiles.Caption" Class="DKLANG_STRING">
             <Src>Open selected item(s)</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-43-08" Translated="2013-03-17T11-43-08" State="Validated">
+              <cur>선택 항목 열기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuSetMain.Caption" Class="DKLANG_STRING">
             <Src>Set as main file</Src>
@@ -15294,11 +15887,15 @@
           </Vl>
           <Vl Name="TBXItemMnuSortByExt.Caption" Class="DKLANG_STRING">
             <Src>By extension</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-43-39" Translated="2013-03-17T11-43-39" State="Validated">
+              <cur>확장자별로</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuSortByName.Caption" Class="DKLANG_STRING">
             <Src>By name</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-17T11-43-51" Translated="2013-03-17T11-43-51" State="Validated">
+              <cur>이름순으로</cur>
+            </Trg>
           </Vl>
           <Vl Name="ODProj.Filter" Class="DKLANG_STRING">
             <Src>SynWrite projects|*.synwproj</Src>
@@ -15310,19 +15907,27 @@
           </Vl>
           <Vl Name="TBXItemMnuSortBySizeDesc.Caption" Class="DKLANG_STRING">
             <Src>By size, descending</Src>
-            <Trg Created="2013-01-14T18-22-48"/>
+            <Trg Created="2013-01-14T18-22-48" Changed="2013-03-17T11-44-00" Translated="2013-03-17T11-44-00" State="Validated">
+              <cur>크기순으로,내림차순</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuSortByDateDesc.Caption" Class="DKLANG_STRING">
             <Src>By date, descending</Src>
-            <Trg Created="2013-01-14T18-22-48"/>
+            <Trg Created="2013-01-14T18-22-48" Changed="2013-03-17T11-44-08" Translated="2013-03-17T11-44-08" State="Validated">
+              <cur>날짜순으로,내림차순</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuSortBySize.Caption" Class="DKLANG_STRING">
             <Src>By size</Src>
-            <Trg Created="2013-01-14T18-22-48"/>
+            <Trg Created="2013-01-14T18-22-48" Changed="2013-03-17T11-44-12" Translated="2013-03-17T11-44-12" State="Validated">
+              <cur>크기순으로</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuSortByDate.Caption" Class="DKLANG_STRING">
             <Src>By date</Src>
-            <Trg Created="2013-01-14T18-22-48"/>
+            <Trg Created="2013-01-14T18-22-48" Changed="2013-03-17T11-44-16" Translated="2013-03-17T11-44-16" State="Validated">
+              <cur>날짜순으로</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemMnuProps.Caption" Class="DKLANG_STRING">
             <Src>Show file properties...</Src>
@@ -15444,7 +16049,9 @@
           </Vl>
           <Vl Name="Label2.Caption" Class="DKLANG_STRING">
             <Src>Line ends:</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-03-16T23-42-53" Translated="2013-03-16T23-42-53" State="Validated">
+              <cur>줄 넘김:</cur>
+            </Trg>
           </Vl>
           <Vl Name="Label3.Caption" Class="DKLANG_STRING">
             <Src>Lexer:</Src>
@@ -15635,13 +16242,13 @@
           </Vl>
           <Vl Name="bOk.Caption" Class="DKLANG_STRING">
             <Src>OK</Src>
-            <Trg Created="2013-01-18T11-57-26" State="ForReview">
+            <Trg Created="2013-01-18T11-57-26" Translated="2013-03-16T23-42-45" State="Validated">
               <cur>확인</cur>
             </Trg>
           </Vl>
           <Vl Name="bCan.Caption" Class="DKLANG_STRING">
             <Src>Cancel</Src>
-            <Trg Created="2013-01-18T11-57-26" State="ForReview">
+            <Trg Created="2013-01-18T11-57-26" Translated="2013-03-16T23-42-46" State="Validated">
               <cur>취소</cur>
             </Trg>
           </Vl>
@@ -15664,13 +16271,13 @@
           </Vl>
           <Vl Name="bOk.Caption" Class="DKLANG_STRING">
             <Src>OK</Src>
-            <Trg Created="2013-02-19T11-23-01" State="ForReview">
+            <Trg Created="2013-02-19T11-23-01" Translated="2013-03-16T23-42-42" State="Validated">
               <cur>확인</cur>
             </Trg>
           </Vl>
           <Vl Name="bCan.Caption" Class="DKLANG_STRING">
             <Src>Cancel</Src>
-            <Trg Created="2013-02-19T11-23-01" State="ForReview">
+            <Trg Created="2013-02-19T11-23-01" Translated="2013-03-16T23-42-43" State="Validated">
               <cur>취소</cur>
             </Trg>
           </Vl>
@@ -15680,11 +16287,15 @@
           </Vl>
           <Vl Name="cbAsc.Caption" Class="DKLANG_STRING">
             <Src>Ascending</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T10-48-02" Translated="2013-03-17T10-48-02" State="Validated">
+              <cur>오름차순</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbDesc.Caption" Class="DKLANG_STRING">
             <Src>Descending</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T10-48-04" Translated="2013-03-17T10-48-04" State="Validated">
+              <cur>내림차순</cur>
+            </Trg>
           </Vl>
           <Vl Name="cbCase.Caption" Class="DKLANG_STRING">
             <Src>Case sensitive</Src>
@@ -15694,7 +16305,9 @@
           </Vl>
           <Vl Name="cbRemDups.Caption" Class="DKLANG_STRING">
             <Src>Remove duplicates</Src>
-            <Trg Created="2013-02-19T11-23-01"/>
+            <Trg Created="2013-02-19T11-23-01" Changed="2013-03-17T10-48-07" Translated="2013-03-17T10-48-07" State="Validated">
+              <cur>중복 제거</cur>
+            </Trg>
           </Vl>
           <Vl Name="boxColumn.Caption" Class="DKLANG_STRING">
             <Src>Columns</Src>

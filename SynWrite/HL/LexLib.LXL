@@ -18733,7 +18733,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tag param'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clSkyBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -18741,7 +18741,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tag properties'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clSkyBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26060,7 +26060,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26077,7 +26077,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -26085,7 +26085,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26119,7 +26119,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clMoneyGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
