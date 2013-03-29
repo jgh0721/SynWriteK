@@ -2,14 +2,45 @@ Legend:
  + added
  - fixed
  * changed
+                                      
+5.0.020
++ HTML lexer: misspelled tags are hilited in red
++ command "Commands list" (Alt+P; Edit -- Show commands list)
++ command "Project files list" (Alt+G; Search -- Go to project file)  
++ collapsed (folded) blocks states are saved in sessions 
++ option "Editor -- Activate URLs by simple click"
++ option "Tree -- Update delay"
++ dialog "Rename" redone
++ command "Delete lines" keeps caret X pos
++ command "Scroll to selection"
+* removed option "Editor -- Select all of focusing"
+* removed option "Editor -- Enable column selection"
++ help topic "Command/Project list dialog"
++ help topic "How to make your own IDE"
+- fixes (forum)
 
-4.10.880
+4.10.940
++ Clojure lexer
++ sorting: additional Unicode sort mode (old one renamed to "Unciode (Win API)")
++ sorting: option "Misc -- Default sort type", affects Sort dialog and sort commands
++ command "Edit -- Blank operations -- Spaces to tabs (leading)"
++ command "Edit -- Comments -- Toggle block comment (alt.)" (places comment chars on 1st non-space position)
++ shortcut "Clipboard operations -- Paste to 1st column" (+item in context menu)
++ shortcut Alt+Delete in dialogs' expanded comboboxes (e.g. in Find/Replace dialog) deletes selected list item
++ Emmet updated to 1.0
++ demo lexer for indent-based folding "Text with indentation"
+
+4.10.900
 + folding in Python lexer (indentation based!)
 + commands "View -- Folding -- Collapse all /Expand all/ Expand current block"
++ Go lexer
++ macros: can record actions in Find/Replace dialog
 + tree: when going to a node, editor line should uncollapse
++ Find dialog: F4 key toggles regex mode
 + SynFTP plugin: master pwd is masked with **
 + SynFTP plugin: cursor keys work in treeview
 + LexerConfig.chm: images added, topic "Indentation-based folding" added
+- fix: "Tabs to spaces" for var-length tabs
 - fix: line selection didn't work
    
 4.9.840
