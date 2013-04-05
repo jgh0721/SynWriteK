@@ -2,6 +2,19 @@ Legend:
  + added
  - fixed
  * changed
+
+5.1.050
++ lexer CSS: underlined misspelled properties and vendor prefixes (~400 of them are known)
++ lexer CSS: auto-complete knows all vendor prefixes
++ lexer Objective-C added (anybody needs it on Win??)
++ toolbar theme "Office user-defined", uses file "OfficeTheme.ini" (template is OfficeTheme.sample.ini)
++ options: color "Caret BG"
+* HTML lexer: indent guides hidden; tree items for tag attribs hidden
++ HTML lexer: "doctype" tag hilited as comment; "noindex" tag known
++ lexers CSS, AviSynth: "{"<enter> adds "}"
++ lexer Ini: color preview works in it
+* lexers renamed: D, Resource script
+- fixes
                                       
 5.0.020
 + HTML lexer: misspelled tags are hilited in red

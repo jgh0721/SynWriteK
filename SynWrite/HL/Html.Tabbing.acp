@@ -79,6 +79,7 @@ meta=<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 meter=<meter value="2" min="0" max="10"></meter>
 nav=<nav>\n    \n</nav>
 noframes=<noframes>|</noframes>
+noindex=<noindex>|</noindex>
 noscript=<noscript>|</noscript>
 object=<object width="400" height="400" data="flash.swf"></object>
 ol=<ol>\n    |\n</ol>

@@ -80,7 +80,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -388,6 +388,7 @@ object SyntaxManager: TSyntaxManager
         RefToCondEnd = True
         HighlightPos = cpBound
         IgnoreAsParent = True
+        AutoCloseText = '}'#13#10
       end
       item
         DisplayName = 'function end'
@@ -662,7 +663,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -688,7 +689,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clRed
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -704,7 +705,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -712,7 +713,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -720,7 +721,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -728,14 +729,14 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -753,8 +754,8 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'class (tree)'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clWindowText
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7279,7 +7280,7 @@ object SyntaxManager: TSyntaxManager
       'Preprocessor')
     MarkedBlockStyle = 'Marked block'
     Extentions = 'rc rc2'
-    LexerName = 'Resource files'
+    LexerName = 'Resource script'
     LineComment = '//'
     Charset = DEFAULT_CHARSET
   end
@@ -16682,7 +16683,7 @@ object SyntaxManager: TSyntaxManager
         Font.Style = [fsBold]
       end
       item
-        DisplayName = 'Tag id incorrect'
+        DisplayName = 'Tag id - underlines'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clRed
         Font.Height = -13
@@ -16726,6 +16727,16 @@ object SyntaxManager: TSyntaxManager
         Font.Style = []
       end
       item
+        DisplayName = 'Tag attrib - underlines'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clPurple
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BorderTypeBottom = blWavyLine
+        BorderColorBottom = clRed
+      end
+      item
         DisplayName = 'Tag param'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
@@ -16756,24 +16767,6 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
-      end
-      item
-        DisplayName = 'Bound'
-        Enabled = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BorderTypeLeft = blSolid
-        BorderColorLeft = clGray
-        BorderTypeTop = blSolid
-        BorderColorTop = clGray
-        BorderTypeRight = blSolid
-        BorderColorRight = clGray
-        BorderTypeBottom = blSolid
-        BorderColorBottom = clGray
-        MultiLineBorder = True
       end
       item
         DisplayName = 'Marked block'
@@ -16856,6 +16849,14 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
+        DisplayName = 'Comment Doctype'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '(?s)<!doctype .+? >'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
         DisplayName = '<'
         StyleName = 'Tag bound'
         TokenType = 10
@@ -16900,7 +16901,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Tag ident'
-        StyleName = 'Tag id incorrect'
+        StyleName = 'Tag id - underlines'
         BlockName = 'Tag begin'
         TokenType = 2
         Expression = '[^\s=>]+'
@@ -17039,6 +17040,7 @@ object SyntaxManager: TSyntaxManager
               'meter'
               'nav'
               'noframes'
+              'noindex'
               'noscript'
               'object'
               'ol'
@@ -17096,6 +17098,23 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 1024
           end>
         HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag attrib incorrect'
+        StyleName = 'Tag attrib - underlines'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '=')
+            TokenTypes = 8
+          end
+          item
+            TokenTypes = 4
+          end>
+        IdentIndex = 1
+        HighlightPos = cpAny
         IgnoreAsParent = False
       end
       item
@@ -17209,6 +17228,7 @@ object SyntaxManager: TSyntaxManager
               'onselect'
               'onsubmit'
               'onunload'
+              'placeholder'
               'profile'
               'prompt'
               'public'
@@ -17375,8 +17395,7 @@ object SyntaxManager: TSyntaxManager
         DynHighlight = dhBound
         HighlightPos = cpRange
         DynSelectMin = True
-        DrawStaple = True
-        CollapseFmt = '< %s0 >'
+        CollapseFmt = '%s0'
         TreeItemStyle = 'Tree item (tag)'
         IgnoreAsParent = False
       end
@@ -17420,7 +17439,8 @@ object SyntaxManager: TSyntaxManager
         IgnoreAsParent = False
       end
       item
-        DisplayName = 'Tag attribute'
+        DisplayName = 'Tag attrib (tree)'
+        Enabled = False
         BlockName = 'Tag begin'
         ConditionList = <
           item
@@ -17933,11 +17953,11 @@ object SyntaxManager: TSyntaxManager
       '<body>'
       '<a href="" hre="" target=_blank data-nnn="test">'
       '<h2a>Hello&amp;</h2b>'
-      '<ul>'
-      '<li_b> Test'
-      '<li> Test'
-      '<li> Test'
-      '</ul>'
+      '  <ul>'
+      '    <liN> Test'
+      '    <li> Test'
+      '    <li> Test'
+      '  </ul>'
       '</body>'
       '</html>')
     TokenTypeNames.Strings = (
@@ -18663,15 +18683,6 @@ object SyntaxManager: TSyntaxManager
   object SyntAnalyzer10: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftCustomFont
-      end
-      item
         DisplayName = 'Style'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clNavy
@@ -18680,12 +18691,22 @@ object SyntaxManager: TSyntaxManager
         Font.Style = []
       end
       item
-        DisplayName = 'Param'
+        DisplayName = 'Param correct'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
+      end
+      item
+        DisplayName = 'Param incorrect'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BorderTypeBottom = blWavyLine
+        BorderColorBottom = clRed
       end
       item
         DisplayName = 'Value'
@@ -18720,16 +18741,6 @@ object SyntaxManager: TSyntaxManager
         Font.Style = []
         BgColor = clWhite
         FormatType = ftBackGround
-      end
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
       end
       item
         DisplayName = 'Color'
@@ -18774,7 +18785,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Param'
-        StyleName = 'Param'
+        StyleName = 'Param incorrect'
         BlockName = 'Style begin'
         TokenType = 2
         Expression = '[\w\.-]+ (?=\s*\:)'
@@ -18785,7 +18796,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Symbol'
         StyleName = 'Symbol'
         TokenType = 5
-        Expression = '[;:,%\(\)\[\]@=/\*]'
+        Expression = '[;:,%\(\)\[\]@=/\*>\+]'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -18834,11 +18845,588 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Style'
         StyleName = 'Style'
         TokenType = 2
-        Expression = '[\w:\#\.\-]+'
+        Expression = '[\w:\#\.\-\+]+'
         ColumnFrom = 0
         ColumnTo = 0
       end>
     BlockRules = <
+      item
+        DisplayName = 'Known props'
+        StyleName = 'Param correct'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'azimuth'
+              'background'
+              'background-attachment'
+              'background-clip'
+              'background-color'
+              'background-image'
+              'background-origin'
+              'background-position'
+              'background-repeat'
+              'background-size'
+              'behavior'
+              'border'
+              'border-bottom'
+              'border-bottom-color'
+              'border-bottom-left-radius'
+              'border-bottom-right-radius'
+              'border-bottom-style'
+              'border-bottom-width'
+              'border-collapse'
+              'border-color'
+              'border-image'
+              'border-left'
+              'border-left-color'
+              'border-left-style'
+              'border-left-width'
+              'border-radius'
+              'border-right'
+              'border-right-color'
+              'border-right-style'
+              'border-right-width'
+              'border-spacing'
+              'border-style'
+              'border-top'
+              'border-top-color'
+              'border-top-left-radius'
+              'border-top-right-radius'
+              'border-top-style'
+              'border-top-width'
+              'border-width'
+              'bottom'
+              'box-shadow'
+              'box-sizing'
+              'caption-side'
+              'clear'
+              'clip'
+              'color'
+              'column-count'
+              'column-gap'
+              'column-rule'
+              'columns'
+              'column-width'
+              'content'
+              'counter-increment'
+              'counter-reset'
+              'cue'
+              'cue-after'
+              'cue-before'
+              'cursor'
+              'data'
+              'direction'
+              'display'
+              'elevation'
+              'empty-cells'
+              'float'
+              'font'
+              'font-family'
+              'font-size'
+              'font-size-adjust'
+              'font-stretch'
+              'font-style'
+              'font-variant'
+              'font-weight'
+              'height'
+              'left'
+              'letter-spacing'
+              'line-height'
+              'list-style'
+              'list-style-image'
+              'list-style-position'
+              'list-style-type'
+              'margin'
+              'margin-bottom'
+              'margin-left'
+              'margin-right'
+              'margin-top'
+              'marker-offset'
+              'marks'
+              'max-height'
+              'max-width'
+              'min-height'
+              'min-width'
+              'opacity'
+              'orphans'
+              'outline'
+              'outline-color'
+              'outline-style'
+              'outline-width'
+              'overflow'
+              'overflow-x'
+              'overflow-y'
+              'padding'
+              'padding-bottom'
+              'padding-left'
+              'padding-right'
+              'padding-top'
+              'page-break-after'
+              'page-break-before'
+              'page-break-inside'
+              'pause'
+              'pause-after'
+              'pause-before'
+              'pitch'
+              'pitch-range'
+              'play-during'
+              'position'
+              'quotes'
+              'resize'
+              'richness'
+              'right'
+              'size'
+              'speak'
+              'speak-header'
+              'speak-numeral'
+              'speak-punctuation'
+              'speech-rate'
+              'src'
+              'stress'
+              'table-layout'
+              'text-align'
+              'text-align-last'
+              'text-decoration'
+              'text-indent'
+              'text-overflow'
+              'text-shadow'
+              'text-transform'
+              'top'
+              'unicode-bidi'
+              'vertical-align'
+              'visibility'
+              'voice-family'
+              'volume'
+              'white-space'
+              'widows'
+              'width'
+              'word-spacing'
+              'word-wrap'
+              'writing-mode'
+              'z-index'
+              'zoom')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Known vendor prefixes'
+        StyleName = 'Param correct'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '-apple-dashboard-region'
+              '-epub-caption-side'
+              '-epub-hyphens'
+              '-epub-text-combine'
+              '-epub-text-emphasis'
+              '-epub-text-emphasis-color'
+              '-epub-text-emphasis-style'
+              '-epub-text-orientation'
+              '-epub-text-transform'
+              '-epub-word-break'
+              '-epub-writing-mode'
+              '-moz-appearance'
+              '-moz-background-inline-policy'
+              '-moz-binding'
+              '-moz-border-bottom-colors'
+              '-moz-border-end'
+              '-moz-border-end-color'
+              '-moz-border-end-style'
+              '-moz-border-end-width'
+              '-moz-border-left-colors'
+              '-moz-border-right-colors'
+              '-moz-border-start'
+              '-moz-border-start-color'
+              '-moz-border-start-style'
+              '-moz-border-start-width'
+              '-moz-border-top-colors'
+              '-moz-box-align'
+              '-moz-box-direction'
+              '-moz-box-flex'
+              '-moz-box-ordinal-group'
+              '-moz-box-orient'
+              '-moz-box-pack'
+              '-moz-box-shadow'
+              '-moz-box-sizing'
+              '-moz-column-count'
+              '-moz-column-fill'
+              '-moz-column-gap'
+              '-moz-column-rule'
+              '-moz-column-rule-color'
+              '-moz-column-rule-style'
+              '-moz-column-rule-width'
+              '-moz-columns'
+              '-moz-column-width'
+              '-moz-float-edge'
+              '-moz-font-feature-settings'
+              '-moz-font-language-override'
+              '-moz-force-broken-image-icon'
+              '-moz-hyphens'
+              '-moz-image-region'
+              '-moz-margin-end'
+              '-moz-margin-start'
+              '-moz-orient'
+              '-moz-outline-radius'
+              '-moz-outline-radius-bottomleft'
+              '-moz-outline-radius-bottomright'
+              '-moz-outline-radius-topleft'
+              '-moz-outline-radius-topright'
+              '-moz-padding-end'
+              '-moz-padding-start'
+              '-moz-script-level'
+              '-moz-script-min-size'
+              '-moz-script-size-multiplier'
+              '-moz-stack-sizing'
+              '-moz-tab-size'
+              '-moz-text-align-last'
+              '-moz-text-blink'
+              '-moz-text-decoration-color'
+              '-moz-text-decoration-line'
+              '-moz-text-decoration-style'
+              '-moz-text-size-adjust'
+              '-moz-transform'
+              '-moz-transition'
+              '-moz-transition-delay'
+              '-moz-user-focus'
+              '-moz-user-input'
+              '-moz-user-modify'
+              '-moz-user-select'
+              '-moz-window-shadow'
+              '-ms-accelerator'
+              '-ms-background-position-x'
+              '-ms-background-position-y'
+              '-ms-behavior'
+              '-ms-block-progression'
+              '-ms-content-zoom-chaining'
+              '-ms-content-zooming'
+              '-ms-content-zoom-limit'
+              '-ms-content-zoom-limit-max'
+              '-ms-content-zoom-limit-min'
+              '-ms-content-zoom-snap'
+              '-ms-content-zoom-snap-points'
+              '-ms-content-zoom-snap-type'
+              '-ms-filter'
+              '-ms-flex'
+              '-ms-flex-align'
+              '-ms-flex-direction'
+              '-ms-flex-order'
+              '-ms-flex-pack'
+              '-ms-flex-wrap'
+              '-ms-flow-from'
+              '-ms-flow-into'
+              '-ms-grid-column'
+              '-ms-grid-column-align'
+              '-ms-grid-columns'
+              '-ms-grid-column-span'
+              '-ms-grid-row'
+              '-ms-grid-row-align'
+              '-ms-grid-rows'
+              '-ms-grid-row-span'
+              '-ms-high-contrast-adjust'
+              '-ms-hyphenate-limit-chars'
+              '-ms-hyphenate-limit-lines'
+              '-ms-hyphenate-limit-zone'
+              '-ms-hyphens'
+              '-ms-ime-mode'
+              '-ms-interpolation-mode'
+              '-ms-layout-flow'
+              '-ms-layout-grid'
+              '-ms-layout-grid-char'
+              '-ms-layout-grid-line'
+              '-ms-layout-grid-mode'
+              '-ms-layout-grid-type'
+              '-ms-overflow-style'
+              '-ms-overflow-x'
+              '-ms-overflow-y'
+              '-ms-progress-appearance'
+              '-ms-scrollbar-arrow-color'
+              '-ms-scrollbar-base-color'
+              '-ms-scrollbar-darkshadow-color'
+              '-ms-scrollbar-face-color'
+              '-ms-scrollbar-highlight-color'
+              '-ms-scrollbar-shadow-color'
+              '-ms-scrollbar-track-color'
+              '-ms-scroll-chaining'
+              '-ms-scroll-limit'
+              '-ms-scroll-limit-x-max'
+              '-ms-scroll-limit-x-min'
+              '-ms-scroll-limit-y-max'
+              '-ms-scroll-limit-y-min'
+              '-ms-scroll-rails'
+              '-ms-scroll-snap-points-x'
+              '-ms-scroll-snap-points-y'
+              '-ms-scroll-snap-type'
+              '-ms-scroll-snap-x'
+              '-ms-scroll-snap-y'
+              '-ms-scroll-translation'
+              '-ms-text-align-last'
+              '-ms-text-autospace'
+              '-ms-text-justify'
+              '-ms-text-kashida-space'
+              '-ms-text-overflow'
+              '-ms-text-underline-position'
+              '-ms-touch-action'
+              '-ms-user-select'
+              '-ms-word-break'
+              '-ms-word-wrap'
+              '-ms-wrap-flow'
+              '-ms-wrap-margin'
+              '-ms-wrap-through'
+              '-ms-writing-mode'
+              '-ms-zoom'
+              '-o-border-image'
+              '-o-device-pixel-ratio'
+              '-o-focus-opacity'
+              '-o-link'
+              '-o-link-source'
+              '-o-mini-fold'
+              '-o-object-fit'
+              '-o-object-position'
+              '-o-table-baseline'
+              '-o-tab-size'
+              '-o-transform'
+              '-o-transform-origin'
+              '-o-transition'
+              '-o-transition-delay'
+              '-o-transition-duration'
+              '-o-transition-property'
+              '-o-transition-timing-function'
+              '-pie-background'
+              '-wap-accesskey'
+              '-wap-input-format'
+              '-wap-input-required'
+              '-wap-marquee-dir'
+              '-wap-marquee-loop'
+              '-wap-marquee-speed'
+              '-wap-marquee-style'
+              '-webkit-align-content'
+              '-webkit-align-items'
+              '-webkit-align-self'
+              '-webkit-animation'
+              '-webkit-animation-delay'
+              '-webkit-animation-direction'
+              '-webkit-animation-duration'
+              '-webkit-animation-fill-mode'
+              '-webkit-animation-iteration-count'
+              '-webkit-animation-name'
+              '-webkit-animation-play-state'
+              '-webkit-animation-timing-function'
+              '-webkit-appearance'
+              '-webkit-app-region'
+              '-webkit-aspect-ratio'
+              '-webkit-backface-visibility'
+              '-webkit-background-blend-mode'
+              '-webkit-background-clip'
+              '-webkit-background-composite'
+              '-webkit-background-origin'
+              '-webkit-background-size'
+              '-webkit-blend-mode'
+              '-webkit-border-after'
+              '-webkit-border-after-color'
+              '-webkit-border-after-style'
+              '-webkit-border-after-width'
+              '-webkit-border-before'
+              '-webkit-border-before-color'
+              '-webkit-border-before-style'
+              '-webkit-border-before-width'
+              '-webkit-border-bottom-left-radius'
+              '-webkit-border-bottom-right-radius'
+              '-webkit-border-end'
+              '-webkit-border-end-color'
+              '-webkit-border-end-style'
+              '-webkit-border-end-width'
+              '-webkit-border-fit'
+              '-webkit-border-horizontal-spacing'
+              '-webkit-border-image'
+              '-webkit-border-radius'
+              '-webkit-border-start'
+              '-webkit-border-start-color'
+              '-webkit-border-start-style'
+              '-webkit-border-start-width'
+              '-webkit-border-top-left-radius'
+              '-webkit-border-top-right-radius'
+              '-webkit-border-vertical-spacing'
+              '-webkit-box-align'
+              '-webkit-box-decoration-break'
+              '-webkit-box-direction'
+              '-webkit-box-flex'
+              '-webkit-box-flex-group'
+              '-webkit-box-lines'
+              '-webkit-box-ordinal-group'
+              '-webkit-box-orient'
+              '-webkit-box-pack'
+              '-webkit-box-reflect'
+              '-webkit-box-shadow'
+              '-webkit-box-sizing'
+              '-webkit-clip-path'
+              '-webkit-color-correction'
+              '-webkit-column-axis'
+              '-webkit-column-break-after'
+              '-webkit-column-break-before'
+              '-webkit-column-break-inside'
+              '-webkit-column-count'
+              '-webkit-column-gap'
+              '-webkit-column-progression'
+              '-webkit-column-rule'
+              '-webkit-column-rule-color'
+              '-webkit-column-rule-style'
+              '-webkit-column-rule-width'
+              '-webkit-columns'
+              '-webkit-column-span'
+              '-webkit-column-width'
+              '-webkit-cursor-visibility'
+              '-webkit-dashboard-region'
+              '-webkit-filter'
+              '-webkit-flex'
+              '-webkit-flex-basis'
+              '-webkit-flex-direction'
+              '-webkit-flex-flow'
+              '-webkit-flex-grow'
+              '-webkit-flex-shrink'
+              '-webkit-flex-wrap'
+              '-webkit-flow-from'
+              '-webkit-flow-into'
+              '-webkit-font-feature-settings'
+              '-webkit-font-kerning'
+              '-webkit-font-size-delta'
+              '-webkit-font-smoothing'
+              '-webkit-font-variant-ligatures'
+              '-webkit-grid-after'
+              '-webkit-grid-auto-columns'
+              '-webkit-grid-auto-flow'
+              '-webkit-grid-auto-rows'
+              '-webkit-grid-before'
+              '-webkit-grid-column'
+              '-webkit-grid-columns'
+              '-webkit-grid-end'
+              '-webkit-grid-row'
+              '-webkit-grid-rows'
+              '-webkit-grid-start'
+              '-webkit-highlight'
+              '-webkit-hyphenate-character'
+              '-webkit-hyphenate-limit-after'
+              '-webkit-hyphenate-limit-before'
+              '-webkit-hyphenate-limit-lines'
+              '-webkit-justify-content'
+              '-webkit-line-align'
+              '-webkit-line-box-contain'
+              '-webkit-line-break'
+              '-webkit-line-clamp'
+              '-webkit-line-grid'
+              '-webkit-line-snap'
+              '-webkit-locale'
+              '-webkit-logical-height'
+              '-webkit-logical-width'
+              '-webkit-margin-after'
+              '-webkit-margin-after-collapse'
+              '-webkit-margin-before'
+              '-webkit-margin-before-collapse'
+              '-webkit-margin-bottom-collapse'
+              '-webkit-margin-collapse'
+              '-webkit-margin-end'
+              '-webkit-margin-start'
+              '-webkit-margin-top-collapse'
+              '-webkit-marquee'
+              '-webkit-marquee-direction'
+              '-webkit-marquee-increment'
+              '-webkit-marquee-repetition'
+              '-webkit-marquee-speed'
+              '-webkit-marquee-style'
+              '-webkit-mask'
+              '-webkit-mask-box-image'
+              '-webkit-mask-box-image-outset'
+              '-webkit-mask-box-image-repeat'
+              '-webkit-mask-box-image-slice'
+              '-webkit-mask-box-image-source'
+              '-webkit-mask-box-image-width'
+              '-webkit-mask-clip'
+              '-webkit-mask-composite'
+              '-webkit-mask-image'
+              '-webkit-mask-origin'
+              '-webkit-mask-position'
+              '-webkit-mask-position-x'
+              '-webkit-mask-position-y'
+              '-webkit-mask-repeat'
+              '-webkit-mask-repeat-x'
+              '-webkit-mask-repeat-y'
+              '-webkit-mask-size'
+              '-webkit-max-logical-height'
+              '-webkit-max-logical-width'
+              '-webkit-min-logical-height'
+              '-webkit-min-logical-width'
+              '-webkit-nbsp-mode'
+              '-webkit-opacity'
+              '-webkit-order'
+              '-webkit-overflow-scrolling'
+              '-webkit-padding-after'
+              '-webkit-padding-before'
+              '-webkit-padding-end'
+              '-webkit-padding-start'
+              '-webkit-perspective'
+              '-webkit-perspective-origin'
+              '-webkit-perspective-origin-x'
+              '-webkit-perspective-origin-y'
+              '-webkit-print-color-adjust'
+              '-webkit-region-break-after'
+              '-webkit-region-break-before'
+              '-webkit-region-break-inside'
+              '-webkit-region-overflow'
+              '-webkit-rtl-ordering'
+              '-webkit-ruby-position'
+              '-webkit-shape-inside'
+              '-webkit-shape-margin'
+              '-webkit-shape-outside'
+              '-webkit-shape-padding'
+              '-webkit-svg-shadow'
+              '-webkit-tap-highlight-color'
+              '-webkit-text-align-last'
+              '-webkit-text-decoration-color'
+              '-webkit-text-decoration-line'
+              '-webkit-text-decorations-in-effect'
+              '-webkit-text-decoration-style'
+              '-webkit-text-emphasis-position'
+              '-webkit-text-fill-color'
+              '-webkit-text-security'
+              '-webkit-text-stroke'
+              '-webkit-text-stroke-color'
+              '-webkit-text-stroke-width'
+              '-webkit-text-underline-position'
+              '-webkit-touch-callout'
+              '-webkit-transform'
+              '-webkit-transform-origin'
+              '-webkit-transform-origin-x'
+              '-webkit-transform-origin-y'
+              '-webkit-transform-origin-z'
+              '-webkit-transform-style'
+              '-webkit-transition'
+              '-webkit-transition-delay'
+              '-webkit-transition-duration'
+              '-webkit-transition-property'
+              '-webkit-transition-timing-function'
+              '-webkit-user-drag'
+              '-webkit-user-modify'
+              '-webkit-user-select'
+              '-webkit-wrap'
+              '-webkit-wrap-flow'
+              '-webkit-wrap-through'
+              '-xv-interpret-as'
+              '-xv-phonemes'
+              '-xv-voice-balance'
+              '-xv-voice-duration'
+              '-xv-voice-pitch'
+              '-xv-voice-pitch-range'
+              '-xv-voice-rate'
+              '-xv-voice-stress'
+              '-xv-voice-volume')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
       item
         DisplayName = 'Style begin'
         StyleName = 'Current block'
@@ -18857,6 +19445,8 @@ object SyntaxManager: TSyntaxManager
         DynSelectMin = True
         CollapseFmt = '{ ... }'
         IgnoreAsParent = False
+        AutoCloseMode = acmCloseNearest
+        AutoCloseText = '}'#13#10
       end
       item
         DisplayName = 'Style end'
@@ -18867,25 +19457,6 @@ object SyntaxManager: TSyntaxManager
               '}')
             TokenTypes = 8
           end>
-        HighlightPos = cpBound
-        IgnoreAsParent = False
-      end
-      item
-        DisplayName = 'Param'
-        Enabled = False
-        StyleName = 'Value'
-        BlockType = btTagDetect
-        ConditionList = <
-          item
-            TagList.Strings = (
-              ':')
-            CondType = tcNotEqual
-            TokenTypes = 520
-          end
-          item
-            TokenTypes = 16
-          end>
-        IdentIndex = 1
         HighlightPos = cpBound
         IgnoreAsParent = False
       end
@@ -18925,17 +19496,15 @@ object SyntaxManager: TSyntaxManager
     SubAnalyzers = <>
     SampleText.Strings = (
       '/* Comment */'
-      'body { '
-      '  font-family: Tahoma, Verdana, Arial, sans-serif; '
-      '  font-size: 8pt '
-      '}'
       '.name, .name2 { '
       '  font-size: 18pt; '
       '  color: #000099;'
       '  width: 100%; '
       '  background: url("../img.gif") no-repeat;'
       '  back2: url('#39'../img.gif'#39');'
-      '  back3: url(../img.gif)'
+      '  back3: url(../img.gif);'
+      '  -ms-zoom: 100%; '
+      '  -ms-hmm: test;'
       '}'
       '#footer {color: #AA00BB;}')
     TokenTypeNames.Strings = (
@@ -18947,11 +19516,16 @@ object SyntaxManager: TSyntaxManager
       'Delimiter'
       'Color'
       'Number')
-    MarkedBlockStyle = 'Marked block'
     Extentions = 'css'
     LexerName = 'Style sheets'
     Notes.Strings = (
-      'Fixed by Alex, uvviewsoft.com')
+      'Author: Alex, uvviewsoft.com'
+      'Added misspelled properties underlining.'
+      ''
+      'Known properties: http://htmlbook.ru'
+      
+        'Known vendor prefixes: http://peter.sh/experiments/vendor-prefix' +
+        'ed-css-property-overview/')
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal22: TLibSyntAnalyzer
@@ -23735,11 +24309,11 @@ object SyntaxManager: TSyntaxManager
       'Attrib'
       'Id not-func'
       'Symbol []')
-    MarkedBlockStyle = 'Marked block'
     Extentions = 'd'
-    LexerName = 'DigitalMars D'
+    LexerName = 'D'
     Notes.Strings = (
-      'Author: krzys.mif@op.pl')
+      'Original author: krzys.mif@op.pl'
+      'Fixed tree: Alex, uvviewsoft.com')
     LineComment = '//'
     Charset = DEFAULT_CHARSET
     Left = 140
@@ -32663,6 +33237,7 @@ object SyntaxManager: TSyntaxManager
               'meter'
               'nav'
               'noframes'
+              'noindex'
               'noscript'
               'object'
               'ol'
@@ -39546,7 +40121,6 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Comment'
-        Enabled = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
         Font.Height = -13
@@ -39991,6 +40565,8 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         DrawStaple = True
         IgnoreAsParent = False
+        AutoCloseMode = acmCloseNearest
+        AutoCloseText = '}'#13#10
       end
       item
         DisplayName = '}'
@@ -48464,6 +49040,8 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpRange
         DynSelectMin = True
         IgnoreAsParent = False
+        AutoCloseMode = acmCloseNearest
+        AutoCloseText = '}'#13#10
       end
       item
         DisplayName = '}'
@@ -51527,6 +52105,1187 @@ object SyntaxManager: TSyntaxManager
       '(must-see "test_clojure\predicates.clj")')
     LineComment = ';'
     AlwaysSyncBlockAnal = True
+    Charset = DEFAULT_CHARSET
+  end
+  object SyntAnal25: TLibSyntAnalyzer
+    Formats = <
+      item
+        DisplayName = 'Default'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        FormatType = ftCustomFont
+      end
+      item
+        DisplayName = 'Symbol'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Number'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'String'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Identifier'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Reserved word'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Comment'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsItalic]
+      end
+      item
+        DisplayName = 'Preprocessor'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Current block'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        BgColor = 13369046
+        FormatType = ftColor
+        BorderTypeLeft = blSolid
+        BorderColorLeft = clGray
+        BorderTypeTop = blSolid
+        BorderColorTop = clGray
+        BorderTypeRight = blSolid
+        BorderColorRight = clGray
+        BorderTypeBottom = blSolid
+        BorderColorBottom = clGray
+      end
+      item
+        DisplayName = '@word'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clPurple
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Standard id'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end>
+    TokenRules = <
+      item
+        DisplayName = 'String'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '"(\\"|\\\\|.)*?("|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String <path>'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '\<\S+(\>|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = '@id'
+        StyleName = '@word'
+        TokenType = 2
+        Expression = '@\w+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Any name'
+        StyleName = 'Identifier'
+        TokenType = 2
+        Expression = '[a-z_]\w*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'HEX'
+        StyleName = 'Number'
+        TokenType = 7
+        Expression = '0x[\da-f]*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Float'
+        StyleName = 'Number'
+        TokenType = 6
+        Expression = 
+          '#with exp. dot is optional '#13#10'(\d+ \.)? \d+ e [\+\-]? \d+ |'#13#10'#wit' +
+          'hout exp. dot is required'#13#10'\d+ \. \d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Integer'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '\d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Define'
+        Enabled = False
+        StyleName = 'Preprocessor'
+        TokenType = 9
+        Expression = '(?-i)'#13#10'\#define(.*\\\s*\n)*'#13#10'.*  # last line'#13#10#13#10
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Preprocessor'
+        StyleName = 'Preprocessor'
+        TokenType = 9
+        Expression = '\#\w+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment 1'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '(?s)/\*.*?(\*/|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment 2'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '//.*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Method begin'
+        StyleName = 'Symbol'
+        TokenType = 10
+        Expression = '^[\+\-]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[/\+\-\*:=<>&/\|\^\.!\?%@]+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Single symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[\{\}\(\)\[\],;]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Char'
+        StyleName = 'String'
+        TokenType = 8
+        Expression = #39'.*?('#39'|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end>
+    BlockRules = <
+      item
+        DisplayName = 'Keywords'
+        StyleName = 'Reserved word'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'atomic'
+              'auto'
+              'break'
+              'bycopy'
+              'byref'
+              'case'
+              'char'
+              'Class'
+              'const'
+              'continue'
+              'default'
+              'do'
+              'double'
+              'else'
+              'enum'
+              'extern'
+              'float'
+              'for'
+              'goto'
+              'id'
+              'if'
+              'in'
+              'inline'
+              'inout'
+              'int'
+              'long'
+              'nil'
+              'nonatomic'
+              'oneway'
+              'out'
+              'Protocol'
+              'register'
+              'restrict'
+              'retain'
+              'return'
+              'self'
+              'short'
+              'signed'
+              'sizeof'
+              'static'
+              'struct'
+              'super'
+              'switch'
+              'typedef'
+              'union'
+              'unsigned'
+              'void'
+              'volatile'
+              'while')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Known types'
+        StyleName = 'Standard id'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '_Bool'
+              '_Complex'
+              '_Imaginery'
+              'BOOL'
+              'IMP'
+              'NO'
+              'NSAccessibilityChildrenAttribute'
+              'NSAccessibilityDescriptionAttribute'
+              'NSAccessibilityEnabledAttribute'
+              'NSAccessibilityException'
+              'NSAccessibilityParentAttribute'
+              'NSAccessibilityRoleAttribute'
+              'NSAccessibilityRoleDescriptionAttribute'
+              'NSAccessibilityRowRole'
+              'NSAccessibilityTitleAttribute'
+              'NSAccessibilityUnignoredAncestor'
+              'NSAlert'
+              'NSAlertAlternateReturn'
+              'NSAlertDefaultReturn'
+              'NSAlertFirstButtonReturn'
+              'NSAllDomainsMask'
+              'NSAlternateKeyMask'
+              'NSAnchoredSearch'
+              'NSAnimation'
+              'NSAnimationBlocking'
+              'NSAnimationDelegate'
+              'NSAnimationEaseInOut'
+              'NSAnimationNonblocking'
+              'NSAnimationProgress'
+              'NSApp'
+              'NSAppKitVersionNumber10_3'
+              'NSAppleEvent'
+              'NSAppleEventDescriptor'
+              'NSAppleEventManager'
+              'NSAppleScript'
+              'NSApplication'
+              'NSApplicationDidChangeScreenParametersNotification'
+              'NSApplicationDidUnhideNotification'
+              'NSApplicationMain'
+              'NSApplicationTerminateReply'
+              'NSApplicationWillBecomeActiveNotification'
+              'NSApplicationWillResignActiveNotification'
+              'NSArchiverArchiveInconsistency'
+              'NSArray'
+              'NSAscendingSortIndicator'
+              'NSASCIIStringEncoding'
+              'NSAssert'
+              'NSAssert1'
+              'NSAssert2'
+              'NSAssert3'
+              'NSAssert4'
+              'NSAssert5'
+              'NSAttachmentAttribute'
+              'NSAttachmentAttributeName'
+              'NSAttributedString'
+              'NSAttributeRun'
+              'NSAutoreleasePool'
+              'NSBackgroundColorAttributeName'
+              'NSBackingStoreType'
+              'NSBackwardsSearch'
+              'NSBeep'
+              'NSBeginAlertSheet'
+              'NSBeginInformationalAlertSheet'
+              'NSBezelBorder'
+              'NSBezierPath'
+              'NSBezierPath_AMShading'
+              'NSBitmapImageRep'
+              'NSBoldFontMask'
+              'NSBundle'
+              'NSButton'
+              'NSButtonCell'
+              'NSCalendarDate'
+              'NSCancelButton'
+              'NSCaseInsensitiveSearch'
+              'NSCAssert1'
+              'NSCell'
+              'NSCenterTextAlignment'
+              'NSCFDictionary'
+              'NSCFDictionaryClass'
+              'NSCFString'
+              'NSCharacterConversionException'
+              'NSCharacterSet'
+              'NSCIImageRep'
+              'NSClassDescription'
+              'NSClassFromString'
+              'NSClipView'
+              'NSClosableWindowMask'
+              'NSCloseCommand'
+              'NSCoder'
+              'NSColor'
+              'NSColorPanel'
+              'NSColorSwatch'
+              'NSCommandKeyMask'
+              'NSComparisonResult'
+              'NSCompositeCopy'
+              'NSCompositeDestinationAtop'
+              'NSCompositeSourceIn'
+              'NSCompositeSourceOver'
+              'NSConcreteFileHandle'
+              'NSConcreteTextStorage'
+              'NSConnection'
+              'NSControl'
+              'NSControlKeyMask'
+              'NSControlSize'
+              'NSCopying'
+              'NSCountedSet'
+              'NSCreateCommand'
+              'NSCriticalRequest'
+              'NSCursor'
+              'NSData'
+              'NSDataAdditions'
+              'NSDate'
+              'NSDateFormatter'
+              'NSDateFormatterBehaviorDefault'
+              'NSDateFormatterFullStyle'
+              'NSDateFormatterLongStyle'
+              'NSDateFormatterMediumStyle'
+              'NSDateFormatterNoStyle'
+              'NSDateFormatterShortStyle'
+              'NSDateFormatterStyle'
+              'NSDefaultRunLoopMode'
+              'NSDescendingSortIndicator'
+              'NSDictionaries'
+              'NSDictionary'
+              'NSDictionarys'
+              'NSDirectoryEnumerator'
+              'NSDistributedNotificationCenter'
+              'NSDownloadsDirectory'
+              'NSDraggingInfo'
+              'NSDragOperation'
+              'NSDragOperationCopy'
+              'NSDragOperationLink'
+              'NSDragOperationMove'
+              'NSDragOperationNone'
+              'NSDragOperationPrivate'
+              'NSEndFunctionKey'
+              'NSEnumerator'
+              'NSEqualRanges'
+              'NSEqualRects'
+              'NSError'
+              'NSEscapeFunctionKey'
+              'NSEvenOddWindingRule'
+              'NSEvent'
+              'NSEventTrackingRunLoopMode'
+              'NSEventType'
+              'NSException'
+              'NSExceptionHandler'
+              'NSFileHandle'
+              'NSFileHandleOperationException'
+              'NSFileHandler'
+              'NSFileHandlingPanelOKButton'
+              'NSFileManager'
+              'NSFilenamesPboardType'
+              'NSFilePosixPermissions'
+              'NSFileSize'
+              'NSFilesPromisePboardType'
+              'NSFileWrapper'
+              'NSFitPagination'
+              'NSFloatingWindowLevel'
+              'NSFocusRingTypeNone'
+              'NSFont'
+              'NSFontAttributeName'
+              'NSFontManager'
+              'NSFontManagerCollectionAdditions'
+              'NSFontPanel'
+              'NSForegroundColorAttributeName'
+              'NSGradient'
+              'NSGraphicsContext'
+              'NSHandle'
+              'NSHandleOtherExceptionMask'
+              'NSHandleTopLevelExceptionMask'
+              'NSHandleUncaughtExceptionMask'
+              'NSHandleUncaughtRuntimeErrorMask'
+              'NSHandleUncaughtSystemExceptionMask'
+              'NSHeight'
+              'NSHelpManager'
+              'NSHomeDirectory'
+              'NSHomeFunctionKey'
+              'NSHTTPURLResponse'
+              'NSIconRefImageRep'
+              'NSImage'
+              'NSImageAlignRight'
+              'NSImageCacheException'
+              'NSImageCell'
+              'NSImageCellType'
+              'NSImageView'
+              'NSIndexSet'
+              'NSInformationalRequest'
+              'NSInsetRect'
+              'NSInteger'
+              'NSIntegralRect'
+              'NSInternalInconsistencyException'
+              'NSIntersectsRect'
+              'NSInvalidReceivePortException'
+              'NSInvocation'
+              'NSInvocationOperation'
+              'NSISOLatin1StringEncoding'
+              'NSItalicFontMask'
+              'NSKeyedArchiver'
+              'NSKeyedUnarchiver'
+              'NSKeyValueChangeNewKey'
+              'NSKeyValueChangeOldKey'
+              'NSKeyValueObservingOptionNew'
+              'NSKeyValueObservingOptionOld'
+              'NSKeyValueObservingOptions'
+              'NSLayoutManager'
+              'NSLeftArrowFunctionKey'
+              'NSLeftMouseDragged'
+              'NSLeftMouseDraggedMask'
+              'NSLeftMouseUp'
+              'NSLeftMouseUpMask'
+              'NSLeftTabStopType'
+              'NSLeftTextAlignment'
+              'NSLibraryDirectory'
+              'NSLineBreakByTruncatingMiddle'
+              'NSLineBreakByTruncatingTail'
+              'NSLineBreakByWordWrapping'
+              'NSLinkAttributeName'
+              'NSLiteralSearch'
+              'NSLocalizedString'
+              'NSLock'
+              'NSLog'
+              'NSLogOtherExceptionMask'
+              'NSLogTopLevelExceptionMask'
+              'NSLogUncaughtExceptionMask'
+              'NSLogUncaughtRuntimeErrorMask'
+              'NSLogUncaughtSystemExceptionMask'
+              'NSMakePoint'
+              'NSMakeRange'
+              'NSMakeRect'
+              'NSMakeSize'
+              'NSMaxRange'
+              'NSMaxX'
+              'NSMaxXEdge'
+              'NSMaxY'
+              'NSMaxYEdge'
+              'NSMenu'
+              'NSMenuDidEndTrackingNotification'
+              'NSMenuFunctionKey'
+              'NSMenuItem'
+              'NSMenuItemSeparators'
+              'NSMethodSignature'
+              'NSMiniaturizableWindowMask'
+              'NSMinX'
+              'NSMinXEdge'
+              'NSMinY'
+              'NSMinYEdge'
+              'NSMixedState'
+              'NSModalPanelRunLoopMode'
+              'NSMoveCommand'
+              'NSMutableArray'
+              'NSMutableAttributedString'
+              'NSMutableCharacterSet'
+              'NSMutableData'
+              'NSMutableDictionary'
+              'NSMutableParagraphStyle'
+              'NSMutableRLEArray'
+              'NSMutableSet'
+              'NSMutableString'
+              'NSMutableStrings'
+              'NSMutableURLRequest'
+              'NSNibOwner'
+              'NSNibTopLevelObjects'
+              'NSNormalWindowLevel'
+              'NSNotFound'
+              'NSNotification'
+              'NSNotificationCenter'
+              'NSNotificatoin'
+              'NSNull'
+              'NSNumber'
+              'NSNumbers'
+              'NSObject'
+              'NSObjectInaccessibleException'
+              'NSOffState'
+              'NSOKButton'
+              'NSOldWidth'
+              'NSOnState'
+              'NSOpenPanel'
+              'NSOperationQueue'
+              'NSOrderedAscending'
+              'NSOrderedDescending'
+              'NSOrderedSame'
+              'NSOtherMouseDragged'
+              'nsounds'
+              'NSOutlineView'
+              'NSOutlineViewDropOnItemIndex'
+              'NSPageDownFunctionKey'
+              'NSPageUpFunctionKey'
+              'NSPanel'
+              'NSParagraphStyle'
+              'NSParagraphStyleAttributeName'
+              'NSParameterAssert'
+              'NSPasteboard'
+              'NSPeriodic'
+              'NSPeriodicMask'
+              'NSPlainTextTokenStyle'
+              'NSPoint'
+              'NSPointInRect'
+              'NSPopUpButton'
+              'NSPopupButtonCell'
+              'NSPortTimeoutException'
+              'NSPositionalSpecifier'
+              'NSPredicate'
+              'NSPrintInfo'
+              'NSPrintOperation'
+              'NSPrivate'
+              'NSProcessInfo'
+              'NSPropertyListMutableContainers'
+              'NSPropertyListSerialization'
+              'NSPropertySpecifier'
+              'NSRange'
+              'NSRangeException'
+              'NSRangeFromString'
+              'NSRect'
+              'NSRectEdge'
+              'NSRectFill'
+              'NSRecursiveLock'
+              'NSResponder'
+              'NSRightArrowFunctionKey'
+              'NSRightMouseDragged'
+              'NSRightTabStopType'
+              'NSRightTextAlignment'
+              'NSRoundedTokenStyle'
+              'NSRTFDPboardType'
+              'NSRTFException'
+              'NSRTFPboardType'
+              'NSRunAlertPanel'
+              'NSRunCriticalAlertPanel'
+              'NSRunInformationalAlertPanel'
+              'NSRunLoop'
+              'NSRunStorage'
+              'NSSavePanel'
+              'NSScaleNone'
+              'NSScaleProportionally'
+              'NSScanner'
+              'NSScreen'
+              'NSScriptClassDescription'
+              'NSScriptCommand'
+              'NSScriptObjectSpecifier'
+              'NSScrollElasticityNone'
+              'NSScroller'
+              'NSScrollView'
+              'NSScrollViewAccessibility'
+              'NSSearchField'
+              'NSSearchFieldCell'
+              'NSSearchPathForDirectoriesInDomains'
+              'NSSelectorFromString'
+              'NSSet'
+              'NSShadow'
+              'NSShadowAttributeName'
+              'NSSharing'
+              'NSShiftKeyMask'
+              'NSSize'
+              'NSSmallControlSize'
+              'NSSound'
+              'NSSpeechPitchBaseProperty'
+              'NSSpeechSynthesizer'
+              'NSSpellChecker'
+              'NSSplitView'
+              'NSStackTraceKey'
+              'NSStepper'
+              'NSString'
+              'NSStringFromClass'
+              'NSStringFromRange'
+              'NSStringFromRect'
+              'NSStringFromSelector'
+              'NSStringPboardType'
+              'NSStrings'
+              'NSStringScriptingAdditions'
+              'NSSystemDomainMask'
+              'NSSystemTimeZoneDidChangeDistributedNotification'
+              'NSTableColumn'
+              'NSTableView'
+              'NSTableViewColumnDidResizeNotification'
+              'NSTableViewDropAbove'
+              'NSTableViewDropOperation'
+              'NSTableViewSelectionHighlightStyleSourceList'
+              'NSTableViewUniformColumnAutoresizingStyle'
+              'NSTabView'
+              'NSTabViewItem'
+              'nStack'
+              'NSTask'
+              'NSTemporaryDirectory'
+              'NSTerminateCancel'
+              'NSTerminateLater'
+              'NSTerminateNow'
+              'NSText'
+              'NSTextAlignment'
+              'NSTextAttachment'
+              'NSTextAttachmentCell'
+              'NSTextAttachments'
+              'NSTextBlockAbsoluteValueType'
+              'NSTextBlockBorder'
+              'NSTextBlockPadding'
+              'NSTextBlockTopAlignment'
+              'NSTextBlockWidth'
+              'NSTextCellType'
+              'NSTextDidChangeNotification'
+              'NSTextField'
+              'NSTextFieldCell'
+              'NSTextTab'
+              'NSTextTable'
+              'NSTextTableAutomaticLayoutAlgorithm'
+              'NSTextTableBlock'
+              'NSTextView'
+              'NSThemeDocumentButton'
+              'NSThread'
+              'NSTimeInterval'
+              'NSTimer'
+              'NSTimeZone'
+              'NSTitledWindowMask'
+              'NSTokenField'
+              'NSTokenFieldAdditions'
+              'NSTokenStyle'
+              'NSToolbar'
+              'NSToolbarCustomizeToolbarItemIdentifier'
+              'NSToolbarDidRemoveItemNotification'
+              'NSToolbarDisplayModeIconAndLabel'
+              'NSToolbarDisplayModeIconOnly'
+              'NSToolbarFlexibleSpaceItemIdentifier'
+              'NSToolbarItem'
+              'NSToolbarItemVisibilityPriorityHigh'
+              'NSToolbarPrintItemIdentifier'
+              'NSToolbarSeparatorItemIdentifier'
+              'NSToolbarSizeModeRegular'
+              'NSToolbarSizeModeSmall'
+              'NSToolbarSpaceItemIdentifier'
+              'NSToolbarWillAddItemNotification'
+              'NSTrackingActiveAlways'
+              'NSTrackingArea'
+              'NSTrackingInVisibleRect'
+              'NSTrackingMouseEnteredAndExited'
+              'NSUInteger'
+              'NSUnarchiver'
+              'NSUncachedRead'
+              'NSUndoManager'
+              'NSUniqueIDSpecifier'
+              'NSUnknownKeyException'
+              'NSURL'
+              'NSURLConnection'
+              'NSURLDownload'
+              'NSURLPboardType'
+              'NSURLResponse'
+              'NSURLResponseUnknownLength'
+              'NSUserDefaults'
+              'NSUserDomainMask'
+              'NSUTF8StringEncoding'
+              'NSValue'
+              'NSView'
+              'NSViewAnimation'
+              'NSViewAnimationEffectKey'
+              'NSViewAnimationEndFrameKey'
+              'NSViewAnimationFadeInEffect'
+              'NSViewAnimationFadeOutEffect'
+              'NSViewAnimationTargetKey'
+              'NSViewFrameDidChangeNotification'
+              'NSViewHeightSizable'
+              'NSViewMaxXMargin'
+              'NSViewMaxYMargin'
+              'NSViewMinXMargin'
+              'NSViewMinYMargin'
+              'NSViewWidthSizable'
+              'NSVoiceDemoText'
+              'NSVoiceName'
+              'NSWidth'
+              'NSWindow'
+              'NSWindowCloseButton'
+              'NSWindowCollectionBehavior'
+              'NSWindowCollectionBehaviorCanJoinAllSpaces'
+              'NSWindowCollectionBehaviorDefault'
+              'NSWindowCollectionBehaviorStationary'
+              'NSWindowController'
+              'NSWindowControllers'
+              'NSWindowDidBecomeKeyNotification'
+              'NSWindowDidMoveNotification'
+              'NSWindowDidResignKeyNotification'
+              'NSWindowDidResignMainNotification'
+              'NSWindowMiniaturizeButton'
+              'NSWindowScriptingAdditions'
+              'NSWindowWillMoveNotification'
+              'NSWindowZoomButton'
+              'NSWorkspace'
+              'NSWorkspaceSessionDidBecomeActiveNotification'
+              'NSWorkspaceSessionDidResignActiveNotification'
+              'NSXMLDocument'
+              'NSXMLElement'
+              'NSXMLNode'
+              'NSXMLNodePreserveCDATA'
+              'NSXMLParser'
+              'NSZeroRect'
+              'NSZeroSize'
+              'NSZone'
+              'NSZoneFree'
+              'NSZoneMalloc'
+              'NULL'
+              'SEL'
+              'YES')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Block comment'
+        BlockName = 'Block comment'
+        NotParent = True
+        AlwaysEnabled = True
+        ConditionList = <
+          item
+            TokenTypes = 2
+          end>
+        BlockEnd = 'Block comment end'
+        DisplayInTree = False
+        HighlightPos = cpBound
+        CollapseFmt = '/* ... */'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Block comment end'
+        BlockName = 'Block comment'
+        StrictParent = True
+        AlwaysEnabled = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            CondType = tcNotEqual
+            TokenTypes = 2
+          end>
+        BlockOffset = 1
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '}'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Method begin'
+        ConditionList = <
+          item
+            TokenTypes = 5120
+          end>
+        BlockEnd = '}'
+        NameFmt = '%sz0'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        NoEndRule = True
+        TreeItemImage = 6
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'function end'
+        Enabled = False
+        BlockName = 'function begin'
+        StrictParent = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'function begin'
+        Enabled = False
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+            TokenTypes = 8
+          end
+          item
+            TagList.Strings = (
+              'const')
+            CondType = tcSkip
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              ')')
+            TokenTypes = 8
+          end
+          item
+            CondType = tcSkip
+          end
+          item
+            TagList.Strings = (
+              '(')
+            TokenTypes = 8
+          end
+          item
+            TagList.Strings = (
+              'else'
+              'if')
+            CondType = tcNotEqual
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              '::')
+            CondType = tcNotEqual
+            TokenTypes = 8
+          end>
+        IdentIndex = -1
+        BlockOffset = -1
+        BlockEnd = 'function end'
+        RefToCondEnd = True
+        HighlightPos = cpBound
+        CollapseFmt = '%sz-1...'
+        TreeItemImage = 5
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '{'
+        StyleName = 'Current block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+            TokenTypes = 8
+          end>
+        IdentIndex = 1
+        BlockEnd = '}'
+        DisplayInTree = False
+        DynHighlight = dhBound
+        HighlightPos = cpRange
+        DynSelectMin = True
+        DrawStaple = True
+        CollapseFmt = '{ ... %ez0'
+        IgnoreAsParent = False
+        AutoCloseMode = acmCloseNearest
+        AutoCloseText = '}'
+      end
+      item
+        DisplayName = '('
+        StyleName = 'Current block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '(')
+            TokenTypes = 8
+          end>
+        BlockEnd = ')'
+        NotCollapsed = True
+        DisplayInTree = False
+        DynHighlight = dhBound
+        HighlightPos = cpBoundTagBegin
+        DynSelectMin = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = ')'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ')')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '['
+        StyleName = 'Current block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '[')
+            TokenTypes = 8
+          end>
+        BlockEnd = ']'
+        NotCollapsed = True
+        DisplayInTree = False
+        DynHighlight = dhBound
+        HighlightPos = cpBoundTagBegin
+        DynSelectMin = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = ']'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ']')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '@begin'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '@implementation'
+              '@interface')
+            TokenTypes = 4
+          end>
+        BlockEnd = '@end'
+        NameFmt = '%sz0'
+        HighlightPos = cpAny
+        CollapseFmt = '%sz0...'
+        TreeItemImage = 4
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '@end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '@end')
+            TokenTypes = 4
+          end>
+        BlockEnd = '@begin'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end>
+    CodeTemplates = <
+      item
+        Name = 'if'
+        Description = 'if ( ) {...}'
+        Code.Strings = (
+          'if (<caret>)'
+          '{'
+          ''
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'func'
+        Description = 'void function (void) {...}'
+        Code.Strings = (
+          'void <caret> function (void)'
+          '{'
+          '  '
+          '  return;'
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'for'
+        Description = 'for (int i=0; i<x; i++) {...}'
+        Code.Strings = (
+          'for(int i=0;i<<caret>;i++)'
+          '{'
+          ''
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'while'
+        Description = 'while ( ) {...}'
+        Code.Strings = (
+          'while (<caret>)'
+          '{'
+          ''
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'do'
+        Description = 'do {...} while ( );'
+        Code.Strings = (
+          'do'
+          '{'
+          ''
+          '}'
+          'while (<caret>);')
+        Advanced = True
+      end
+      item
+        Name = 'switch'
+        Description = 'switch...case...'
+        Code.Strings = (
+          'switch (<caret>)'
+          '{'
+          '  case 0:'
+          ''
+          '    break;'
+          '  case 1:'
+          ''
+          '    break;'
+          '  case 2:'
+          ''
+          '    break;'
+          '  default:'
+          ''
+          '    break;'
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'if_else'
+        Description = 'if ( ) {...} else {...}'
+        Code.Strings = (
+          'if (<caret>)'
+          '{'
+          ''
+          '}'
+          'else'
+          '{'
+          ''
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'main'
+        Description = 'int main (int argc, char* argv[]) {...}'
+        Code.Strings = (
+          'int main(int argc, char* argv[])'
+          '{'
+          '  <caret>'
+          '  return 0;'
+          '}')
+        Advanced = True
+      end
+      item
+        Name = 'vmain'
+        Description = 'void main (void) {...}'
+        Code.Strings = (
+          'void main(void)'
+          '{'
+          '  <caret>'
+          '}')
+        Advanced = True
+      end>
+    SubAnalyzers = <>
+    SampleText.Strings = (
+      '//Comment'
+      '//Comment'
+      '#include <test\test.h>'
+      ''
+      '@implementation XtrasInstaller'
+      ''
+      '+ (XtrasInstaller *)installer'
+      '{'
+      '    NSString test = "Some text";'
+      '    NSUInteger id;'
+      #9'return [[XtrasInstaller alloc] init];'
+      '}'
+      ''
+      '- (id)init'
+      '{'
+      #9'if ((self = [super init])) {'
+      #9#9'self.download = nil;'
+      #9#9'window = nil;'
+      #9'}'
+      #9'return self;'
+      '}'
+      ''
+      '@end')
+    TokenTypeNames.Strings = (
+      'Unknown'
+      'Comment'
+      'Identifier'
+      'Symbol'
+      'String'
+      'Integer const'
+      'Float const'
+      'Hex const'
+      'Char const'
+      'Preprocessor'
+      'Method begin')
+    Extentions = 'c h m mm pch'
+    LexerName = 'Objective-C'
+    Notes.Strings = (
+      'Author: Alex, uvviewsoft.com'
+      'Note:'
+      'usual functions (without +/- sign at line start) are '
+      'not shown in tree, yet. Not simple to do.')
+    LineComment = '//'
     Charset = DEFAULT_CHARSET
   end
 end
