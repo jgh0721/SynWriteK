@@ -3,6 +3,23 @@ Legend:
  - fixed
  * changed
 
+5.2.155
+* removed options (5 of them) from "Tree/Map" tab of options
+
+5.2.150
++ Multi-carets feature. See help topic. Note: multiple selections are not yet implemented. 
++ commands added in "Edit -- Multi-carets" submenu.
++ command added "Edit -- Edit column", which is "alias" for one multi-carets command.
++ command "Edit -- Sorting -- Remove all duplicates" added
++ command "Edit -- Sorting -- Remove adjacent duplicates" speed up
++ lexer Rust (in Readme\*.rar)
++ lexer HTML has 8 "doctype" code templates
++ dialog "Output pattern" has "Save preset" button
+* change: external tools preset files have new extension
+* change: color pallette files have new extenson
+* change: command "Find all (mark)" takes current selection or word, if such options are enabled
+* removed: option color "Caret BG"
+
 5.1.050
 + lexer CSS: underlined misspelled properties and vendor prefixes (~400 of them are known)
 + lexer CSS: auto-complete knows all vendor prefixes
