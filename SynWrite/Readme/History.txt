@@ -3,8 +3,50 @@ Legend:
  - fixed
  * changed
 
-5.2.155
+5.4.350
++ HTML tree: nodes "Images", "Links", "Style sheets", "IDs", "Classes", "Forms" (seen in WeBuilder)
++ CSS tree: nodes "Styles", "Colors", "Images" (seen in WeBuilder)
++ PHP tree: node "Includes"
++ command "Search -- Extend selection", useful for any lexer, especially HTML (seen in Emmet)
++ commands "Edit -- Line operations -- Reverse/Shuffle lines" (seen in Sublime)
++ shortcuts "Delete from caret to beginning/end of file" (seen in Sublime)
++ dialog "Color Picker" updated
++ more items in Tree popup menu
+* command "Show cmd list" moved to "Search" menu
+- fixes
+
+5.3.284
++ "Auto-Complete plugins" API. See Wiki.
+- fixes
+
+5.2.250
++ dialog "Favorites" reworked
++ added main menu button "«|»", which toggles visibility of 2nd view (also added shotrcut)
++ Find dialog: added item in "»?" menu to toggle regex option "(?s)"
+* removed initial visibility of editor's horz splitter. Now, to split editor, use tab header's popup menu.
++ project files may have extension "synw-proj" too
++ help: FAQ item "How to copy program settings"
+
+5.2.230
++ Find in files: option "Close when finished"; Esc stops search; option "Max count of nodes.." can be set to 0 for unlimited
+- Emmet updated
+
+5.2.220
++ command "Edit -- Blank operations -- Align with separator", aligns 2 columns by custom separator chars
++ speed up of most "Blank" commands
++ option "Show wrap mark on gutter" returned back
++ lexer "Inno Setup" improved
+- fixes (forum)
+
+5.2.190
++ help topic "Coding helpers -- HTML Tidy"
++ redone PHP(dev) lexer tree
+* find in files: result tree nodes may contain no more than N (option) items (fixes slowdown)
+* reworked progress window ("Searching for text: NN%")
+* reworked "Tabs to spaces"/"Spaces to tabs", speed up
 * removed options (5 of them) from "Tree/Map" tab of options
+* removed options (5 of them) from "Editor 2" tab of options
+- fixes (forum)
 
 5.2.150
 + Multi-carets feature. See help topic. Note: multiple selections are not yet implemented. 

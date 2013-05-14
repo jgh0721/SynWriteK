@@ -2643,19 +2643,30 @@ var walker, tokens = [], isOp, isNameChar, isDigit;
             conf = getConf();    
      
         cnext = w.nextChar();
-        
-        if (cnext !== '*') {
+
+        if (cnext === '/') {
+            // inline comment in SCSS and such
+            token += cnext;
+            var pk = w.peek();
+            while (pk && pk !== '\n') {
+                token += cnext;
+                cnext = w.nextChar();
+                pk = w.peek();
+            }
+        } else if (cnext === '*') {
+            // multiline CSS commment
+            while (!(c === "*" && cnext === "/")) {
+                token += cnext;
+                c = cnext;
+                cnext = w.nextChar();        
+            }            
+        } else {
             // oops, not a comment, just a /
             conf.charend = conf['char'];
             conf.lineend = conf.line;
             return tokener(token, token, conf);
         }
-    
-        while (!(c === "*" && cnext === "/")) {
-            token += cnext;
-            c = cnext;
-            cnext = w.nextChar();        
-        }
+        
         token += cnext;
         w.nextChar();
         tokener(token, 'comment', conf);
@@ -4667,7 +4678,7 @@ emmet.define('resources', function(require, _) {
 		/**
 		 * Returns resource (abbreviation, snippet, etc.) matched for passed 
 		 * abbreviation
-		 * @param {TreeNode} node
+		 * @param {AbbreviationNode} node
 		 * @param {String} syntax
 		 * @returns {Object}
 		 */
@@ -5184,7 +5195,7 @@ emmet.define('profile', function(require, _) {
 		createProfile('html', {self_closing_tag: false});
 		createProfile('xml', {self_closing_tag: true, tag_nl: true});
 		createProfile('xml_zen', {self_closing_tag: true, tag_nl: true, tag_nl_leaf: true}); //AT
-		createProfile('plain', {tag_nl: false, indent: false, place_cursor: false});
+        createProfile('plain', {tag_nl: false, indent: false, place_cursor: false});
 		createProfile('line', {tag_nl: false, indent: false, extraFilters: 's'});
 	}
 	
@@ -5316,7 +5327,7 @@ emmet.define('editorUtils', function(require, _) {
 			return  {
 				/** @memberOf outputInfo */
 				syntax: String(syntax || editor.getSyntax()),
-				profile: profile ? String(profile) : null,
+				profile: profile || null,
 				content: String(editor.getContent())
 			};
 		},
@@ -5498,21 +5509,20 @@ emmet.define('actionUtils', function(require, _) {
 				var tag = require('htmlMatcher').find(content, editor.getCaretPos());
 				
 				if (tag && tag.type == 'tag') {
-					var reAttr = /([\w\-:]+)(?:\s*=\s*(?:(?:"((?:\\.|[^"])*)")|(?:'((?:\\.|[^'])*)')|([^>\s]+)))?/g;
 					var startTag = tag.open;
-					var tagAttrs = startTag.range.substring(content).replace(/^<[\w\-\:]+/, '');
-//					var tagAttrs = startTag.full_tag.replace(/^<[\w\-\:]+/, '');
 					var contextNode = {
 						name: startTag.name,
 						attributes: []
 					};
 					
 					// parse attributes
-					var m;
-					while (m = reAttr.exec(tagAttrs)) {
-						contextNode.attributes.push({
-							name: m[1],
-							value: m[2]
+					var tagTree = require('xmlEditTree').parse(startTag.range.substring(content));
+					if (tagTree) {
+						contextNode.attributes = _.map(tagTree.getAll(), function(item) {
+							return {
+								name: item.name(),
+								value: item.value()
+							};
 						});
 					}
 					
@@ -6562,7 +6572,9 @@ emmet.define('preferences', function(require, _) {
 							v = parseInt(v + '', 10) || 0;
 							break;
 						default: // convert to string
-							v += '';
+							if (v !== null) {
+								v += '';
+							}
 					}
 
 					preferences[k] = v;
@@ -6596,10 +6608,13 @@ emmet.define('preferences', function(require, _) {
 		 */
 		getArray: function(name) {
 			var val = this.get(name);
-			if (!_.isUndefined(val)) {
-				val = _.map(val.split(','), require('utils').trim);
-				if (!val.length)
-					val = null;
+			if (_.isUndefined(val) || val === null || val === '')  {
+				return null;
+			}
+
+			val = _.map(val.split(','), require('utils').trim);
+			if (!val.length) {
+				return null;
 			}
 			
 			return val;
@@ -6816,7 +6831,7 @@ emmet.define('filters', function(require, _) {
  */
 emmet.define('elements', function(require, _) {
 	var factories = {};
-	var reAttrs = /([\w\-]+)\s*=\s*(['"])(.*?)\2/g;
+	var reAttrs = /([\w\-:]+)\s*=\s*(['"])(.*?)\2/g;
 	
 	var result = {
 		/**
@@ -11082,9 +11097,12 @@ emmet.define('cssGradient', function(require, _) {
 	
 	function getPrefixedNames(name) {
 		var prefixes = prefs.getArray('css.gradient.prefixes');
-		var names = _.map(prefixes, function(p) {
-			return '-' + p + '-' + name;
-		});
+		var names = prefixes 
+			? _.map(prefixes, function(p) {
+				return '-' + p + '-' + name;
+			}) 
+			: [];
+		
 		names.push(name);
 		
 		return names;
@@ -12648,35 +12666,11 @@ emmet.exec(function(require, _) {
  * @constructor
  * @memberOf __loremIpsumGeneratorDefine
  */
-emmet.exec(function(require, _) {
-	/**
-	 * @param {AbbreviationNode} tree
-	 * @param {Object} options
-	 */
-	require('abbreviationParser').addPreprocessor(function(tree, options) {
-		var re = /^(?:lorem|lipsum)(\d*)$/i, match;
-		
-		/** @param {AbbreviationNode} node */
-		tree.findAll(function(node) {
-			if (node._name && (match = node._name.match(re))) {
-				var wordCound = match[1] || 30;
-				
-				// force node name resolving if node should be repeated
-				// or contains attributes. In this case, node should be outputed
-				// as tag, otherwise as text-only node
-				node._name = '';
-				node.data('forceNameResolving', node.isRepeating() || node.attributeList().length);
-				node.data('pasteOverwrites', true);
-				node.data('paste', function(i, content) {
-					return paragraph(wordCound, !i);
-				});
-			}
-		});
-	});
-	
-	var COMMON_P = 'lorem ipsum dolor sit amet consectetur adipisicing elit'.split(' ');
-	
-	var WORDS = ['exercitationem', 'perferendis', 'perspiciatis', 'laborum', 'eveniet',
+emmet.define('lorem', function(require, _) {
+	var langs = {
+		en: {
+			common: ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipisicing', 'elit'],
+			words: ['exercitationem', 'perferendis', 'perspiciatis', 'laborum', 'eveniet',
 	             'sunt', 'iure', 'nam', 'nobis', 'eum', 'cum', 'officiis', 'excepturi',
 	             'odio', 'consectetur', 'quasi', 'aut', 'quisquam', 'vel', 'eligendi',
 	             'itaque', 'non', 'odit', 'tempore', 'quaerat', 'dignissimos',
@@ -12704,7 +12698,67 @@ emmet.exec(function(require, _) {
 	             'optio', 'dolor', 'labore', 'temporibus', 'repellat', 'veniam',
 	             'architecto', 'est', 'esse', 'mollitia', 'nulla', 'a', 'similique',
 	             'eos', 'alias', 'dolore', 'tenetur', 'deleniti', 'porro', 'facere',
-	             'maxime', 'corrupti'];
+	             'maxime', 'corrupti']
+		},
+		ru: {
+			common: ['далеко-далеко', 'за', 'словесными', 'горами', 'в стране', 'гласных', 'и согласных', 'живут', 'рыбные', 'тексты'],
+			words: ['вдали', 'от всех', 'они', 'буквенных', 'домах', 'на берегу', 'семантика', 
+		            'большого', 'языкового', 'океана', 'маленький', 'ручеек', 'даль', 
+		            'журчит', 'по всей', 'обеспечивает', 'ее','всеми', 'необходимыми', 
+		            'правилами', 'эта', 'парадигматическая', 'страна', 'которой', 'жаренные', 
+		            'предложения', 'залетают', 'прямо', 'рот', 'даже', 'всемогущая', 
+		            'пунктуация', 'не', 'имеет', 'власти', 'над', 'рыбными', 'текстами', 
+		            'ведущими', 'безорфографичный', 'образ', 'жизни', 'однажды', 'одна', 
+		            'маленькая', 'строчка','рыбного', 'текста', 'имени', 'lorem', 'ipsum', 
+		            'решила', 'выйти', 'большой', 'мир', 'грамматики', 'великий', 'оксмокс', 
+		            'предупреждал', 'о', 'злых', 'запятых', 'диких', 'знаках', 'вопроса', 
+		            'коварных', 'точках', 'запятой', 'но', 'текст', 'дал', 'сбить', 
+		            'себя', 'толку', 'он', 'собрал', 'семь', 'своих', 'заглавных', 'букв', 
+		            'подпоясал', 'инициал', 'за', 'пояс', 'пустился', 'дорогу', 
+		            'взобравшись', 'первую', 'вершину', 'курсивных', 'гор', 'бросил', 
+		            'последний', 'взгляд', 'назад', 'силуэт', 'своего', 'родного', 'города', 
+		            'буквоград', 'заголовок', 'деревни', 'алфавит', 'подзаголовок', 'своего', 
+		            'переулка', 'грустный', 'реторический', 'вопрос', 'скатился', 'его', 
+		            'щеке', 'продолжил', 'свой', 'путь', 'дороге', 'встретил', 'рукопись', 
+		            'она', 'предупредила',  'моей', 'все', 'переписывается', 'несколько', 
+		            'раз', 'единственное', 'что', 'меня', 'осталось', 'это', 'приставка', 
+		            'возвращайся', 'ты', 'лучше', 'свою', 'безопасную', 'страну', 'послушавшись', 
+		            'рукописи', 'наш', 'продолжил', 'свой', 'путь', 'вскоре', 'ему', 
+		            'повстречался', 'коварный', 'составитель', 'рекламных', 'текстов', 
+		            'напоивший', 'языком', 'речью', 'заманивший', 'свое', 'агенство', 
+		            'которое', 'использовало', 'снова', 'снова', 'своих', 'проектах', 
+		            'если', 'переписали', 'то', 'живет', 'там', 'до', 'сих', 'пор']
+		}
+	};
+
+	var prefs = require('preferences');
+	prefs.define('lorem.defaultLang', 'en');
+
+	/**
+	 * @param {AbbreviationNode} tree
+	 * @param {Object} options
+	 */
+	require('abbreviationParser').addPreprocessor(function(tree, options) {
+		var re = /^(?:lorem|lipsum)([a-z]{2})?(\d*)$/i, match;
+		
+		/** @param {AbbreviationNode} node */
+		tree.findAll(function(node) {
+			if (node._name && (match = node._name.match(re))) {
+				var wordCound = match[2] || 30;
+				var lang = match[1] || prefs.get('lorem.defaultLang') || 'en';
+				
+				// force node name resolving if node should be repeated
+				// or contains attributes. In this case, node should be outputed
+				// as tag, otherwise as text-only node
+				node._name = '';
+				node.data('forceNameResolving', node.isRepeating() || node.attributeList().length);
+				node.data('pasteOverwrites', true);
+				node.data('paste', function(i, content) {
+					return paragraph(lang, wordCound, !i);
+				});
+			}
+		});
+	});
 	
 	/**
 	 * Returns random integer between <code>from</code> and <code>to</code> values
@@ -12767,9 +12821,11 @@ emmet.exec(function(require, _) {
 		} else {
 			totalCommas = randint(1, 4);
 		}
-		
-		_.each(sample(_.range(totalCommas)), function(ix) {
-			words[ix] += ',';
+
+		_.each(_.range(totalCommas), function(ix) {
+			if (ix < words.length - 1) {
+				words[ix] += ',';
+			}
 		});
 	}
 	
@@ -12780,15 +12836,20 @@ emmet.exec(function(require, _) {
 	 * "lorem ipsum" sentence.
 	 * @returns {String}
 	 */
-	function paragraph(wordCount, startWithCommon) {
+	function paragraph(lang, wordCount, startWithCommon) {
+		var data = langs[lang];
+		if (!data) {
+			return '';
+		}
+
 		var result = [];
 		var totalWords = 0;
 		var words;
 		
 		wordCount = parseInt(wordCount, 10);
 		
-		if (startWithCommon) {
-			words = COMMON_P.slice(0, wordCount);
+		if (startWithCommon && data.common) {
+			words = data.common.slice(0, wordCount);
 			if (words.length > 5)
 				words[4] += ',';
 			totalWords += words.length;
@@ -12796,13 +12857,32 @@ emmet.exec(function(require, _) {
 		}
 		
 		while (totalWords < wordCount) {
-			words = sample(WORDS, Math.min(randint(3, 12) * randint(1, 5), wordCount - totalWords));
+			words = sample(data.words, Math.min(randint(3, 12) * randint(1, 5), wordCount - totalWords));
 			totalWords += words.length;
 			insertCommas(words);
 			result.push(sentence(words));
 		}
 		
 		return result.join(' ');
+	}
+
+	return {
+		/**
+		 * Adds new language words for Lorem Ipsum generator
+		 * @param {String} lang Two-letter lang definition
+		 * @param {Object} data Words for language. Maight be either a space-separated 
+		 * list of words (String), Array of words or object with <code>text</code> and
+		 * <code>common</code> properties
+		 */
+		addLang: function(lang, data) {
+			if (_.isString(data)) {
+				data = {words: _.compact(data.split(' '))};
+			} else if (_.isArray(data)) {
+				data = {words: data};
+			}
+
+			langs[lang] = data;
+		}
 	}
 });/**
  * Select current line (for simple editors like browser's &lt;textarea&gt;)
@@ -13312,6 +13392,7 @@ emmet.exec(function(require, _) {
 			"wow:n": "word-wrap:none;",
 			"wow:u": "word-wrap:unrestricted;",
 			"wow:s": "word-wrap:suppress;",
+			"wow:b": "word-wrap:break-word;",
 			"lts": "letter-spacing:|;",
 			"f": "font:|;",
 			"f+": "font:${1:1em} ${2:Arial,sans-serif};",
@@ -13336,6 +13417,7 @@ emmet.exec(function(require, _) {
 			"ff:c": "font-family:cursive;",
 			"ff:f": "font-family:fantasy;",
 			"ff:m": "font-family:monospace;",
+			"ff:a": "font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;",
 			"fef": "font-effect:|;",
 			"fef:n": "font-effect:none;",
 			"fef:eg": "font-effect:engrave;",
@@ -13551,7 +13633,7 @@ emmet.exec(function(require, _) {
 			"det": "details",
 			"cmd": "command",
 			"doc": "html>(head>meta[charset=UTF-8]+title{${1:Document}})+body",
-			"doc4": "html>(head>meta[http-equiv=\"Content-Type\" content=\"text/html;charset=${charset}\"]+title{${1:Document}})",
+			"doc4": "html>(head>meta[http-equiv=\"Content-Type\" content=\"text/html;charset=${charset}\"]+title{${1:Document}})+body",
 
 			"html:4t":  "!!!4t+doc4[lang=${lang}]",
 			"html:4s":  "!!!4s+doc4[lang=${lang}]",
@@ -13657,6 +13739,10 @@ emmet.exec(function(require, _) {
 	
 	"stylus": {
 		"extends": "css"
+	},
+
+	"styl": {
+		"extends": "stylus"
 	}
 }
 , 'system');});

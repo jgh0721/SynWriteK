@@ -6,7 +6,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -33,7 +33,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -41,7 +41,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clTeal
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -49,7 +49,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -57,7 +57,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -80,7 +80,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -663,7 +663,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -689,7 +689,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -705,7 +705,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -713,7 +713,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -721,7 +721,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -729,14 +729,14 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -754,8 +754,8 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'class (tree)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -5897,25 +5897,6 @@ object SyntaxManager: TSyntaxManager
   object SyntAnal84: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftCustomFont
-      end
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
-      end
-      item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
@@ -5934,7 +5915,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -5943,7 +5924,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -5951,7 +5932,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -6066,6 +6047,14 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
+        DisplayName = 'String Heredoc'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '(?s)<<<(\w+)\z.+?\z\1;'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
         DisplayName = 'Variable'
         StyleName = 'Variable'
         TokenType = 2
@@ -6125,6 +6114,7 @@ object SyntaxManager: TSyntaxManager
               'break'
               'case'
               'class'
+              'const'
               'continue'
               'default'
               'define'
@@ -6293,7 +6283,22 @@ object SyntaxManager: TSyntaxManager
               'function')
             TokenTypes = 4
           end>
+        BlockEnd = 'function_without_class_end'
         NameFmt = '%s0 %s-1'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'function_without_class_end'
+        BlockName = 'function_without_class'
+        StrictParent = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 8
+          end>
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
@@ -6521,10 +6526,10 @@ object SyntaxManager: TSyntaxManager
       'Char const'
       'Code Start'
       'Code End')
-    MarkedBlockStyle = 'Marked block'
     LexerName = 'PHP'
     Notes.Strings = (
-      'Tree added by Matthias030, ghisler.ch.')
+      'Tree added by Matthias030, SynWrite admin'
+      'Fixes by Alex, uvviewsoft.com')
     RestartFromLineStart = True
     LineComment = '//'
     Charset = DEFAULT_CHARSET
@@ -8308,28 +8313,9 @@ object SyntaxManager: TSyntaxManager
   object SyntAnal16: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftCustomFont
-      end
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
-      end
-      item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -8349,12 +8335,11 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
-        BgColor = 15658734
       end
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -8362,15 +8347,15 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'constant'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = []
       end
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -8454,6 +8439,16 @@ object SyntaxManager: TSyntaxManager
         StyleName = 'Preprocessor'
         TokenType = 10
         Expression = '^\s*\#.*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String with {var}'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = 
+          '"       [\w\\\.\-\+\#\:\*\s/]*? " |'#13#10'"       [\w\\\.\-\+\#\:\*\s' +
+          '/]*? (?=\{) |'#13#10'(?<=\}) [\w\\\.\-\+\#\:\*\s/]*? "'#13#10
         ColumnFrom = 0
         ColumnTo = 0
       end>
@@ -8635,7 +8630,7 @@ object SyntaxManager: TSyntaxManager
       
         'Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; Grou' +
         'pDescription: "{cm:AdditionalIcons}"'
-      ''
+      ';test'
       '[Files]'
       
         'Source: "{app}\Plugins\wlx\SynWrite\HL\C#.acp"; DestDir: "{app}\' +
@@ -8679,10 +8674,11 @@ object SyntaxManager: TSyntaxManager
       'Constant'
       'Section'
       'Preprocessor')
-    MarkedBlockStyle = 'Marked block'
     Extentions = 'iss'
     LexerName = 'Inno Setup'
     SkipSpaces = False
+    Notes.Strings = (
+      'Improved by Alex, uvviewsoft.com')
     LineComment = ';'
     Charset = DEFAULT_CHARSET
   end
@@ -15591,7 +15587,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -15599,7 +15595,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String RE'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 9199360
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -15675,15 +15671,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String'
         StyleName = 'String'
         TokenType = 4
-        Expression = '(?s)" (\\\\|\\"|.)*? ("|\Z)'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'String 2'
-        StyleName = 'String'
-        TokenType = 4
-        Expression = #39' (\\'#39'|.)*? ('#39'|$)'
+        Expression = '(?s)("|'#39') (\\\\|\\\1|.)*? (\1|\Z)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -15692,6 +15680,14 @@ object SyntaxManager: TSyntaxManager
         StyleName = 'String RE'
         TokenType = 4
         Expression = '#before / must be =,('#13#10'(?<=[=\(&]\s*) / (\\/|.)*? (/[gim]*|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String Heredoc'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '(?s) <r><!\[CDATA\[ .+? (\]\]></r> | \Z) '
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -15739,7 +15735,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Symbol'
         StyleName = 'Symbol'
         TokenType = 3
-        Expression = '[/\+\-\*:=<>&/\|\^~!]+'
+        Expression = '[/\+\-\*:=<>&/\|\^~!%]+'
         ColumnFrom = 0
         ColumnTo = 0
       end>
@@ -16192,12 +16188,13 @@ object SyntaxManager: TSyntaxManager
     Extentions = 'js'
     LexerName = 'JavaScript'
     Notes.Strings = (
-      'Fixed by Alex, uvviewsoft.com'
+      'Improved by Alex, uvviewsoft.com'
       ' -tree: added if/for/var'
       ' -tree: func params shown'
       ' -strings '#39'..'#39
       ' -strings multiline ".."'
-      ' -strings /../')
+      ' -strings /../'
+      ' -strings heredoc syntax')
     LineComment = '//'
     Charset = DEFAULT_CHARSET
   end
@@ -16794,7 +16791,7 @@ object SyntaxManager: TSyntaxManager
         Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = []
       end
       item
         DisplayName = 'Current Block'
@@ -17340,11 +17337,12 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'br'
               'hr'
               'image'
               'img'
-              'link')
+              'input'
+              'link'
+              'meta')
             TokenTypes = 4
             IgnoreCase = True
           end
@@ -17354,6 +17352,7 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 1024
           end>
         BlockEnd = 'Simple tag block end'
+        NameFmt = '%s0~s[>]1'
         HighlightPos = cpBound
         TreeItemStyle = 'Tree item (tag)'
         IgnoreAsParent = False
@@ -17380,7 +17379,9 @@ object SyntaxManager: TSyntaxManager
               'hr'
               'image'
               'img'
-              'link')
+              'input'
+              'link'
+              'meta')
             CondType = tcNotEqual
             TokenTypes = 4
             IgnoreCase = True
@@ -17392,6 +17393,7 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 1024
           end>
         BlockEnd = 'Tag block end'
+        NameFmt = '%s0~s[>]1'
         DynHighlight = dhBound
         HighlightPos = cpRange
         DynSelectMin = True
@@ -17439,12 +17441,128 @@ object SyntaxManager: TSyntaxManager
         IgnoreAsParent = False
       end
       item
-        DisplayName = 'Tag attrib (tree)'
-        Enabled = False
-        BlockName = 'Tag begin'
+        DisplayName = 'Tag img begin'
         ConditionList = <
           item
-            TokenTypes = 20
+            TagList.Strings = (
+              'img')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '<')
+            TokenTypes = 1024
+          end>
+        BlockEnd = 'Tag img end'
+        NameFmt = '%s-1~s[>]1'
+        GroupFmt = '\Images'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag img end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '/>'
+              '>')
+            TokenTypes = 2048
+          end>
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag a begin'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'a')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '<')
+            TokenTypes = 1024
+          end>
+        BlockEnd = 'Tag a end'
+        NameFmt = '%s-2~s[>]1'
+        GroupFmt = '\Links'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag a end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'a')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '</')
+            TokenTypes = 1024
+          end>
+        BlockEnd = 'Tag a begin'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag form begin'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'form')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '<')
+            TokenTypes = 1024
+          end>
+        BlockEnd = 'Tag form end'
+        NameFmt = '%s-1~s[>]1'
+        GroupFmt = '\Forms'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag form end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'form')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '</')
+            TokenTypes = 1024
+          end>
+        BlockEnd = 'Tag form begin'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag css begin'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '"stylesheet"')
+            TokenTypes = 16
           end
           item
             TagList.Strings = (
@@ -17452,13 +17570,125 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 8
           end
           item
+            TagList.Strings = (
+              'rel')
             TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              'link')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '<')
+            TokenTypes = 1024
           end>
-        NotCollapsed = True
-        NameFmt = '%s0 %s-1 %s-2'
-        HighlightPos = cpBound
+        BlockEnd = 'Tag css end'
+        NameFmt = '%s-1~s[>]1'
+        GroupFmt = '\Style sheets'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag css end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '>')
+            TokenTypes = 2048
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'attrib id'
+        ConditionList = <
+          item
+            TokenTypes = 16
+          end
+          item
+            TagList.Strings = (
+              '=')
+            TokenTypes = 8
+          end
+          item
+            TagList.Strings = (
+              'id')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        NameFmt = '%s-2'
+        GroupFmt = '\IDs'
+        RefToCondEnd = True
+        HighlightPos = cpAny
         NoEndRule = True
-        TreeItemStyle = 'Tree item (attribute)'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'attrib class'
+        ConditionList = <
+          item
+            TokenTypes = 16
+          end
+          item
+            TagList.Strings = (
+              '=')
+            TokenTypes = 8
+          end
+          item
+            TagList.Strings = (
+              'class')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        NameFmt = '%s-2'
+        GroupFmt = '\Classes'
+        HighlightPos = cpAny
+        NoEndRule = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag script begin'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'script')
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '<')
+            TokenTypes = 1024
+          end>
+        BlockEnd = 'Tag script end'
+        NameFmt = '%s-1~s[>]1'
+        GroupFmt = '\Scripts'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Tag script end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'script')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              '</')
+            TokenTypes = 1024
+          end>
+        RefToCondEnd = True
+        HighlightPos = cpAny
         IgnoreAsParent = False
       end>
     CodeTemplates = <
@@ -17840,14 +18070,23 @@ object SyntaxManager: TSyntaxManager
       '<!DOCTYPE html PUBLIC >'
       '<html>'
       '<head>'
-      '<title>HTML page</title>'
+      '  <title>HTML page</title>'
+      
+        '  <link rel="stylesheet" type="text/css" href="/files/styles.css' +
+        '">'
       '</head>'
       '<body>'
-      '<a href="" hre="" target=_blank data-nnn="test">'
+      ''
+      '<a href="" hre="" target=_blank data-nnn="test">Test</a>  '
+      '<img src="image.png">'
+      '<form method="GET" action="search.php">'
+      '  <input name="s" size="10" type="text">'
+      '  <input value="Find" type="submit">'
+      '</form>'
+      ''
       '<h2a>Hello&amp;</h2b>'
       '  <ul>'
       '    <liN> Test'
-      '    <li> Test'
       '    <li> Test'
       '  </ul>'
       '</body>'
@@ -17871,7 +18110,8 @@ object SyntaxManager: TSyntaxManager
     LexerName = 'HTML documents'
     Notes.Strings = (
       'Reworked by Alex, uvviewsoft.com'
-      'Added red underlines for misspelled tags and tag attribs.')
+      'Added red underlines for misspelled tags and tag attribs.'
+      'Added more tree nodes: Links, Images, Style sheets etc.')
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal40: TLibSyntAnalyzer
@@ -19332,6 +19572,7 @@ object SyntaxManager: TSyntaxManager
         Highlight = True
         InvertColors = True
         NameFmt = '%sl1'
+        GroupFmt = 'Styles'
         DynHighlight = dhRange
         HighlightPos = cpRange
         DynSelectMin = True
@@ -19361,6 +19602,9 @@ object SyntaxManager: TSyntaxManager
             TokenTypes = 544
           end
           item
+            TagList.Strings = (
+              'http')
+            CondType = tcNotEqual
             TokenTypes = 4
           end>
         IdentIndex = 1
@@ -19382,6 +19626,47 @@ object SyntaxManager: TSyntaxManager
         BlockOffset = 1
         DisplayInTree = False
         HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Colors'
+        ConditionList = <
+          item
+            TokenTypes = 64
+          end>
+        GroupFmt = '\Colors'
+        HighlightPos = cpAny
+        NoEndRule = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Images'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '(')
+            TokenTypes = 32
+          end
+          item
+            TagList.Strings = (
+              'url')
+          end>
+        BlockEnd = 'Images end'
+        NameFmt = '%s-1~s[)]1'
+        GroupFmt = '\Images'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Images end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ')')
+            TokenTypes = 32
+          end>
+        HighlightPos = cpAny
         IgnoreAsParent = False
       end>
     CodeTemplates = <>
@@ -19425,7 +19710,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -19435,7 +19720,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Text'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -20169,7 +20454,7 @@ object SyntaxManager: TSyntaxManager
     MarkedBlockStyle = 'Marked block'
     Extentions = 
       'xml xsl xslt mmpa mmpr sti bdsproj xsd rss wml svg xul xsd axl r' +
-      'df xaml vcproj dproj'
+      'df xaml vcproj dproj plist storyboard'
     LexerName = 'XML'
     Charset = DEFAULT_CHARSET
     Left = 140
@@ -20446,7 +20731,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20463,7 +20748,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -20471,7 +20756,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Commands'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 12615935
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold, fsUnderline]
@@ -20479,7 +20764,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20513,7 +20798,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotationMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clFuchsia
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20521,7 +20806,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -26413,7 +26698,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26430,7 +26715,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -26438,7 +26723,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -26472,7 +26757,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -30302,7 +30587,7 @@ object SyntaxManager: TSyntaxManager
           end>
         IdentIndex = 2
         BlockOffset = 2
-        BlockEnd = ';'
+        BlockEnd = 'Enum end'
         NameFmt = 'enum %s2'
         GroupFmt = 'Types'
         HighlightPos = cpBound
@@ -30379,6 +30664,20 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpBound
         CollapseFmt = 'uses ...'
         TreeItemImage = 0
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Enum end'
+        BlockName = 'Enum'
+        StrictParent = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ';')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpAny
         IgnoreAsParent = False
       end
       item
@@ -30794,6 +31093,12 @@ object SyntaxManager: TSyntaxManager
       ''
       'uses aa.aa, bb, cc.cc.cc;                          '
       ''
+      'const'
+      '  cColorCodes: array[0..1] of TColorCode = ('
+      '    (sName: '#39'AliceBlue'#39'; sVal: '#39'#00'#39'),'
+      '    (sName: '#39'AntiqueWhite'#39'; sVal: '#39'#00'#39'),'
+      '    );'
+      '    '
       'type                        '
       '  TForm1 = class(TForm)    '
       '    procedure Button1Click(Sender: TObject);'
@@ -33471,11 +33776,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = cl3DDkShadow
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clScrollBar
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Digits'
@@ -33565,13 +33869,14 @@ object SyntaxManager: TSyntaxManager
         BorderColorTop = clLime
       end
       item
-        DisplayName = 'PHP_'
+        DisplayName = 'PHP_bg'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
         BgColor = 14477031
+        FormatType = ftBackGround
       end
       item
         DisplayName = 'PHP_end'
@@ -33632,16 +33937,6 @@ object SyntaxManager: TSyntaxManager
       end>
     TokenRules = <
       item
-        DisplayName = 'function'
-        Enabled = False
-        TokenType = 10
-        Expression = 
-          'function[\s\w]+\((\w|\d|\s|\$|\=|\+|\-|\'#39'|\"|\%|\/)*\)(\{|\s)*(\' +
-          '{|$)+'#13#10'[\s\w]+\{[\W\w?\}]'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
         DisplayName = 'Code block start'
         StyleName = 'PHP_start'
         TokenType = 3
@@ -33695,6 +33990,14 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
+        DisplayName = 'String Heredoc'
+        StyleName = 'String'
+        TokenType = 7
+        Expression = '(?s)<<<(\w+)\z.+?\z\1;'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
         DisplayName = 'Operators'
         StyleName = 'Operators'
         TokenType = 4
@@ -33736,108 +34039,13 @@ object SyntaxManager: TSyntaxManager
       end>
     BlockRules = <
       item
-        DisplayName = 'HTML_Start'
-        StyleName = 'Tree_PHP_tag'
-        ConditionList = <
-          item
-            TagList.Strings = (
-              '?>')
-          end>
-        BlockEnd = 'HTML_END'
-        DisplayInTree = False
-        NameFmt = '%s-1 %s-2 %s-3 %s-4'
-        DynHighlight = dhRangeNoBound
-        HighlightPos = cpAny
-        CollapseFmt = 'HTML.....'
-        TreeItemStyle = 'Reserved Words'
-        IgnoreAsParent = False
-      end
-      item
-        DisplayName = 'PHP_Start'
-        StyleName = 'PHP_'
-        ConditionList = <
-          item
-            TagList.Strings = (
-              '<?'
-              '<?php')
-          end>
-        BlockEnd = 'PHP_End'
-        DisplayInTree = False
-        NameFmt = '<%s-1>'
-        DynHighlight = dhRangeNoBound
-        HighlightPos = cpAny
-        DynSelectMin = True
-        CollapseFmt = 'PHP.....'
-        TreeItemStyle = 'DIM'
-        IgnoreAsParent = False
-      end
-      item
-        DisplayName = 'HTML_END'
-        BlockType = btRangeEnd
-        ConditionList = <
-          item
-            TagList.Strings = (
-              '<?'
-              '<?php')
-          end>
-        BlockEnd = 'HTML_Start'
-        HighlightPos = cpAny
-        IgnoreAsParent = False
-      end
-      item
-        DisplayName = 'PHP_End'
-        BlockType = btRangeEnd
-        ConditionList = <
-          item
-            TagList.Strings = (
-              '?>')
-          end>
-        BlockEnd = 'PHP_Start'
-        HighlightPos = cpAny
-        IgnoreAsParent = False
-      end
-      item
-        DisplayName = '{_start'
-        StyleName = 'Actual_block'
-        ConditionList = <
-          item
-            TagList.Strings = (
-              '{')
-          end>
-        BlockEnd = '}_end'
-        NameFmt = '%sl0'
-        RefToCondEnd = True
-        DynHighlight = dhBound
-        HighlightPos = cpRange
-        DynSelectMin = True
-        DrawStaple = True
-        CollapseFmt = '.....'
-        Pen.Color = clRed
-        Pen.Style = psDot
-        IgnoreAsParent = False
-        AutoCloseMode = acmCloseNearest
-        AutoCloseText = '}'#13#10
-      end
-      item
-        DisplayName = '}_end'
-        BlockType = btRangeEnd
-        ConditionList = <
-          item
-            TagList.Strings = (
-              '}')
-          end>
-        BlockEnd = '{_start'
-        HighlightPos = cpAny
-        GroupIndex = 1
-        IgnoreAsParent = False
-      end
-      item
         DisplayName = 'reserved_words'
         StyleName = 'Reserved Words'
         BlockType = btTagDetect
         ConditionList = <
           item
             TagList.Strings = (
+              'abstract'
               'as'
               'break'
               'case'
@@ -33866,6 +34074,7 @@ object SyntaxManager: TSyntaxManager
               'for'
               'foreach'
               'function'
+              'global'
               'if'
               'import'
               'in'
@@ -33873,9 +34082,12 @@ object SyntaxManager: TSyntaxManager
               'include_once'
               'new'
               'null'
+              'protected'
+              'public'
               'require'
               'require_once'
               'return'
+              'static'
               'super'
               'switch'
               'switch-case'
@@ -34469,7 +34681,6 @@ object SyntaxManager: TSyntaxManager
               'DOMDocument->schemaValidateSource'
               'DOMDocument->validate'
               'DomDocument->xinclude'
-              'DOMDocument->xinclude'
               'DomDocumentType->entities'
               'DomDocumentType->internal_subset'
               'DomDocumentType->name'
@@ -35408,6 +35619,9 @@ object SyntaxManager: TSyntaxManager
               'jewishtojd'
               'join'
               'jpeg2wbmp'
+              'json_decode'
+              'json_encode'
+              'json_last_error'
               'juliantojd'
               'key'
               'krsort'
@@ -37755,6 +37969,102 @@ object SyntaxManager: TSyntaxManager
         IgnoreAsParent = False
       end
       item
+        DisplayName = 'HTML_Start'
+        StyleName = 'Tree_PHP_tag'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '?>')
+          end>
+        BlockEnd = 'HTML_END'
+        DisplayInTree = False
+        NameFmt = '%s-1 %s-2 %s-3 %s-4'
+        DynHighlight = dhRangeNoBound
+        HighlightPos = cpAny
+        CollapseFmt = 'HTML.....'
+        TreeItemStyle = 'Reserved Words'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'PHP_Start'
+        StyleName = 'PHP_bg'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '<?'
+              '<?php')
+          end>
+        BlockEnd = 'PHP_End'
+        DisplayInTree = False
+        NameFmt = '<%s-1>'
+        DynHighlight = dhRangeNoBound
+        HighlightPos = cpAny
+        DynSelectMin = True
+        CollapseFmt = 'PHP.....'
+        TreeItemStyle = 'DIM'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'HTML_END'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '<?'
+              '<?php')
+          end>
+        BlockEnd = 'HTML_Start'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'PHP_End'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '?>')
+          end>
+        BlockEnd = 'PHP_Start'
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '{_start'
+        StyleName = 'Actual_block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+          end>
+        BlockEnd = '}_end'
+        DisplayInTree = False
+        RefToCondEnd = True
+        DynHighlight = dhBound
+        HighlightPos = cpRange
+        DynSelectMin = True
+        DrawStaple = True
+        CollapseFmt = '...'
+        Pen.Color = clRed
+        Pen.Style = psDot
+        IgnoreAsParent = False
+        AutoCloseMode = acmCloseNearest
+        AutoCloseText = '}'#13#10
+      end
+      item
+        DisplayName = '}_end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+          end>
+        BlockEnd = '{_start'
+        HighlightPos = cpAny
+        GroupIndex = 1
+        IgnoreAsParent = False
+      end
+      item
         DisplayName = 'var ='
         ConditionList = <
           item
@@ -37838,29 +38148,6 @@ object SyntaxManager: TSyntaxManager
         IgnoreAsParent = False
       end
       item
-        DisplayName = 'func abstract'
-        ConditionList = <
-          item
-            TagList.Strings = (
-              'function')
-            TokenTypes = 2
-          end
-          item
-            CondType = tcSkip
-            TokenTypes = 2
-          end
-          item
-            TagList.Strings = (
-              'abstract')
-            TokenTypes = 2
-          end>
-        NameFmt = '%sz0'
-        RefToCondEnd = True
-        HighlightPos = cpAny
-        NoEndRule = True
-        IgnoreAsParent = False
-      end
-      item
         DisplayName = '[_start'
         StyleName = 'Actual_block'
         ConditionList = <
@@ -37888,6 +38175,112 @@ object SyntaxManager: TSyntaxManager
           end>
         BlockEnd = '[_start'
         HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'class'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'class')
+            TokenTypes = 2
+          end>
+        BlockEnd = 'class_end'
+        EndOfTextClose = True
+        NameFmt = '%s0 %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        SelfClose = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'class_end'
+        BlockName = 'class'
+        StrictParent = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 64
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'func'
+        BlockName = 'class'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'function')
+            TokenTypes = 2
+          end>
+        BlockEnd = 'func_end'
+        EndOfTextClose = True
+        NameFmt = '%s0 %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        CancelNextRules = True
+        SelfClose = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'func_end'
+        BlockName = 'func'
+        StrictParent = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 64
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'func_without_class'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'function')
+            TokenTypes = 2
+          end>
+        BlockEnd = 'func_without_class_end'
+        NameFmt = '%s0 %s-1'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'func_without_class_end'
+        BlockName = 'func_without_class'
+        StrictParent = True
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 64
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'include'
+        ConditionList = <
+          item
+            TokenTypes = 128
+          end
+          item
+            TagList.Strings = (
+              'include')
+            TokenTypes = 2
+          end>
+        GroupFmt = '\Includes'
+        HighlightPos = cpAny
+        NoEndRule = True
         IgnoreAsParent = False
       end>
     CodeTemplates = <
@@ -38070,7 +38463,10 @@ object SyntaxManager: TSyntaxManager
       '<body>'
       '<?php //Example'
       ''
-      'function Pp(int a){'
+      'include "os.php";'
+      'include "math.php";'
+      ''
+      'function pp_out1(int $a){'
       '  $a = 10;'
       '  $b = 20;'
       '  $this->var = 100;'
@@ -38085,6 +38481,7 @@ object SyntaxManager: TSyntaxManager
       ''
       'class f {'
       '  function a(){'
+      '    $n = 10;'
       '    if (a) { a++; }'
       '    i++;'
       '  }'
@@ -38104,9 +38501,9 @@ object SyntaxManager: TSyntaxManager
       '  }'
       '}'
       ''
-      'function pp(int a; int b){'
-      '  i++;'
-      '  if (a){'
+      'function pp_out2($a; $b){'
+      '  $i++;'
+      '  if ($a){'
       '  }'
       '}'
       ''
@@ -38126,28 +38523,17 @@ object SyntaxManager: TSyntaxManager
       'Reserved Words'
       'HTML'
       '')
-    CollapseStyleName = 'slide_marker'
     Extentions = 'php php2 php3 php4 php5'
     LexerName = 'PHP (dev)'
     Notes.Strings = (
       'Created by 480499497 from http://forum.wincmd.ru'
-      'Fixed by Alex (uvviewsoft.com)')
+      'Tree redone by Alex, uvviewsoft.com')
     RestartFromLineStart = True
     LineComment = '//'
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal98: TLibSyntAnalyzer
     Formats = <
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
-      end
       item
         DisplayName = 'Cmt'
         Font.Charset = DEFAULT_CHARSET
@@ -38175,7 +38561,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Str'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -38306,7 +38692,6 @@ object SyntaxManager: TSyntaxManager
       'String'
       'Integer const'
       'Float const')
-    MarkedBlockStyle = 'Marked block'
     Extentions = 'yml yaml'
     LexerName = 'YAML'
     SkipSpaces = False
@@ -39580,7 +39965,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -39588,7 +39973,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -39596,13 +39981,14 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Comment'
+        Enabled = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
         Font.Height = -13
@@ -41528,15 +41914,6 @@ object SyntaxManager: TSyntaxManager
   object SyntAnal20: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftCustomFont
-      end
-      item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
@@ -41555,7 +41932,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -41579,10 +41956,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Preprocessor'
@@ -41591,16 +41968,6 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
-      end
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
       end
       item
         DisplayName = 'Function separator'
@@ -42260,12 +42627,12 @@ object SyntaxManager: TSyntaxManager
       'Float const'
       'Hex const'
       'Char const')
-    MarkedBlockStyle = 'Marked block'
     LexerName = 'Pascal script'
     SkipSpaces = False
     Notes.Strings = (
       'This lexer is used in Inno Setup to hilite [Code] blocks.')
     Internal = True
+    LineComment = '//'
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal29: TLibSyntAnalyzer
