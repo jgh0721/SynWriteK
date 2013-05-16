@@ -73,4 +73,8 @@ Output,출력
 Line-Spacing,줄 간격
 
 Minimap,미니맵
+micro-map, 마이크로 맵
 Project Manager,프로젝트 관리자
+
+word wrap,줄 바꿈
+Sort lines,줄 정렬
