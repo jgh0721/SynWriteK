@@ -3,6 +3,15 @@ Legend:
  - fixed
  * changed
 
+5.5.400
++ customizable user toolbars (3 of them). See "Options -- Customize toolbars" and "View -- Toolbars" submenu.
++ option "Editor 2 -- Draw current column margin"
++ option "Editor carets -- Caret width" (seen in NP++)
++ commands "View -- Fold level -- N" (seen in Sublime)
++ toolbar buttons "Comment/Uncomment lines" enabled for HTML/CSS (they call same cmd "Toggle stream comment")
++ external tools: "File name"/"Initial dir" fields handle {SynDir} {SynIniDir} macros
+- fixes
+
 5.4.350
 + HTML tree: nodes "Images", "Links", "Style sheets", "IDs", "Classes", "Forms" (seen in WeBuilder)
 + CSS tree: nodes "Styles", "Colors", "Images" (seen in WeBuilder)

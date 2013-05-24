@@ -1,0 +1,398 @@
+date/time         : 2013-05-20, 13:50:14, 865ms
+computer name     : DEVTESTER-COM
+user name         : DEVTESTER <admin>
+registered owner  : DEVTESTER
+operating system  : Windows 7 x64 Service Pack 1 build 7601
+system language   : Korean
+system up time    : 4 hours 45 minutes
+program up time   : 2 hours 28 minutes
+processors        : 4x Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+physical memory   : 4321/8174 MB (free/total)
+free disk space   : (C:) 45.81 GB (D:) 94.73 GB
+display mode      : 2560x1440, 32 bit
+process id        : $1538
+allocated memory  : 85.62 MB
+command line      : "D:\GitHub\SynWriteK\SynWrite\Syn.exe" "D:\GitHub\iMonAMM\_build\x86\Debug\imonamm_ui_ko.qm"
+executable        : Syn.exe
+exec. date/time   : 2013-05-16 00:23
+version           : 5.4.0.0
+compiled with     : Delphi 7
+madExcept version : 4.0.6
+callstack crc     : $75a502b6, $7f3b6e42, $908ea653
+exception number  : 1
+exception class   : EOSError
+exception message : System Error. Code: 6. 핸들이 잘못되었습니다.
+
+main thread ($1674):
+0046fcb5 +075 Syn.exe        SysUtils             RaiseLastOSError
+005492d2 +06e Syn.exe        ecUnicode   4729 +12 TWideStrings.LoadFromFile
+777f012e +00a ntdll.dll                           KiUserExceptionDispatcher
+752ac408 +041 KERNELBASE.dll                      RaiseException
+00687cb0 +058 Syn.exe        unFrame      459  +8 TEditorFrame.LoadFile
+0069471c +148 Syn.exe        unMain      3143 +39 TfmMain.OpnFile
+006d5363 +0fb Syn.exe        unEx         267 +31 TfmSynEx.FormShow
+004fcbe9 +015 Syn.exe        Forms                TCustomForm.DoShow
+004ffbb5 +0a9 Syn.exe        Forms                TCustomForm.CMShowingChanged
+004e3760 +188 Syn.exe        Controls             TControl.WndProc
+004e67bf +157 Syn.exe        Controls             TWinControl.WndProc
+004fd375 +421 Syn.exe        Forms                TCustomForm.WndProc
+0051f229 +085 Syn.exe        TntControls  666 +19 TWinControlTrap.WindowProc
+004e3530 +024 Syn.exe        Controls             TControl.Perform
+004e6313 +0c7 Syn.exe        Controls             TWinControl.UpdateShowing
+004e637e +036 Syn.exe        Controls             TWinControl.UpdateControlState
+004e810e +026 Syn.exe        Controls             TWinControl.CMVisibleChanged
+004e3760 +188 Syn.exe        Controls             TControl.WndProc
+004e67bf +157 Syn.exe        Controls             TWinControl.WndProc
+004fd375 +421 Syn.exe        Forms                TCustomForm.WndProc
+0051f229 +085 Syn.exe        TntControls  666 +19 TWinControlTrap.WindowProc
+004e3530 +024 Syn.exe        Controls             TControl.Perform
+004e2233 +027 Syn.exe        Controls             TControl.SetVisible
+004fce6a +03a Syn.exe        Forms                TCustomForm.SetVisible
+00503bc4 +080 Syn.exe        Forms                TApplication.Run
+006d6d58 +06c Syn.exe        Syn           70  +7 initialization
+76cd33a8 +010 kernel32.dll                        BaseThreadInitThunk
+
+main thread ($1674), inner exception level 1:
+>> EFOpenError, Cannot open file "D:\GitHub\iMonAMM\_build\x86\Debug\imonamm_ui_ko.qm". 지정된 파일을 찾을 수 없습니다.
+0050a9a5 +101 Syn.exe      TntClasses   619 +18 TTntFileStream.Create
+00549286 +022 Syn.exe      ecUnicode   4719  +2 TWideStrings.LoadFromFile
+00687cb0 +058 Syn.exe      unFrame      459  +8 TEditorFrame.LoadFile
+0069471c +148 Syn.exe      unMain      3143 +39 TfmMain.OpnFile
+006d5363 +0fb Syn.exe      unEx         267 +31 TfmSynEx.FormShow
+004fcbe9 +015 Syn.exe      Forms                TCustomForm.DoShow
+004ffbb5 +0a9 Syn.exe      Forms                TCustomForm.CMShowingChanged
+004e3760 +188 Syn.exe      Controls             TControl.WndProc
+004e67bf +157 Syn.exe      Controls             TWinControl.WndProc
+004fd375 +421 Syn.exe      Forms                TCustomForm.WndProc
+0051f229 +085 Syn.exe      TntControls  666 +19 TWinControlTrap.WindowProc
+004e3530 +024 Syn.exe      Controls             TControl.Perform
+004e6313 +0c7 Syn.exe      Controls             TWinControl.UpdateShowing
+004e637e +036 Syn.exe      Controls             TWinControl.UpdateControlState
+004e810e +026 Syn.exe      Controls             TWinControl.CMVisibleChanged
+004e3760 +188 Syn.exe      Controls             TControl.WndProc
+004e67bf +157 Syn.exe      Controls             TWinControl.WndProc
+004fd375 +421 Syn.exe      Forms                TCustomForm.WndProc
+0051f229 +085 Syn.exe      TntControls  666 +19 TWinControlTrap.WindowProc
+004e3530 +024 Syn.exe      Controls             TControl.Perform
+004e2233 +027 Syn.exe      Controls             TControl.SetVisible
+004fce6a +03a Syn.exe      Forms                TCustomForm.SetVisible
+00503bc4 +080 Syn.exe      Forms                TApplication.Run
+006d6d58 +06c Syn.exe      Syn           70  +7 initialization
+76cd33a8 +010 kernel32.dll                      BaseThreadInitThunk
+
+thread $6a4:
+77067908 +26 user32.dll    GetMessageW
+76cd33a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $13c4:
+77801f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+76cd33a8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $c1c:
+77801f1f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+76cd33a8 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 Syn.exe                                  5.4.0.0            D:\GitHub\SynWriteK\SynWrite
+27230000 NgsX.nip                                 6.80.0.53          C:\Program Files (x86)\Common Files\YmSoft\NgsLib\PlugIn
+272a0000 PadUI.nip                                6.80.0.53          C:\Program Files (x86)\Common Files\YmSoft\NgsLib\PlugIn
+51ab0000 FaultRep.dll                             6.1.7601.17514     C:\Windows\system32
+6e2f0000 propsys.dll                              7.0.7601.17514     C:\Windows\system32
+6f660000 ngs3.dll                                 6.80.0.53          C:\Program Files (x86)\Common Files\YmSoft\NgsLib
+6fd20000 NGSIME.IME                               6.80.0.53          C:\Windows\system32
+6fec0000 gdiplus.dll                              6.1.7601.17825     C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17825_none_72d273598668a06b
+70090000 dwmapi.DLL                               6.1.7600.16385     C:\Windows\system32
+701a0000 uxtheme.dll                              6.1.7600.16385     C:\Windows\system32
+70da0000 WindowsHook.dll                          2.4.2.16           C:\Program Files (x86)\iDisplay
+72ec0000 apphelp.dll                              6.1.7601.17514     C:\Windows\system32
+74a30000 SHFolder.dll                             6.1.7600.16385     C:\Windows\system32
+74c70000 comctl32.dll                             6.10.7601.17514    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2
+74e10000 msimg32.dll                              6.1.7600.16385     C:\Windows\system32
+74e60000 wsock32.dll                              6.1.7600.16385     C:\Windows\system32
+74f70000 profapi.dll                              6.1.7600.16385     C:\Windows\system32
+750d0000 ntmarta.dll                              6.1.7600.16385     C:\Windows\system32
+75100000 winspool.drv                             6.1.7601.17514     C:\Windows\system32
+75160000 version.dll                              6.1.7600.16385     C:\Windows\system32
+75230000 CRYPTBASE.dll                            6.1.7600.16385     C:\Windows\syswow64
+75240000 SspiCli.dll                              6.1.7601.17940     C:\Windows\syswow64
+752a0000 KERNELBASE.dll                           6.1.7601.18015     C:\Windows\syswow64
+75320000 imm32.dll                                6.1.7601.17514     C:\Windows\syswow64
+75420000 msvcrt.dll                               7.0.7601.17744     C:\Windows\syswow64
+754d0000 CLBCatQ.DLL                              2001.12.8530.16385 C:\Windows\syswow64
+75680000 SETUPAPI.dll                             6.1.7601.17514     C:\Windows\syswow64
+75880000 LPK.dll                                  6.1.7600.16385     C:\Windows\syswow64
+758c0000 shell32.dll                              6.1.7601.18103     C:\Windows\syswow64
+76510000 SHLWAPI.dll                              6.1.7601.17514     C:\Windows\syswow64
+76570000 NSI.dll                                  6.1.7600.16385     C:\Windows\syswow64
+76580000 iertutil.dll                             10.0.9200.16576    C:\Windows\syswow64
+76780000 urlmon.dll                               10.0.9200.16576    C:\Windows\syswow64
+768a0000 USP10.dll                                1.626.7601.18009   C:\Windows\syswow64
+76940000 api-ms-win-downlevel-version-l1-1-0.dll  6.2.9200.16492     C:\Windows\syswow64
+76950000 api-ms-win-downlevel-ole32-l1-1-0.dll    6.2.9200.16492     C:\Windows\syswow64
+76960000 DEVOBJ.dll                               6.1.7601.17621     C:\Windows\syswow64
+76990000 WLDAP32.dll                              6.1.7601.17514     C:\Windows\syswow64
+769e0000 GDI32.dll                                6.1.7601.17514     C:\Windows\syswow64
+76a70000 WININET.dll                              10.0.9200.16576    C:\Windows\syswow64
+76c30000 oleaut32.dll                             6.1.7601.17676     C:\Windows\syswow64
+76cc0000 kernel32.dll                             6.1.7601.18015     C:\Windows\syswow64
+76dd0000 api-ms-win-downlevel-advapi32-l1-1-0.dll 6.2.9200.16492     C:\Windows\syswow64
+76de0000 api-ms-win-downlevel-normaliz-l1-1-0.dll 6.2.9200.16492     C:\Windows\syswow64
+76df0000 comdlg32.dll                             6.1.7601.17514     C:\Windows\syswow64
+76e70000 ADVAPI32.dll                             6.1.7601.17514     C:\Windows\syswow64
+76f10000 api-ms-win-downlevel-user32-l1-1-0.dll   6.2.9200.16492     C:\Windows\syswow64
+76f20000 WS2_32.dll                               6.1.7601.17514     C:\Windows\syswow64
+76f60000 RPCRT4.dll                               6.1.7601.17514     C:\Windows\syswow64
+77050000 user32.dll                               6.1.7601.17514     C:\Windows\syswow64
+77150000 normaliz.DLL                             6.1.7600.16385     C:\Windows\syswow64
+77160000 CFGMGR32.dll                             6.1.7601.17621     C:\Windows\syswow64
+77190000 ole32.dll                                6.1.7601.17514     C:\Windows\syswow64
+772f0000 sechost.dll                              6.1.7600.16385     C:\Windows\SysWOW64
+77310000 MSCTF.dll                                6.1.7600.16385     C:\Windows\syswow64
+777b0000 api-ms-win-downlevel-shlwapi-l1-1-0.dll  6.2.9200.16492     C:\Windows\syswow64
+777e0000 ntdll.dll                                6.1.7601.17725     C:\Windows\SysWOW64
+
+processes:
+0000 Idle                        0 0    0
+0004 System                      0 0    0
+00ec smss.exe                    0 0    0
+0144 csrss.exe                   0 0    0
+0180 wininit.exe                 0 0    0
+0194 csrss.exe                   1 0    0
+01c4 services.exe                0 0    0
+01d4 lsass.exe                   0 0    0
+01dc lsm.exe                     0 0    0
+0200 winlogon.exe                1 0    0
+0270 svchost.exe                 0 0    0
+02a8 nvvsvc.exe                  0 0    0
+02c0 nvSCPAPISvr.exe             0 0    0
+02ec svchost.exe                 0 0    0
+034c svchost.exe                 0 0    0
+0374 svchost.exe                 0 0    0
+0390 svchost.exe                 0 0    0
+03b4 svchost.exe                 0 0    0
+0104 svchost.exe                 0 0    0
+03fc svchost.exe                 0 0    0
+046c spoolsv.exe                 0 0    0
+0488 svchost.exe                 0 0    0
+04e4 mDNSResponder.exe           0 0    0
+0500 svchost.exe                 0 0    0
+0524 gnabcoms.exe                0 0    0
+0560 HeciServer.exe              0 0    0
+05d4 NQVM_V.exe                  0 0    0
+0618 sqlwriter.exe               0 0    0
+0640 svchost.exe                 0 0    0
+0668 vmnat.exe                   0 0    0
+069c vmware-authd.exe            0 0    0
+06d4 vmnetdhcp.exe               0 0    0
+0700 vmware-usbarbitrator64.exe  0 0    0
+070c nvxdsync.exe                1 0    0
+0714 nvvsvc.exe                  1 0    0
+07a8 vmware-hostd.exe            0 0    0
+05f4 NQVM_RTM.exe                1 0    0
+081c taskhost.exe                1 41   31  normal
+083c taskeng.exe                 1 24   11  normal
+087c dwm.exe                     1 25   4   high
+08d8 explorer.exe                1 1732 667 normal
+0914 iDisplay.exe                1 87   32  high         C:\Program Files (x86)\iDisplay
+0a00 WmiPrvSE.exe                0 0    0
+0bb4 DaumCloud.exe               1 68   47  normal       C:\Program Files (x86)\Daum\DaumCloud
+0bd0 MyPeople.exe                1 114  42  normal       C:\Program Files (x86)\Daum\MyPeople\MyPeople
+0be8 gnab1err.exe                1 27   16  normal       C:\Program Files\Printer\ErrorApp
+0824 emedtray.exe                1 30   15  normal
+0834 MagicDisc.exe               1 68   36  normal       C:\Program Files (x86)\MagicDisc
+08ec vmware-tray.exe             1 40   19  normal       C:\Program Files (x86)\VMware\VMware Workstation
+05d0 jusched.exe                 1 9    2   normal       C:\Program Files (x86)\Common Files\Java\Java Update
+05c8 TSVNCache.exe               1 24   12  normal
+0584 SVN_Notifier.exe            1 86   43  normal
+0d60 NQVM_SUP.exe                1 0    0
+0db4 nvtray.exe                  1 94   10  normal
+0df8 NATEONMain.exe              1 905  846 normal       C:\Program Files (x86)\NATEON\BIN
+0f78 adb.exe                     1 4    2   below normal C:\Program Files (x86)\iDisplay
+0f8c conhost.exe                 1 44   15  normal
+0ca8 SearchIndexer.exe           0 0    0
+0a90 wmpnetwk.exe                0 0    0
+12f0 iDisplayX64Helper.exe       1 22   10  normal
+11b0 iexplore.exe                1 363  117 normal
+115c IEXPLORE.EXE                1 90   97  normal       C:\Program Files (x86)\Internet Explorer
+0cb4 Syn.exe                     1 262  161 normal       D:\GitHub\SynWriteK\SynWrite
+05c4 LMS.exe                     0 0    0
+1088 daemonu.exe                 0 0    0   normal
+075c svchost.exe                 0 0    0
+03ec UNS.exe                     0 0    0
+0ecc MsSpellCheckingFacility.exe 1 4    1   normal
+1734 ISStudio.exe                1 646  225 normal       C:\Program Files (x86)\Inno Script Studio
+15d8 TOTALCMD.EXE                1 538  297 normal       C:\Program Files (x86)\TotalCMD
+12c0 tcmatch.exe                 1 82   135 normal       C:\Program Files (x86)\TotalCMD
+16d0 TGitCache.exe               1 22   12  normal
+15d0 assistant.exe               1 129  47  normal       D:\Qt\Qt-5.0.2-VS2010-X86\5.0.2\msvc2010_opengl\bin
+0d58 ssh-agent.exe               1 4    1   normal       C:\Users\DEVTESTER\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\bin
+0b18 devenv.exe                  1 614  281 normal       C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE
+06e8 qt5appwrapper.exe           1 22   9   normal
+1220 HlpViewer.exe               1 102  69  normal       C:\Program Files (x86)\Microsoft Help Viewer\v2.0
+1538 Syn.exe                     1 231  182 normal       D:\GitHub\SynWriteK\SynWrite
+11a8 WUDFHost.exe                0 0    0
+1120 MSBuild.exe                 1 4    2   normal       C:\Windows\Microsoft.NET\Framework\v4.0.30319
+065c conhost.exe                 1 29   1   normal
+16b0 MSBuild.exe                 1 4    2   normal       C:\Windows\Microsoft.NET\Framework\v4.0.30319
+0a20 conhost.exe                 1 29   1   normal
+1470 mspdbsrv.exe                1 0    0   normal       C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\ide
+0f68 MpCmdRun.exe                0 0    0
+0900 VCPkgSrv.exe                1 4    1   normal       C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcpackages
+
+hardware:
++ Android Device
+  - SAMSUNG Android ADB Interface (driver 2.9.507.0)
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - Samsung SSD 840 Series ATA Device
+  - ST31000524AS ATA Device
++ Display adapters
+  - NVIDIA GeForce 8600 GT  (driver 9.18.13.1422)
++ DVD/CD-ROM drives
+  - HL-DT-ST DVDRAM GH24NS70 ATA Device
+  - MagicISO Virtual DVD-ROM0000
++ Human Interface Devices
+  - HID 규격 사용자 컨트롤 장치
+  - HID 준수 장치
+  - HID 준수 장치
+  - USB 입력 장치
+  - USB 입력 장치
+  - USB 입력 장치
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - ATA Channel 2
+  - Intel(R) 6 Series/C200 Series Chipset Family 6 Port SATA AHCI Controller - 1C02 (driver 9.2.0.1011)
++ Keyboards
+  - HID 키보드 장치
+  - HID 키보드 장치
++ Mice and other pointing devices
+  - HID 규격 마우스
++ Modems
+  - SAMSUNG Mobile USB Modem #2 (driver 2.9.507.0)
++ Monitors
+  - 일반 PnP 모니터
++ Network adapters
+  - Microsoft ISATAP Adapter
+  - Microsoft ISATAP Adapter #2
+  - Microsoft ISATAP Adapter #3
+  - Microsoft ISATAP Adapter #4
+  - Realtek PCIe GBE Family Controller (driver 7.46.610.2011)
+  - Teredo Tunneling Pseudo-Interface
+  - VMware Virtual Ethernet Adapter for VMnet1 (driver 4.1.4.0)
+  - VMware Virtual Ethernet Adapter for VMnet8 (driver 4.1.4.0)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
+  - WAN 미니포트(IPv6)
+  - WAN 미니포트(PPPOE)
++ NTS Devices
+  - NQNM Display Drivers (driver 6.0.6000.8)
++ Portable Devices
+  - SHV-E250S (driver 2.9.319.511)
++ Processors
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
++ Rsupport Drivers
+  - Virtual Remote Video Driver(VRVD302) (driver 6.0.9999.4)
++ Sound, video and game controllers
+  - High Definition Audio 장치
++ Storage controllers
+  - MagicISO SCSI Host Controller (driver 2.7.106.0)
++ System devices
+  - 2nd Generation Intel(R) Core(TM) Processor Family DRAM Controller - 0100 (driver 9.2.0.1026)
+  - ACPI 고정된 기능 단추
+  - ACPI 전원 단추
+  - High Definition Audio 컨트롤러
+  - High precision 이벤트 타이머
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 1 - 1C10 (driver 9.2.0.1016)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 6 - 1C1A (driver 9.2.0.1016)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 7 - 1C1C (driver 9.2.0.1016)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 8 - 1C1E (driver 9.2.0.1016)
+  - Intel(R) 6 Series/C200 Series Chipset Family SMBus Controller - 1C22 (driver 9.2.0.1011)
+  - Intel(R) 82801 PCI Bridge - 244E
+  - Intel(R) H67 Express Chipset Family LPC Interface Controller - 1C4A (driver 9.2.0.1016)
+  - Intel(R) Management Engine Interface  (driver 8.0.0.1262)
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft 가상 드라이브 에뮬레이터 드라이버
+  - PCI 버스
+  - PCI 표준 PCI-to-PCI 브리지
+  - Remote Desktop Device Redirector Bus
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - VMware VMCI Host Device (driver 9.3.51.0)
+  - Xeon E3-1200/2nd Generation Intel(R) Core(TM) Processor Family PCI Express Root Port - 0101 (driver 9.2.0.1026)
+  - 마더보드 리소스
+  - 마더보드 리소스
+  - 마더보드 리소스
+  - 마더보드 리소스
+  - 복합 버스 열거자
+  - 볼륨 관리자
+  - 수치 데이터 프로세서
+  - 시스템 CMOS/실시간 클록
+  - 시스템 보드
+  - 시스템 보드
+  - 시스템 보드
+  - 시스템 스피커
+  - 시스템 타이머
+  - 직접 메모리 액세스(DMA) 컨트롤러
+  - 터미널 서버 마우스 드라이버
+  - 터미널 서버 키보드 드라이버
+  - 파일을 볼륨 드라이버로
+  - 프로그램 가능 인터럽트 컨트롤러
+  - 플러그 앤 플레이 소프트웨어 장치 계수기
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Generic USB Hub
+  - Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host Controller - 1C26 (driver 9.2.0.1021)
+  - Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host Controller - 1C2D (driver 9.2.0.1021)
+  - SAMSUNG Mobile USB Composite Device  (driver 2.9.507.0)
+  - USB Composite Device
+  - USB Root Hub
+  - USB Root Hub
+
+stack dump:
+0018fa64  aa a9 50 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..P.............
+0018fa74  78 fa 18 00 aa a9 50 00 - 60 93 e6 04 80 92 e6 04  x.....P.`.......
+0018fa84  64 3d e4 02 60 94 30 02 - e0 fa 18 00 94 fa 18 00  d=..`.0.........
+0018fa94  a0 fa 18 00 80 49 40 00 - e0 fa 18 00 ec fa 18 00  .....I@.........
+0018faa4  bf 4a 40 00 e0 fa 18 00 - 80 92 e6 04 10 60 32 02  .J@..........`2.
+0018fab4  60 94 30 02 00 00 00 00 - 00 00 00 00 00 00 00 00  `.0.............
+0018fac4  00 00 00 00 d4 2a e4 02 - 0f 00 00 00 f4 bf f0 02  .....*..........
+0018fad4  0f ff ff ff 00 00 00 00 - ff ff ff 01 08 fb 18 00  ................
+0018fae4  8b 92 54 00 40 00 00 00 - 1c fb 18 00 80 49 40 00  ..T.@........I@.
+0018faf4  08 fb 18 00 60 94 30 02 - 64 3d e4 02 60 94 30 02  ....`.0.d=..`.0.
+0018fb04  78 31 55 00 40 fb 18 00 - b3 7c 68 00 60 94 30 02  x1U.@....|h.`.0.
+0018fb14  e0 04 2e 02 21 47 69 00 - 48 fb 18 00 80 49 40 00  ....!Gi.H....I@.
+0018fb24  40 fb 18 00 01 00 00 00 - a8 f5 4e 00 01 00 00 00  @.........N.....
+0018fb34  00 00 00 00 01 00 00 00 - 64 3d e4 02 6c fb 18 00  ........d=..l...
+0018fb44  68 53 6d 00 7c fb 18 00 - 80 49 40 00 6c fb 18 00  hSm.|....I@.l...
+0018fb54  b8 74 32 02 d4 cb 4f 00 - 00 8b 30 02 00 00 00 00  .t2...O...0.....
+0018fb64  00 00 00 00 00 00 00 00 - b4 fb 18 00 ef cb 4f 00  ..............O.
+0018fb74  40 fd 18 00 ba fb 4f 00 - 88 fb 18 00 a0 47 40 00  @.....O......G@.
+0018fb84  b4 fb 18 00 94 fb 18 00 - 59 00 50 00 b4 fb 18 00  ........Y.P.....
+0018fb94  5c fd 18 00 76 00 50 00 - b4 fb 18 00 b8 74 32 02  \...v.P......t2.
+
+disassembling:
+[...]
+0050a991       call    -$1033b2 ($4075e4)     ; System.LoadResString
+0050a996       mov     ecx, [ebp-$28]
+0050a999       mov     dl, 1
+0050a99b       mov     eax, [$47f5a0]
+0050a9a0       call    -$9c645 ($46e360)      ; SysUtils.Exception.CreateFmt
+0050a9a5     > call    -$105f5e ($404a4c)     ; System.@RaiseExcept
+0050a9aa 625   mov     ecx, eax
+0050a9ac       xor     edx, edx
+0050a9ae       mov     eax, ebx
+0050a9b0       call    -$853f1 ($4855c4)      ; Classes.THandleStream.Create
+0050a9b5       xor     eax, eax
+[...]
+

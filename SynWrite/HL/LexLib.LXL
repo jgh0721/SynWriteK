@@ -6090,7 +6090,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Single symbol'
         StyleName = 'Symbol'
         TokenType = 3
-        Expression = '[\{\}\(\)\[\],;\.]'
+        Expression = '[\{\}\(\)\[\],;\.\\]'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -6150,6 +6150,7 @@ object SyntaxManager: TSyntaxManager
               'static'
               'string'
               'switch'
+              'use'
               'var'
               'void'
               'while')
@@ -34011,7 +34012,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Single symbol'
         StyleName = 'Single Symbol'
         TokenType = 6
-        Expression = '[\{\}\(\)\[\],;\.]'
+        Expression = '[\{\}\(\)\[\],;\.\\]'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -34098,6 +34099,7 @@ object SyntaxManager: TSyntaxManager
               'true'
               'try'
               'typeof'
+              'use'
               'var'
               'void'
               'while'
@@ -38283,7 +38285,7 @@ object SyntaxManager: TSyntaxManager
               'require_once')
             TokenTypes = 2
           end>
-        NameFmt = '%s-1'
+        NameFmt = '%s0~s-1'
         GroupFmt = '\Includes'
         RefToCondEnd = True
         HighlightPos = cpAny
@@ -38314,7 +38316,7 @@ object SyntaxManager: TSyntaxManager
               'require_once')
             TokenTypes = 2
           end>
-        NameFmt = '%s-2'
+        NameFmt = '%s0~s-3'
         GroupFmt = '\Includes'
         RefToCondEnd = True
         HighlightPos = cpAny
