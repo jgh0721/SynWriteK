@@ -3,6 +3,19 @@ Legend:
  - fixed
  * changed
 
+5.5.460
++ user toolbars: external tools can be placed here
++ user toolbars: can read icons from exe/dll/icl/ico
++ user toolbars: can create nested submenus (of any level)
++ project pane: saves folded nodes list in project-file
++ non-printable chars submenu
++ command "Paste, as column block" (seen in Akelpad)
++ commands "Extract duplicate lines" (seen in Akelpad)
++ chr(12) can be entered using CharTable
++ localized help files are supported: "Readme\SynWrite.NN.chm", where suffix NN is described in Synw wiki 
++ lexer PowerShell: heredoc support
+* lexer PL/SQL: moved into "Readme\MoreLexers.rar" (it's 160KB file)
+
 5.5.400
 + customizable user toolbars (3 of them). See "Options -- Customize toolbars" and "View -- Toolbars" submenu.
 + option "Editor 2 -- Draw current column margin"
