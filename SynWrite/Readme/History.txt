@@ -3,6 +3,10 @@ Legend:
  - fixed
  * changed
 
+5.5.480
++ command "Options -- Advanced -- Hide menu items"
++ user toolbars: more features in "Toolbar prop" dlg
+
 5.5.460
 + user toolbars: external tools can be placed here
 + user toolbars: can read icons from exe/dll/icl/ico

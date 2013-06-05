@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynFTP defaultCache="%CONFIGDIR%\Cache\%USERNAME%@%HOSTNAME%" outputShown="0" windowRatio="0.5" menuSplit="0" clearCache="0" clearCachePermanent="0">
+    <Profiles />
+</SynFTP>
