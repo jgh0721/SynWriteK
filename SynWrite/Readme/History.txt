@@ -3,8 +3,70 @@ Legend:
  - fixed
  * changed
 
+5.7.720                             
+* options dialog: big rework
+* toolbar: 3 buttons added/updated (toggle left/bottom/right panel) and few removed 
+* lexers Eiffel, Euphoria moved to "Readme\MoreLexers.rar" 
+ 
+5.7.700                               
++ dbl-click on spaces selects them (like in Notepad++) 
+* options: removed some options from "Search" tab
+* Lister plugin: options "Use Totalcmd history section"+"Allow to use modern search dialog" are now "hidden". See help topic about Lister plugin. 
+                                                                                               
+5.7.680 
++ dialog "Project files list": you can add to filter "@Name" to filter files which contain "Name"
++ dialog "Find in files" presets (blue label on right and keys F3, Alt+1..Alt+9)
++ dialog "Lexer library" redone
++ dialog "Go to bookmark": Shift+click selects from caret to bookmark
++ external tools user variables. They can be set in project options.
++ Explorer plugin: favorites are listed in "star" menu
+* fix: portable bookmarks now added without indent+newline
+- fix: Batch lexer
+- fix: sync'ed vertival scrolling
+
+5.6.640
++ added two tutorials "Creating new lexer", "Creating lexer rules": see files "Readme\LexerTutorial***.odt" 
++ added recent templates list in "File -- New"
++ added command-line key /S: force single-instance
++ options: "Editor overrides" include also "Optimal fill"
++ commands list: added "Tree - collapse level 2..9"
++ commands list: added "Options dialog - tab nnnnnnnnnn"
+- fix: AutoIt lexer
+
+5.6.620
++ sessions: session file extention "syn" can be associated with SynWrite
++ sessions: portable mode: default session file is now in app folder
++ help topic "Sessions"
++ hidden folder option for saving of untitled files (updated on each saving)
++ german help file ("SynWrite.de.chm" used automatically with German lang). Thanks Stefan.
+- fixed JSON lexer tree
+- fixed broken "Hide menu items" dlg
+- fixes
+            
+5.6.600
++ UI reworked. Skin-engine changed to SpTBX. More skins added.
++ added skinning via "template\skins\*.skn" files
++ Find in files: to exclude a folder, write it with slash: "mask\"
++ Find in files: N instances have their own values of edit fields of dialog (but same dropdown history)
++ russian help file ("Readme\SynWrite.ru.chm" used automatically) by kvichans
+* removed theming via OfficeTheme.ini
+* removed splitters colors opt
+* removed opt "Minimap vert scrollbar"
+* removed Gnome icons 
+                                 
+5.5.530
++ "Find in files" dialog: field "File masks to exclude"
++ lexer "WSH script"
++ lexer "Jade" (template engine)
+* lexers moved into "Readme\MoreLexers.rar": ActionScript, Cobol, ColdFusion, IDL files, Matlab, Smalltalk, Verilog, VHDL  
++ auto-closing of brackets/quotes: can work with selection too (seen in Sublime)
++ some dialogs: handling of Ctrl+BkSp (delete last word) in edit fields 
++ command "Open filename selected in editor"
++ hidden option in Syn.ini: [Setup] MarkDeletedModified=1
+- fixes (forum)
+
 5.5.480
-+ command "Options -- Advanced -- Hide menu items"
++ dialog "Options -- Advanced -- Hide menu items"
 + user toolbars: more features in "Toolbar prop" dlg
 
 5.5.460

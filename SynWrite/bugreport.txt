@@ -396,3 +396,298 @@ disassembling:
 0050a9b5       xor     eax, eax
 [...]
 
+date/time         : 2013-07-16, 20:51:00, 126ms
+computer name     : DEVTESTER-PC
+user name         : DevTester <admin>
+registered owner  : Microsoft / Microsoft
+operating system  : Windows 7 x64 Service Pack 1 build 7601
+system language   : Korean
+system up time    : 22 minutes 23 seconds
+program up time   : 2 seconds
+processors        : 4x Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+physical memory   : 6293/8174 MB (free/total)
+free disk space   : (C:) 85.25 GB (D:) 60.25 GB
+display mode      : 2560x1440, 32 bit
+process id        : $618
+allocated memory  : 75.03 MB
+command line      : "D:\GitHub\SynWriteK\SynWrite\Syn.exe" "E:\Pubs\DTLite4454-0315.exe"
+executable        : Syn.exe
+exec. date/time   : 2013-07-07 22:46
+version           : 5.4.0.0
+compiled with     : Delphi 7
+madExcept version : 4.0.6
+callstack crc     : $69bf4bba, $433b5077, $433b5077
+exception number  : 1
+exception class   : EInvalidPointer
+exception message : Invalid pointer operation.
+
+main thread ($6d0):
+00402a73 +13 Syn.exe      System              @FreeMem
+0040414c +0c Syn.exe      System              TObject.FreeInstance
+00461f09 +19 Syn.exe      madExcept           InterceptClassDestroy
+0048231c +18 Syn.exe      Classes             TList.Destroy
+00404194 +08 Syn.exe      System              TObject.Free
+00470154 +08 Syn.exe      SysUtils            FreeAndNil
+0063d54a +0e Syn.exe      PngImageList 242 +1 RevertPatchedMethods
+0063df81 +2d Syn.exe      PngImageList 512 +4 TPngImageList.Destroy
+0048d902 +46 Syn.exe      Classes             TComponent.DestroyComponents
+0048d707 +47 Syn.exe      Classes             TComponent.Destroy
+004e18ef +9b Syn.exe      Controls            TControl.Destroy
+004e4f25 +b9 Syn.exe      Controls            TWinControl.Destroy
+004fc06c +28 Syn.exe      Forms               TScrollingWinControl.Destroy
+004fcf6f +ab Syn.exe      Forms               TCustomForm.Destroy
+004e4ef6 +8a Syn.exe      Controls            TWinControl.Destroy
+004fc06c +28 Syn.exe      Forms               TScrollingWinControl.Destroy
+004fcf6f +ab Syn.exe      Forms               TCustomForm.Destroy
+0048d902 +46 Syn.exe      Classes             TComponent.DestroyComponents
+004faf47 +2f Syn.exe      Forms               DoneApplication
+00505b32 +22 Syn.exe      Forms               Finalization
+00404c9e +36 Syn.exe      System              FinalizeUnits
+00461580 +54 Syn.exe      madExcept           InterceptFinalizeUnits
+0046158f +07 Syn.exe      madExcept           InterceptHalt0FinalizeUnits
+00404f65 +59 Syn.exe      System              @Halt0
+006db261 +71 Syn.exe      Syn           75 +8 initialization
+772133c8 +10 kernel32.dll                     BaseThreadInitThunk
+
+thread $e90:
+77c41f2f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+772133c8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $e98:
+77c41f2f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+772133c8 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $124:
+77c41f2f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+772133c8 +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 Syn.exe        5.4.0.0            D:\GitHub\SynWriteK\SynWrite
+27230000 NgsX.nip       7.0.0.54           C:\Program Files (x86)\Common Files\YmSoft\NgsLib\PlugIn
+272b0000 PadUI.nip      7.0.0.54           C:\Program Files (x86)\Common Files\YmSoft\NgsLib\PlugIn
+71460000 icm32.dll      6.1.7600.16385     C:\Windows\system32
+714a0000 mscms.dll      6.1.7601.17514     C:\Windows\system32
+71520000 msimg32.dll    6.1.7600.16385     C:\Windows\system32
+71530000 FaultRep.dll   6.1.7601.17514     C:\Windows\system32
+72280000 wsock32.dll    6.1.7600.16385     C:\Windows\system32
+725d0000 propsys.dll    7.0.7601.17514     C:\Windows\system32
+72e20000 ngs3.dll       7.0.0.54           C:\Program Files (x86)\Common Files\YmSoft\NgsLib
+72ed0000 comctl32.dll   6.10.7601.17514    C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2
+736f0000 SHFolder.dll   6.1.7600.16385     C:\Windows\system32
+738c0000 NGSIME.IME     7.0.0.54           C:\Windows\system32
+739d0000 dwmapi.DLL     6.1.7600.16385     C:\Windows\system32
+739f0000 profapi.dll    6.1.7600.16385     C:\Windows\system32
+73a00000 USERENV.dll    6.1.7601.17514     C:\Windows\system32
+73b20000 winmm.dll      6.1.7601.17514     C:\Windows\system32
+73b60000 uxtheme.dll    6.1.7600.16385     C:\Windows\system32
+73be0000 apphelp.dll    6.1.7601.17514     C:\Windows\system32
+75640000 winspool.drv   6.1.7601.17514     C:\Windows\system32
+756a0000 version.dll    6.1.7600.16385     C:\Windows\system32
+75770000 CRYPTBASE.dll  6.1.7600.16385     C:\Windows\syswow64
+75780000 SspiCli.dll    6.1.7601.17514     C:\Windows\syswow64
+757e0000 MSCTF.dll      6.1.7600.16385     C:\Windows\syswow64
+758b0000 DEVOBJ.dll     6.1.7600.16385     C:\Windows\syswow64
+758d0000 msvcrt.dll     7.0.7600.16385     C:\Windows\syswow64
+75980000 USP10.dll      1.626.7601.17514   C:\Windows\syswow64
+75c40000 WS2_32.dll     6.1.7601.17514     C:\Windows\syswow64
+75c80000 LPK.dll        6.1.7600.16385     C:\Windows\syswow64
+75c90000 GDI32.dll      6.1.7601.17514     C:\Windows\syswow64
+75d30000 comdlg32.dll   6.1.7601.17514     C:\Windows\syswow64
+75dd0000 oleaut32.dll   6.1.7601.17514     C:\Windows\syswow64
+75e60000 KERNELBASE.dll 6.1.7601.17514     C:\Windows\syswow64
+75ff0000 shell32.dll    6.1.7601.17514     C:\Windows\syswow64
+76c40000 CFGMGR32.dll   6.1.7601.17514     C:\Windows\syswow64
+76ca0000 ADVAPI32.dll   6.1.7601.17514     C:\Windows\syswow64
+76d40000 SETUPAPI.dll   6.1.7601.17514     C:\Windows\syswow64
+76f30000 SHLWAPI.dll    6.1.7601.17514     C:\Windows\syswow64
+76f90000 RPCRT4.dll     6.1.7601.17514     C:\Windows\syswow64
+77080000 ole32.dll      6.1.7601.17514     C:\Windows\syswow64
+771e0000 sechost.dll    6.1.7600.16385     C:\Windows\SysWOW64
+77200000 kernel32.dll   6.1.7601.17514     C:\Windows\syswow64
+77310000 user32.dll     6.1.7601.17514     C:\Windows\syswow64
+77410000 imm32.dll      6.1.7601.17514     C:\Windows\syswow64
+776d0000 CLBCatQ.DLL    2001.12.8530.16385 C:\Windows\syswow64
+77bf0000 NSI.dll        6.1.7600.16385     C:\Windows\syswow64
+77c20000 ntdll.dll      6.1.7601.17514     C:\Windows\SysWOW64
+
+processes:
+000 Idle                  0 0   0
+004 System                0 0   0
+0f0 smss.exe              0 0   0
+144 csrss.exe             0 0   0
+174 wininit.exe           0 0   0
+190 csrss.exe             1 0   0
+1b8 services.exe          0 0   0
+1c8 lsass.exe             0 0   0
+1d0 lsm.exe               0 0   0
+224 winlogon.exe          1 0   0
+260 svchost.exe           0 0   0
+29c nvvsvc.exe            0 0   0
+2b4 nvSCPAPISvr.exe       0 0   0
+2e0 svchost.exe           0 0   0
+324 svchost.exe           0 0   0
+348 svchost.exe           0 0   0
+370 svchost.exe           0 0   0
+3c8 TrustedInstaller.exe  0 0   0
+3e4 svchost.exe           0 0   0
+208 svchost.exe           0 0   0
+41c spoolsv.exe           0 0   0
+438 svchost.exe           0 0   0
+4a8 svchost.exe           0 0   0
+4c4 HeciServer.exe        0 0   0
+708 nvxdsync.exe          1 0   0
+710 nvvsvc.exe            1 0   0
+7ec taskhost.exe          1 37  23  normal
+4f0 dwm.exe               1 19  2   high
+738 explorer.exe          1 956 557 normal
+914 SearchIndexer.exe     0 0   0
+99c wmpnetwk.exe          0 0   0
+560 emedtray.exe          1 26  9   normal
+818 mscorsvw.exe          0 0   0
+8b8 mscorsvw.exe          0 0   0
+6f4 Jhi_service.exe       0 0   0
+140 LMS.exe               0 0   0
+be4 sppsvc.exe            0 0   0
+86c svchost.exe           0 0   0
+c94 PrivacyIconClient.exe 1 103 43  normal
+f74 taskhost.exe          1 86  19  normal
+d70 MAGICD~1.EXE          1 120 46  normal C:\PROGRA~2\MAGICD~1
+678 msiexec.exe           0 0   0
+950 SPInstaller.exe       1 84  79  normal G:\vs90sp1
+750 MsiExec.exe           1 4   2   normal C:\Windows\syswow64
+e50 msiexec.exe           1 0   0
+424 TOTALCMD64.EXE        1 380 292 normal
+618 Syn.exe               1 139 74  normal D:\GitHub\SynWriteK\SynWrite
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - Samsung SSD 840 Series ATA Device
+  - ST31000524AS ATA Device
++ Display adapters
+  - NVIDIA GeForce 8600 GT  (driver 9.18.13.2049)
++ DVD/CD-ROM drives
+  - HL-DT-ST DVDRAM GH24NS70 ATA Device
+  - MagicISO Virtual DVD-ROM0000
++ Human Interface Devices
+  - HID 규격 사용자 컨트롤 장치
+  - HID 준수 장치
+  - HID 준수 장치
+  - USB 입력 장치
+  - USB 입력 장치
+  - USB 입력 장치
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - ATA Channel 2
+  - Intel(R) 6 Series/C200 Series Chipset Family 6 Port SATA AHCI Controller - 1C02 (driver 9.2.0.1033)
++ Keyboards
+  - HID 키보드 장치
+  - HID 키보드 장치
++ Mice and other pointing devices
+  - HID 규격 마우스
++ Monitors
+  - 일반 PnP 모니터
++ Network adapters
+  - Microsoft ISATAP Adapter
+  - Realtek RTL8168D/8111D Family PCI-E Gigabit Ethernet NIC(NDIS 6.20)
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
+  - WAN 미니포트(IPv6)
+  - WAN 미니포트(PPPOE)
++ Processors
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
+  - Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz
++ Sound, video and game controllers
+  - High Definition Audio 장치
++ Storage controllers
+  - MagicISO SCSI Host Controller (driver 2.7.106.0)
++ System devices
+  - 2nd Generation Intel(R) Core(TM) Processor Family DRAM Controller - 0100 (driver 9.2.0.1033)
+  - ACPI 고정된 기능 단추
+  - ACPI 전원 단추
+  - High Definition Audio 컨트롤러
+  - High precision 이벤트 타이머
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 1 - 1C10 (driver 9.2.0.1033)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 6 - 1C1A (driver 9.2.0.1033)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 7 - 1C1C (driver 9.2.0.1033)
+  - Intel(R) 6 Series/C200 Series Chipset Family PCI Express Root Port 8 - 1C1E (driver 9.2.0.1033)
+  - Intel(R) 6 Series/C200 Series Chipset Family SMBus Controller - 1C22 (driver 9.2.0.1033)
+  - Intel(R) 82801 PCI Bridge - 244E
+  - Intel(R) H67 Express Chipset Family LPC Interface Controller - 1C4A (driver 9.2.0.1033)
+  - Intel(R) Management Engine Interface  (driver 9.5.10.1538)
+  - Microsoft ACPI-Compliant System
+  - Microsoft System Management BIOS Driver
+  - Microsoft Windows Management Interface for ACPI
+  - Microsoft 가상 드라이브 에뮬레이터 드라이버
+  - PCI 버스
+  - PCI 표준 PCI-to-PCI 브리지
+  - Remote Desktop Device Redirector Bus
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - Xeon E3-1200/2nd Generation Intel(R) Core(TM) Processor Family PCI Express Root Port - 0101 (driver 9.2.0.1033)
+  - 마더보드 리소스
+  - 마더보드 리소스
+  - 마더보드 리소스
+  - 마더보드 리소스
+  - 복합 버스 열거자
+  - 볼륨 관리자
+  - 수치 데이터 프로세서
+  - 시스템 CMOS/실시간 클록
+  - 시스템 보드
+  - 시스템 보드
+  - 시스템 보드
+  - 시스템 스피커
+  - 시스템 타이머
+  - 직접 메모리 액세스(DMA) 컨트롤러
+  - 터미널 서버 마우스 드라이버
+  - 터미널 서버 키보드 드라이버
+  - 파일을 볼륨 드라이버로
+  - 프로그램 가능 인터럽트 컨트롤러
+  - 플러그 앤 플레이 소프트웨어 장치 계수기
++ Universal Serial Bus controllers
+  - Generic USB Hub
+  - Generic USB Hub
+  - Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host Controller - 1C26 (driver 9.2.0.1033)
+  - Intel(R) 6 Series/C200 Series Chipset Family USB Enhanced Host Controller - 1C2D (driver 9.2.0.1033)
+  - USB Composite Device
+  - USB Root Hub
+  - USB Root Hub
+
+stack dump:
+0018fd90  de fa ed 0e 01 00 00 00 - 00 00 00 00 27 b7 e6 75  ............'..u
+0018fda0  07 00 00 00 78 2a 40 00 - 98 1c 24 02 78 2a 40 00  ....x*@...$.x*@.
+0018fdb0  78 2a 40 00 50 5d 97 02 - d4 fe 18 00 14 fe 18 00  x*@.P]..........
+0018fdc0  df 0b 46 00 50 5d 97 02 - 78 2a 40 00 d4 fe 18 00  ..F.P]..x*@.....
+0018fdd0  e4 fd 18 00 78 2a 40 00 - 78 2a 40 00 38 1a 90 02  ....x*@.x*@.8...
+0018fde0  d4 fe 18 00 78 2a 40 00 - de fa ed 0e 01 00 00 00  ....x*@.........
+0018fdf0  07 00 00 00 f8 fd 18 00 - 78 2a 40 00 98 1c 24 02  ........x*@...$.
+0018fe00  78 2a 40 00 78 2a 40 00 - 50 5d 97 02 d4 fe 18 00  x*@.x*@.P]......
+0018fe10  14 fe 18 00 02 00 00 00 - e0 2b 40 00 38 1a 90 02  .........+@.8...
+0018fe20  ff ff ff ff 78 2a 40 00 - 38 1a 90 02 51 41 40 00  ....x*@.8...QA@.
+0018fe30  38 1a 90 02 0c 1f 46 00 - 01 1a 90 02 21 23 48 00  8.....F.....!#H.
+0018fe40  50 5d 97 02 01 5d 97 02 - 97 41 40 00 59 01 47 00  P]...]...A@.Y.G.
+0018fe50  4f d5 63 00 86 df 63 00 - 40 f1 19 02 c8 3d 24 02  O.c...c.@....=$.
+0018fe60  05 d9 48 00 40 f1 19 02 - 00 00 00 00 40 f1 19 02  ..H.@.......@...
+0018fe70  0c d7 48 00 00 6d 21 02 - d0 fc 18 02 00 19 24 02  ..H..m!.......$.
+0018fe80  f4 18 4e 00 10 b8 20 02 - 0c 1f 46 00 01 00 00 00  ..N... ...F.....
+0018fe90  8f 18 49 00 40 f1 19 02 - d0 fc 18 02 00 19 24 02  ..I.@.........$.
+0018fea0  2a 4f 4e 00 c0 74 1a 02 - 40 f1 19 02 00 19 24 02  *ON..t..@.....$.
+0018feb0  71 c0 4f 00 40 f1 19 02 - 00 00 00 00 74 cf 4f 00  q.O.@.......t.O.
+0018fec0  f8 fe 18 00 50 49 40 00 - d4 fe 18 00 a9 5b 4e 01  ....PI@......[N.
+
+disassembling:
+0063d53c     public PngImageList.RevertPatchedMethods:  ; function entry point
+0063d53c 241   cmp     dword ptr [$6e5fec], 0
+0063d543       jnz     loc_63d54f
+0063d545 242   mov     eax, $6e5ff0
+0063d54a     > call    -$1cd403 ($47014c)     ; SysUtils.FreeAndNil
+0063d54f 243   ret
+
