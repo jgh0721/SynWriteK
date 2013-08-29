@@ -6,7 +6,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -33,7 +33,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clRed
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -49,7 +49,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -57,7 +57,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -80,7 +80,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -662,7 +662,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -688,7 +688,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clRed
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -696,7 +696,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clTeal
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -704,7 +704,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -712,7 +712,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -720,7 +720,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -728,14 +728,14 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -753,8 +753,8 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'class (tree)'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clWindowText
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -2997,7 +2997,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -3040,7 +3040,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -3048,7 +3048,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7749,7 +7749,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -7757,7 +7757,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Section'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7765,7 +7765,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = 4227072
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -7773,7 +7773,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'constant'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clPurple
+        Font.Color = clYellow
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -7781,7 +7781,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7789,7 +7789,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = 65408
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -7797,7 +7797,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
+        Font.Color = 12615935
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -9665,7 +9665,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -9716,7 +9716,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -9724,7 +9724,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -9747,7 +9747,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -11817,7 +11817,7 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        BgColor = clWhite
+        BgColor = 16053492
         FormatType = ftBackGround
       end
       item
@@ -12085,6 +12085,7 @@ object SyntaxManager: TSyntaxManager
               'z-index'
               'zoom')
             TokenTypes = 4
+            IgnoreCase = True
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
@@ -12501,6 +12502,7 @@ object SyntaxManager: TSyntaxManager
               '-xv-voice-stress'
               '-xv-voice-volume')
             TokenTypes = 4
+            IgnoreCase = True
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
@@ -12656,7 +12658,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12666,7 +12668,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Text'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -12687,7 +12689,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clOlive
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12727,7 +12729,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tag param'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12735,7 +12737,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tag properties'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12797,7 +12799,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tree item (tag)'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -13398,7 +13400,7 @@ object SyntaxManager: TSyntaxManager
       'CDATA end')
     Extentions = 
       'xml xsl xslt mmpa mmpr sti bdsproj xsd rss wml svg xul xsd axl r' +
-      'df xaml vcproj dproj plist storyboard'
+      'df xaml vcproj dproj'
     LexerName = 'XML'
     Charset = DEFAULT_CHARSET
     Left = 140
@@ -13408,8 +13410,8 @@ object SyntaxManager: TSyntaxManager
     Formats = <
       item
         DisplayName = 'Default'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clWindowText
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -13417,7 +13419,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Section'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -13425,23 +13427,23 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Parameter'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clWindowText
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Value'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clBlue
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Symbol'
-        Font.Charset = RUSSIAN_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -13449,16 +13451,16 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Comment'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clGray
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Number'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clNavy
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -13667,12 +13669,12 @@ object SyntaxManager: TSyntaxManager
         Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsItalic]
+        Font.Style = []
       end
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -13680,7 +13682,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Commands'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 12615935
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold, fsUnderline]
@@ -13688,7 +13690,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -13712,7 +13714,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotationMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clFuchsia
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -13720,7 +13722,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -14157,192 +14159,6 @@ object SyntaxManager: TSyntaxManager
     FullRefreshSize = 10000
     Notes.Strings = (
       'Reworked by Alex, uvviewsoft.com')
-    Charset = DEFAULT_CHARSET
-  end
-  object SyntAnal10: TLibSyntAnalyzer
-    Formats = <
-      item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftCustomFont
-      end
-      item
-        DisplayName = 'String'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
-        DisplayName = 'Identifier'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
-        DisplayName = 'Comment'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold]
-      end
-      item
-        DisplayName = 'Symbol'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold]
-      end
-      item
-        DisplayName = 'Reserved word'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold]
-      end>
-    TokenRules = <
-      item
-        DisplayName = 'Any name'
-        StyleName = 'Identifier'
-        TokenType = 2
-        Expression = '[a-z_]\w*'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'Comment'
-        StyleName = 'Comment'
-        TokenType = 1
-        Expression = '!.*'#13#10
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'String'
-        StyleName = 'String'
-        TokenType = 4
-        Expression = #39'.*?('#39'|$)'#13#10
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'Symbol'
-        StyleName = 'Symbol'
-        TokenType = 3
-        Expression = '[/\*,\.;:\(\)=<>\+\-\[\]]'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end>
-    BlockRules = <
-      item
-        DisplayName = 'Key words'
-        StyleName = 'Reserved word'
-        BlockType = btTagDetect
-        ConditionList = <
-          item
-            TagList.Strings = (
-              'accept'
-              'and'
-              'application'
-              'begin'
-              'break'
-              'by'
-              'case'
-              'choose'
-              'class'
-              'code'
-              'compile'
-              'cycle'
-              'data'
-              'detail'
-              'do'
-              'else'
-              'elsif'
-              'end'
-              'execute'
-              'exit'
-              'file'
-              'footer'
-              'form'
-              'function'
-              'goto'
-              'group'
-              'header'
-              'if'
-              'include'
-              'item'
-              'itemize'
-              'join'
-              'loop'
-              'map'
-              'member'
-              'menu'
-              'menubar'
-              'module'
-              'new'
-              'not'
-              'null'
-              'of'
-              'olecontrol'
-              'omit'
-              'option'
-              'or'
-              'orof'
-              'parent'
-              'procedure'
-              'program'
-              'queue'
-              'record'
-              'report'
-              'return'
-              'routine'
-              'row'
-              'section'
-              'self'
-              'sheet'
-              'tab'
-              'table'
-              'then'
-              'times'
-              'to'
-              'toolbar'
-              'until'
-              'view'
-              'while'
-              'window'
-              'xor')
-            TokenTypes = 4
-            IgnoreCase = True
-          end>
-        HighlightPos = cpBound
-        IgnoreAsParent = False
-      end>
-    CodeTemplates = <>
-    SubAnalyzers = <>
-    TokenTypeNames.Strings = (
-      'Unknown'
-      'Comment'
-      'Identifier'
-      'Symbol'
-      'String'
-      'Integer const'
-      'Float const'
-      'Hex const'
-      'Char const'
-      'Preprocessor')
-    Extentions = 'cla clw'
-    LexerName = 'Clarion'
-    LineComment = '!'
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal9: TLibSyntAnalyzer
@@ -16469,7 +16285,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Var'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16477,7 +16293,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16485,7 +16301,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id Param'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16613,7 +16429,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Command'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -16637,7 +16453,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Default'
-        Font.Charset = ANSI_CHARSET
+        Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Consolas'
@@ -16648,7 +16464,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Directive'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -16690,7 +16506,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clPurple
+        Font.Color = clYellow
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16698,7 +16514,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable within String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 13260
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -19020,7 +18836,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clSilver
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -19037,7 +18853,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -19045,7 +18861,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -19069,7 +18885,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20718,7 +20534,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20726,7 +20542,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clRed
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -31051,7 +30867,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 16711808
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -31059,7 +30875,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clTeal
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -31067,7 +30883,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -31075,7 +30891,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -32978,7 +32794,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
+        Font.Color = clFuchsia
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -32986,7 +32802,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = clRed
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -33002,7 +32818,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 4227327
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -33010,7 +32826,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -33018,7 +32834,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -33026,7 +32842,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -36726,7 +36542,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = 16744576
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -36742,7 +36558,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Var'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clPurple
+        Font.Color = 33023
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -36750,7 +36566,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = 8421631
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -36758,7 +36574,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id keyword'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clFuchsia
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -36766,7 +36582,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id keyword2'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
+        Font.Color = 16744448
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -40070,33 +39886,6 @@ object SyntaxManager: TSyntaxManager
   object SyntAnal2: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
-      end
-      item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftBackGround
-      end
-      item
-        DisplayName = 'Symbol'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clMaroon
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold]
-      end
-      item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clNavy
@@ -40114,18 +39903,9 @@ object SyntaxManager: TSyntaxManager
         FormatType = ftColor
       end
       item
-        DisplayName = 'Identifier'
+        DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftColor
-      end
-      item
-        DisplayName = 'Reserved word'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -40133,49 +39913,32 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = 4227072
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
       end
       item
-        DisplayName = 'Current block'
-        Font.Charset = RUSSIAN_CHARSET
-        Font.Color = clMaroon
+        DisplayName = 'Identifier'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 4227327
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        FormatType = ftColor
+      end
+      item
+        DisplayName = 'Id keyword'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
-        BgColor = 13369046
-        FormatType = ftColor
-        BorderTypeLeft = blSolid
-        BorderColorLeft = clGray
-        BorderTypeTop = blSolid
-        BorderColorTop = clGray
-        BorderTypeRight = blSolid
-        BorderColorRight = clGray
-        BorderTypeBottom = blSolid
-        BorderColorBottom = clGray
       end
       item
-        DisplayName = 'Function'
+        DisplayName = 'Id function'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
-        DisplayName = 'function tree'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clNavy
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
-        DisplayName = 'class tree'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -40183,7 +39946,7 @@ object SyntaxManager: TSyntaxManager
     TokenRules = <
       item
         DisplayName = 'Word1stTreeItem'
-        StyleName = 'Reserved word'
+        StyleName = 'Id keyword'
         TokenType = 11
         Expression = '^[\x20\x09]*(def|class)\b'
         ColumnFrom = 0
@@ -40191,11 +39954,19 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Word1stKeyword'
-        StyleName = 'Reserved word'
+        StyleName = 'Id keyword'
         TokenType = 10
         Expression = 
           '^[\x20\x09]*(if|else|elif|for|while|try|except|finally|switch|ca' +
-          'se)\b'
+          'se|with)\b'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Word1stInteger'
+        StyleName = 'Number'
+        TokenType = 9
+        Expression = '^[\x20\x09]* \d+(\.\d+)?'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -40240,7 +40011,15 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
-        DisplayName = 'Any name'
+        DisplayName = 'Id __init__'
+        StyleName = 'Identifier'
+        TokenType = 2
+        Expression = '__\w+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id'
         StyleName = 'Identifier'
         TokenType = 2
         Expression = '[a-z_]\w*'
@@ -40248,10 +40027,18 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
+        DisplayName = 'Integer hex'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '0[xbo][0-9a-f]+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
         DisplayName = 'Integer'
         StyleName = 'Number'
         TokenType = 5
-        Expression = '\d+'
+        Expression = '\d+(\.\d*)?'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -40267,19 +40054,20 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Symbol'
         StyleName = 'Symbol'
         TokenType = 3
-        Expression = '[/\*,\.;:\(\)=<>\+\-\[\]\{\}\^@!%]'
+        Expression = '[/\*,\.;:\(\)=<>\+\-\[\]\{\}\^@!%\\\|~&]'
         ColumnFrom = 0
         ColumnTo = 0
       end>
     BlockRules = <
       item
         DisplayName = 'Keywords'
-        StyleName = 'Reserved word'
+        StyleName = 'Id keyword'
         BlockType = btTagDetect
         ConditionList = <
           item
             TagList.Strings = (
               'and'
+              'as'
               'assert'
               'break'
               'class'
@@ -40309,14 +40097,13 @@ object SyntaxManager: TSyntaxManager
               'while'
               'yield')
             TokenTypes = 516
-            IgnoreCase = True
           end>
         HighlightPos = cpAny
         IgnoreAsParent = False
       end
       item
         DisplayName = 'Functions'
-        StyleName = 'Function'
+        StyleName = 'Id function'
         BlockType = btTagDetect
         ConditionList = <
           item
@@ -40325,18 +40112,19 @@ object SyntaxManager: TSyntaxManager
               '__import__'
               'abs'
               'apply'
-              'as'
+              'bool'
               'buffer'
               'callable'
               'chr'
+              'classmethod'
               'cmp'
               'coerce'
-              'compile'
               'complex'
               'delattr'
               'dict'
               'dir'
               'divmod'
+              'enumerate'
               'eval'
               'execfile'
               'False'
@@ -40365,10 +40153,12 @@ object SyntaxManager: TSyntaxManager
               'min'
               'None'
               'NotImplemented'
+              'object'
               'oct'
               'open'
               'ord'
               'pow'
+              'property'
               'range'
               'raw_input'
               'reduce'
@@ -40378,7 +40168,10 @@ object SyntaxManager: TSyntaxManager
               'self'
               'setattr'
               'slice'
+              'staticmethod'
               'str'
+              'sum'
+              'super'
               'True'
               'tuple'
               'type'
@@ -40471,22 +40264,64 @@ object SyntaxManager: TSyntaxManager
         GroupIndex = 20
         CollapseFmt = '%sz0 ...'
         IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'import'
+        ConditionList = <
+          item
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              'import')
+            TokenTypes = 512
+          end>
+        NameFmt = '%sz-1'
+        GroupFmt = 'imports'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        NoEndRule = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'import-from'
+        ConditionList = <
+          item
+            TokenTypes = 4
+          end
+          item
+            TagList.Strings = (
+              'from')
+            TokenTypes = 512
+          end>
+        NameFmt = '%s-1'
+        GroupFmt = 'imports'
+        HighlightPos = cpAny
+        NoEndRule = True
+        IgnoreAsParent = False
       end>
     CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
-      '#!/usr/local/bin/python'
-      '#comment'
-      'import string, sys'
-      '""" multiline '
-      'string """'
-      'if len(sys.argv)==1:'
-      '    print '#39'Text here'#39
-      '    compile compile'
-      '    if cc:'
-      '      cc'
-      '      cc'
-      '    aa        ')
+      '#Comment'
+      '"""Doc'
+      'string"""'
+      'import sys, sys2, sys3'
+      'from csv import aa, bb'
+      ''
+      '  def func(num):'
+      '    for n in range(len(sys.argv)):'
+      '      print "Arg %s" % sys.argv[n]'
+      '      if n>2:'
+      '        return True'
+      '    return False        '
+      ''
+      'class MyName(object):      '
+      '  @staticmethod'
+      '  def func1(num):'
+      '    pass'
+      '   '
+      'MyName().func1(num)')
     TokenTypeNames.Strings = (
       'Unknown'
       'Comment'
@@ -40505,11 +40340,9 @@ object SyntaxManager: TSyntaxManager
     SkipSpaces = False
     FullRefreshSize = 80000
     Notes.Strings = (
-      'New Python lexer, by Alex, uvviewsoft.com'
-      'Special properties must be set for folding to appear:'
-      '- rules group index set to 20'
-      '- parsers needed which take first words with spaces/tabs'
-      '- tokens type names (for new parsers) set to "1nnnnn"')
+      'New Python lexer, by Alex (SynWrite)'
+      'For indent-based folding lexer must be tweaked:'
+      'see SynWrite lexer documentation about these tweaks.')
     LineComment = '#'
     Charset = DEFAULT_CHARSET
     Left = 144
@@ -42326,6 +42159,685 @@ object SyntaxManager: TSyntaxManager
     Notes.Strings = (
       'Author: Alex (SynWrite)'
       'Ref: http://jade-lang.com/')
+    LineComment = '//'
+    Charset = DEFAULT_CHARSET
+  end
+  object SyntAnal25: TLibSyntAnalyzer
+    Formats = <
+      item
+        DisplayName = 'Id'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Symbol'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Number'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'String'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'String Regex'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Comment'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsItalic]
+      end
+      item
+        DisplayName = 'Id Reserved'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Id Funcs'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clPurple
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Inline JS'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BgColor = clMoneyGreen
+        FormatType = ftBackGround
+      end>
+    TokenRules = <
+      item
+        DisplayName = 'Comment ###'
+        StyleName = 'Comment'
+        TokenType = 2
+        Expression = '(?s)\s* \#\#\#.+?(\#\#\#|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment #'
+        StyleName = 'Comment'
+        TokenType = 2
+        Expression = '\s*\#.*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = '1st Number'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '^[\x20\x09]* \d+(\.\d+)?'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = '1st Symbol'
+        StyleName = 'Symbol'
+        TokenType = 5
+        Expression = '^[\x20\x09]* [\{\}\(\)\[\],;\.\?/\+\-\*:=<>&/\|\^~!%@`]+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = '1st Id'
+        StyleName = 'Id'
+        TokenType = 5
+        Expression = '^[\x20\x09]* \w+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String Regex ///'
+        StyleName = 'String Regex'
+        TokenType = 1
+        Expression = 
+          '#before / must be =,('#13#10'(?s) (?<=[=\(&\s]) /// (\\.|.)*? (///[gim' +
+          ']*|Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String Regex'
+        StyleName = 'String Regex'
+        TokenType = 1
+        Expression = '#before / must be =,('#13#10'(?<=[=\(&\s]) / (\\.|.)*? (/[gim]*|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String """'
+        StyleName = 'String'
+        TokenType = 1
+        Expression = '(?s)("""|'#39#39#39') (\\.|.)*? (\1|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String'
+        StyleName = 'String'
+        TokenType = 1
+        Expression = '(?s)("|'#39') (\\.|.)*? (\1|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id'
+        StyleName = 'Id'
+        Expression = '[a-z_]\w*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Float'
+        StyleName = 'Number'
+        TokenType = 3
+        Expression = '\d+ (\.\d+)? e [\+\-]? \d+ |'#13#10'\d+ \. \d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Integer'
+        StyleName = 'Number'
+        TokenType = 3
+        Expression = '0x[a-f]+ | \d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Symbol'
+        StyleName = 'Symbol'
+        TokenType = 4
+        Expression = '-> | [\{\}\(\)\[\],;\.\?/\+\-\*:=<>&/\|\^~!%@`]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end>
+    BlockRules = <
+      item
+        DisplayName = 'block begin class'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'class')
+            TokenTypes = 32
+          end>
+        EndOfTextClose = True
+        NameFmt = '%sz0'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        GroupIndex = 20
+        CollapseFmt = '%sz0'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'block begin func'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '->')
+            TokenTypes = 16
+          end
+          item
+            CondType = tcSkip
+          end
+          item
+            TokenTypes = 32
+          end>
+        EndOfTextClose = True
+        NameFmt = '%sz0'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        GroupIndex = 20
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'block begin'
+        ConditionList = <
+          item
+            TokenTypes = 32
+          end>
+        EndOfTextClose = True
+        DisplayInTree = False
+        NameFmt = '"%s0"'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        GroupIndex = 20
+        CollapseFmt = '%sz0 ...'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Keyword'
+        StyleName = 'Id Reserved'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'and'
+              'break'
+              'by'
+              'catch'
+              'class'
+              'continue'
+              'debugger'
+              'delete'
+              'do'
+              'else'
+              'extends'
+              'false'
+              'finally'
+              'for'
+              'if'
+              'in'
+              'instanceof'
+              'is'
+              'isnt'
+              'loop'
+              'new'
+              'null'
+              'of'
+              'or'
+              'return'
+              'super'
+              'switch'
+              'then'
+              'this'
+              'throw'
+              'true'
+              'try'
+              'typeof'
+              'undefined'
+              'unless'
+              'until'
+              'when'
+              'while')
+            TokenTypes = 33
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Funcs'
+        StyleName = 'Id Funcs'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'alert'
+              'arrayEq'
+              'constructor'
+              'doesNotThrow'
+              'each'
+              'eq'
+              'Error'
+              'indexOf'
+              'Infinity'
+              'isNaN'
+              'length'
+              'NaN'
+              'ok'
+              'print'
+              'slice'
+              'test'
+              'throws')
+            TokenTypes = 33
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end>
+    CodeTemplates = <>
+    SubAnalyzers = <
+      item
+        DisplayName = 'Inline JS'
+        StyleName = 'Inline JS'
+        StartExpression = '`'
+        EndExpression = '`'
+        SyntAnalyzer = SyntAnal38
+      end>
+    SampleText.Strings = (
+      '#Comment'
+      '` //Inline JS'
+      '  name = func(); `'
+      ''
+      'test "trailing commas", ->'
+      '  trailingComma = [1, 2, 3,]'
+      
+        '  ok (trailingComma[0] is 1) and (trailingComma[2] is 3) and (tr' +
+        'ailingComma.length is 3)'
+      '  '
+      '  trailingComma = ['
+      '    1.0, 2, 3,'
+      '    4, 5, 6'
+      '  ]'
+      '  (sum = (sum or 0) + n) for n in trailingComma'
+      '     '
+      'funcTest = (a, b) ->  '
+      '  ok a.length is 2')
+    TokenTypeNames.Strings = (
+      'Id'
+      'String'
+      'Comment'
+      'Number'
+      'Symbol'
+      '1st word')
+    Extentions = 'coffee'
+    LexerName = 'CoffeeScript'
+    SkipSpaces = False
+    Notes.Strings = (
+      'Author: Alex (SynWrite)'
+      'Ref: http://coffeescript.org/'
+      'Test: see download package, "test" folder')
+    LineComment = '#'
+    Charset = DEFAULT_CHARSET
+  end
+  object SyntAnal10: TLibSyntAnalyzer
+    Formats = <
+      item
+        DisplayName = 'Symbol'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Number'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'String'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Identifier'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Reserved word'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Comment'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsItalic]
+      end
+      item
+        DisplayName = 'Current block'
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        BgColor = 13369046
+        FormatType = ftColor
+        BorderTypeLeft = blSolid
+        BorderColorLeft = clGray
+        BorderTypeTop = blSolid
+        BorderColorTop = clGray
+        BorderTypeRight = blSolid
+        BorderColorRight = clGray
+        BorderTypeBottom = blSolid
+        BorderColorBottom = clGray
+      end
+      item
+        DisplayName = 'Type'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clPurple
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end>
+    TokenRules = <
+      item
+        DisplayName = 'String'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '"(\\"|\\\\|.)*?("|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id'
+        StyleName = 'Identifier'
+        TokenType = 2
+        Expression = '[a-z_]\w*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Float'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '(\d+ \.)? \d+ e [\+\-]? \d+ |'#13#10'\d* \. \d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Integer'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '\d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment 1'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '(?s)/\*.*?(\*/|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment 2'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '//.*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Single symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[\{\}\(\)\[\],;=]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[/\+\-\*:<>&/\|\^\.!%]+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end>
+    BlockRules = <
+      item
+        DisplayName = 'keywords'
+        StyleName = 'Reserved word'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'digraph'
+              'subgraph')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'attribs'
+        StyleName = 'Type'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'arrowhead'
+              'arrowsize'
+              'arrowtail'
+              'charset'
+              'color'
+              'dir'
+              'distortion'
+              'fontcolor'
+              'fontname'
+              'fontsize'
+              'headlabel'
+              'height'
+              'label'
+              'labelangle'
+              'labeldistance'
+              'labelfontsize'
+              'minlen'
+              'nodesep'
+              'ordering'
+              'orientation'
+              'rank'
+              'rankdir'
+              'ranksep'
+              'ratio'
+              'samearrowhead'
+              'samehead'
+              'shape'
+              'sides'
+              'size'
+              'skew'
+              'style'
+              'weight'
+              'width')
+            TokenTypes = 4
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '{'
+        StyleName = 'Current block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+            TokenTypes = 8
+          end>
+        BlockEnd = '}'
+        NameFmt = '%sl0'
+        DynHighlight = dhBound
+        HighlightPos = cpRange
+        DynSelectMin = True
+        DrawStaple = True
+        CollapseFmt = '{ ... }'
+        IgnoreAsParent = False
+        AutoCloseMode = acmCloseNearest
+        AutoCloseText = '}'
+      end
+      item
+        DisplayName = '}'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 8
+          end>
+        BlockEnd = '{'
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '['
+        StyleName = 'Current block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '[')
+            TokenTypes = 8
+          end>
+        BlockEnd = ']'
+        DisplayInTree = False
+        NameFmt = '%sl1'
+        DynHighlight = dhBound
+        HighlightPos = cpBoundTagBegin
+        DynSelectMin = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = ']'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ']')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '('
+        Enabled = False
+        StyleName = 'Current block'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '(')
+            TokenTypes = 8
+          end>
+        BlockEnd = ')'
+        DisplayInTree = False
+        DynHighlight = dhBound
+        HighlightPos = cpBoundTagBegin
+        DynSelectMin = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = ')'
+        Enabled = False
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ')')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end>
+    CodeTemplates = <>
+    SubAnalyzers = <>
+    SampleText.Strings = (
+      'digraph abstract {'
+      #9'graph [ '
+      '      fontname = "Arial",'
+      '      fontsize = 10 ];'
+      #9'size="2,0";'
+      '    nodesep=.05'
+      #9'S24 -> 24;'
+      #9'S24 -> 24;'
+      '}')
+    TokenTypeNames.Strings = (
+      'Unknown'
+      'Comment'
+      'Identifier'
+      'Symbol'
+      'String'
+      'Number')
+    Extentions = 'gv dot'
+    LexerName = 'Graphviz'
+    Notes.Strings = (
+      'Author: Alex (SynWrite)'
+      'Test: Graphviz download package, "directed" folder')
     LineComment = '//'
     Charset = DEFAULT_CHARSET
   end

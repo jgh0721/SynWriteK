@@ -3,10 +3,42 @@ Legend:
  - fixed
  * changed
 
-5.7.720                             
-* options dialog: big rework
-* toolbar: 3 buttons added/updated (toggle left/bottom/right panel) and few removed 
-* lexers Eiffel, Euphoria moved to "Readme\MoreLexers.rar" 
+5.8.800
+* changes in UI:
+  * changed: "Show commands list" menu item moved under "Help" item
+  * changed: "Go to project file" menu item moved into project context menu
+  * changed: print menu items in "File" grouped
+  * removed: X and XX menu items
+  * removed: option "Show panels tooltips"
+
++ command "HTML -- Insert image tag" inserts also folder path of image
++ added 2 hidden options (at the end of "Readme\HiddenOptions.txt")
++ lexer Graphviz added
++ lexer CoffeeScript added
++ lexer Python: added tree node "imports"
+* lexer Clarion removed to "Readme\MoreLexers.rar"
+
+5.8.770
++ menu "Run -- Text converters" added (see help topic in Misc section) 
++ command "Encode HTML chars" works with all html entities
++ command "Preview HTML code" works ok with both ansi and utf8
++ command "Copy search marks to clipboard" (in Commands List)
+- fixes
+
+5.8.740                             
+* changed:
+  * options dialog: big rework
+  * main menu: big rework ("HTML" added, "Lexer" removed, "Run" changed, etc)
+  * toolbar: few buttons added/updated (toggle left/bottom/right panel) and few removed
+  * option "strip names in portable bkmk dialog" is now hidden - see "Readme\HiddenOptions.txt"
+  * command "preview html code" creates temp html file in file's folder (not in %temp%)
+  * lister plugin: option "start in read-only" is now hidden - see help topic about TC plugin
+  * lexers Eiffel, Euphoria removed to "Readme\MoreLexers.rar"
++ added:  
+  + right-click on gutter -> new menu  
+  + lexer Python: fixes and additions (class names hilited; hex/oct/bin numbers hilited; "with" folded)
+  + external tools: added macro {SelectedTextForWeb}
+- fixes 
  
 5.7.700                               
 + dbl-click on spaces selects them (like in Notepad++) 

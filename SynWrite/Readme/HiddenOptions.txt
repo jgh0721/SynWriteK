@@ -1,0 +1,22 @@
+This file lists SynWrite hidden options, ie options not visible in the Options dialog.
+They must be set in file "Syn.ini" in section [Setup]. 
+Use menu command "Options -- Advanced -- Edit file Syn.ini".
+Bool values have only two possible values: 0 mean Off, 1 means On.
+
+--------------------
+Utf8Buffer=32
+Sets buffer size, in Kb, of UTF-8 detection procedure. Set it bigger if UTF-8 detection fails on big text files.
+
+--------------------
+BkStrip=0
+Bool. Enables to strip names of portable bookmarks, in "Go to portable bookmark" dialog.
+
+--------------------
+Borders=1
+Bool. Enables 1px borders around editors/treeviews/listviews.
+
+--------------------
+Tooltips=1
+Bool. Enables tooltips for long strings inside listviews/treeviews.
+
+--------------------
