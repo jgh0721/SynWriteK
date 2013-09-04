@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<header>
+<title>SynCodeIntel plugin</title>    
+</header>
+<body>
+<h1><font color=darkblue>SynCodeIntel</font></h1>
+
+<h1>Intro</h1>  
+<p>Intelligent auto-completion plugin for <a href="http://uvviewsoft.com/synwrite/" target="_blank">SynWrite</a> editor,
+for several lexers: Python (2 and 3), PHP, Perl, Ruby, JavaScript, Tcl, SCSS, LESS.<br />
+Based on CodeIntel2 library from ActiveState (it's also used in Komodo Edit).
+</p>
+
+<h1>How to install</h1>
+<ul>
+<li> create folder "SynCodeIntel" inside "Plugins" subfolder of SynWrite install folder
+<li> unpack plugin package into this folder 
+  ("SynCodeIntel.dll" file must exist directly under "Plugins\SynCodeIntel" folder)
+<li> in SynWrite open menu command "Options -- Advanced -- Edit file SynPlugins.ini"
+<li> in opened editor of "SynPlugins.ini" file add a line under section [Complete]:
+<p><pre>
+[Complete]
+SynCodeIntel=SynCodeIntel\SynCodeIntel.dll;PHP,PHP (dev),Python,Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;
+</pre></p>
+<li> you may adjust lexers list in the above line, e.g. remove lexers which are not needed
+</ul>
+
+<h1>How to use</h1>
+<p>
+Note a) First plugin call initializes CodeIntel database, this takes about 5-10 sec.
+You can delete this database: folder "%userprofile%\.codeintel\db".
+</p>
+<p>
+Note b) If plugin fails, you should see message in SynWrite statusbar, e.g. 
+"[SynCodeIntel] Cannot parse position". This msg in statusbar is visible only for 1-2 sec.
+</p>
+<h3>1) Auto-completion</h3>
+<p>
+Open for ex Python script, place caret after "objname." (where objname is some object instance),
+and press Ctrl+Space (default auto-complete shortcut). You should see message in SynWrite statusbar 
+"Trying auto-complete: .........", then you should see, after 1-2 sec delay, auto-completion list 
+for your objname.
+</p>
+
+<h3>2) Function hints</h3>
+<p>
+You can place caret after "objname.funcname(" and press Ctrl+Shift+Space (default func-hint shortcut),
+after 1-2 sec delay you'll see function hint, above caret, for function "objname.funcname".
+</p>
+
+<h3>3) Find symbol definition</h3>
+<p>
+Note done yet.
+</p>
+
+
+<h1>About</h1>
+<ul>
+<li> License for SynCodeIntel is Mozilla Public License 1.1.
+<li> CodeIntel2 library &copy; <a href="http://www.activestate.com" target="_blank">ActiveState</a> 
+<li> SynCodeIntel plugin &copy; Alexey Torgashin, <a href="http://www.uvviewsoft.com" target="_blank">UVViewSoft</a> 
+</ul>
+
+</body>
+</html>

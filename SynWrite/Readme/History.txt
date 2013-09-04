@@ -3,20 +3,31 @@ Legend:
  - fixed
  * changed
 
-5.8.800
+5.8.830
++ command "HTML -- Insert image tag" inserts also folder path of image
++ added submenu "Projects" under "File" menu
++ added option "Lexer overrides -- Word chars" (affects double-click on word, smart hiliting, etc)
++ added option "Tabs -- Tabs style"
++ added option "Auto-complete -- Auto show param hint" (turn off for slow Auto-complete plugins)
++ returned options tab "Formats/Reload" (under "Files" tab)
++ added hidden options (at the end of "Readme\HiddenOptions.txt")
++ added help file in French (thanks nickw)
+
 * changes in UI:
   * changed: "Show commands list" menu item moved under "Help" item
   * changed: "Go to project file" menu item moved into project context menu
   * changed: print menu items in "File" grouped
-  * removed: X and XX menu items
-  * removed: option "Show panels tooltips"
+  * removed: option "Show panels tooltips" (made hidden)
+  * removed: option colors "Brackets hilite" (search marks color used)
 
-+ command "HTML -- Insert image tag" inserts also folder path of image
-+ added 2 hidden options (at the end of "Readme\HiddenOptions.txt")
-+ lexer Graphviz added
-+ lexer CoffeeScript added
-+ lexer Python: added tree node "imports"
-* lexer Clarion removed to "Readme\MoreLexers.rar"
++ lexers:
+  + lexer Graphviz added
+  + lexer CoffeeScript added
+  + lexer Python: added tree node "imports", added code templates, fixed "def" folding
+  + lexer AutoIt: many changes (thanks myCrack)
+  + lexer Lua: many changes (thanks myCrack)
+  * lexer T-SQL removed to "Readme\MoreLexers.rar"
+  * lexer Clarion removed to "Readme\MoreLexers.rar"
 
 5.8.770
 + menu "Run -- Text converters" added (see help topic in Misc section) 

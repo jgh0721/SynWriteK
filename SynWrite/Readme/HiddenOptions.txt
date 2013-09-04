@@ -12,11 +12,7 @@ BkStrip=0
 Bool. Enables to strip names of portable bookmarks, in "Go to portable bookmark" dialog.
 
 --------------------
-Borders=1
-Bool. Enables 1px borders around editors/treeviews/listviews.
-
---------------------
 Tooltips=1
-Bool. Enables tooltips for long strings inside listviews/treeviews.
+Bool. Enables tooltips for long strings in listviews/treeviews.
 
 --------------------

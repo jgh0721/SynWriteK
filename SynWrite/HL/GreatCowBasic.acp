@@ -1,0 +1,127 @@
+-> ! | NOT | !  \conditions.htm
+-> # | XOR | #  \conditions.htm
+-> #chip | #chip model, speed \chip.htm
+-> #config | #config option1, option2, ... , optionN \config.htm
+-> #define | #define Find Replace \define.htm
+-> #if | #if Condition ... #endif \if.htm
+-> #ifdef | #ifdef Constant | Constant Value | Var(VariableName) ... #endif \ifdef.htm
+-> #ifndef | #ifndef Constant | Constant Value | Var(VariableName) ... #endif \ifndef.htm
+-> #include | #include filename \include.htm
+-> #mem | #mem 'This directive is obsolete' \mem.htm
+-> #option bootloader | #option bootloader Address
+-> #script | #script   [scriptcommand1]   [scriptcommand2]   ...   [scriptcommandN] #endscript \script.htm
+-> #startup | #startup SubName \startup.htm
+-> & | AND | &  \conditions.htm
+-> | | OR | '|'  \conditions.htm
+-> 10ms | Wait timevalue 10-MILLISECONDS \wait.htm
+-> 10us | Wait timevalue 10-MICROSECONDS \wait.htm
+-> ADOff | This command is obsolete
+-> AND | AND | &  \conditions.htm
+-> bootloader | #option bootloader Address
+-> Call | On Interrupt event Call handler | On Interrupt event Ignore \oninterrupt.htm
+-> Case | Select Case var | Case value1 | ...code | ...Case valueN | ...code | ...Case Else | ...code | ...End Select \select.htm
+-> ClearTimer | ClearTimer TimerNo
+-> Cls | Cls
+-> Dim | Dim variable [, variable2[, variable3]] [As type] [Alias othervar [,othervar2]] [At location] | Dim array(size) [At location]
+-> Dir | Dir port.bit {In | Out} (Individual Form) Dir port {In | Out | DirectionByte} (Entire Port Form)
+-> DisplayChar | DisplayChar (display, character)
+-> DisplayValue | DisplayValue display, data
+-> Do | Do [{While | Until} condition] |  ...program code |  ...Loop [{While | Until} condition]
+-> Else | 1) If condition Then command  2) If condition Then | ...code to run if true | Else | ...code to run if false | End If \if.htm
+-> End | End  'ends programm execution'
+-> EPRead | EPRead location, store
+-> EPWrite | EPWrite location, data
+-> Exit Sub | Exit Sub
+-> For | For counter = start To end [Step increment] | ...program code | ...Next
+-> Function | Function return | ...program code | ...End Function \functions.htm
+-> Get | var = Get(Line, Column)
+-> Gosub | Gosub label | ...program code | ...Return
+-> Goto | Goto label
+-> h | Wait timevalue HOURS \wait.htm
+-> Hex | stringvar = Hex(number) \he.htm
+-> HPWM | HPWM channel, frequency, duty cycle
+-> HSerPrint | HSerPrint value
+-> HSerReceive | HSerReceive output output = HserReceive
+-> HSerSend | HSerSend data
+-> I2CReceive | I2CReceive data I2CReceive data, ack
+-> I2CSend | I2CSend data I2CSend data, ack
+-> I2CStart | I2CStart
+-> I2CStop | I2CStop
+-> If | 1) If condition Then command  2) If condition Then | ...code to run if true | Else | ...code to run if false | End If
+-> Ignore | On Interrupt event Call handler | On Interrupt event Ignore \oninterrupt.htm
+-> In | Dir port.bit {In | Out} (Individual Form) Dir port {In | Out | DirectionByte} (Entire Port Form) \dir.htm
+-> IndCall | IndCall Address \indcall.htm
+-> InitSer | InitSer channel, rate, start, data, stop, parity, invert
+-> InitTimer0 | InitTimer0 source, prescaler
+-> InitTimer1 | InitTimer1 source, prescaler
+-> InKey | output = InKey
+-> Instr | location = Instr(source, find)
+-> IntOff | IntOff
+-> IntOn | IntOn
+-> KeypadData | var = KeypadData
+-> KeypadRaw | largevar = KeypadRaw
+-> LCase | output = LCase(source)
+-> LCDCreateChar | LCDCreateChar char, chardata()
+-> LCDHex | LCDHex value
+-> LCDWriteChar | LCDWriteChar char
+-> Left | output = Left(source, count)
+-> Locate | Locate line, column
+-> Loop | Do [{While | Until} condition] |  ...program code |  ...Loop [{While | Until} condition] \do.htm
+-> m | Wait timevalue MINUTES \wait.htm
+-> Mid | output = Mid(source, start, count)
+-> ms | Wait timevalue MILLISECONDS \wait.htm
+-> Next | For counter = start To end [Step increment] | ...program code | ...Next \for.htm
+-> NOT | NOT | !  \conditions.htm
+-> Off | Set variable.bit {On | Off} \casting.htm
+-> On | Set variable.bit {On | Off} \casting.htm
+-> On Interrupt | On Interrupt event Call handler | On Interrupt event Ignore \oninterrupt.htm
+-> OR | OR | '|' \conditions.htm
+-> Out | Dir port.bit {In | Out} (Individual Form) Dir port {In | Out | DirectionByte} (Entire Port Form) \dir.htm
+-> Peek | OutputVariable = Peek (location)
+-> Poke | Poke (location, value)
+-> Pot | Pot pin, output
+-> Print | Print var
+-> ProgramErase | ProgramErase(location)
+-> ProgramRead | ProgramRead (location, store)
+-> ProgramWrite | ProgramWrite (location, value)
+-> PS2ReadByte | output = PS2ReadByte
+-> PS2SetKBLeds | PS2SetKBLeds (LedStatus)
+-> PS2WriteByte | PS2WriteByte data
+-> PulseOut | PulseOut pin, time units
+-> Put | Put Line,Column, Character
+-> PWMOff | PWMOff
+-> PWMOn | PWMOn
+-> PWMOut | PWMOut channel, duty cycle, cycles
+-> Random | var = Random
+-> Randomize | Randomize Randomize seed
+-> ReadAD | var = ReadAD (port)
+-> ReadTable | ReadTable TableName, Item, Output
+-> Repeat | Repeat times
+-> Return | Gosub label | ...program code | ...Return \gosub.htm
+-> Right | output = Right(source, count)
+-> Rotate | Rotate variable {Left | Right} [Simple]
+-> s | Wait timevalue SECONDS \wait.htm
+-> Select | Select Case var | Case value1 | ...code | ...Case valueN | ...code | ...Case Else | ...code | ...End Select
+-> SerPrint | SerPrint channel, value
+-> SerReceive | SerReceive channel, output
+-> SerSend | SerSend channel, data
+-> Set | Set variable.bit {On | Off}
+-> ShortTone | ShortTone Frequency, Duration
+-> Simple | Rotate variable {Left | Right} [Simple] \rotate.htm
+-> SPIMode | SPIMode Mode
+-> SPITransfer | SPITransfer tx, rx
+-> StartTimer | StartTimer TimerNo
+-> Step | For counter = start To end [Step increment] | ...program code | ...Next \for.htm
+-> StopTimer | StopTimer TimerNo
+-> Str | stringvar = Str(number)
+-> Sub | Sub (var1,[,var2] [,varN]) [#NR] | ...program code | ...End Sub \subroutines.htm
+-> Then | 1) If condition Then command  2) If condition Then | ...code to run if true | Else | ...code to run if false | End If \if.htm
+-> To | For counter = start To end [Step increment] | ...program code | ...Next \for.htm
+-> Tone | Tone Frequency, Duration
+-> UCase | output = UCase(source)
+-> Until | Do [{While | Until} condition] |  ...program code |  ...Loop [{While | Until} condition] \do.htm
+-> us | Wait timevalue MICROSECONDS \wait.htm
+-> Val | var = Val(string)
+-> Wait | Wait timevalue timeunit | Wait {While | Until} condition
+-> While | Do [{While | Until} condition] |  ...program code |  ...Loop [{While | Until} condition] \do.htm
+-> XOR | XOR | #  \conditions.htm

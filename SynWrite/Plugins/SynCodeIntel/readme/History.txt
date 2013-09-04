@@ -1,0 +1,4 @@
+SynCodeIntel version history
+
+0.4 (sep 2013)
+- php: variables names were returned without leading "$"
