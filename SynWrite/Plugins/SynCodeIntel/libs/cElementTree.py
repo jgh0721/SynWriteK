@@ -1,5 +1,6 @@
 try:
     from _local_arch.cElementTree import *
+    
     platform = "Local arch"
 except ImportError:
     try:

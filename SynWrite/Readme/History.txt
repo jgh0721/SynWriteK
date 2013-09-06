@@ -2,6 +2,12 @@ Legend:
  + added
  - fixed
  * changed
+ 
+Announce (sep 2013):
+Look at two new auto-completion plugins: SynCodeIntel and SynJedi. 
+SynCodeIntel adds intelligent auto-completion for many lexers (Python, PHP, JS, LESS, SCSS, etc).
+SynJedi adds intelligent auto-completion and find-declaration for Python lexer only.
+Both can be downloaded at SynWrite SF.net project page, section "Files". 
 
 5.8.830
 + command "HTML -- Insert image tag" inserts also folder path of image

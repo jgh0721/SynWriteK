@@ -1,5 +1,8 @@
 ﻿용어집
 
+Expand,펼치기
+Collapse,접기
+
 Lexer,분석기
 Editor,편집기
 

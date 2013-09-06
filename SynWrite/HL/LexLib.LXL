@@ -6,7 +6,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -33,7 +33,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -49,7 +49,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -57,7 +57,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -80,7 +80,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -662,7 +662,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -688,7 +688,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -696,7 +696,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -704,7 +704,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -712,7 +712,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -720,7 +720,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -728,14 +728,14 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -753,8 +753,8 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'class (tree)'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -2997,7 +2997,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -3040,7 +3040,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -3048,7 +3048,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7749,7 +7749,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -7757,7 +7757,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Section'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7765,7 +7765,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227072
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -7773,7 +7773,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'constant'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clYellow
+        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -7781,7 +7781,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -7789,7 +7789,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 65408
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -7797,7 +7797,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 12615935
+        Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -9665,7 +9665,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -9716,7 +9716,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -9724,7 +9724,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -9747,7 +9747,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Current block'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -12658,7 +12658,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12668,7 +12668,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Text'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -12689,7 +12689,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clOlive
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12729,7 +12729,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tag param'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12737,7 +12737,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tag properties'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -12799,7 +12799,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Tree item (tag)'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -13400,7 +13400,7 @@ object SyntaxManager: TSyntaxManager
       'CDATA end')
     Extentions = 
       'xml xsl xslt mmpa mmpr sti bdsproj xsd rss wml svg xul xsd axl r' +
-      'df xaml vcproj dproj'
+      'df xaml vcproj dproj plist storyboard msc'
     LexerName = 'XML'
     Charset = DEFAULT_CHARSET
     Left = 140
@@ -13410,8 +13410,8 @@ object SyntaxManager: TSyntaxManager
     Formats = <
       item
         DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -13419,7 +13419,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Section'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -13427,23 +13427,23 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Parameter'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Value'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Symbol'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = RUSSIAN_CHARSET
         Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
@@ -13451,16 +13451,16 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Comment'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clTeal
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
         DisplayName = 'Number'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Charset = RUSSIAN_CHARSET
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -13669,12 +13669,12 @@ object SyntaxManager: TSyntaxManager
         Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = []
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -13682,7 +13682,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Commands'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 12615935
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold, fsUnderline]
@@ -13690,7 +13690,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -13714,7 +13714,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotationMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clFuchsia
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -13722,7 +13722,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -16285,7 +16285,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Var'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16293,7 +16293,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16301,7 +16301,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id Param'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16429,7 +16429,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Command'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -16453,7 +16453,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
+        Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Consolas'
@@ -16464,7 +16464,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Directive'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -16506,7 +16506,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clYellow
+        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -16514,7 +16514,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable within String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = 13260
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -18836,7 +18836,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Default'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clSilver
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -18853,7 +18853,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Key words'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -18861,7 +18861,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Params'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -18885,7 +18885,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'QuotMarks'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20526,7 +20526,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -20534,7 +20534,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -20542,7 +20542,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -20582,7 +20582,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = cl3DDkShadow
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -30892,7 +30892,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16711808
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -30900,7 +30900,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -30908,7 +30908,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -30916,7 +30916,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -32819,7 +32819,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clFuchsia
+        Font.Color = clMaroon
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -32827,7 +32827,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Number'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -32843,7 +32843,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -32851,7 +32851,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Reserved word'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -32859,7 +32859,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGreen
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -32867,7 +32867,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Preprocessor'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -34622,7 +34622,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744576
+        Font.Color = clBlue
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -34638,7 +34638,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Var'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 33023
+        Font.Color = clPurple
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -34646,7 +34646,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 8421631
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -34654,7 +34654,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id keyword'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clFuchsia
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsBold]
@@ -34662,7 +34662,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Id keyword2'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 16744448
+        Font.Color = clNavy
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -37980,7 +37980,6 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        FormatType = ftColor
       end
       item
         DisplayName = 'Symbol'
@@ -37993,7 +37992,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227072
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
@@ -38001,11 +38000,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Identifier'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        FormatType = ftColor
       end
       item
         DisplayName = 'Id keyword'
