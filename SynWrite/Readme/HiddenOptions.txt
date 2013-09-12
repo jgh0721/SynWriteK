@@ -16,3 +16,10 @@ Tooltips=1
 Bool. Enables tooltips for long strings in listviews/treeviews.
 
 --------------------
+MaxWordLen=100
+Maximal length of text, which is handled by commands "Find current word next/ prior".
+
+--------------------
+TabFontSize=0
+If not 0, specifies font size for tabs headers.
+

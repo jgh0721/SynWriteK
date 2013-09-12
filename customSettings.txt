@@ -25,6 +25,7 @@ Language = Korean
 단축키 설정
                       
 F9, 옵션 창
+F11, 전체화면 전환
 
 Enter,\r\n
 BkSp,마지막 글자 삭제
