@@ -20,6 +20,7 @@ Auto-Save,자동저장
 Encoding,인코딩
 
 Bookmark,책갈피
+Portable Bookmark,간편 책갈피
 Marker,위치표식
 Favorites,즐겨찾기
 Customize,사용자정의
