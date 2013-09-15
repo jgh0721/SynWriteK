@@ -5,16 +5,19 @@ Legend:
  
 Announce (sep 2013):
 Look at two new auto-completion plugins: SynCodeIntel and SynJedi. 
-SynCodeIntel adds intelligent auto-completion for many lexers (Python, PHP, JS, LESS, SCSS, etc).
+SynCodeIntel adds intelligent auto-completion for many lexers (Python, PHP, Perl, Ruby, JS, SCSS, Tcl etc).
 SynJedi adds intelligent auto-completion and find-declaration for Python lexer only.
 Both can be downloaded at SynWrite SF.net project page, section "Files". 
 
 
-5.8.840
-+ added: change-case commands apply to current word, if no selection
-+ added command "Paste, then select" (commands list)
+5.8.850
++ added: change-case commands apply to current word, if nothing selected
++ added command "Paste, then select" ("Commands list" dialog)
++ added command "Open cmd.exe prompt in current dir" ("Commands list")
++ added commands "Insert blank line above/below caret" ("Commands list") 
 + added option "Keep trailing blanks" in "Overrides" tab
-+ added hidden options (Readme\HiddenOpt.txt) 
++ added hidden options (Readme\HiddenOpt.txt)
++ command "Show keyboard mapping" shows dup keys (at end)
 - fixes
 
 5.8.830
