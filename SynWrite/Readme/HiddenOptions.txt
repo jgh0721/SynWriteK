@@ -23,3 +23,6 @@ Maximal length of text, which is handled by commands "Find current word next/ pr
 TabFontSize=0
 If not 0, specifies font size for tabs headers.
 
+--------------------
+MarkDeletedModified=1
+Bool. Enables, when auto-reload in on, to mark deleted file as modified ("*" char in tab caption).

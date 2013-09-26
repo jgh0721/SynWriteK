@@ -2,7 +2,7 @@
 <RadialixLocalizerProject>
   <Header FileVersion="19" Guid="{A5F52DDC-9426-4DC4-A2FE-ABAE21D90838}"/>
   <IDESettings ProjectItemPath="0.Syn.dklang (korean.lng).STRINGS.fmMain" SelectedTable="StringsTabSheet" SelectedVisualDesigner="">
-    <StringTableSettings FocusedValueID="fmMain.TBXItemTabCopyDir.Caption" SortDirection="1" SortedColumnIndex="0"/>
+    <StringTableSettings FocusedValueID="fmMain.TBXItemSMarkNext.Hint" SortDirection="1" SortedColumnIndex="0"/>
     <TextTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <AccelTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <ImageTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
@@ -15,14 +15,14 @@
     </Languages>
     <Info>
       <CreatedBy Date="2012-12-26T14-12-03">Radialix Version 3.00.00  Build 486</CreatedBy>
-      <ModifiedBy Date="2013-09-15T18-39-55">Radialix 버전 3.00.00  빌드 486</ModifiedBy>
+      <ModifiedBy Date="2013-09-20T10-07-15">Radialix 버전 3.00.00  빌드 486</ModifiedBy>
       <Author>DevTester</Author>
       <Organization/>
       <Comment/>
       <WebSite/>
       <ContactEMail/>
       <Copyright/>
-      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="1540" AutoIncrementBuildNumber="1"/>
+      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="1551" AutoIncrementBuildNumber="1"/>
     </Info>
     <Publisher>
       <ApplicationName>&lt;Title&gt; &lt;WinCode&gt;</ApplicationName>
@@ -943,7 +943,7 @@
       <DialogUnits>1</DialogUnits>
     </FormSettings>
     <TextTemplates/>
-    <File Name="D:\GitHub\SynWriteK\SynWrite\Readme\Syn.dklang" Parser="dklang" DateTimeStamp="4675940758537129860" FileSize="393844">
+    <File Name="D:\GitHub\SynWriteK\SynWrite\Readme\Syn.dklang" Parser="dklang" DateTimeStamp="4675941610945744043" FileSize="395442">
       <LangSettings/>
       <ExportSettings Current="Glossary">
         <Glossary FileName="" SortData="1" SkipDuplicates="1" RemoveAccelerators="1" RemoveAccelKeys="1" CaseSensitive="0">
@@ -1933,7 +1933,9 @@
           </Vl>
           <Vl Name="TBXItemSMarkNext.Caption" Class="DKLANG_STRING">
             <Src>Ne&amp;xt search mark</Src>
-            <Trg Created="2013-01-18T11-57-26"/>
+            <Trg Created="2013-01-18T11-57-26" Changed="2013-09-20T10-07-10" Translated="2013-09-20T10-07-10" State="Validated">
+              <cur>다음 찾기 표식(&amp;X)</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemSMarkNext.Hint" Class="DKLANG_STRING">
             <Src>Go to next search mark</Src>
@@ -2079,10 +2081,11 @@
             <Src>9</Src>
             <Trg Created="2012-12-26T14-19-02"/>
           </Vl>
-          <Vl Name="TBXSubmenuItemLexer.Caption" Class="DKLANG_STRING">
-            <Src>&amp;Lexer</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-06T16-59-00" Translated="2013-09-06T16-59-00" State="Validated">
-              <cur>분석기(&amp;L)</cur>
+          <Vl New="1" Name="TBXSubmenuItemLexer.Caption" Class="DKLANG_STRING">
+            <Src>Le&amp;xer</Src>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-03-50" Translated="2013-09-20T10-03-50" State="Validated">
+              <cur>분석기(&amp;X)</cur>
+              <prev>분석기(&amp;L)</prev>
             </Trg>
           </Vl>
           <Vl Name="TBXSubmenuItemOpt.Caption" Class="DKLANG_STRING">
@@ -3228,7 +3231,7 @@
               <cur>텍스트 삽입</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[130].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[130].DisplayName" Class="DKLANG_STRING">
             <Src>Insert a character (uses parameter)</Src>
             <Trg Created="2012-12-26T14-19-02" Changed="2013-09-15T10-47-33"/>
           </Vl>
@@ -3238,7 +3241,7 @@
               <cur>텍스트 삽입</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[131].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[131].DisplayName" Class="DKLANG_STRING">
             <Src>Insert a whole string (uses parameter)</Src>
             <Trg Created="2012-12-26T14-19-02" Changed="2013-09-15T10-47-33"/>
           </Vl>
@@ -5292,7 +5295,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[270].DisplayName" Class="DKLANG_STRING">
             <Src>Copy filename to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-05-55" Translated="2013-09-20T10-05-55" State="Validated">
+              <cur>파일이름을 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[271].Category" Class="DKLANG_STRING">
             <Src>Clipboard operations</Src>
@@ -5302,7 +5307,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[271].DisplayName" Class="DKLANG_STRING">
             <Src>Copy full path to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-06-06" Translated="2013-09-20T10-06-06" State="Validated">
+              <cur>전체 경로를 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[272].Category" Class="DKLANG_STRING">
             <Src>Clipboard operations</Src>
@@ -5312,7 +5319,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[272].DisplayName" Class="DKLANG_STRING">
             <Src>Copy dir path to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-06-18" Translated="2013-09-20T10-06-18" State="Validated">
+              <cur>디렉토리 경로를 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[273].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
@@ -5398,7 +5407,7 @@
               <cur>힌트</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[27].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[27].DisplayName" Class="DKLANG_STRING">
             <Src>Function parameters popup</Src>
             <Trg Created="2012-12-26T14-19-02" Changed="2013-09-15T10-47-33"/>
           </Vl>
@@ -6735,7 +6744,7 @@
               <cur>실행</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[388].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[388].DisplayName" Class="DKLANG_STRING">
             <Src>Open current file in default application</Src>
             <Trg Created="2012-12-26T14-19-02" Changed="2013-09-15T10-47-33"/>
           </Vl>
@@ -8517,35 +8526,65 @@
               <cur>클립보드로부터 붙여넣고, 선택</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[534].Category" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[534].Category" Class="DKLANG_STRING">
             <Src>Inserting text</Src>
-            <Trg Created="2013-09-15T10-47-33" Changed="2013-09-15T10-47-33" State="ForReview">
+            <Trg Created="2013-09-15T10-47-33" State="ForReview">
               <cur>텍스트 삽입</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[534].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[534].DisplayName" Class="DKLANG_STRING">
             <Src>Insert blank line above caret</Src>
             <Trg Created="2013-09-15T10-47-33"/>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[535].Category" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[535].Category" Class="DKLANG_STRING">
             <Src>Inserting text</Src>
-            <Trg Created="2013-09-15T10-47-33" Changed="2013-09-15T10-47-33" State="ForReview">
+            <Trg Created="2013-09-15T10-47-33" State="ForReview">
               <cur>텍스트 삽입</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[535].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[535].DisplayName" Class="DKLANG_STRING">
             <Src>Insert blank line below caret</Src>
             <Trg Created="2013-09-15T10-47-33"/>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[536].Category" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[536].Category" Class="DKLANG_STRING">
             <Src>Run</Src>
-            <Trg Created="2013-09-15T10-47-33" Changed="2013-09-15T10-47-33" State="ForReview">
+            <Trg Created="2013-09-15T10-47-33" Translated="2013-09-20T10-03-03" State="Validated">
               <cur>실행</cur>
             </Trg>
           </Vl>
-          <Vl New="1" Name="SyntKeyMapping.Items[536].DisplayName" Class="DKLANG_STRING">
+          <Vl Name="SyntKeyMapping.Items[536].DisplayName" Class="DKLANG_STRING">
             <Src>Open cmd.exe prompt in current folder</Src>
             <Trg Created="2013-09-15T10-47-33"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[537].Category" Class="DKLANG_STRING">
+            <Src>Miscellaneous</Src>
+            <Trg Created="2013-09-20T09-57-45" Changed="2013-09-20T09-57-45" State="ForReview">
+              <cur>기타</cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[537].DisplayName" Class="DKLANG_STRING">
+            <Src>Copy current URL to clipboard</Src>
+            <Trg Created="2013-09-20T09-57-45"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[538].Category" Class="DKLANG_STRING">
+            <Src>Miscellaneous</Src>
+            <Trg Created="2013-09-20T09-57-45" Changed="2013-09-20T09-57-45" State="ForReview">
+              <cur>기타</cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[538].DisplayName" Class="DKLANG_STRING">
+            <Src>Open current URL in browser</Src>
+            <Trg Created="2013-09-20T09-57-45"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[539].Category" Class="DKLANG_STRING">
+            <Src>Miscellaneous</Src>
+            <Trg Created="2013-09-20T09-57-45" Changed="2013-09-20T09-57-45" Translated="2013-09-20T10-03-30" State="Validated">
+              <cur>기타</cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[539].DisplayName" Class="DKLANG_STRING">
+            <Src>Find current id declaration</Src>
+            <Trg Created="2013-09-20T09-57-45"/>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[53].Caption" Class="DKLANG_STRING">
             <Src>Begin of Text</Src>
@@ -8560,6 +8599,36 @@
           <Vl Name="SyntKeyMapping.Items[53].DisplayName" Class="DKLANG_STRING">
             <Src>Move cursor to absolute beginning</Src>
             <Trg Created="2012-12-26T14-19-02"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[540].Category" Class="DKLANG_STRING">
+            <Src>Miscellaneous</Src>
+            <Trg Created="2013-09-20T09-57-45" Changed="2013-09-20T09-57-45" Translated="2013-09-20T10-03-23" State="Validated">
+              <cur>기타</cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[540].DisplayName" Class="DKLANG_STRING">
+            <Src>Add current color to recents</Src>
+            <Trg Created="2013-09-20T09-57-45"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[541].Category" Class="DKLANG_STRING">
+            <Src>Text folding</Src>
+            <Trg Created="2013-09-20T09-57-45" Changed="2013-09-20T09-57-45" Translated="2013-09-20T10-03-37" State="Validated">
+              <cur>텍스트 접기</cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[541].DisplayName" Class="DKLANG_STRING">
+            <Src>Save folding to file</Src>
+            <Trg Created="2013-09-20T09-57-45"/>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[542].Category" Class="DKLANG_STRING">
+            <Src>Text folding</Src>
+            <Trg Created="2013-09-20T09-57-45" Changed="2013-09-20T09-57-45" State="ForReview">
+              <cur>텍스트 접기</cur>
+            </Trg>
+          </Vl>
+          <Vl New="1" Name="SyntKeyMapping.Items[542].DisplayName" Class="DKLANG_STRING">
+            <Src>Load folding from file</Src>
+            <Trg Created="2013-09-20T09-57-45"/>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[54].Caption" Class="DKLANG_STRING">
             <Src>Bottom of Page</Src>
@@ -10029,15 +10098,21 @@
           </Vl>
           <Vl Name="TBXItemTabCopyDir.Caption" Class="DKLANG_STRING">
             <Src>Copy dir path to clipboard</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-06-09" Translated="2013-09-20T10-06-09" State="Validated">
+              <cur>디렉토리 경로를 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemTabCopyFull.Caption" Class="DKLANG_STRING">
             <Src>Copy full path to clipboard</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-06-05" Translated="2013-09-20T10-06-05" State="Validated">
+              <cur>전체 경로를 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemTabCopyFN.Caption" Class="DKLANG_STRING">
             <Src>Copy filename to clipboard</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-05-52" Translated="2013-09-20T10-05-52" State="Validated">
+              <cur>파일이름을 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemTabMoveToView.Caption" Class="DKLANG_STRING">
             <Src>Move to other view</Src>
@@ -10271,15 +10346,21 @@
           </Vl>
           <Vl Name="TBXItemECpDirPath.Caption" Class="DKLANG_STRING">
             <Src>Copy dir path to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-06-28" Translated="2013-09-20T10-06-28" State="Validated">
+              <cur>디렉토리 경로를 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECpFullPath.Caption" Class="DKLANG_STRING">
             <Src>Copy full path to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-06-06" Translated="2013-09-20T10-06-06" State="Validated">
+              <cur>전체 경로를 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECpFN.Caption" Class="DKLANG_STRING">
             <Src>Copy filename to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-05-55" Translated="2013-09-20T10-05-55" State="Validated">
+              <cur>파일이름을 클립보드에 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemTbSpellCheck.Caption" Class="DKLANG_STRING">
             <Src>Spell check</Src>
@@ -12038,10 +12119,11 @@
             <Src>9</Src>
             <Trg Created="2013-05-16T09-08-22"/>
           </Vl>
-          <Vl Name="TbxItemTabReload.Caption" Class="DKLANG_STRING">
-            <Src>Reload tab</Src>
-            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-15T18-39-39" Translated="2013-09-15T18-39-39" State="Validated">
-              <cur>탭 다시 불러오기</cur>
+          <Vl New="1" Name="TbxItemTabReload.Caption" Class="DKLANG_STRING">
+            <Src>Reopen tab</Src>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-06-49" Translated="2013-09-20T10-06-49" State="Validated">
+              <cur>탭 다시열기</cur>
+              <prev>탭 다시 불러오기</prev>
             </Trg>
           </Vl>
           <Vl Name="TBXSubmenuHtmlHelp.Caption" Class="DKLANG_STRING">
@@ -18374,7 +18456,15 @@
               <Data>Left on odd pages\r\n</Data>
               <Data>Right on odd pages\r\n</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-20T10-02-41" Translated="2013-09-20T10-02-41" State="Validated">
+              <cur>
+                <Data>없음\r\n</Data>
+                <Data>왼쪽\r\n</Data>
+                <Data>오른쪽\r\n</Data>
+                <Data>홀수 페이지에 왼쪽\r\n</Data>
+                <Data>홀수 페이지에 오른쪽\r\n</Data>
+              </cur>
+            </Trg>
           </Vl>
         </Resource>
         <Resource Name="SyntLexerDlg" Class="DKLangResource" Type="DKLangResource">
@@ -20009,7 +20099,11 @@
             <Src>
               <Data>File and "folder\\" mask(s) to exclude, space separated:</Data>
             </Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-01-00" Translated="2013-09-20T10-01-00" State="Validated">
+              <cur>
+                <Data>공백으로 구분된, 제외할 파일과 폴더("Folder\\") 마스크 :</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="labFav.Caption" Class="DKLANG_STRING">
             <Src>Presets (F3)</Src>
@@ -20025,7 +20119,9 @@
           </Vl>
           <Vl Name="mnuFavFields.Caption" Class="DKLANG_STRING">
             <Src>Fields</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T09-58-53" Translated="2013-09-20T09-58-53" State="Validated">
+              <cur>항목</cur>
+            </Trg>
           </Vl>
           <Vl Name="mnuLoadSkipHiddenDir.Caption" Class="DKLANG_STRING">
             <Src>skip hidden folders</Src>
@@ -20083,7 +20179,9 @@
           </Vl>
           <Vl Name="mnuLoadWords.Caption" Class="DKLANG_STRING">
             <Src>whole words</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-00-36" Translated="2013-09-20T10-00-36" State="Validated">
+              <cur>전체 단어</cur>
+            </Trg>
           </Vl>
           <Vl Name="mnuLoadCase.Caption" Class="DKLANG_STRING">
             <Src>case sensitive</Src>
@@ -20093,11 +20191,15 @@
           </Vl>
           <Vl Name="mnuLoadSubdirs.Caption" Class="DKLANG_STRING">
             <Src>with all subfolders</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T09-59-36" Translated="2013-09-20T09-59-36" State="Validated">
+              <cur>모든 하위폴더 검색</cur>
+            </Trg>
           </Vl>
           <Vl Name="mnuLoadFolder.Caption" Class="DKLANG_STRING">
             <Src>search in folder</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T09-59-58" Translated="2013-09-20T09-59-58" State="Validated">
+              <cur>폴더 내부 검색</cur>
+            </Trg>
           </Vl>
           <Vl Name="mnuLoadMaskExc.Caption" Class="DKLANG_STRING">
             <Src>file masks to exclude</Src>
@@ -20113,7 +20215,9 @@
           </Vl>
           <Vl Name="mnuLoadTextR.Caption" Class="DKLANG_STRING">
             <Src>replace with</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-00-30" Translated="2013-09-20T10-00-30" State="Validated">
+              <cur>바꿀 문자열</cur>
+            </Trg>
           </Vl>
           <Vl Name="mnuLoadTextS.Caption" Class="DKLANG_STRING">
             <Src>search for</Src>
@@ -20123,7 +20227,9 @@
           </Vl>
           <Vl Name="mnuLoadSort.Caption" Class="DKLANG_STRING">
             <Src>sort files</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2013-09-20T10-00-14" Translated="2013-09-20T10-00-14" State="Validated">
+              <cur>파일 정렬</cur>
+            </Trg>
           </Vl>
         </Resource>
         <Resource Name="fmRepRpt" Class="DKLangResource" Type="DKLangResource">
@@ -21357,7 +21463,7 @@
             </Trg>
           </Vl>
         </Resource>
-        <Resource Name="fmSetupOvr" New="1" Class="DKLangResource" Type="DKLangResource">
+        <Resource Name="fmSetupOvr" Class="DKLangResource" Type="DKLangResource">
           <SourceLanguages>
             <LangID>9</LangID>
           </SourceLanguages>
@@ -23254,6 +23360,14 @@
         <Item>
           <Str>Go to</Str>
           <Str>바로 가기</Str>
+        </Item>
+        <Item>
+          <Str>&amp;Lexer</Str>
+          <Str>분석기(&amp;L)</Str>
+        </Item>
+        <Item>
+          <Str>Reload tab</Str>
+          <Str>탭 다시 불러오기</Str>
         </Item>
       </Items>
     </DeletedStrings>

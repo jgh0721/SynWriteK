@@ -11422,7 +11422,6 @@ object SyntaxManager: TSyntaxManager
           '    <link rel="shortcut icon" type="image/x-icon" href="">'
           '  </head>'
           '  <body>'
-          ''
           '  </body>'
           '</html>')
         Advanced = True
@@ -16413,7 +16412,7 @@ object SyntaxManager: TSyntaxManager
       'String'
       'Id Param')
     MarkedBlockStyle = 'Marked block'
-    Extentions = 'properties conf'
+    Extentions = 'properties conf /hosts'
     LexerName = 'Properties'
     Notes.Strings = (
       'Author: Alex, uvviewsoft.com'
@@ -38068,7 +38067,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String """'
         StyleName = 'String'
         TokenType = 4
-        Expression = '(?s) [ru]? ("""|'#39#39#39') .*? (\1|\Z)'
+        Expression = '(?s) ("""|'#39#39#39') .*? (\1|\Z)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -38076,7 +38075,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String '#39
         StyleName = 'String'
         TokenType = 4
-        Expression = '[ru]? '#39'.*?('#39'|$)'#13#10
+        Expression = #39'.*?('#39'|$)'#13#10
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -38084,7 +38083,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String "'
         StyleName = 'String'
         TokenType = 4
-        Expression = '[ru]? "(\\"|.)*?("|$)'
+        Expression = '"(\\"|.)*?("|$)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -38347,33 +38346,14 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'import'
         ConditionList = <
           item
-            TokenTypes = 4
-          end
-          item
             TagList.Strings = (
+              'from'
               'import')
             TokenTypes = 512
           end>
         NameFmt = '%sz0'
         GroupFmt = '\imports'
         RefToCondEnd = True
-        HighlightPos = cpAny
-        NoEndRule = True
-        IgnoreAsParent = False
-      end
-      item
-        DisplayName = 'import-from'
-        ConditionList = <
-          item
-            TokenTypes = 4
-          end
-          item
-            TagList.Strings = (
-              'from')
-            TokenTypes = 512
-          end>
-        NameFmt = '%sz0'
-        GroupFmt = '\imports'
         HighlightPos = cpAny
         NoEndRule = True
         IgnoreAsParent = False

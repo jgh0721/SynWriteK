@@ -10,6 +10,12 @@ SynJedi adds intelligent auto-completion and find-declaration for Python lexer o
 Both can be downloaded at SynWrite SF.net project page, section "Files". 
 
 
+5.8.870
++ mouse shortcut "Ctrl + Alt + click" performs "Find id" command
++ added commands "Copy current URL", "Open current URL", "Find current id", "Add current color to recents": added to "Commands list"
++ added submenu "View -- Lexers"
++ added commands "Save folding to file", "Load folding from file" (file is SynFoldStates.ini) 
+
 5.8.850
 + added: change-case commands apply to current word, if nothing selected
 + added command "Paste, then select" ("Commands list" dialog)
@@ -18,6 +24,7 @@ Both can be downloaded at SynWrite SF.net project page, section "Files".
 + added option "Keep trailing blanks" in "Overrides" tab
 + added hidden options (Readme\HiddenOpt.txt)
 + command "Show keyboard mapping" shows dup keys (at end)
+* removed plugin FindIdPas (it's now in "Files" section of SF.net project page)
 - fixes
 
 5.8.830
