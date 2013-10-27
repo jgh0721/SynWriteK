@@ -4,8 +4,8 @@ Use menu command "Options -- Advanced -- Edit file Syn.ini".
 Bool values have only two possible values: 0 mean Off, 1 means On.
 
 --------------------
-Utf8Buffer=32
-Sets buffer size, in Kb, of UTF-8 detection procedure. Set it bigger if UTF-8 detection fails on big text files.
+Utf8Buffer=64
+Sets buffer size, in Kb, of UTF-8 detection procedure. Increase it if UTF-8 detection fails on big files.
 
 --------------------
 BkStrip=0
@@ -26,3 +26,11 @@ If not 0, specifies font size for tabs headers.
 --------------------
 MarkDeletedModified=1
 Bool. Enables, when auto-reload in on, to mark deleted file as modified ("*" char in tab caption).
+
+--------------------
+SyncEditIcon=1
+Bool. Enables greenish gutter icon for command "Toggle SyncEditing mode".
+
+--------------------
+ProjCloseTabs=0
+Bool. Enables to close all tabs, when project is closed (using project tree context menu).

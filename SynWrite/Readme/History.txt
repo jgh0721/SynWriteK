@@ -10,11 +10,59 @@ SynJedi adds intelligent auto-completion and find-declaration for Python lexer o
 Both can be downloaded at SynWrite SF.net project page, section "Files". 
 
 
-5.8.870
-+ mouse shortcut "Ctrl + Alt + click" performs "Find id" command
-+ added commands "Copy current URL", "Open current URL", "Find current id", "Add current color to recents": added to "Commands list"
-+ added submenu "View -- Lexers"
-+ added commands "Save folding to file", "Load folding from file" (file is SynFoldStates.ini) 
+6.0.030
++ added lexer Razor
++ projects: can drag&drop file tabs to project
++ projects: Ctrl+Space toggles showing of file paths
++ lexer library: list shows lexer links (e.g. for HTML) or "link broken" string
++ external tools: input of {Interactive} value has dropdown history
+- fixes
+
+6.0.010
++ added connection between projects--sessions. Now project-related session can be auto opened and saved. See 2 new options in dialog.
++ added option "Highlight all occurences of clicked word" (seen in Eclipse) and sub-option "Whole words only"
++ added command "Select token, without quotes"
++ added color options "Auto-complete text/bg"
++ improved Scala lexer, Scala auto-complete list
++ improved AutoHotkey lexer (tree support added, registry str hilited)
++ help: FAQ answer about program name
+* changes:
+  * rewritten code of tags detection on HTML and CSS auto-completion (bad from old author)
+  * changed: location of mul-carets options in Syn.ini, "Mul-carets" options reset to default
+  * changed: location of sessions options in Syn.ini, "Sessions" options reset to default
+  * changed: names of special files in HL folder: Htm*.acp -> Html*.ini
+  * removed: lexer Graphviz moved to Readme\MoreLexers.rar
+
+5.9.940
++ added: lexer Scala (not finished)
++ added: additional word-chars for php is "$", for css is "-" (affects double click on id)
+- fix: xml tag auto-closing didn't respect tags <name:sub>
+- fix: code-template popup didn't use font option
+- fixes
+
+5.9.920
+* changed: command-line keys now must be in lower-case: /RO -> /ro, /S -> /s, /N -> /n
++ added "Project preview": press Space in project manager
++ added command-line key "/two" (open 2 views)
++ added external-tools max count: now 16
++ added external-tools macros {ContentFileName}, {ContentFileNameAnsi}
++ added external-tools "Output type" = "Insert at line start"
++ added commands in "Command list" in "Hints" group
++ added option colors "Hints text/BG" (for collapsed ranges hints)
+- fixes
+
+5.8.890
+- fixes
++ hidden option "SyncEditIcon"
++ language file: Trad.Chinese
+
+5.8.880
++ added mouse shortcut Ctrl+Alt+click - performs "Find id" command
++ added commands "Copy current URL", "Open current URL", "Find current id", "Add current color to recents" (were in menu only)
++ added submenu "View -- Lexers" (mainly for Alt+V,X shortcut)
++ added commands "Save folding to file", "Load folding from file" (file is SynFoldStates.ini)
++ added command "Open last closed file" (works if file history not empty)
+- fixes
 
 5.8.850
 + added: change-case commands apply to current word, if nothing selected

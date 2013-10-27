@@ -9,9 +9,9 @@ global $_REQUEST |An associative array consisting of the contents of $_GET, $_PO
 global $_SESSION |Session variables
 global $_SERVER |Server variables
 global $_SERVER['argc'] |Contains the number of command line parameters passed to the script (if run on the command line).
-global $_SERVER['argv'] |Array of arguments passed to the script. When the script is run on the command line
+global $_SERVER['argv'] |Array of arguments passed to the script. When the script is run on the command line.
 global $_SERVER['AUTH_TYPE'] |When running under Apache as module doing HTTP authenticated this variable is set to the authentication type.
-global $_SERVER['DOCUMENT_ROOT'] |The document root directory under which the current script is executing
+global $_SERVER['DOCUMENT_ROOT'] |The document root directory under which the current script is executing.
 global $_SERVER['GATEWAY_INTERFACE'] |What revision of the CGI specification the server is using; i.e. 'CGI/1.1'.
 global $_SERVER['HTTP_ACCEPT'] |Contents of the Accept: header from the current request, if there is one.
 global $_SERVER['HTTP_ACCEPT_CHARSET'] |Contents of the Accept-Charset: header from the current request, if there is one. Example: 'iso-8859-1,*,utf-8'.
