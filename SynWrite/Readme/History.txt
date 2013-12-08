@@ -2,18 +2,49 @@ Legend:
  + added
  - fixed
  * changed
- 
-Announce (sep 2013):
-Look at two new auto-completion plugins: SynCodeIntel and SynJedi. 
-SynCodeIntel adds intelligent auto-completion for many lexers (Python, PHP, Perl, Ruby, JS, SCSS, Tcl etc).
-SynJedi adds intelligent auto-completion and find-declaration for Python lexer only.
-Both can be downloaded at SynWrite SF.net project page, section "Files". 
 
+Announce (dec 2013):
++ Updated plugins SynJedi and SynCodeIntel.
++ New plugin SynSharp for C# lexer. See official homepage.
++ Added new distro "SynWrite Lite". See official homepage.
+
+6.1.175
++ lexer Bash renamed and improved (tree, folding, extension "bash")
+* change: Find/Replace dialog: flag "Search from caret" now ignored for "Replace all" commands
+- fixes  
+  
+6.1.160
++ added distro "SynWrite Lite" (see download page)
++ added ability to use files "Syn.sample.ini" + "SynHide.sample.ini" in the exe folder - useful for custom distros
++ added hidden option "SessionMaxFiles"
+- fix: Live Spelling turns off, after full spell check, if it was off before
+   
+6.1.140
++ added: lexer Dart
+* changed: part of "Syn.ini" file should be splitted to new file "SynHistory.ini". To move old data into new ini file, use our IniUpdater tool, run it from folder with "Syn.ini" file (default folder is %Appdata%\SynWrite). https://sourceforge.net/projects/synwrite/files/Misc/Ini%20updater/
+* changed: binary file SynState.ini not used (you may delete it), instead text file SynHistoryStates.ini is used. It contains file-states more flexible. More info is stored: Unicode filenames supported, names longer than 100 chars supported, max 200 bookmarks stored, folding-state is stored.
+* changed: color-swatches file extension changed to "synw-colorstring"
+* changed: redone command "Extend selection by line"
++ added: some dialogs save x/y position  
+  
+6.0.100
+- fix: key combos [Ctrl+X,X] work ok
++ options dialog: checking for duplicate key combinations
++ html auto-completion works for any lexer with "HTML" in name
++ help: FAQ question "How to set font for specific lexer?"
+
+6.0.080
++ added possibility to set hotkey combinations, e.g. [Ctrl+K,Ctrl+B]. See new help topic "Misc -- Key shortcuts".
++ added commands to scroll current line to top/bottom/middle of window (commands list dlg)
++ added Eclipse/ST2 like behaviour of Home key on indented line
++ project-man: sorting mode "by path"
+* changed: two options made hidden: "Horiz/vert offsets for commands 'Move caret...'"
+- fixes, lot of them
 
 6.0.030
 + added lexer Razor
 + projects: can drag&drop file tabs to project
-+ projects: Ctrl+Space toggles showing of file paths
++ projects: context menu item "Show/hide file paths"
 + lexer library: list shows lexer links (e.g. for HTML) or "link broken" string
 + external tools: input of {Interactive} value has dropdown history
 - fixes

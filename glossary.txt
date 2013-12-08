@@ -13,6 +13,7 @@ Tab mode,탭 모드
 Fonts,글꼴
 Colors,색상
 Keys,단축키
+hotkey,단축키
 
 Auto-Complete,자동완성
 Auto-Save,자동저장

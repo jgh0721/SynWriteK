@@ -484,7 +484,7 @@ procedure Exclude(var S: set of T; I: T) |Removes an element to a set.
 function ExcludeTrailingBackslash(const S: string): string |Removes '\' from the end of a string if it is there.
 function ExcludeTrailingPathDelimiter(const S: string): string |Returns a path name without a trailing delimiter.
 
-procedure Exit |Exits the method in which it appears.
+procedure Exit
 var ExitCode: Integer |Contains the application's exit code.
 
 function Exp(X: Real): Real |Returns the base of natural logarithms (e) raised to a power.
