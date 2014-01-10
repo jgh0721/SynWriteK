@@ -1,0 +1,6 @@
+name=import junit.framework.TestCase
+id=imt
+lex=Java
+text=
+import junit.framework.TestCase;
+${0}

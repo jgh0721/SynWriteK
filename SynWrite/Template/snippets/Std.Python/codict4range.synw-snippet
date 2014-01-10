@@ -1,0 +1,5 @@
+name=dict-comprehension from range
+id=codictr
+lex=Python
+text=
+{${1:(k,k)} for ${2:k} in range(${3:max1})${4: if k}}

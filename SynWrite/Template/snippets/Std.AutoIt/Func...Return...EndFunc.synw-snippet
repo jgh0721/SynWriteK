@@ -1,0 +1,9 @@
+name=Func...Return...EndFunc
+id=Func
+lex=AutoIt
+text=
+Func ${1:_FuncName}(${2})
+	${0}${sel}
+	Return ${3}
+EndFunc
+

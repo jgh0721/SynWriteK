@@ -1,0 +1,5 @@
+name=constant string
+id=cos
+lex=Java
+text=
+static public final String ${2:var} = "${3}";

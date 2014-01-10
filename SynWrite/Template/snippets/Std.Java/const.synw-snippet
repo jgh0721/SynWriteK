@@ -1,0 +1,5 @@
+name=constant
+id=co
+lex=Java
+text=
+static public final ${1:String} ${2:var} = ${3};

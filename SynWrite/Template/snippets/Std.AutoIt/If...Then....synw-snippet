@@ -1,0 +1,5 @@
+name=If...Then...
+id=if
+lex=AutoIt
+text=
+If ${1:True} Then ${0}${sel}

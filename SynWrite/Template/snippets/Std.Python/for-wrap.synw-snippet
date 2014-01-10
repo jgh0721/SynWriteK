@@ -1,0 +1,6 @@
+name=for in something
+id=forw
+lex=Python
+text=
+for ${1:i} in ${sel}:
+	${3:pass}

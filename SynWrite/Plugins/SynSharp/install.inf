@@ -1,0 +1,16 @@
+[info]
+title=SynSharp
+type=plugin
+subdir=SynSharp
+
+[ini]
+section=Complete
+id=SynSharp
+file=SynSharp.dll
+params=C#;
+
+[ini1]
+section=FindID
+id=SynSharp
+file=SynSharp.dll
+params=C#;

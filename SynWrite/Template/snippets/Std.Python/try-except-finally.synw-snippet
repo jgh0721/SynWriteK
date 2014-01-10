@@ -1,0 +1,10 @@
+name=try/except/finally
+id=try-f
+lex=Python
+text=
+try:
+	${1:pass}
+except Exception as e:
+	${2:raise e}
+finally:
+	${3:pass}

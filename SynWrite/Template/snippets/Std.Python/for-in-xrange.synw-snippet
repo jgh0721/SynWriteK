@@ -1,0 +1,6 @@
+name=for in xrange
+id=forx
+lex=Python
+text=
+for ${1:i} in xrange(${2:max1}):
+	${3:pass}

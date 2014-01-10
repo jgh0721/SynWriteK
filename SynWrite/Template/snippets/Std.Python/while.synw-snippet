@@ -1,0 +1,6 @@
+name=while
+id=while
+lex=Python
+text=
+while ${1:True}:
+	${2:pass}

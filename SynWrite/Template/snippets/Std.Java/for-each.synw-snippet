@@ -1,0 +1,7 @@
+name=for each
+id=fore
+lex=Java
+text=
+for (${1} : ${2}) {
+	${0}
+}

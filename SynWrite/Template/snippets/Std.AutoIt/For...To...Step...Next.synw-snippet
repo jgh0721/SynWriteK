@@ -1,0 +1,7 @@
+name=For...To...Step...Next
+id=For
+lex=AutoIt
+text=
+For ${1:$i} = ${2:0} To ${3:$stop} Step ${4:$stepval}
+	${0}${sel}
+Next

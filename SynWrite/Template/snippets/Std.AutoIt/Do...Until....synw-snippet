@@ -1,0 +1,7 @@
+name=Do...Until...
+id=Do
+lex=AutoIt
+text=
+Do
+	${0}${sel}
+Until ${1:True}

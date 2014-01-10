@@ -1,0 +1,7 @@
+name=if
+id=if
+lex=Java
+text=
+if (${1}) {
+	${0}
+}

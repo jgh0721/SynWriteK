@@ -1,0 +1,6 @@
+name=method
+id=method
+lex=Python
+text=
+def ${1:fname}(self${2:, arg}):
+	${3:pass}

@@ -1,0 +1,6 @@
+name=for in range
+id=forr
+lex=Python
+text=
+for ${1:i} in range(${2:max1}):
+	${3:pass}

@@ -1,0 +1,5 @@
+name=assert
+id=as
+lex=Java
+text=
+assert ${1:test} : "${2:Failure message}";

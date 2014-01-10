@@ -1,0 +1,12 @@
+name=try/except/else/finally
+id=try-eef
+lex=Python
+text=
+try:
+	${1:pass}
+except Exception as e:
+	${2:raise e}
+else:
+	${3:pass}
+finally:
+	${4:pass}

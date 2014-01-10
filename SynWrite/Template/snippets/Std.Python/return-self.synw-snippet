@@ -1,0 +1,5 @@
+name=return self.smth
+id=rets
+lex=Python
+text=
+return self.${1}

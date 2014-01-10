@@ -3,57 +3,118 @@
 <title>SynCodeIntel plugin</title>    
 </header>
 <body>
+<center>
 <h1><font color=darkblue>SynCodeIntel</font></h1>
+</center>
 
+<ul>
+<li> <a href="#in">Intro</a>
+<li> <a href="#inst">How to install</a>
+<li> <a href="#use">How to use</a>
+   <ul>
+   <li> <a href="#acp">Auto-completion</a>
+   <li> <a href="#fhint">Function hints</a>
+   <li> <a href="#findid">Find symbol definition</a>
+   </ul>
+<li> <a href="#paths">How to specify search paths</a>
+<li> <a href="#ini">Config file</a>
+<li> <a href="#ab">About</a>
+</ul>
+
+<a name="in"></a>
 <h1>Intro</h1>  
 <p>Intelligent auto-completion plugin for <a href="http://uvviewsoft.com/synwrite/" target="_blank">SynWrite</a> editor,
-for several lexers: Python (2 and 3), PHP, Perl, Ruby, JavaScript, Tcl, SCSS, LESS.<br />
+for several lexers: 
+Python (note: for Python lexer better use another plugin <a href="http://uvviewsoft.com/synjedi/" target="_blank">SynJedi</a>),
+PHP, Perl, Ruby, JavaScript, Tcl, SCSS, LESS.<br />
 Based on CodeIntel2 library from ActiveState (it's also used in Komodo Edit).
 </p>
 
+<br />
+<a name="inst"></a>
 <h1>How to install</h1>
+
+<p>Latest SynWrite supports plugins auto-installing. Just open "SynCodeIntel.rar" file in SynWrite,
+you'll see plugin installation prompt. Confirm it, then wait until "unrar" window finishes its work.
+</p>
+
+<p>Note: if you have renamed one of supported lexers, correct also lexer name in "SynPlugins.ini" file, using command 
+"Options -- Advanced -- Edit file SynPlugins.ini". 
+</p>
+
+<br />
+<a name="use"></a>
+<h1>How to use</h1>
+<h2>Notes</h2>
 <ul>
-<li> create folder "SynCodeIntel" inside "Plugins" subfolder of SynWrite install folder
-<li> unpack plugin package into this folder 
-  ("SynCodeIntel.dll" file must exist directly under "Plugins\SynCodeIntel" folder)
-<li> in SynWrite open menu command "Options -- Advanced -- Edit file SynPlugins.ini"
-<li> in opened editor of "SynPlugins.ini" file add a line under section [Complete]:
-<p><pre>
-[Complete]
-SynCodeIntel=SynCodeIntel\SynCodeIntel.dll;PHP,PHP (dev),Python,Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;
-</pre></p>
-<li> you may adjust lexers list in the above line, e.g. remove lexers which are not needed
+<li> Plugin runs server window, it's minimized, you can close it at any time, after work in editor is finished.
+     Server starts slowly (4-5 sec or more) but works fast.
+<li> Plugin creates big database, you can delete its folder: <tt>%userprofile%\.codeintel</tt>.
+<li> If plugin fails, you should see message in SynWrite statusbar, e.g. 
+  "[SynCodeIntel] Cannot parse position". This msg in statusbar is visible only for 1.5 sec.
 </ul>
 
-<h1>How to use</h1>
-<p>
-Note a) First plugin call initializes CodeIntel database, this takes about 5-10 sec.
-You can delete this database: folder "%userprofile%\.codeintel\db".
-</p>
-<p>
-Note b) If plugin fails, you should see message in SynWrite statusbar, e.g. 
-"[SynCodeIntel] Cannot parse position". This msg in statusbar is visible only for 1-2 sec.
-</p>
-<h3>1) Auto-completion</h3>
+<a name="acp"></a>
+<h2>1) Auto-completion</h2>
 <p>
 Open for ex Python script, place caret after "objname." (where objname is some object instance),
-and press Ctrl+Space (default auto-complete shortcut). You should see message in SynWrite statusbar 
-"Trying auto-complete: .........", then you should see, after 1-2 sec delay, auto-completion list 
+and press Ctrl+Space (default auto-completion shortcut). You should see message in SynWrite statusbar 
+"Trying auto-complete: .........", then you should see, after server reply, auto-completion list 
 for your objname.
 </p>
+<p>For PHP lexer you should place caret after "objname->", PHP uses "->" instead of a dot.</p>
 
-<h3>2) Function hints</h3>
+<a name="fhint"></a>
+<h2>2) Function hints</h2>
 <p>
 You can place caret after "objname.funcname(" and press Ctrl+Shift+Space (default func-hint shortcut),
-after 1-2 sec delay you'll see function hint, above caret, for function "objname.funcname".
+after server reply, you'll see function hint, above caret, for function "objname.funcname".
 </p>
 
-<h3>3) Find symbol definition</h3>
+<a name="findid"></a>
+<h2>3) Find symbol definition</h2>
 <p>
-Note done yet.
+Right-click any identifier (class name, function name, variable, etc),
+to call editor context menu, and choose menu item "Find ID" (if menu item is disabled, you didn't configure "SynPlugins.ini" section [FindID]).
+If id declaration can be found by CodeIntel library, you'll see "Found" message in statusbar, and caret placed on line-start of id declaration
+(CodeIntel doesn't return column position).
+</p>
+<p>Also you can use Ctrl+Alt+click, instead of context menu.</p>
+
+
+<br />
+<a name="paths"></a>
+<h1>How to specify search paths</h1>
+
+<p>You can specify additional folders, for your custom libraries (for any of these languages: PHP/Python/Perl/Ruby/JavaScript),
+using one or both of methods:
+<ul>
+	<li> list folders in SynWrite options dialog, "Path Environment" tab;
+	<li> list folders in current SynWrite project's properties dialog (if you have different folders for each project).
+</ul>
+</p>
+<p>Notes:
+<ul>
+	<li> If you have changed search folders, server window must be closed, to apply this setting to server.
+	<li> SynWrite feature <i>"append '*' to search folder to search in all subfolders"</i> isn't supported here.
+</ul>
 </p>
 
 
+<br />
+<a name="ini"></a>
+<h1>Config file</h1>
+
+<p>You may create file "SynCodeIntel.ini" in the plugin folder and write there few options in section [ini]:</p>
+<ul>
+<li> <b>datadir</b>: Specifies folder where plugin finds its folder "server".
+<li> <b>hints</b> (bool, 0 or 1): Enables to show function hints. 
+<li> <b>server_port</b>: Specifies TCP port for server process. Default is 11112. 
+<li> <b>server_hide</b> (bool): Enables to hide server window (otherwise window is minimized). 
+</ul>
+
+<br />
+<a name="ab"></a>
 <h1>About</h1>
 <ul>
 <li> License for SynCodeIntel is Mozilla Public License 1.1.

@@ -1,0 +1,30 @@
+SynJedi version history
+-----------------------
+
+1.0.5
++ plugin auto-installation file "install.inf" added.
+
+1.0.4
+* search folders must be specified another way. See readme file about it.
++ faster readin of big files.
+
+1.0.2 (dec 2013)
+- file server.py rearranged
+- files rearranged
+
+1.0.0 (nov 2013)
++ module rewritten in client-server tech. Server window opens automatically and 
+  doesn't close on editor closing. Close it by hands. You can hide server window 
+  using option in Synjedi.ini (readme).
+  Work of auto-completion is fast now (after server starts).
++ Python3 used  
+
+0.5.1
++ completions for "function" items inserted with "("
++ readme: info about SynJedi.ini
+
+0.5 (sep 2013)
++ find-id: can find variable declarations in current module
++ find-id: uses column number too
++ can specify search paths: readme
+- fixes

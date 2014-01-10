@@ -1,0 +1,7 @@
+name=test case
+id=tc
+lex=Java
+text=
+public class ${1:NameCase} extends ${2:TestCase} {
+	${0}
+}

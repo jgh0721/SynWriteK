@@ -1,0 +1,16 @@
+[info]
+title=SynCodeIntel
+type=plugin
+subdir=SynCodeIntel
+
+[ini]
+section=Complete
+id=SynCodeIntel
+file=SynCodeIntel.dll
+params=PHP,PHP (dev),Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;
+
+[ini1]
+section=FindID
+id=SynCodeIntel
+file=SynCodeIntel.dll
+params=PHP,PHP (dev),Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;

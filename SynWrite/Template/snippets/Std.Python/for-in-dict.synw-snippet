@@ -1,0 +1,6 @@
+name=for in dict
+id=ford
+lex=Python
+text=
+for ${1:k,v} in ${2:src_dict}:
+	${3:pass}

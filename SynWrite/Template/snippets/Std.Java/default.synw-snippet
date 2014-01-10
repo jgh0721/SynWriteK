@@ -1,0 +1,6 @@
+name=default
+id=de
+lex=Java
+text=
+default:
+	${0}

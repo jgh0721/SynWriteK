@@ -1,0 +1,7 @@
+name=for...in...do...end
+id=forIter
+lex=Lua
+text=
+for ${1:_param}, ${2:_value} in pairs(${3:_tbl}) do
+	${0}${sel}
+end

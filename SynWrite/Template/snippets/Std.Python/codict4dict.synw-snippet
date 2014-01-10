@@ -1,0 +1,5 @@
+name=dict-comprehension from dict
+id=codict
+lex=Python
+text=
+{${1:(k,v)} for ${2:k,v} in ${3:src_dict}${4: if k}}

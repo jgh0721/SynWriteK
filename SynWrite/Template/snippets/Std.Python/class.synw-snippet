@@ -1,0 +1,9 @@
+name=class
+id=class
+lex=Python
+text=
+class ${1:ClassName}(${2:object}):
+	"""${3:Doc string}"""
+	def __init__(self, ${4:arg}):
+		${5:super().__init__(arg)}
+		${6:self.arg = arg}

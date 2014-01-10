@@ -1,0 +1,11 @@
+name=If...ElseIf...Else...EndIf
+id=Ifel
+lex=AutoIt
+text=
+If ${1:True} Then
+	${0}${sel}
+ElseIf ${2:False} Then
+	${3}
+Else
+	${4}
+EndIf

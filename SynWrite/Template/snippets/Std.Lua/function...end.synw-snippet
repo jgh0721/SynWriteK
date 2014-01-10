@@ -1,0 +1,7 @@
+name=function...end
+id=func
+lex=Lua
+text=
+function ${1:_FuncName}(${2})
+	${0}${sel}
+end

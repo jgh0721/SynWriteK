@@ -1,0 +1,5 @@
+name=print
+id=p
+lex=Java
+text=
+System.out.print(${1});${0}

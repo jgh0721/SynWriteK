@@ -1,0 +1,16 @@
+[info]
+title=SynJedi
+type=plugin
+subdir=SynJedi
+
+[ini]
+section=Complete
+id=SynJedi
+file=SynJedi.dll
+params=Python;
+
+[ini1]
+section=FindID
+id=SynJedi
+file=SynJedi.dll
+params=Python;

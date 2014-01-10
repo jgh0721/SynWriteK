@@ -1,0 +1,12 @@
+name=Select...Case...EndSelect
+id=Select
+lex=AutoIt
+text=
+Select
+	Case ${1:True}
+		${2}
+	Case ${3:False}
+		${4}
+	Case Else
+		${5}
+EndSelect

@@ -1,0 +1,10 @@
+name=Switch...Case...EndSwitch
+id=Switch
+lex=AutoIt
+text=
+Switch ${1:$expression}
+	Case ${2:$val1} To ${3:$val2}
+		${4}
+	Case Else
+		${5}
+EndSwitch

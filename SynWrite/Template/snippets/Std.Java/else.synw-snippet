@@ -1,0 +1,7 @@
+name=else
+id=el
+lex=Java
+text=
+else {
+	${0}
+}

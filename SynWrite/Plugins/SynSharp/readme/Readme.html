@@ -1,0 +1,101 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<header>
+<title>SynSharp plugin</title>    
+</header>
+<body>
+<center>
+<h1><font color=darkblue>SynSharp plugin</font></h1>
+</center>
+
+<ul>
+<li> <a href="#in">Intro</a>
+<li> <a href="#inst">How to install</a>
+<li> <a href="#use">How to use</a>
+  <ul>
+	<li> <a href="#notes">Usage notes</a>
+	<li> <a href="#acp">Auto-completion</a>
+	<li> <a href="#findid">Find symbol definition</a>
+  </ul>
+<li> <a href="#ini">Config file</a>
+<li> <a href="#ab">About</a>
+</ul>
+
+<a name="in"></a>
+<h1>Intro</h1>  
+<p>
+Plugin for <a href="http://uvviewsoft.com/synwrite/" target="_blank">SynWrite</a> text editor.
+Intelligent auto-completion and find-id-declaration for C# lexer.<br />
+Based on <a href="https://github.com/nosami/OmniSharpServer" target="_blank">OmniSharpServer</a>.
+</p>
+
+<p>Requires .NET Framework (one of latest versions, 3 or 4). 
+</p>
+
+<br />
+<a name="inst"></a>
+<h1>How to install</h1>
+<p>Latest SynWrite supports plugins auto-installing. Just open "SynSharp.rar" file in SynWrite,
+you'll see plugin installation prompt. Confirm it, then wait until "unrar" window finishes its work.
+</p>
+
+<br />
+<a name="use"></a>
+<h1>How to use</h1>
+
+<a name="notes"></a>
+<h2>Usage notes</h2>
+<ul>
+<li> Before calling plugin, write full filename of your C# solution sln-file to the "Search paths" list.<br />
+     I.e., write it in the SynWrite options dialog ("Path Environment" tab), or in the current SynWrite project properties dialog.
+	 Second method is better, if you use several SynWrite projects with different solutions.
+	 Note: not folder of sln-file, but full filename of sln-file.
+<li> On first call plugin runs OmniSharp server window. This window is minimized, you can close it any time,
+     after work in editor is finished. Server runs slowly, some seconds, but works fast.
+<li> If plugin fails, you should see short message about it, in SynWrite status bar.
+<li> If plugin fails, then instead of intelligent completions list, you'll see fixed names list, from file "SynWrite\HL\C#.acp".
+     You may delete this "C#.acp" file if you don't need fixed list.
+<li> Plugin fails if current server window was opened for another solution file.
+     Plugin cannot close server window by itself, so please close server window by yourself, if you see error message about wrong solution file.
+     Plugin stores last solution filename to file "history.ini" in the plugin folder.
+</ul>
+
+<a name="acp"></a>
+<h2>Auto-completion</h2>
+<p>
+In C# source file, place caret after "objname." or "objname.Func" (ie, some class name followed with a dot and, maybe, partially typed name),
+and press Ctrl+Space (default auto-completion shortcut). You should see message in SynWrite statusbar:<br />
+<tt>Trying auto-complete: .....</tt> <br />
+then, after server reply, you should see auto-completion list for your objname.
+</p>
+
+<a name="findid"></a>
+<h2>Find symbol definition</h2>
+<p>
+In C# source file, place caret on any function/variable/class name, and call command "Find ID" from SynWrite context menu.
+(Menu item should be enabled if you have registered plugin in [FindID] section of SynPlugins.ini.)
+After server reply, plugin will open file with id declaration and place caret before this id.
+</p>
+<p>You can also click id with Ctrl+Alt pressed (instead of using menu).</p>
+
+<br />
+<a name="ini"></a>
+<h1>Config file</h1>
+
+<p>You may create file "SynSharp.ini" in the plugin folder and write there few options in section [ini]:</p>
+<ul>
+<li> <b>datadir</b>: Specifies folder which contains "server" folder (default is plugin folder).
+<li> <b>server_port</b>: Specifies TCP port for server (default is 2000). 
+<li> <b>server_hide</b> (bool: 0 or 1): Enables to hide server window (default is 0: window is minimized). 
+</ul>
+
+<br />
+<a name="ab"></a>
+<h1>About</h1>
+<ul>
+<li> License for SynSharp is Mozilla Public License 1.1
+<li> OmniSharpServer &copy; OmniSharpServer contributors
+<li> SynSharp plugin &copy; Alexey Torgashin, <a href="http://www.uvviewsoft.com" target="_blank">UVViewSoft</a> 
+</ul>
+
+</body>
+</html>

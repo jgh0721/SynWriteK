@@ -1,0 +1,7 @@
+name=For...In...Next
+id=ForObj
+lex=AutoIt
+text=
+For ${1:$vElement} In ${2:$oObjectORaArray}
+	${0}${sel}
+Next

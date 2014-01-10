@@ -1,0 +1,7 @@
+name=while...do...end
+id=while
+lex=Lua
+text=
+while ${1:true} do
+	${0}${sel}
+end

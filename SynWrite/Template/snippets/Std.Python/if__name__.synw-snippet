@@ -1,0 +1,6 @@
+name=if __name__
+id=if__n
+lex=Python
+text=
+if __name__ == '__main__':
+	${1:pass}	

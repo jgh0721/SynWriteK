@@ -3,14 +3,47 @@ Legend:
  - fixed
  * changed
 
+Announce (new year 2014):
++ Python API implemented! You can write Py-plugins easily. Call "Tools -- New plugin" and write your code in the default method. Full API documentation is in our wiki https://sourceforge.net/p/synwrite/wiki/Home/ . Plugins are callable by menu "Tools -- Plugins" and can implement several menu items at once. Py-plugins also support auto-installing from zip/rar files (also see our wiki about it). Lister-plugin doesn't support Py-engine, because DLLs are needed in exe folder for it.
+
 Announce (dec 2013):
 + Updated plugins SynJedi and SynCodeIntel.
 + New plugin SynSharp for C# lexer. See official homepage.
 + Added new distro "SynWrite Lite". See official homepage.
 
+
+6.3.380
++ added new "snippets" system. Old "code-templates" system removed. See new menu-items: "Tools - Snippets", "Tools - New snippet". New snippets have different macros and allow to have many tabstops like ${1} ${2}... ${0}, and allow to jump over tabstops with Tab key. Inspired by ST2. See new help topic about snippets.
++ added lexer for snippet files
++ updated lexer nnCron (in Readme\MoreLexers)
++ added colors #rrggbbAA show
++ added option "Tree -- Sort for these extensions"
+* removed option "Use Tab key to expand code templates"
+* removed code for command "Code templates popup" (command is visible to reassign Ctrl+J)
+* change: click on micro-map doesn't move caret
+
+6.2.310
++ added plugins tutorial (En/Rus) in Readme folder
++ added option "View -- Colored underlines size" (3px default, width of colored line for HTML color codes)
++ improved "Align with separator" to make single space after separator
+
+6.2.280
++ Python API implemented! See announce text above.
++ Python console added: default hotkey is Ctrl+tilde.
++ dialog "Tools -- New plugin".
+* program must be installed not to "Program Files". Reason: Py-plugins are created inside program subfolder "Py".
+* distro file increased by 5 Mb because of Py API. You can still delete Py files and folders: DLLs\, Py\, python*.*, msvc*.dll (maybe needed to change *.manifest then, it refers to msvc*.dll). To just disable Py-engine: delete python*.dll.
+* renamed menu "Run" to "Tools"
++ output panel: "Command list" hotkey works, last tab remembered
++ improved lexer Tcl (tree, strings)
+- fixes
+
+6.1.185
++ plugins ZIP/RAR files can be auto-installed. Plugins SynJedi/SynCodeIntel/SynSharp updated. Just open rar/zip file in editor and confirm installation. And wait for unrar.exe/unzip.exe to finish.
+
 6.1.175
 + lexer Bash renamed and improved (tree, folding, extension "bash")
-* change: Find/Replace dialog: flag "Search from caret" now ignored for "Replace all" commands
+* change: find/replace dialog: flag "Search from caret" now ignored for "Replace all" commands
 - fixes  
   
 6.1.160

@@ -1,0 +1,11 @@
+name=if...then...elseif...then...else...end
+id=ifel
+lex=Lua
+text=
+if ${1:true} then
+	${0}${sel}
+elseif ${2:false} then
+	${3}
+else
+	${4}
+end

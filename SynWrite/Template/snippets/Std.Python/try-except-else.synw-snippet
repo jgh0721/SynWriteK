@@ -1,0 +1,10 @@
+name=try/except/else
+id=try-ee
+lex=Python
+text=
+try:
+	${1:pass}
+except Exception as e:
+	${2:raise e}
+else:
+	${3:pass}

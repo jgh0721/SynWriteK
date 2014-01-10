@@ -1,0 +1,7 @@
+name=while
+id=wh
+lex=Java
+text=
+while (${1}) {
+	${0}
+}

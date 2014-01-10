@@ -1,0 +1,8 @@
+name=if-else
+id=ifel
+lex=Python
+text=
+if ${1:what}:
+	${2:pass}	
+else:
+	${3:pass}	

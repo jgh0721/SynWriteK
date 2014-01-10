@@ -1,0 +1,5 @@
+name=println
+id=pl
+lex=Java
+text=
+System.out.println(${1});${0}
