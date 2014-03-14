@@ -1,9 +1,9 @@
-name=class
+name=new class
 id=class
 lex=Python
 text=
-class ${1:ClassName}(${2:object}):
-	"""${3:Doc string}"""
-	def __init__(self, ${4:arg}):
-		${5:super().__init__(arg)}
-		${6:self.arg = arg}
+class ${1:MyClass}(${2:object}):
+	"""${0:doc for class}"""
+	def __init__(self, ${3}):
+		super().__init__(${3})
+		self.${3} = ${3}

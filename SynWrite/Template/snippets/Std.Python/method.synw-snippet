@@ -1,5 +1,5 @@
 name=method
-id=method
+id=cfun
 lex=Python
 text=
 def ${1:fname}(self${2:, arg}):

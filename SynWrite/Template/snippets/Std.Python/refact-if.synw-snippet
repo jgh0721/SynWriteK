@@ -1,0 +1,6 @@
+name=refactoring: if over selection
+id=
+lex=Python
+text=
+if ${1:when}:
+	${sel}

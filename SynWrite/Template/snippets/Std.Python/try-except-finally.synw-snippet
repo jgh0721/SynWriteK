@@ -1,10 +1,10 @@
 name=try/except/finally
-id=try-f
+id=try.ef
 lex=Python
 text=
 try:
 	${1:pass}
-except Exception as e:
+except ${2:Exception} as e:
 	${2:raise e}
 finally:
 	${3:pass}

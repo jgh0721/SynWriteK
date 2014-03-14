@@ -41,9 +41,18 @@ MovY=10
 These options specify horiz. and vert. offsets, used by 4 commands: "Move cursor left/right/up/down by <N> chars".
 
 --------------------
-KeepScr=1
-Bool. Enables to keep caret on visible editor area, on doing Ctrl+Up/ Ctrl+Down commands.
-
---------------------
 SessionMaxFiles=0
 If set to positive value N, then additional confirmation will be shown on session saving/loading: "Session contains many files (more than N). Are you sure you want to save/load it?"
+
+--------------------
+[Tree]
+Click=2
+Sets action for dbl-click of syntax-tree nodes. 0: none, 1: expand/collapse node, 2: put caret at range start, 3: select entire range.
+
+--------------------
+PyChangeDelay=3000
+Delays (in msec) for Python plugins on_change_slow event.
+
+--------------------
+HintScroll=0
+Bool. Enables hint "Line NNNN" for editor vertical scrollbar, when scrollbar thumb is dragged.

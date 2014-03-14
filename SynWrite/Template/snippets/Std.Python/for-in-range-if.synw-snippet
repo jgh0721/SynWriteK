@@ -1,0 +1,6 @@
+name=for-loop for range if
+id=forr.if
+lex=Python
+text=
+for ${1:i} in [${2} for ${2} in range(${3:max+1}) if ${2}]:
+	${0:pass}

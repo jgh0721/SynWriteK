@@ -1,0 +1,8 @@
+name=refactoring: try over selection
+id=
+lex=Python
+text=
+try:
+	${sel}
+except:
+	${2:pass}

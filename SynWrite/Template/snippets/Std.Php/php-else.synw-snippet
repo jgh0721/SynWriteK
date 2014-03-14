@@ -1,0 +1,5 @@
+name=<?php else: ?>
+id=else
+lex=HTML documents,PHP_dev_HTML
+text=
+<?php else: ?>

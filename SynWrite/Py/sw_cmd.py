@@ -1,5 +1,3 @@
-# List of integer constants for "ed_cmd" SynWrite API.
-
 #-----------------------------------
 # Caret movement commands
 cmd_Left            = 1    # Move cursor left one char
@@ -580,6 +578,8 @@ cmd_ToggleFocusConsole = 1044
 cmd_NewPythonPluginDialog = 1045
 cmd_NewSnippetDialog = 1046
 cmd_SnippetsDialog = 1047
+cmd_HelpFileContents = 1048
+cmd_ResetPythonPlugins = 1049
 
 cmd_TreeCollapseAll = 1090
 cmd_TreeExpandAll = 1091

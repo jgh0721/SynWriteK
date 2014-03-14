@@ -1,0 +1,10 @@
+name=refactoring: try/except/else over selection 
+id=
+lex=Python
+text=
+try:
+	${sel}
+except ${1:Exception} as e:
+	${2:raise e}
+else:
+	${3:pass}

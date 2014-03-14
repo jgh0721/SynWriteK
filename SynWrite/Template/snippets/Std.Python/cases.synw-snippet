@@ -3,9 +3,9 @@ id=cases
 lex=Python
 text=
 if 0:pass
-elif ${1:cond1}:
+elif ${1:case1}:
 	${2:pass}
-elif ${3:cond1}:
+elif ${3:case2}:
 	${4:pass}
 else:
 	${5:pass}

@@ -1,1 +1,2 @@
-SynFTP source code is located on SynWrite SF.net download page, "Plugins" folder.
+SynFTP source code is located at SourceForge.net:
+https://sourceforge.net/projects/synwrite-addons/files/BinaryPlugins/

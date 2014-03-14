@@ -3,21 +3,93 @@ Legend:
  - fixed
  * changed
 
-Announce (new year 2014):
-+ Python API implemented! You can write Py-plugins easily. Call "Tools -- New plugin" and write your code in the default method. Full API documentation is in our wiki https://sourceforge.net/p/synwrite/wiki/Home/ . Plugins are callable by menu "Tools -- Plugins" and can implement several menu items at once. Py-plugins also support auto-installing from zip/rar files (also see our wiki about it). Lister-plugin doesn't support Py-engine, because DLLs are needed in exe folder for it.
 
-Announce (dec 2013):
-+ Updated plugins SynJedi and SynCodeIntel.
-+ New plugin SynSharp for C# lexer. See official homepage.
-+ Added new distro "SynWrite Lite". See official homepage.
+6.4.750
++ add: click on line-number selects this line
++ add: extern-tool variables {FileNameL}, {FileNameR}
++ add: tree options "Auto collapse/expand" visible in dlg
++ add: SynLint bookmarks: have icons hints; not saved in history
++ change: unzip administrator prompt shows only for "Program Files" dir
+- fixes
 
+6.4.720
++ more API
++ add: lexers selectable via Commands dlg
++ add: patches from Zvezdan D. (e.g. hide horz-scrollbar in wrap-mode; thanks!)
++ add: text-converter "Translit"
++ add: cmds "Next tab", "Previous tab"
++ coloring of "rgb(nnn,nnn,nnn)"
+- many fixes
+
+6.4.660
++ add: lexer Harbour
++ add: command "Reset Python plugins" 
+minor:
+  + add: command plugins visible in "Commands" dlg
+  + add: more info in zip-file install prompt (description, version)
+  + add: hidden options "ACollapse", "AExpand" for syntax-tree
+  - fix: hanging of Tidy "Reformat only"
+  - fix: lexer FoxPro
+
+6.4.625
++ new regex engine for usual searches (not lexers), almost 100% PCRE compatible. Thanks to Zvezdan Dimitrijevic for big work. See new part in Regex help topic.
++ changes in Py API (see our wiki)
+* removed annoying feature in find dlg: escape regex on pasting
++ help topic "Python console"
++ returned back CZ translation
+
+6.4.580
++ add: Py API: event plugins
++ add: Py API: log-panel api
++ add: find/replace dialog: more info in statusbar
++ add: find/replace dialog: option "dot matches newline" 
++ add: hidden option "HintScroll" (HiddenOptions.txt)
+
+6.3.540
++ add: Py API: support for auto-completion plugins; added bookmark api
++ add: "Find all" command logs to "Search results" pane (like NP++)
+minor:
+  + more menu items in Window menu
+  * find dialog: "search from caret" ignored for "Find all", "Find in all tabs", "Count"
+  * find dialog: red line moved to statusbar
+
+6.3.510
++ added coding helper "Auto-Correction of Id Case" - new help topic
++ added Notepad++ feature: can open folder path, both via command-line and via drap-drop
++ added: file LexersEx.cfg (if you create it) adds data to Lexers.cfg
+* redone lexer Markdown (by NoSi) and added Markdown snippets at sf.net download page
++ addition to help topic "Snippets"
++ additions to Py API
+
+6.3.470
+* changed Python API. Now API is not flat, it has objects to access not only active editor. Update your plugins, if any.
++ add: Find-id Python plugins supported. See wiki for info.
+* lexers: renamed VBScript lexer, reworked VBScript auto-completion (thanks ZYX)
+minor:
+  + add: quick-search color indication of "not found"
+  + add: hilite of brackets for caret righter than bracket
+  + add: macro {SelectedText} handles EOL chars
+  + add: acp files can specify id with spaces: Name%20more
+  + add: docked panels tab-area context menu
+  * change: minimap click should not move caret
+  - fix: lexer for acp-files
+
+6.3.410
++ more snippets for php (Alexey) and python (kvichans)
++ py-plugins are placeable on user toolbars
++ minor:
+  + lexer-prop dialog is sizable
+  + snippet code tweaks
+  * longer delay (1500) for token hints
+  * removed hidden-option KeepScr
+- fixes
 
 6.3.380
 + added new "snippets" system. Old "code-templates" system removed. See new menu-items: "Tools - Snippets", "Tools - New snippet". New snippets have different macros and allow to have many tabstops like ${1} ${2}... ${0}, and allow to jump over tabstops with Tab key. Inspired by ST2. See new help topic about snippets.
 + added lexer for snippet files
 + updated lexer nnCron (in Readme\MoreLexers)
 + added colors #rrggbbAA show
-+ added option "Tree -- Sort for these extensions"
++ added option "Tree -- Sort for these file extensions"
 * removed option "Use Tab key to expand code templates"
 * removed code for command "Code templates popup" (command is visible to reassign Ctrl+J)
 * change: click on micro-map doesn't move caret

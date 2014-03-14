@@ -1,0 +1,5 @@
+name=list-comprehension-if from range
+id=colistr.if
+lex=Python
+text=
+[${1} for ${1} in range(${2:max+1}) if ${1}]

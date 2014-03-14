@@ -1400,128 +1400,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpBound
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'if'
-        Description = 'if ( ) {...}'
-        Code.Strings = (
-          'if (<caret>)'
-          '{'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'func'
-        Description = 'void function (void) {...}'
-        Code.Strings = (
-          'void <caret> function (void)'
-          '{'
-          '  '
-          '  return;'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'for'
-        Description = 'for (int i=0; i<x; i++) {...}'
-        Code.Strings = (
-          'for(int i=0;i<<caret>;i++)'
-          '{'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'while'
-        Description = 'while ( ) {...}'
-        Code.Strings = (
-          'while (<caret>)'
-          '{'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'do'
-        Description = 'do {...} while ( );'
-        Code.Strings = (
-          'do'
-          '{'
-          ''
-          '}'
-          'while (<caret>);')
-        Advanced = True
-      end
-      item
-        Name = 'switch'
-        Description = 'switch...case...'
-        Code.Strings = (
-          'switch (<caret>)'
-          '{'
-          '  case 0:'
-          ''
-          '    break;'
-          '  case 1:'
-          ''
-          '    break;'
-          '  case 2:'
-          ''
-          '    break;'
-          '  default:'
-          ''
-          '    break;'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'if_else'
-        Description = 'if ( ) {...} else {...}'
-        Code.Strings = (
-          'if (<caret>)'
-          '{'
-          ''
-          '}'
-          'else'
-          '{'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'main'
-        Description = 'int main (int argc, char* argv[]) {...}'
-        Code.Strings = (
-          'int main(int argc, char* argv[])'
-          '{'
-          '  <caret>'
-          '  return 0;'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'vmain'
-        Description = 'void main (void) {...}'
-        Code.Strings = (
-          'void main(void)'
-          '{'
-          '  <caret>'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'class'
-        Description = 'class x TNewClass {...}'
-        Code.Strings = (
-          'class <caret> TNewClass'
-          '{'
-          '  private:'
-          '  '
-          '  public:'
-          '  '
-          '};')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <
       item
         DisplayName = 'asm2'
@@ -1675,16 +1554,6 @@ object SyntaxManager: TSyntaxManager
         Font.Style = []
         BgColor = 15663082
         FormatType = ftBackGround
-      end
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
       end
       item
         DisplayName = 'OP Keywords'
@@ -2256,7 +2125,6 @@ object SyntaxManager: TSyntaxManager
       'Hex const'
       'Char const'
       'Preprocessor')
-    MarkedBlockStyle = 'Marked block'
     LexerName = 'Visual Basic'
     LineComment = #39
     Charset = DEFAULT_CHARSET
@@ -4483,170 +4351,7 @@ object SyntaxManager: TSyntaxManager
         SelfClose = True
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'switchs'
-        Description = 'switch statement'
-        Code.Strings = (
-          'switch (|)'
-          '{'
-          '  case : ;'
-          '  break;'
-          '  case : ;'
-          '  break;'
-          '}')
-      end
-      item
-        Name = 'switche'
-        Description = 'switch statement (with default)'
-        Code.Strings = (
-          'switch (|)'
-          '{'
-          '  case : ;'
-          '  break;'
-          '  case : ;'
-          '  break;'
-          '  default: ;'
-          '}')
-      end
-      item
-        Name = 'classd'
-        Description = 'class declaration (no parts)'
-        Code.Strings = (
-          'public class |'
-          '{'
-          '};')
-      end
-      item
-        Name = 'fors'
-        Description = 'for (no opening/closing braces)'
-        Code.Strings = (
-          'for (|; ;)')
-      end
-      item
-        Name = 'forb'
-        Description = 'for statement'
-        Code.Strings = (
-          'for (|; ;)'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'for'
-        Description = 'for statement'
-        Code.Strings = (
-          'for (int i = 0; i <|; i++)'
-          '{'
-          '}')
-      end
-      item
-        Name = 'function'
-        Description = 'function declaration'
-        Code.Strings = (
-          '|()'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'ifs'
-        Description = 'if (no opening/closing braces)'
-        Code.Strings = (
-          'if (|)')
-      end
-      item
-        Name = 'ifb'
-        Description = 'if statement'
-        Code.Strings = (
-          'if (|)'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'ife'
-        Description = 'if (no opening/closing braces) else (no opening/closing braces)'
-        Code.Strings = (
-          'if (|)'
-          ''
-          'else')
-      end
-      item
-        Name = 'ifeb'
-        Description = 'if else'
-        Code.Strings = (
-          'if (|)'
-          '{'
-          ''
-          '}'
-          'else'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'trye'
-        Description = 'try catch'
-        Code.Strings = (
-          'try'
-          '{'
-          '  |'
-          '}'
-          'catch()'
-          '{'
-          '}')
-      end
-      item
-        Name = 'trycf'
-        Description = 'try catch finally'
-        Code.Strings = (
-          'try'
-          '{'
-          '  |'
-          '}'
-          'catch()'
-          '{'
-          '}'
-          'finally'
-          '{'
-          '}')
-      end
-      item
-        Name = 'whileb'
-        Description = 'while statement'
-        Code.Strings = (
-          'while (|)'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'whiles'
-        Description = 'while (no opening/closing braces)'
-        Code.Strings = (
-          'while (|)')
-      end
-      item
-        Name = 'out'
-        Description = 'System.out.println'
-        Code.Strings = (
-          'System.out.println')
-      end
-      item
-        Name = 'streamin'
-        Description = 'input from keyboard'
-        Code.Strings = (
-          'BufferedReader streami = new BufferedReader('
-          '  new InputStreamReader(System.in));'
-          '|')
-      end
-      item
-        Name = 'fostream'
-        Description = 'file output stream'
-        Code.Strings = (
-          'PrintWriter fostream = new PrintWriter(new FileWriter(|))')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '/* Java syntax highlighting */'
@@ -6117,6 +5822,7 @@ object SyntaxManager: TSyntaxManager
               'global'
               'if'
               'include'
+              'include_once'
               'int'
               'isset'
               'old_function'
@@ -6126,6 +5832,7 @@ object SyntaxManager: TSyntaxManager
               'public'
               'pval'
               'require'
+              'require_once'
               'return'
               'settype'
               'static'
@@ -6284,171 +5991,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'if'
-        Description = 'if ( ) {...}'
-        Code.Strings = (
-          'if (<caret>){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'func'
-        Description = 'function ( ) {...}'
-        Code.Strings = (
-          'function <caret>(){'
-          ''
-          '}'
-          '  ')
-        Advanced = True
-      end
-      item
-        Name = 'for'
-        Description = 'for($i=0; $i<x; $i++) {...}'
-        Code.Strings = (
-          'for($i=0; $i<<caret>; $i++){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'while'
-        Description = 'while ( ) {...}'
-        Code.Strings = (
-          'while (<caret>){'
-          ''
-          '}'
-          '    ')
-        Advanced = True
-      end
-      item
-        Name = 'do'
-        Description = 'do {...} while'
-        Code.Strings = (
-          'do{'
-          ''
-          '}'
-          'while (<caret>);')
-        Advanced = True
-      end
-      item
-        Name = 'switch'
-        Description = 'swith...case'
-        Code.Strings = (
-          'switch ($<caret>i){'
-          '  case 0:'
-          ''
-          '    break;'
-          '  case 1:'
-          ''
-          '    break;'
-          '  case 2:'
-          ''
-          '    break;'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'print'
-        Description = 'print " "'
-        Code.Strings = (
-          'print "<caret>";')
-        Advanced = True
-      end
-      item
-        Name = 'echo'
-        Description = 'echo " "'
-        Code.Strings = (
-          'echo "<caret>";')
-        Advanced = True
-      end
-      item
-        Name = 'mail'
-        Description = 'mail template'
-        Code.Strings = (
-          'mail($<caret>email, $subject, $message, "From: $from_email");')
-        Advanced = True
-      end
-      item
-        Name = 'setcookie'
-        Description = 'cookie for 1 hr'
-        Code.Strings = (
-          'setcookie ("<caret>", $value, time()+3600);')
-        Advanced = True
-      end
-      item
-        Name = 'mysql_con'
-        Description = 'connect to MySQL'
-        Code.Strings = (
-          
-            '$link = mysql_connect("<caret>mysql_host", "mysql_login", "mysql' +
-            '_password")'
-          '  or die ("Could not connect to MySQL");'
-          ''
-          'mysql_select_db("my_database")'
-          '  or die ("Could not select database");')
-        Advanced = True
-      end
-      item
-        Name = 'mysql_query'
-        Description = 'mysql query'
-        Code.Strings = (
-          '$query = "<caret>SELECT * FROM my_table";'
-          '$result = mysql_query($query)'
-          '  or die("Query failed");'
-          ''
-          '// Output in HTML'
-          ''
-          'print "<table>\n";'
-          'while ($line = mysql_fetch_array($result))'
-          '{'
-          '  print "\t<tr>\n";'
-          '  while (list($col_name, $col_value) = each($line))'
-          '  {'
-          '    print "\t\t<td>$col_value</td>\n";'
-          '  }'
-          '  print "\t</tr>\n";'
-          '}'
-          'print "</table>\n";')
-        Advanced = True
-      end
-      item
-        Name = 'header'
-        Description = 'header'
-        Code.Strings = (
-          'Header("Content-type: <caret>image/png");')
-        Advanced = True
-      end
-      item
-        Name = 'loc'
-        Description = 'loc'
-        Code.Strings = (
-          'Header("Location: http://<caret>");')
-        Advanced = True
-      end
-      item
-        Name = 'fwrite'
-        Description = 'file output template'
-        Code.Strings = (
-          '$fp = fopen("<caret>file.txt", "w+");'
-          'fwrite($fp, "Test");'
-          'fclose($fp);')
-        Advanced = True
-      end
-      item
-        Name = 'if_else'
-        Description = 'if...else'
-        Code.Strings = (
-          'if (<caret>){'
-          ''
-          '}'
-          'else{'
-          ''
-          '}')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <
       item
         DisplayName = 'HTML'
@@ -8994,16 +8537,6 @@ object SyntaxManager: TSyntaxManager
         FormatType = ftCustomFont
       end
       item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
-      end
-      item
         DisplayName = 'Current Line'
         Font.Charset = RUSSIAN_CHARSET
         Font.Color = clWindowText
@@ -9617,10 +9150,9 @@ object SyntaxManager: TSyntaxManager
       'et1 <Unknown> |'#13#10'             '#39'('#39';'#13#10'             '#13#10'Braket2 = Lef' +
       'tBraket2 '#39']'#39';'#13#10#13#10'LeftBraket2 = LeftBraket2 <Unknown> |'#13#10'        ' +
       '     '#39'['#39';'
-    MarkedBlockStyle = 'Marked block'
     CurrentLineStyle = 'Current Line'
     Extentions = 'bas vb vbs'
-    LexerName = 'Visual Basic Script'
+    LexerName = 'VBScript'
     LineComment = #39
     Charset = DEFAULT_CHARSET
     Left = 144
@@ -9790,7 +9322,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Float'
         StyleName = 'Number'
         TokenType = 6
-        Expression = '\d+ \.? \d+ e [\+\-]? \d+ |'#13#10'\d+ \. \d+'
+        Expression = '\d+ (\.\d+)? e [\+\-]? \d+ |'#13#10'\d+ \. \d+'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -10051,164 +9583,7 @@ object SyntaxManager: TSyntaxManager
         NoEndRule = True
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'switchs'
-        Description = 'switch statement'
-        Code.Strings = (
-          'switch (|)'
-          '{'
-          '  case : ;'
-          '  break;'
-          '  case : ;'
-          '  break;'
-          '}')
-      end
-      item
-        Name = 'switche'
-        Description = 'switch statement (with default)'
-        Code.Strings = (
-          'switch (|)'
-          '{'
-          '  case : ;'
-          '  break;'
-          '  case : ;'
-          '  break;'
-          '  default: ;'
-          '}')
-      end
-      item
-        Name = 'fors'
-        Description = 'for (no opening/closing braces)'
-        Code.Strings = (
-          'for (|; ;)')
-      end
-      item
-        Name = 'forb'
-        Description = 'for statement'
-        Code.Strings = (
-          'for (|; ;)'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'for'
-        Description = 'for statement'
-        Code.Strings = (
-          'for (int i = 0; i <|; i++)'
-          '{'
-          '}')
-      end
-      item
-        Name = 'funcp'
-        Description = 'function declaration with parenthesis'
-        Code.Strings = (
-          'function |()'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'func'
-        Description = 'function declaration'
-        Code.Strings = (
-          'function | {'
-          ''
-          '}')
-      end
-      item
-        Name = 'ifs'
-        Description = 'if (no opening/closing braces)'
-        Code.Strings = (
-          'if (|)')
-      end
-      item
-        Name = 'ifb'
-        Description = 'if statement'
-        Code.Strings = (
-          'if (|)'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'ife'
-        Description = 'if (no opening/closing braces) else (no opening/closing braces)'
-        Code.Strings = (
-          'if (|)'
-          ''
-          'else')
-      end
-      item
-        Name = 'ifeb'
-        Description = 'if else'
-        Code.Strings = (
-          'if (|)'
-          '{'
-          ''
-          '}'
-          'else'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'trye'
-        Description = 'try catch'
-        Code.Strings = (
-          'try'
-          '{'
-          '  |'
-          '}'
-          'catch()'
-          '{'
-          '}')
-      end
-      item
-        Name = 'trycf'
-        Description = 'try catch finally'
-        Code.Strings = (
-          'try'
-          '{'
-          '  |'
-          '}'
-          'catch()'
-          '{'
-          '}'
-          'finally'
-          '{'
-          '}')
-      end
-      item
-        Name = 'whileb'
-        Description = 'while statement'
-        Code.Strings = (
-          'while (|)'
-          '{'
-          ''
-          '}')
-      end
-      item
-        Name = 'whiles'
-        Description = 'while (no opening/closing braces)'
-        Code.Strings = (
-          'while (|)')
-      end
-      item
-        Name = 'dow'
-        Description = 'do while statement'
-        Code.Strings = (
-          'do'
-          '  |'
-          'while ();')
-      end
-      item
-        Name = 'forin'
-        Description = 'for in statement'
-        Code.Strings = (
-          'for (| in)')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '// example function'
@@ -10428,13 +9803,14 @@ object SyntaxManager: TSyntaxManager
         BgColor = clSilver
       end
       item
-        DisplayName = 'ASP back'
+        DisplayName = 'Sublexer BG'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clNone
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
         BgColor = clCream
+        FormatType = ftBackGround
       end>
     TokenRules = <
       item
@@ -11305,333 +10681,11 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'htm'
-        Code.Strings = (
-          '<html>'
-          '  <head>'
-          '    <title><caret></title>'
-          '  </head>'
-          '  <body>'
-          '    '
-          '  </body>'
-          '</html>')
-        Advanced = True
-      end
-      item
-        Name = 'body'
-        Code.Strings = (
-          '<body bgcolor=<caret> text= link= alink= vlink=>'
-          ''
-          '</body>')
-        Advanced = True
-      end
-      item
-        Name = 'head'
-        Code.Strings = (
-          '<head>'
-          '  <title><caret></title>'
-          '  <meta http-equiv="Content-Language" content="en">'
-          
-            '  <meta http-equiv="Content-Type" content="text/html; charset=wi' +
-            'ndows-1251">'
-          '  <meta name="author" content="">'
-          '  <meta name="generator" content="">'
-          '  <meta name="keywords" content="">'
-          '  <meta name="description" content="">'
-          '  <link rel="stylesheet" type="text/css" href="">'
-          '  <link rel="shortcut icon" type="image/x-icon" href="">'
-          '</head>')
-        Advanced = True
-      end
-      item
-        Name = 'linki'
-        Description = 'link to image'
-        Code.Strings = (
-          '<link rel="shortcut icon" type="image/x-icon" href="<caret>">')
-        Advanced = True
-      end
-      item
-        Name = 'link'
-        Description = 'hyperlink'
-        Code.Strings = (
-          '<link rel="stylesheet" type="text/css" href="<caret>">')
-        Advanced = True
-      end
-      item
-        Name = 'meta'
-        Code.Strings = (
-          '<meta http-equiv="Content-Language" content="en">'
-          
-            '<meta http-equiv="Content-Type" content="text/html; charset=wind' +
-            'ows-1251">'
-          '<meta name="author" content="<caret>">'
-          '<meta name="generator" content="">'
-          '<meta Name="keywords" Content="">'
-          '<meta Name="description" Content="">')
-        Advanced = True
-      end
-      item
-        Name = 'html'
-        Code.Strings = (
-          '<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.0  Transitional//EN"'
-          '"http://www.w3.org/TR/REC-html40/loose.dtd">'
-          '<html>'
-          '  <head>'
-          '    <title><caret></title>'
-          '    <meta http-equiv="Content-Language" content="en">'
-          
-            '    <meta http-equiv="Content-Type" content="text/html; charset=' +
-            'windows-1251">'
-          '    <meta name="author" content="">'
-          '    <meta name="generator" content="">'
-          '    <meta name="keywords" content="">'
-          '    <meta name="description" content="">'
-          '    <link rel="stylesheet" type="text/css" href="">'
-          '    <link rel="shortcut icon" type="image/x-icon" href="">'
-          '  </head>'
-          '  <body>'
-          '  </body>'
-          '</html>')
-        Advanced = True
-      end
-      item
-        Name = '--'
-        Code.Strings = (
-          '<!-- <caret> -->')
-        Advanced = True
-      end
-      item
-        Name = 'a'
-        Code.Strings = (
-          '<a href="<caret>"></a>')
-        Advanced = True
-      end
-      item
-        Name = 'an'
-        Description = 'link in new window'
-        Code.Strings = (
-          '<a target="_blank" href="<caret>"></a>')
-        Advanced = True
-      end
-      item
-        Name = 'form'
-        Code.Strings = (
-          '<form action="<caret>" method="post">'
-          '</form>')
-        Advanced = True
-      end
-      item
-        Name = 'formi'
-        Description = 'form with input tags'
-        Code.Strings = (
-          '<form action="<caret>" method=get>'
-          '  <input name="" type=text>'
-          '  <input type=submit>'
-          '  <input type=reset>'
-          '</form>')
-        Advanced = True
-      end
-      item
-        Name = 'input'
-        Code.Strings = (
-          '<input name="<caret>" type="text">')
-        Advanced = True
-      end
-      item
-        Name = 'frameset'
-        Code.Strings = (
-          '<frameset cols="30%,*">'
-          '  <frame name="" src="<caret>.html">'
-          '  <frame name="" src=".html">'
-          '</frameset>')
-        Advanced = True
-      end
-      item
-        Name = 'img'
-        Code.Strings = (
-          '<img src="<caret>" alt="">')
-        Advanced = True
-      end
-      item
-        Name = 'js'
-        Code.Strings = (
-          
-            '<script src="<caret>.js" type="text/javascript" language="javasc' +
-            'ript"></script>')
-        Advanced = True
-      end
-      item
-        Name = 'script'
-        Code.Strings = (
-          '<script language="JavaScript" type="text/javascript">'
-          '<!--'
-          '  <caret>'
-          '//-->'
-          '</script>')
-        Advanced = True
-      end
-      item
-        Name = 'style'
-        Code.Strings = (
-          '<style type="text/css">'
-          '<!--'
-          '  <caret>'
-          '//-->'
-          '</style>')
-        Advanced = True
-      end
-      item
-        Name = 'table'
-        Code.Strings = (
-          '<table cellspacing=0 cellpadding=0 width="100%">'
-          '  <tr>'
-          '    <td><caret></td>'
-          '  </tr>'
-          '</table>')
-        Advanced = True
-      end
-      item
-        Name = 'tableh'
-        Description = 'table with header'
-        Code.Strings = (
-          
-            '<table align="left" border=0 cellspacing=0 cellpadding=0 width="' +
-            '100%">'
-          '  <tr align="left" valign="middle">'
-          '    <th><caret></th>'
-          '    <th></th>'
-          '  <tr align="left" valign=middle">'
-          '    <td></td>'
-          '    <td></td>'
-          '</table>')
-        Advanced = True
-      end
-      item
-        Name = 'tr'
-        Code.Strings = (
-          '<tr>'
-          '  <td><caret></td>'
-          '</tr>')
-        Advanced = True
-      end
-      item
-        Name = 'td'
-        Code.Strings = (
-          '<td><caret></td>')
-        Advanced = True
-      end
-      item
-        Name = 'ul'
-        Code.Strings = (
-          '<ul type=square>'
-          '  <li><caret>'
-          '</ul>')
-        Advanced = True
-      end
-      item
-        Name = 'ol'
-        Code.Strings = (
-          '<ol>'
-          '  <li><caret>'
-          '</ol>')
-        Advanced = True
-      end
-      item
-        Name = 'xml'
-        Code.Strings = (
-          '<?xml version="1.0" encoding="windows-1251"?>'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = 'xmlcss'
-        Code.Strings = (
-          '<?xml version="1.0" encoding="windows-1251"?>'
-          '<?xml-stylesheet type="text/css" href="<caret>"?>')
-        Advanced = True
-      end
-      item
-        Name = 'wml'
-        Code.Strings = (
-          '<?xml version="1.0"?>'
-          
-            '<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.' +
-            'wapforum.org/DTD/wml_1.2.xml">'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = 'doctype_HTML5'
-        Description = 'HTML 5'
-        Code.Strings = (
-          '<!DOCTYPE html>')
-      end
-      item
-        Name = 'doctype_HTML4_Strict'
-        Description = 'HTML 4.01 Strict'
-        Code.Strings = (
-          
-            '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3' +
-            '.org/TR/html4/strict.dtd">')
-      end
-      item
-        Name = 'doctype_HTML4_Transitional'
-        Description = 'HTML 4.01 Transitional'
-        Code.Strings = (
-          
-            '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "' +
-            'http://www.w3.org/TR/html4/loose.dtd">'
-          ' ')
-      end
-      item
-        Name = 'doctype_HTML4_Frameset'
-        Description = 'HTML 4.01 Frameset'
-        Code.Strings = (
-          
-            '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http' +
-            '://www.w3.org/TR/html4/frameset.dtd">')
-      end
-      item
-        Name = 'doctype_XHTML10_Strict'
-        Description = 'XHTML 1.0 Strict'
-        Code.Strings = (
-          
-            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http:/' +
-            '/www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'
-          ' ')
-      end
-      item
-        Name = 'doctype_XHTML10_Transitional'
-        Description = 'XHTML 1.0 Transitional'
-        Code.Strings = (
-          
-            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "' +
-            'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">'
-          ' ')
-      end
-      item
-        Name = 'doctype_XHTML10_Frameset'
-        Description = 'XHTML 1.0 Frameset'
-        Code.Strings = (
-          
-            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http' +
-            '://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">'
-          ' ')
-      end
-      item
-        Name = 'doctype_XHTML11'
-        Description = 'XHTML 1.1'
-        Code.Strings = (
-          
-            '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3' +
-            '.org/TR/xhtml11/DTD/xhtml11.dtd">'
-          ' ')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <
       item
         DisplayName = 'Style sheet'
+        StyleName = 'Sublexer BG'
         AlwaysEnabled = True
         StartExpression = '(?si)<style[^>]*> '#13#10
         EndExpression = '</style>'#13#10
@@ -11639,6 +10693,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'VB script'
+        StyleName = 'Sublexer BG'
         AlwaysEnabled = True
         StartExpression = '(?si)<script[^>]*vbscript[^>]*>\s*(<!--)?'#13#10
         EndExpression = '(?i)(-->)?\s*</script>'#13#10
@@ -11646,6 +10701,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Java script'
+        StyleName = 'Sublexer BG'
         AlwaysEnabled = True
         StartExpression = '(?si)<script[^>]*javascript[^>]*>\s*(<!--)?'#13#10
         EndExpression = '(?i)(//)?(-->)?\s*</script>'#13#10
@@ -11653,13 +10709,14 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'Default script'
+        StyleName = 'Sublexer BG'
         StartExpression = '<\s*script\s*>'
         EndExpression = '</\s*script\s*>'
         SyntAnalyzer = SyntAnal38
       end
       item
         DisplayName = 'ASP'
-        StyleName = 'ASP back'
+        StyleName = 'Sublexer BG'
         AlwaysEnabled = True
         StartExpression = '<%[^@]'#13#10
         EndExpression = '%>'#13#10
@@ -11823,6 +10880,22 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
+        DisplayName = 'String'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '("|'#39') .*? (\1|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'String in URL'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '(?<=URL\s*\() .+? (?=\))'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
         DisplayName = 'Comment'
         StyleName = 'Comment'
         TokenType = 1
@@ -11843,7 +10916,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Symbol'
         StyleName = 'Symbol'
         TokenType = 5
-        Expression = '[;:,%\(\)\[\]@=/\*>\+]'
+        Expression = '[;:,%\(\)\[\]@=/\*>\+!\^\$]'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -11857,25 +10930,10 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
-        DisplayName = 'String in URL'
-        StyleName = 'String'
-        Expression = '(?<=URL\s*\() .*? (?=\))'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'String'
-        StyleName = 'String'
-        TokenType = 4
-        Expression = '("|'#39') .*? (\1|$)'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
         DisplayName = 'Number'
         StyleName = 'Number'
         TokenType = 7
-        Expression = '-?\d+(\.\d+)?'
+        Expression = '-?\d*\.?\d+'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -11999,6 +11057,7 @@ object SyntaxManager: TSyntaxManager
               'orphans'
               'outline'
               'outline-color'
+              'outline-offset'
               'outline-style'
               'outline-width'
               'overflow'
@@ -12018,6 +11077,7 @@ object SyntaxManager: TSyntaxManager
               'pitch'
               'pitch-range'
               'play-during'
+              'pointer-events'
               'position'
               'quotes'
               'resize'
@@ -12041,6 +11101,7 @@ object SyntaxManager: TSyntaxManager
               'text-transform'
               'top'
               'unicode-bidi'
+              'user-select'
               'vertical-align'
               'visibility'
               'voice-family'
@@ -12077,6 +11138,7 @@ object SyntaxManager: TSyntaxManager
               '-epub-text-transform'
               '-epub-word-break'
               '-epub-writing-mode'
+              '-khtml-user-select'
               '-moz-animation'
               '-moz-appearance'
               '-moz-background-inline-policy'
@@ -12087,6 +11149,7 @@ object SyntaxManager: TSyntaxManager
               '-moz-border-end-style'
               '-moz-border-end-width'
               '-moz-border-left-colors'
+              '-moz-border-radius'
               '-moz-border-right-colors'
               '-moz-border-start'
               '-moz-border-start-color'
@@ -12218,6 +11281,7 @@ object SyntaxManager: TSyntaxManager
               '-ms-text-justify'
               '-ms-text-kashida-space'
               '-ms-text-overflow'
+              '-ms-text-size-adjust'
               '-ms-text-underline-position'
               '-ms-touch-action'
               '-ms-user-select'
@@ -12245,6 +11309,7 @@ object SyntaxManager: TSyntaxManager
               '-o-transition-duration'
               '-o-transition-property'
               '-o-transition-timing-function'
+              '-o-user-select'
               '-pie-background'
               '-wap-accesskey'
               '-wap-input-format'
@@ -12441,6 +11506,7 @@ object SyntaxManager: TSyntaxManager
               '-webkit-text-emphasis-position'
               '-webkit-text-fill-color'
               '-webkit-text-security'
+              '-webkit-text-size-adjust'
               '-webkit-text-stroke'
               '-webkit-text-stroke-color'
               '-webkit-text-stroke-width'
@@ -12598,7 +11664,7 @@ object SyntaxManager: TSyntaxManager
       '  color: #000099;'
       '  width: 100%; '
       '  background: url("../img.gif") no-repeat;'
-      '  back2: url('#39'../img.gif'#39');'
+      '  back2: url(http://www.com/url);'
       '  back3: url(../img.gif);'
       '  -ms-zoom: 100%; '
       '  -ms-hmm: test;'
@@ -13364,61 +12430,7 @@ object SyntaxManager: TSyntaxManager
         NoEndRule = True
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'HKCU'
-        Description = 'HKEY_CURRENT_USER'
-        Code.Strings = (
-          '[HKEY_CURRENT_USER\<caret>]')
-        Advanced = True
-      end
-      item
-        Name = 'HKCR'
-        Description = 'HKEY_CLASSES_ROOT'
-        Code.Strings = (
-          '[HKEY_CLASSES_ROOT\<caret>]')
-        Advanced = True
-      end
-      item
-        Name = 'HKU'
-        Description = 'HKEY_USERS'
-        Code.Strings = (
-          '[HKEY_USERS\<caret>]')
-        Advanced = True
-      end
-      item
-        Name = 'HKCC'
-        Description = 'HKEY_CURRENT_CONFIG'
-        Code.Strings = (
-          '[HKEY_CURRENT_CONFIG\<caret>]')
-        Advanced = True
-      end
-      item
-        Name = 'HKLM'
-        Description = 'HKEY_LOCAL_MACHINE'
-        Code.Strings = (
-          '[HKEY_LOCAL_MACHINE\<caret>]')
-        Advanced = True
-      end
-      item
-        Name = 'HKDD'
-        Description = 'HKEY_DYN_DATA'
-        Code.Strings = (
-          '[HKEY_DYN_DATA\<caret>]')
-        Advanced = True
-      end
-      item
-        Name = 'REGEDIT5'
-        Description = 'Header for Windows XP'
-        Code.Strings = (
-          'Windows Registry Editor Version 5.00')
-      end
-      item
-        Name = 'REGEDIT4'
-        Description = 'Header for Windows 98'
-        Code.Strings = (
-          'REGEDIT4')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '[TT]'
@@ -13553,7 +12565,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Variable'
         StyleName = 'Variable'
-        Expression = '%\w+(%|$)'
+        Expression = '%\d | %\w+(%|$)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -13589,6 +12601,7 @@ object SyntaxManager: TSyntaxManager
       end
       item
         DisplayName = 'echo text'
+        Enabled = False
         StyleName = 'Echo'
         BlockName = 'echo start'
         StrictParent = True
@@ -13920,15 +12933,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpBound
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'date'
-        Description = 'Date formatted'
-        Code.Strings = (
-          'Current date: <date:dd.mm.yyyy>'
-          'Current time: <date:h:mm>')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       'bbb'
@@ -13954,15 +12959,6 @@ object SyntaxManager: TSyntaxManager
   object SyntAnal9: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        FormatType = ftCustomFont
-      end
-      item
         DisplayName = 'Symbol'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clMaroon
@@ -13981,7 +12977,7 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
+        Font.Color = clTeal
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
@@ -14005,10 +13001,10 @@ object SyntaxManager: TSyntaxManager
       item
         DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clRed
+        Font.Color = clGray
         Font.Height = -13
         Font.Name = 'Courier New'
-        Font.Style = [fsBold]
+        Font.Style = [fsItalic]
       end
       item
         DisplayName = 'Preprocessor'
@@ -14017,16 +13013,6 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-      end
-      item
-        DisplayName = 'Marked block'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
       end>
     TokenRules = <
       item
@@ -14083,7 +13069,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Any name'
         StyleName = 'Identifier'
         TokenType = 2
-        Expression = '[a-z_]\w*'
+        Expression = '(?r)[a-z'#1072'-'#1103#1040'-'#1071'_][\.\w]*'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -14119,331 +13105,1388 @@ object SyntaxManager: TSyntaxManager
         ConditionList = <
           item
             TagList.Strings = (
-              'accept'
-              'activate'
-              'add'
-              'all'
-              'alter'
-              'alternate'
-              'ansi'
-              'aplabout'
-              'app'
-              'append'
-              'array'
-              'as'
-              'assist'
-              'autosave'
-              'average'
-              'bar'
-              'begin'
-              'bell'
-              'blank'
-              'blink'
-              'blocksize'
-              'border'
-              'box'
-              'browse'
-              'brstatus'
-              'build'
-              'by'
-              'calculate'
-              'call'
-              'cancel'
-              'carry'
-              'case'
-              'cd'
-              'century'
-              'change'
-              'chdir'
-              'class'
-              'classlib'
-              'clear'
-              'clock'
-              'close'
-              'collate'
-              'color'
-              'command'
-              'compatible'
-              'compile'
-              'confirm'
-              'connection'
-              'connections'
-              'console'
-              'continue'
-              'copy'
-              'count'
-              'cpcompile'
-              'cpdialog'
-              'create'
-              'currency'
-              'cursor'
-              'data'
-              'database'
-              'databases'
-              'datasession'
-              'date'
-              'deactivate'
-              'debug'
-              'decimals'
-              'declare'
-              'default'
-              'define'
-              'delete'
-              'deleted'
-              'delimiters'
-              'development'
-              'device'
-              'dimension'
-              'dir'
-              'directory'
-              'display'
-              'dlls'
-              'do'
-              'dohistory'
-              'echo'
-              'edit'
-              'eject'
-              'else'
-              'end'
-              'endcase'
-              'enddefine'
-              'enddo'
-              'endfor'
-              'endfunc'
-              'endif'
-              'endprintjob'
-              'endproc'
-              'endscan'
-              'endtext'
-              'endtry'
-              'endwith'
-              'erase'
-              'error'
-              'escape'
-              'events'
-              'exact'
-              'exclusive'
-              'exe'
-              'exit'
-              'export'
-              'extended'
-              'external'
-              'fdow'
-              'fields'
-              'file'
-              'filer'
-              'files'
-              'filter'
-              'find'
-              'fixed'
-              'flush'
-              'for'
-              'form'
-              'format'
-              'free'
-              'from'
-              'fullpath'
-              'function'
-              'fweek'
-              'gather'
-              'general'
-              'get'
-              'getexpr'
-              'gets'
-              'go'
-              'goto'
-              'headings'
-              'help'
-              'helpfilter'
-              'hidden'
-              'hide'
-              'hours'
-              'id'
-              'if'
-              'import'
-              'in'
-              'index'
-              'indexes'
-              'inner'
-              'input'
-              'insert'
-              'integer'
-              'intensity'
-              'into'
-              'join'
-              'key'
-              'keyboard'
-              'keycomp'
-              'label'
-              'left'
-              'library'
-              'list'
-              'load'
-              'local'
-              'locate'
-              'lock'
-              'logerrors'
-              'lparameter'
-              'lparameters'
-              'macdesktop'
-              'machelp'
-              'mackey'
-              'macro'
-              'macros'
-              'margin'
-              'mark'
-              'md'
-              'memo'
-              'memory'
-              'memowidth'
-              'menu'
-              'menus'
-              'message'
-              'mkdir'
-              'modify'
-              'module'
-              'mouse'
-              'move'
-              'multilocks'
-              'near'
-              'nocptrans'
-              'nofilter'
-              'normal'
-              'note'
-              'notify'
-              'null'
-              'object'
-              'objects'
-              'odometer'
-              'of'
-              'off'
-              'oleobject'
-              'on'
-              'open'
-              'optimize'
-              'or'
-              'order'
-              'otherwise'
-              'outer'
-              'pack'
-              'pad'
-              'page'
-              'palette'
-              'parameters'
-              'path'
-              'pdsetup'
-              'play'
-              'point'
-              'pop'
-              'popup'
-              'popups'
-              'printer'
-              'printjob'
-              'private'
-              'procedure'
-              'procedures'
-              'project'
-              'prompt'
-              'protected'
-              'public'
-              'push'
-              'query'
-              'quit'
-              'rd'
-              'read'
-              'readborder'
-              'readerror'
-              'readwrite'
-              'recall'
-              'refresh'
-              'regional'
-              'reindex'
-              'relation'
-              'relative'
-              'release'
-              'remove'
-              'rename'
-              'replace'
-              'report'
-              'reprocess'
-              'resource'
-              'restore'
-              'resume'
-              'retry'
-              'return'
-              'right'
-              'rmdir'
-              'rollback'
-              'run'
-              'runscript'
-              's'
-              'safety'
-              'save'
-              'scan'
-              'scatter'
-              'scheme'
-              'scoreboard'
-              'screen'
-              'scroll'
-              'seconds'
-              'seek'
-              'select'
-              'selection'
-              'separator'
-              'set'
-              'shadows'
-              'show'
-              'shutdown'
-              'size'
-              'skip'
-              'sort'
-              'space'
-              'sql'
-              'status'
-              'step'
-              'sticky'
-              'store'
-              'string'
-              'string$'
-              'structure'
-              'sum'
-              'suspend'
-              'sysformats'
-              'sysmenu'
-              'table'
-              'tables'
-              'tag'
-              'talk'
-              'text'
-              'textmerge'
-              'this'
-              'to'
-              'topic'
-              'total'
-              'transaction'
-              'trbetween'
-              'trigger'
-              'try'
-              'type'
-              'typeahead'
-              'udfparms'
-              'unique'
-              'unlock'
-              'update'
-              'use'
-              'validate'
-              'view'
-              'views'
-              'volume'
-              'wait'
-              'where'
-              'while'
-              'window'
-              'windows'
-              'with'
-              'xcmdfile'
-              'zap'
-              'zoom')
+              'ABS'
+              'ACCEPT'
+              'ACOPY'
+              'ACTIVATE'
+              'ADATABASES'
+              'ADD'
+              'ADDBS'
+              'ADDITIVE'
+              'ADEL'
+              'ADIR'
+              'AERROR'
+              'AEVENTS'
+              'AFIELDS'
+              'AGAIN'
+              'ALEN'
+              'ALIAS'
+              'ALIGN'
+              'ALIGNMENT'
+              'ALIGNRIGHT'
+              'ALINES'
+              'ALL'
+              'ALLTRIM'
+              'ALT'
+              'ALTER'
+              'ALTERNATE'
+              'AMEMBERS'
+              'ANCHOR'
+              'AND'
+              'ANSI'
+              'ANSITOOEM'
+              'ANY'
+              'APLABOUT'
+              'APP'
+              'APPEND'
+              'APPLICATION'
+              'ARRAY'
+              'AS'
+              'ASC'
+              'ASCAN'
+              'ASCENDING'
+              'ASCII'
+              'ASESSIONS'
+              'ASORT'
+              'ASSERT'
+              'ASSERTS'
+              'ASSIST'
+              'ASTACKINFO'
+              'ASYNCHRONOUS'
+              'AT'
+              'AT_C'
+              'ATAGINFO'
+              'ATC'
+              'ATCC'
+              'ATCLINE'
+              'ATLINE'
+              'ATTACH'
+              'ATTRIBUTES'
+              'AUSED'
+              'AUTOSAVE'
+              'AVERAGE'
+              'AVG'
+              'BAR'
+              'BEFORE'
+              'BEGIN'
+              'BELL'
+              'BELLSOUND'
+              'BETWEEN'
+              'BINDEVENT'
+              'BINTOC'
+              'BITAND'
+              'BITCLEAR'
+              'BITLSHIFT'
+              'BITMAP'
+              'BITNOT'
+              'BITOR'
+              'BITRSHIFT'
+              'BITSET'
+              'BITTEST'
+              'BITXOR'
+              'BLANK'
+              'BLINK'
+              'BLOB'
+              'BLOCKSIZE'
+              'BOF'
+              'BORDER'
+              'BOTTOM'
+              'BOUND'
+              'BOUNDCOLUMN'
+              'BOUNDTO'
+              'BOX'
+              'BROWSE'
+              'BRSTATUS'
+              'BUILD'
+              'BY'
+              'CALCULATE'
+              'CALL'
+              'CANCEL'
+              'CANDIDATE'
+              'CAPTION'
+              'CARRY'
+              'CASCADE'
+              'CASE'
+              'CAST'
+              'CATCH'
+              'CD'
+              'CDX'
+              'CEILING'
+              'CENTER'
+              'CENTERED'
+              'CENTRAL'
+              'CENTURY'
+              'CGA'
+              'CHANGE'
+              'CHAR'
+              'CHARACTER'
+              'CHDIR'
+              'CHECK'
+              'CHECKBOX'
+              'CHR'
+              'CIRCLE'
+              'CLASS'
+              'CLASSLIB'
+              'CLASSLIBRARY'
+              'CLEAR'
+              'CLICK'
+              'CLOCK'
+              'CLOSE'
+              'CMONTH'
+              'CNT'
+              'CODEPAGE'
+              'COL'
+              'COLLATE'
+              'COLLECTION'
+              'COLOR'
+              'COLUMN'
+              'COMARRAY'
+              'COMBOBOX'
+              'COMCLASSINFO'
+              'COMMAND'
+              'COMMANDBUTTON'
+              'COMMANDGROUP'
+              'COMMENT'
+              'COMPACT'
+              'COMPAREMEMO'
+              'COMPATIBLE'
+              'COMPILE'
+              'COMPLETED'
+              'COMPOBJ'
+              'COMPRESS'
+              'COMPUTE'
+              'CONCAT'
+              'CONFIRM'
+              'CONNECTION'
+              'CONNECTIONS'
+              'CONNECTNAME'
+              'CONNECTSTRING'
+              'CONNECTTIMEOUT'
+              'CONNSTRING'
+              'CONSOLE'
+              'CONTAINER'
+              'CONTINUE'
+              'CONTROL'
+              'COPY'
+              'COS'
+              'COUNT'
+              'COVERAGE'
+              'CPCOMPILE'
+              'CPCONVERT'
+              'CPCURRENT'
+              'CPDBF'
+              'CPDIALOG'
+              'CPNOTRANS'
+              'CREATE'
+              'CREATEBINARY'
+              'CREATEOBJECT'
+              'CREATEOBJECTEX'
+              'CREATEOFFLINE'
+              'CSV'
+              'CTOBIN'
+              'CTOD'
+              'CTOT'
+              'CURDATE'
+              'CURDIR'
+              'CURRENCY'
+              'CURRENTCONTROL'
+              'CURRENTDATASESSION'
+              'CURSOR'
+              'CURSORADAPTER'
+              'CURTIME'
+              'CURVAL'
+              'CURVATURE'
+              'CUSTOM'
+              'CYCLE'
+              'DATA'
+              'DATABASE'
+              'DATABASES'
+              'DATAENVIRONMENT'
+              'DATAOBJECT'
+              'DATASESSION'
+              'DATASESSIONID'
+              'DATASOURCE'
+              'DATASOURCEOBJ'
+              'DATASOURCETYPE'
+              'DATATOCLIP'
+              'DATATYPE'
+              'DATE'
+              'DATEFORMAT'
+              'DATEMARK'
+              'DATETIME'
+              'DAY'
+              'DAYNAME'
+              'DAYOFMONTH'
+              'DAYOFWEEK'
+              'DAYOFYEAR'
+              'DBF'
+              'DBFDBLCLICK'
+              'DBGETPROP'
+              'DBLCLICK'
+              'DBMEMO3'
+              'DBSETPROP'
+              'DBTRAP'
+              'DBUSED'
+              'DEACTIVATE'
+              'DEBUG'
+              'DEBUGGER'
+              'DEBUGOUT'
+              'DECIMALS'
+              'DECLARE'
+              'DEFBUTTON'
+              'DEFBUTTONORIG'
+              'DEFINE'
+              'DEFINEWINDOWS'
+              'DEFLEFT'
+              'DEFOLELCID'
+              'DEFTOP'
+              'DEFWIDTH'
+              'DEGREES'
+              'DELAYBIND'
+              'DELAYEDMEMOFETCH'
+              'DELETE'
+              'DELETED'
+              'DELETEMARK'
+              'DELETETABLES'
+              'DELETETRIGGER'
+              'DELIMITED'
+              'DELIMITERS'
+              'DESC'
+              'DESCENDING'
+              'DESCRIPTION'
+              'DESIGN'
+              'DESKTOP'
+              'DESTROY'
+              'DETAILS'
+              'DEVELOPMENT'
+              'DEVICE'
+              'DIF'
+              'DIFFERENCE'
+              'DIMENSION'
+              'DIR'
+              'DIRECTORY'
+              'DISCONNECTED'
+              'DISKSPACE'
+              'DISPLAY'
+              'DISPLOGIN'
+              'DISPPAGEHEIGHT'
+              'DISPPAGEWIDTH'
+              'DISPWARNINGS'
+              'DISTINCT'
+              'DLL'
+              'DLLS'
+              'DMY'
+              'DO'
+              'DOC'
+              'DOCK'
+              'DOCKED'
+              'DOCKPOSITION'
+              'DOCMD'
+              'DOCREATE'
+              'DOCUMENTFILE'
+              'DODEFAULT'
+              'DOEVENTS'
+              'DOHISTORY'
+              'DOMESSAGE'
+              'DOS'
+              'DOSCROLL'
+              'DOSMEM'
+              'DOSTATUS'
+              'DOUBLE'
+              'DOVERB'
+              'DOW'
+              'DOWN'
+              'DOWNCLICK'
+              'DRAG'
+              'DRAGDROP'
+              'DRAGICON'
+              'DRAGMODE'
+              'DRAGOVER'
+              'DRAGSTATE'
+              'DRAW'
+              'DRAWMODE'
+              'DRAWSTYLE'
+              'DRAWWIDTH'
+              'DRIVER'
+              'DRIVETYPE'
+              'DROP'
+              'DROPDOWN'
+              'DROPOFFLINE'
+              'DTOC'
+              'DTOR'
+              'DTOS'
+              'DTOT'
+              'DUPLEX'
+              'EACH'
+              'ECHO'
+              'EDIT'
+              'EDITBOX'
+              'EDITFLAGS'
+              'EDITOROPTIONS'
+              'EDITSOURCE'
+              'EDITWORK'
+              'EJECT'
+              'ELIF'
+              'ELSE'
+              'EMPTY'
+              'ENCRYPT'
+              'ENCRYPTION'
+              'END'
+              'ENDCASE'
+              'ENDDEFINE'
+              'ENDDO'
+              'ENDFOR'
+              'ENDFUNC'
+              'ENDIF'
+              'ENDPRINTJOB'
+              'ENDPROC'
+              'ENDSCAN'
+              'ENDTEXT'
+              'ENDTRY'
+              'ENDWITH'
+              'ENGINEBEHAVIOR'
+              'ENTERFOCUS'
+              'ENVIRONMENT'
+              'ENVLEVEL'
+              'EOF'
+              'ERASE'
+              'ERASEPAGE'
+              'ERROR'
+              'ERRORMESSAGE'
+              'ERRORNO'
+              'ESCAPE'
+              'EVALUATE'
+              'EVALUATECONTENTS'
+              'EVENTHANDLER'
+              'EVENTLIST'
+              'EVENTS'
+              'EVENTTRACKING'
+              'EVL'
+              'EXACT'
+              'EXCEPT'
+              'EXCEPTION'
+              'EXCLUSIVE'
+              'EXE'
+              'EXECSCRIPT'
+              'EXISTS'
+              'EXIT'
+              'EXITFOCUS'
+              'EXP'
+              'EXPORT'
+              'EXPRESSION'
+              'EXTENDED'
+              'EXTERNAL'
+              'FCHSIZE'
+              'FCLOSE'
+              'FCOUNT'
+              'FCREATE'
+              'FDATE'
+              'FDOW'
+              'FEOF'
+              'FERROR'
+              'FETCH'
+              'FFLUSH'
+              'FGETS'
+              'FIELD'
+              'FIELDS'
+              'FILE'
+              'FILER'
+              'FILES'
+              'FILETOSTR'
+              'FILL'
+              'FILLCOLOR'
+              'FILLSTYLE'
+              'FILTER'
+              'FINALLY'
+              'FIND'
+              'FIRSTELEMENT'
+              'FIXED'
+              'FKLABEL'
+              'FKMAX'
+              'FLAGS'
+              'FLDCOUNT'
+              'FLDLIST'
+              'FLOAT'
+              'FLOCK'
+              'FLOOR'
+              'FLUSH'
+              'FOLDCONST'
+              'FONT'
+              'FOOTER'
+              'FOPEN'
+              'FOR'
+              'FORCE'
+              'FORCECLOSETAG'
+              'FORCEEXT'
+              'FORCEFOCUS'
+              'FORCEPATH'
+              'FOREIGN'
+              'FORM'
+              'FORMAT'
+              'FORMATCHANGE'
+              'FORMATTEDOUTPUT'
+              'FORMCOUNT'
+              'FORMINDEX'
+              'FORMPAGECOUNT'
+              'FORMPAGEINDEX'
+              'FORMS'
+              'FORMSCLASS'
+              'FORMSET'
+              'FORMSETCLASS'
+              'FORMSETLIB'
+              'FORMSLIB'
+              'FOUND'
+              'FPUTS'
+              'FRACTIONDIGITS'
+              'FREAD'
+              'FREE'
+              'FREEZE'
+              'FRENCH'
+              'FROM'
+              'FRXDATASESSION'
+              'FSEEK'
+              'FSIZE'
+              'FTIME'
+              'FULL'
+              'FULLNAME'
+              'FULLPATH'
+              'FUNCTION'
+              'FV'
+              'FWEEK'
+              'FWRITE'
+              'GATHER'
+              'GDIPLUSGRAPHICS'
+              'GENERAL'
+              'GERMAN'
+              'GET'
+              'GETAUTOINCVALUE'
+              'GETBAR'
+              'GETCOLOR'
+              'GETCP'
+              'GETCURSORADAPTER'
+              'GETDATA'
+              'GETDIR'
+              'GETDOCKSTATE'
+              'GETENV'
+              'GETEXPR'
+              'GETFILE'
+              'GETFLDSTATE'
+              'GETFONT'
+              'GETFORMAT'
+              'GETHOST'
+              'GETINTERFACE'
+              'GETKEY'
+              'GETNEXTMODIFIED'
+              'GETOBJECT'
+              'GETPAD'
+              'GETPAGEHEIGHT'
+              'GETPAGEWIDTH'
+              'GETPEM'
+              'GETPICT'
+              'GETPRINTER'
+              'GETRESULTSET'
+              'GETS'
+              'GETWORDCOUNT'
+              'GETWORDNUM'
+              'GLOBAL'
+              'GO'
+              'GOBACK'
+              'GOFIRST'
+              'GOFORWARD'
+              'GOLAST'
+              'GOMONTH'
+              'GOTFOCUS'
+              'GOTO'
+              'GRAPH'
+              'GRID'
+              'GROUP'
+              'GROW'
+              'HALFHEIGHT'
+              'HALFHEIGHTCAPTION'
+              'HASCLIP'
+              'HAVING'
+              'HEADER'
+              'HEADERCLASS'
+              'HEADERCLASSLIBRARY'
+              'HEADERGAP'
+              'HEADERHEIGHT'
+              'HEADING'
+              'HEADINGS'
+              'HEIGHT'
+              'HELP'
+              'HELPCONTEXTID'
+              'HELPFILTER'
+              'HELPON'
+              'HELPTO'
+              'HIDE'
+              'HIDEAPPOBJ'
+              'HIDEDOC'
+              'HIDESELECTION'
+              'HISTORY'
+              'HMEMORY'
+              'HOME'
+              'HOSTNAME'
+              'HOTKEY'
+              'HOUR'
+              'HOURS'
+              'HPROJ'
+              'HSCROLLSMALLCHANGE'
+              'HWND'
+              'HYPERLINK'
+              'ICASE'
+              'ICON'
+              'ID'
+              'IDHISTORY'
+              'IDLETIMEOUT'
+              'IDXCOLLATE'
+              'IF'
+              'IFDEF'
+              'IFNDEF'
+              'IGNOREINSERT'
+              'IIF'
+              'IMAGE'
+              'IMPORT'
+              'IN'
+              'INCLUDE'
+              'INCREMENT'
+              'INCREMENTALSEARCH'
+              'INDBC'
+              'INDEX'
+              'INDEXES'
+              'INDEXSEEK'
+              'INDEXTOITEMID'
+              'INFORMATION'
+              'INIT'
+              'INITIALSELECTEDALIAS'
+              'INKEY'
+              'INLIST'
+              'INNER'
+              'INPUT'
+              'INPUTMASK'
+              'INRESIZE'
+              'INSERT'
+              'INSMODE'
+              'INSTRUCT'
+              'INT'
+              'INTEGER'
+              'INTEGRALHEIGHT'
+              'INTENSITY'
+              'INTERACTIVECHANGE'
+              'INTERSECT'
+              'INTERVAL'
+              'INTO'
+              'IS'
+              'ISALPHA'
+              'ISATTRIBUTE'
+              'ISBASE64'
+              'ISBINARY'
+              'ISBLANK'
+              'ISCOLOR'
+              'ISDIFFGRAM'
+              'ISDIGIT'
+              'ISEXCLUSIVE'
+              'ISFLOCKED'
+              'ISHOSTED'
+              'ISLEADBYTE'
+              'ISLOWER'
+              'ISMEMOFETCHED'
+              'ISMOUSE'
+              'ISNULL'
+              'ISOMETRIC'
+              'ISPEN'
+              'ISREADONLY'
+              'ISRLOCKED'
+              'ISUPPER'
+              'IXMLDOMELEMENT'
+              'JOIN'
+              'JUSTDRIVE'
+              'JUSTEXT'
+              'JUSTFNAME'
+              'JUSTPATH'
+              'JUSTREADLOCKED'
+              'JUSTSTEM'
+              'KEY'
+              'KEYBOARD'
+              'KEYCOLUMNS'
+              'KEYCOMP'
+              'KEYFIELD'
+              'KEYFIELDLIST'
+              'KEYMATCH'
+              'KEYPRESS'
+              'KEYPREVIEW'
+              'KEYSET'
+              'KEYSORT'
+              'LABEL'
+              'LANGUAGEOPTIONS'
+              'LAST'
+              'LASTKEY'
+              'LASTPROJECT'
+              'LCASE'
+              'LDCHECK'
+              'LEDIT'
+              'LEFT'
+              'LEFTC'
+              'LEFTCOLUMN'
+              'LEN'
+              'LENGTH'
+              'LEVEL'
+              'LIBRARY'
+              'LIKE'
+              'LINE'
+              'LINECONTENTS'
+              'LINENO'
+              'LINESLANT'
+              'LINKED'
+              'LINKMASTER'
+              'LIST'
+              'LISTBOX'
+              'LOAD'
+              'LOADPICTURE'
+              'LOADREPORT'
+              'LOADXML'
+              'LOCAL'
+              'LOCATE'
+              'LOCFILE'
+              'LOCK'
+              'LOCKCOLUMNS'
+              'LOCKCOLUMNSLEFT'
+              'LOCKDATASOURCE'
+              'LOCKSCREEN'
+              'LOG'
+              'LOG10'
+              'LOGERRORS'
+              'LOGOUT'
+              'LONG'
+              'LOOKUP'
+              'LOOP'
+              'LOSTFOCUS'
+              'LOWER'
+              'LPARAMETER'
+              'LPARAMETERS'
+              'LPARTITION'
+              'LTRIM'
+              'LTRJUSTIFY'
+              'LUPDATE'
+              'MACRO'
+              'MACROS'
+              'MAIL'
+              'MAKETRANSACTABLE'
+              'MARGIN'
+              'MARK'
+              'MASTER'
+              'MAX'
+              'MAXTOP'
+              'MAXWIDTH'
+              'MBLOCK'
+              'MCOL'
+              'MD'
+              'MDI'
+              'MDIFORM'
+              'MDOWN'
+              'MDX'
+              'MDY'
+              'MEMBERCLASS'
+              'MEMBERCLASSLIBRARY'
+              'MEMLIMIT'
+              'MEMLINES'
+              'MEMO'
+              'MEMORY'
+              'MEMOS'
+              'MEMOWIDTH'
+              'MEMOWINDOW'
+              'MEMVAR'
+              'MENU'
+              'MENUS'
+              'MESSAGE'
+              'MESSAGEBOX'
+              'MESSAGES'
+              'METHOD'
+              'MIDDLE'
+              'MIDDLECLICK'
+              'MIN'
+              'MINBUTTON'
+              'MINHEIGHT'
+              'MINIMIZE'
+              'MINUS'
+              'MINUTE'
+              'MINWIDTH'
+              'MKDIR'
+              'MLINE'
+              'MOD'
+              'MODAL'
+              'MODIFY'
+              'MODULE'
+              'MONTH'
+              'MONTHNAME'
+              'MOUSE'
+              'MOUSEDOWN'
+              'MOUSEICON'
+              'MOUSEMOVE'
+              'MOUSEPOINTER'
+              'MOUSEUP'
+              'MOUSEWHEEL'
+              'MOVE'
+              'MOVED'
+              'MOVEITEM'
+              'MOVERBARS'
+              'MOVERS'
+              'MRKBAR'
+              'MRKPAD'
+              'MROW'
+              'MTON'
+              'MULTILOCKS'
+              'MULTISELECT'
+              'MVARSIZ'
+              'MVCOUNT'
+              'MWINDOW'
+              'NAME'
+              'NAPTIME'
+              'NATIVE'
+              'NAVIGATETO'
+              'NDX'
+              'NEAR'
+              'NEGOTIATE'
+              'NEST'
+              'NESTEDINTO'
+              'NETWORK'
+              'NEWINDEX'
+              'NEWITEMID'
+              'NEWOBJECT'
+              'NEXT'
+              'NEXTVALUE'
+              'NOALIAS'
+              'NOAPPEND'
+              'NOCLEAR'
+              'NOCLOSE'
+              'NOCONSOLE'
+              'NOCPTRANS'
+              'NODATA'
+              'NODATAONLOAD'
+              'NODEBUG'
+              'NODEFAULT'
+              'NODEFINE'
+              'NODELETE'
+              'NODIALOG'
+              'NODUP'
+              'NOEDIT'
+              'NOEJECT'
+              'NOENVIRONMENT'
+              'NOFILTER'
+              'NOFLOAT'
+              'NOFOLLOW'
+              'NOGROW'
+              'NOINIT'
+              'NOLGRID'
+              'NOLINK'
+              'NOLOCK'
+              'NOLOG'
+              'NOMARGIN'
+              'NOMDI'
+              'NOMENU'
+              'NOMINIMIZE'
+              'NOMODIFY'
+              'NOMOUSE'
+              'NONE'
+              'NOOPTIMIZE'
+              'NOORGANIZE'
+              'NOOVERWRITE'
+              'NOPROJECTHOOK'
+              'NOPROMPT'
+              'NOREAD'
+              'NOREFRESH'
+              'NOREQUERY'
+              'NORGRID'
+              'NORM'
+              'NORMAL'
+              'NORMALIZE'
+              'NOSAVE'
+              'NOSHADOW'
+              'NOSHOW'
+              'NOSPACE'
+              'NOT'
+              'NOTAB'
+              'NOTE'
+              'NOTIFY'
+              'NOTIFYCONTAINER'
+              'NOUPDATE'
+              'NOVALIDATE'
+              'NOVERIFY'
+              'NOW'
+              'NOWAIT'
+              'NOWINDOW'
+              'NOWRAP'
+              'NOZOOM'
+              'NPV'
+              'NTOM'
+              'NULL'
+              'NULLDISPLAY'
+              'NULLSTRING'
+              'NUMBER'
+              'NUMBEROFELEMENTS'
+              'NUMLOCK'
+              'NVL'
+              'OBJECT'
+              'OBJECTS'
+              'OBJNUM'
+              'OBJREF'
+              'OBJTOCLIENT'
+              'OBJVAR'
+              'OCCURS'
+              'ODBCHDBC'
+              'ODBCHSTMT'
+              'ODOMETER'
+              'OEMTOANSI'
+              'OF'
+              'OFF'
+              'OLDVAL'
+              'ON'
+              'ONETOMANY'
+              'ONLINE'
+              'ONLY'
+              'ONMOVEITEM'
+              'ONPREVIEWCLOSE'
+              'ONRESIZE'
+              'OPEN'
+              'OPENEDITOR'
+              'OPENTABLES'
+              'OPENVIEWS'
+              'OPENWINDOW'
+              'OPTIMIZE'
+              'OPTIONBUTTON'
+              'OPTIONGROUP'
+              'OR'
+              'ORACLE'
+              'ORDER'
+              'ORDERDIRECTION'
+              'OS'
+              'OTHERWISE'
+              'OUTER'
+              'OUTPUT'
+              'OUTPUTPAGE'
+              'OUTPUTPAGECOUNT'
+              'OUTPUTTYPE'
+              'OUTSHOW'
+              'OVERLAY'
+              'OVERWRITE'
+              'PACK'
+              'PACKETSIZE'
+              'PAD'
+              'PADC'
+              'PADL'
+              'PADPROMPT'
+              'PADR'
+              'PAGE'
+              'PAGES'
+              'PAGETOTAL'
+              'PAINT'
+              'PALETTE'
+              'PANEL'
+              'PANELLINK'
+              'PARAMETERS'
+              'PARENT'
+              'PARTITION'
+              'PASSWORD'
+              'PASSWORDCHAR'
+              'PATH'
+              'PATTERN'
+              'PAUSE'
+              'PAYMENT'
+              'PCOL'
+              'PCOUNT'
+              'PDOX'
+              'PDSETUP'
+              'PEMSTATUS'
+              'PEN'
+              'PERCENT'
+              'PFS'
+              'PI'
+              'PIVOT'
+              'PIXELS'
+              'PLAIN'
+              'PLATFORM'
+              'PLAY'
+              'POINT'
+              'POLYPOINTS'
+              'POP'
+              'POPUP'
+              'POPUPS'
+              'POWER'
+              'PRECISION'
+              'PREFERENCE'
+              'PRESERVEWHITESPACE'
+              'PRETEXT'
+              'PREVIEW'
+              'PREVIEWCONTAINER'
+              'PRIMARY'
+              'PRIMARYKEY'
+              'PRINT'
+              'PRIVATE'
+              'PRMBAR'
+              'PRMPAD'
+              'PROCEDURE'
+              'PROCEDURES'
+              'PRODUCTION'
+              'PROGCACHE'
+              'PROGRAM'
+              'PROGRAMMATICCHANGE'
+              'PROGWORK'
+              'PROJECT'
+              'PROJECTCLICK'
+              'PROJECTHOOK'
+              'PROMPT'
+              'PROPER'
+              'PROTECTED'
+              'PROW'
+              'PRTINFO'
+              'PSET'
+              'PUBLIC'
+              'PUSH'
+              'PUTFILE'
+              'PV'
+              'QPR'
+              'QUARTER'
+              'QUERY'
+              'QUERYADDFILE'
+              'QUERYMODIFYFILE'
+              'QUERYNEWFILE'
+              'QUERYREMOVEFILE'
+              'QUERYRUNFILE'
+              'QUERYTIMEOUT'
+              'QUERYUNLOAD'
+              'QUIETMODE'
+              'QUIT'
+              'RADIANS'
+              'RAISEEVENT'
+              'RAND'
+              'RANDOM'
+              'RANGE'
+              'RANGEHIGH'
+              'RANGELOW'
+              'RAT'
+              'RATC'
+              'RATLINE'
+              'RD'
+              'RDLEVEL'
+              'READ'
+              'READACTIVATE'
+              'READBORDER'
+              'RECALL'
+              'RECCOUNT'
+              'RECENTLYUSEDFILES'
+              'RECNO'
+              'RECOMPILE'
+              'RECORD'
+              'RECORDREFRESH'
+              'RECOVER'
+              'RECSIZE'
+              'RECT'
+              'RECTCLASS'
+              'RECYCLE'
+              'REDIT'
+              'REFERENCE'
+              'REFERENCES'
+              'REFRESH'
+              'REFRESHALIAS'
+              'REFRESHCMD'
+              'REFRESHCMDDATASOURCE'
+              'REFRESHCMDDATASOURCETYPE'
+              'REFRESHIGNOREFIELDLIST'
+              'REFRESHTIMESTAMP'
+              'REGIONAL'
+              'REINDEX'
+              'RELATION'
+              'RELATIONALEXPR'
+              'RELATIVE'
+              'RELATIVECOLUMN'
+              'RELATIVEROW'
+              'RELEASE'
+              'RELEASEERASE'
+              'RELEASETYPE'
+              'RELEASEWINDOWS'
+              'RELEASEXML'
+              'REMOTE'
+              'REMOVE'
+              'REMOVEITEM'
+              'REMOVELISTITEM'
+              'REMOVEOBJECT'
+              'REMOVEPROPERTY'
+              'RENAME'
+              'RENDER'
+              'REPEAT'
+              'REPLACE'
+              'REPLICATE'
+              'REPORT'
+              'REPORTBEHAVIOR'
+              'REPORTLISTENER'
+              'REPROCESS'
+              'REQUERY'
+              'REQUESTDATA'
+              'REQUIRED'
+              'RESET'
+              'RESETTODEFAULT'
+              'RESHEIGHT'
+              'RESIZE'
+              'RESOURCE'
+              'RESOURCEON'
+              'RESOURCES'
+              'RESOURCETO'
+              'RESPECTCURSORCP'
+              'RESPECTNESTING'
+              'REST'
+              'RESTORE'
+              'RESTRICT'
+              'RESUME'
+              'RESWIDTH'
+              'RETRY'
+              'RETURN'
+              'REVERTOFFLINE'
+              'RGB'
+              'RGBSCHEME'
+              'RIGHT'
+              'RIGHTC'
+              'RIGHTCLICK'
+              'RIGHTTOLEFT'
+              'RLOCK'
+              'RMDIR'
+              'ROLLBACK'
+              'ROLLOVER'
+              'ROTATEFLIP'
+              'ROTATION'
+              'ROUND'
+              'ROW'
+              'ROWCOLCHANGE'
+              'ROWHEIGHT'
+              'ROWSET'
+              'ROWSOURCE'
+              'ROWSOURCETYPE'
+              'RPD'
+              'RSTOCURSOR'
+              'RTLJUSTIFY'
+              'RTOD'
+              'RTRIM'
+              'RULEEXPRESSION'
+              'RULETEXT'
+              'RUN'
+              'RUNSCRIPT'
+              'RUNTIME'
+              'RVIEW'
+              'SAFETY'
+              'SAME'
+              'SAMPLE'
+              'SAVE'
+              'SAVEAS'
+              'SAVEASCLASS'
+              'SAVEPICTURE'
+              'SAY'
+              'SCALE'
+              'SCALEMODE'
+              'SCALEUNITS'
+              'SCAN'
+              'SCATTER'
+              'SCCDESTROY'
+              'SCCINIT'
+              'SCHEME'
+              'SCOLS'
+              'SCOREBOARD'
+              'SCREEN'
+              'SCREENS'
+              'SCROLL'
+              'SCROLLBARS'
+              'SCROLLED'
+              'SCROLLSCROLLBARS'
+              'SDF'
+              'SDIFORM'
+              'SEC'
+              'SECOND'
+              'SECONDS'
+              'SEEK'
+              'SELECT'
+              'SELECTCMD'
+              'SELECTION'
+              'SELECTIONNAMESPACES'
+              'SELECTONENTRY'
+              'SELFEDIT'
+              'SELLENGTH'
+              'SELSTART'
+              'SELTEXT'
+              'SENDGDIPLUSIMAGE'
+              'SENDUPDATES'
+              'SEPARATOR'
+              'SET'
+              'SETALL'
+              'SETDATA'
+              'SETDEFAULT'
+              'SETFLDSTATE'
+              'SETFOCUS'
+              'SETFORMAT'
+              'SETRESULTSET'
+              'SETUP'
+              'SETVAR'
+              'SETVIEWPORT'
+              'SHADOWS'
+              'SHAPE'
+              'SHARECONNECTION'
+              'SHARED'
+              'SHEET'
+              'SHELL'
+              'SHIFT'
+              'SHORTCUT'
+              'SHOW'
+              'SHOWDOC'
+              'SHOWINTASKBAR'
+              'SHOWOLECONTROLS'
+              'SHOWTIPS'
+              'SHOWVCXS'
+              'SHOWWHATSTHIS'
+              'SHOWWINDOW'
+              'SHUTDOWN'
+              'SIGN'
+              'SIN'
+              'SINGLE'
+              'SIZE'
+              'SIZEBOX'
+              'SKIP'
+              'SKIPFORM'
+              'SKPBAR'
+              'SKPPAD'
+              'SOM'
+              'SOME'
+              'SORT'
+              'SORTED'
+              'SORTWORK'
+              'SOUNDEX'
+              'SOURCENAME'
+              'SOURCETYPE'
+              'SPACE'
+              'SPARSE'
+              'SPECIALEFFECT'
+              'SPINNER'
+              'SPINNERHIGHVALUE'
+              'SPINNERLOWVALUE'
+              'SPLITBAR'
+              'SQL'
+              'SQLASYNCHRONOUS'
+              'SQLBATCHMODE'
+              'SQLCANCEL'
+              'SQLCOLUMNS'
+              'SQLCOMMIT'
+              'SQLCONNECT'
+              'SQLCONNECTTIMEOUT'
+              'SQLDISCONNECT'
+              'SQLDISPLOGIN'
+              'SQLDISPWARNINGS'
+              'SQLEXEC'
+              'SQLGETPROP'
+              'SQLIDLEDISCONNECT'
+              'SQLIDLETIMEOUT'
+              'SQLL'
+              'SQLMORERESULTS'
+              'SQLPREPARE'
+              'SQLQUERYTIMEOUT'
+              'SQLROLLBACK'
+              'SQLSETPROP'
+              'SQLSTRINGCONNECT'
+              'SQLTABLES'
+              'SQLTRANSACTIONS'
+              'SQLWAITTIME'
+              'SQRT'
+              'SROWS'
+              'STACKLEVEL'
+              'STANDALONE'
+              'STATUS'
+              'STATUSBAR'
+              'STATUSBARTEXT'
+              'STD'
+              'STEP'
+              'STICKY'
+              'STORE'
+              'STR'
+              'STRCONV'
+              'STRETCH'
+              'STRICTDATE'
+              'STRICTDATEENTRY'
+              'STRING'
+              'STRING$'
+              'STRTOFILE'
+              'STRTRAN'
+              'STRUCTURE'
+              'STUFF'
+              'STUFFC'
+              'STYLE'
+              'SUBCLASS'
+              'SUBSTR'
+              'SUBSTRING'
+              'SUM'
+              'SUMMARY'
+              'SUPPORTSLISTENERTYPE'
+              'SUSPEND'
+              'SYLK'
+              'SYS'
+              'SYSFORMATS'
+              'SYSMENU'
+              'SYSMENUS'
+              'SYSMETRIC'
+              'SYSTEM'
+              'SYSTEMREFCOUNT'
+              'TAB'
+              'TABFIXEDHEIGHT'
+              'TABFIXEDWIDTH'
+              'TABHIT'
+              'TABINDEX'
+              'TABLE'
+              'TABLEPROMPT'
+              'TABLEREFRESH'
+              'TABLEREVERT'
+              'TABLES'
+              'TABLEUPDATE'
+              'TABLEVALIDATE'
+              'TABORDERING'
+              'TABORIENTATION'
+              'TABS'
+              'TABSTOP'
+              'TABSTRETCH'
+              'TABSTYLE'
+              'TAG'
+              'TAGCOUNT'
+              'TAGNO'
+              'TALK'
+              'TAN'
+              'TARGET'
+              'TASKPANE'
+              'TEDIT'
+              'TERMINATEREAD'
+              'TEXT'
+              'TEXTBOX'
+              'TEXTHEIGHT'
+              'TEXTMERGE'
+              'TEXTWIDTH'
+              'THEMES'
+              'THEN'
+              'THIS'
+              'THISFORM'
+              'THISFORMSET'
+              'THROW'
+              'TIME'
+              'TIMEOUT'
+              'TIMER'
+              'TIMESTAMP'
+              'TIMESTAMPDIFF'
+              'TIMESTAMPFIELDLIST'
+              'TITLEBAR'
+              'TITLES'
+              'TMPFILES'
+              'TO'
+              'TOCURSOR'
+              'TOOLBAR'
+              'TOOLBOX'
+              'TOOLTIPTEXT'
+              'TOP'
+              'TOPIC'
+              'TOPINDEX'
+              'TOPITEMID'
+              'TOTAL'
+              'TOXML'
+              'TRANSACTION'
+              'TRANSACTIONS'
+              'TRANSFORM'
+              'TRAP'
+              'TRBETWEEN'
+              'TRIGGER'
+              'TRIM'
+              'TRUNCATE'
+              'TRY'
+              'TTOC'
+              'TTOD'
+              'TTOPTION'
+              'TWOPASSPROCESS'
+              'TXNLEVEL'
+              'TXTWIDTH'
+              'TYPE'
+              'TYPEAHEAD'
+              'UCASE'
+              'UDFPARMS'
+              'UIENABLE'
+              'UNBINDEVENT'
+              'UNDEFINE'
+              'UNDOCK'
+              'UNICODE'
+              'UNION'
+              'UNIQUE'
+              'UNLOAD'
+              'UNLOADREPORT'
+              'UNLOCK'
+              'UNLOCKDATASOURCE'
+              'UNNEST'
+              'UNPACK'
+              'UP'
+              'UPCLICK'
+              'UPDATABLE'
+              'UPDATABLEFIELDLIST'
+              'UPDATE'
+              'UPDATECMD'
+              'UPDATED'
+              'UPPER'
+              'UPSIZING'
+              'USA'
+              'USE'
+              'USECODEPAGE'
+              'USECURSORSCHEMA'
+              'USED'
+              'USEMEMOSIZE'
+              'USERID'
+              'USERS'
+              'USERVALUE'
+              'USETRANSACTIONS'
+              'UTF8ENCODED'
+              'VAL'
+              'VALID'
+              'VALIDATE'
+              'VALUE'
+              'VALUEDIRTY'
+              'VALUES'
+              'VAR'
+              'VARBINARY'
+              'VARCHAR'
+              'VARCHARMAPPING'
+              'VARREAD'
+              'VARTYPE'
+              'VERB'
+              'VERSION'
+              'VGA25'
+              'VGA50'
+              'VIEW'
+              'VIEWS'
+              'VISIBLE'
+              'VISUALEFFECT'
+              'VOLUME'
+              'VSCROLLSMALLCHANGE'
+              'WAIT'
+              'WAITTIME'
+              'WASACTIVE'
+              'WASOPEN'
+              'WBORDER'
+              'WCHILD'
+              'WCOLS'
+              'WDOCKABLE'
+              'WEEK'
+              'WEXIST'
+              'WFONT'
+              'WHEN'
+              'WHERE'
+              'WHEREWHERETYPE'
+              'WHILE'
+              'WIDTH'
+              'WINDOW'
+              'WINDOWS'
+              'WITH'
+              'WONTOP'
+              'WP'
+              'WPARENT'
+              'XMLADAPTER'
+              'YEAR'
+              'ZAP'
+              'ZOOM'
+              'ZORDER')
             TokenTypes = 4
             IgnoreCase = True
           end>
@@ -14523,9 +14566,10 @@ object SyntaxManager: TSyntaxManager
             IgnoreCase = True
           end>
         BlockEnd = 'proc_end'
-        NameFmt = 'proc %s-1~s[(]1'
+        NameFmt = 'proc %s-1'
         HighlightPos = cpAny
         DrawStaple = True
+        CollapseFmt = 'proc %s-1'
         IgnoreAsParent = False
       end
       item
@@ -14895,12 +14939,10 @@ object SyntaxManager: TSyntaxManager
       'Char const'
       'Preprocessor'
       'Proc Id')
-    MarkedBlockStyle = 'Marked block'
     Extentions = 'prg'
     LexerName = 'FoxPro'
-    SkipSpaces = False
     Notes.Strings = (
-      'Changed by Alex, www.uvviewsoft.com'
+      'Changed by Alexey (SynWrite)'
       '-Visual FoxPro features added'
       '-tree improved'
       '-multiline comments added')
@@ -15079,366 +15121,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'docclass'
-        Description = 'Document Class'
-        Code.Strings = (
-          '\documentclass[|]{}')
-      end
-      item
-        Name = 'usepop'
-        Description = 'Use Package with Options'
-        Code.Strings = (
-          '\usepackage[|]{}')
-      end
-      item
-        Name = 'usep'
-        Description = 'Use Package without Options'
-        Code.Strings = (
-          '\usepackage{|}')
-      end
-      item
-        Name = 'include'
-        Description = 'Include File'
-        Code.Strings = (
-          '\include{|}')
-      end
-      item
-        Name = 'includeo'
-        Description = 'Include only File'
-        Code.Strings = (
-          '\includeonly{|}')
-      end
-      item
-        Name = 'input'
-        Description = 'Input'
-        Code.Strings = (
-          '\input{|}')
-      end
-      item
-        Name = 'setlength'
-        Description = 'Set Length'
-        Code.Strings = (
-          '\setlength{\|}{}')
-      end
-      item
-        Name = 'addlength'
-        Description = 'Add to Length'
-        Code.Strings = (
-          '\addtolength{\|}{}')
-      end
-      item
-        Name = 'newcmd'
-        Description = 'New Command'
-        Code.Strings = (
-          '\newcommand{|}[]{}')
-      end
-      item
-        Name = 'newenv'
-        Description = 'New Environment'
-        Code.Strings = (
-          '\newenvironment{|}[]{}{}')
-      end
-      item
-        Name = 'mkindex'
-        Description = 'Make Index'
-        Code.Strings = (
-          '\makeindex')
-      end
-      item
-        Name = 'title'
-        Description = 'Title'
-        Code.Strings = (
-          '\title{|}')
-      end
-      item
-        Name = 'author'
-        Description = 'Author'
-        Code.Strings = (
-          '\author{|}')
-      end
-      item
-        Name = 'date'
-        Description = 'Date'
-        Code.Strings = (
-          '\date{|}')
-      end
-      item
-        Name = 'doc'
-        Description = 'Begin/End Document'
-        Code.Strings = (
-          '\begin{document}'
-          '  |'
-          '\end{document}')
-      end
-      item
-        Name = 'toc'
-        Description = 'Table of Contents'
-        Code.Strings = (
-          '\tableofcontents')
-      end
-      item
-        Name = 'printindex'
-        Description = 'Print Index'
-        Code.Strings = (
-          '\printindex')
-      end
-      item
-        Name = 'chapter'
-        Description = 'Chapter'
-        Code.Strings = (
-          '\chapter{|}')
-      end
-      item
-        Name = 'part'
-        Description = 'Part'
-        Code.Strings = (
-          '\part{|}')
-      end
-      item
-        Name = 'section'
-        Description = 'Section'
-        Code.Strings = (
-          '\section{|}')
-      end
-      item
-        Name = 'subsec'
-        Description = 'Sub Section'
-        Code.Strings = (
-          '\subsection{|}')
-      end
-      item
-        Name = 'ssec'
-        Description = 'Sub Sub Section'
-        Code.Strings = (
-          '\subsubsection{|}')
-      end
-      item
-        Name = 'para'
-        Description = 'Paragraph'
-        Code.Strings = (
-          '\paragraph{|}')
-      end
-      item
-        Name = 'subpara'
-        Description = 'Subparagraph'
-        Code.Strings = (
-          '\subparagraph{|}')
-      end
-      item
-        Name = 'label'
-        Description = 'Label'
-        Code.Strings = (
-          '\label{|}')
-      end
-      item
-        Name = 'ref'
-        Description = 'Reference'
-        Code.Strings = (
-          '\ref{|}')
-      end
-      item
-        Name = 'nameref'
-        Description = 'Reference by name'
-        Code.Strings = (
-          '\nameref{|}')
-      end
-      item
-        Name = 'pageref'
-        Description = 'Page Reference'
-        Code.Strings = (
-          '\pageref{|}')
-      end
-      item
-        Name = 'index'
-        Description = 'Index'
-        Code.Strings = (
-          '\index{|}')
-      end
-      item
-        Name = 'footnote'
-        Description = 'Footnote'
-        Code.Strings = (
-          '\footnote{|}')
-      end
-      item
-        Name = 'math'
-        Description = 'Math Mode'
-        Code.Strings = (
-          '$|$')
-      end
-      item
-        Name = 'environ'
-        Description = 'Begin{...} ... End{...}'
-        Code.Strings = (
-          '\begin{|}'
-          ''
-          '\end{}')
-      end
-      item
-        Name = 'caption'
-        Description = 'Caption'
-        Code.Strings = (
-          '\caption{|}')
-      end
-      item
-        Name = 'clearpage'
-        Description = 'Clear Page'
-        Code.Strings = (
-          '\clearpage')
-      end
-      item
-        Name = 'newpage'
-        Description = 'New Page'
-        Code.Strings = (
-          '\newpage')
-      end
-      item
-        Name = 'hyph'
-        Description = 'Hyphenation'
-        Code.Strings = (
-          '\hyphenation{|}')
-      end
-      item
-        Name = 'left'
-        Description = 'Left Align'
-        Code.Strings = (
-          '\begin{flushleft}'
-          '  |'
-          '\end{flushleft}')
-      end
-      item
-        Name = 'center'
-        Description = 'Center Align'
-        Code.Strings = (
-          '\begin{center}'
-          '  |'
-          '\end{center}')
-      end
-      item
-        Name = 'right'
-        Description = 'Right Align'
-        Code.Strings = (
-          '\begin{flushright}'
-          '  |'
-          '\end{flushright}')
-      end
-      item
-        Name = 'emph'
-        Description = 'Emphasize'
-        Code.Strings = (
-          '\emph{|}')
-      end
-      item
-        Name = 'bold'
-        Description = 'Bold Text'
-        Code.Strings = (
-          '\textbf{|}')
-      end
-      item
-        Name = 'italic'
-        Description = 'Italic Text'
-        Code.Strings = (
-          '\textit{|}')
-      end
-      item
-        Name = 'textsl'
-        Description = 'Slanted Text'
-        Code.Strings = (
-          '\textsl{|}')
-      end
-      item
-        Name = 'cmdopt'
-        Description = 'Command with Options'
-        Code.Strings = (
-          '\|[]{}')
-      end
-      item
-        Name = 'itemize'
-        Description = 'Bullet List'
-        Code.Strings = (
-          '\begin{itemize}'
-          '  \item |'
-          '\end{itemize}')
-      end
-      item
-        Name = 'enumerate'
-        Description = 'Numeric List'
-        Code.Strings = (
-          '\begin{enumerate}'
-          '  \item |'
-          '\end{enumerate}')
-      end
-      item
-        Name = 'descr'
-        Description = 'Description'
-        Code.Strings = (
-          '\begin{description}'
-          '  \item[|] '
-          '\end{description}')
-      end
-      item
-        Name = 'quote'
-        Description = 'Short Quote'
-        Code.Strings = (
-          '\begin{quote}'
-          '  |'
-          '\end{quote}')
-      end
-      item
-        Name = 'quotation'
-        Description = 'Quotation'
-        Code.Strings = (
-          '\begin{quotation}'
-          '  |'
-          '\end{quotation}')
-      end
-      item
-        Name = 'table'
-        Description = 'Table'
-        Code.Strings = (
-          '\begin{table}'
-          '  \begin{tabular}'
-          '    |'
-          '  \end{tabular}'
-          '\end{table}')
-      end
-      item
-        Name = 'tabular'
-        Description = 'Tabular'
-        Code.Strings = (
-          '\begin{tabular}'
-          '  |'
-          '\end{tabular}')
-      end
-      item
-        Name = 'tabbing'
-        Description = 'Tabbing'
-        Code.Strings = (
-          '\begin{tabbing}'
-          '  |'
-          '\end{tabbing}')
-      end
-      item
-        Name = 'fig'
-        Description = 'Figure'
-        Code.Strings = (
-          '\begin{figure}'
-          '  \centering'
-          '    \includegraphics{|}'
-          '  \caption{}'
-          '  \label{fig:}'
-          '\end{figure}')
-      end
-      item
-        Name = 'equation'
-        Description = 'Equation'
-        Code.Strings = (
-          '\begin{equation}'
-          '  |'
-          '\end{equation}')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '%Test'
@@ -16242,16 +15925,6 @@ object SyntaxManager: TSyntaxManager
         BgColor = clSilver
       end
       item
-        DisplayName = 'Default'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Consolas'
-        Font.Style = []
-        BgColor = clHighlightText
-        FormatType = ftColor
-      end
-      item
         DisplayName = 'Directive'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = 8421631
@@ -16276,16 +15949,6 @@ object SyntaxManager: TSyntaxManager
         Font.Style = []
       end
       item
-        DisplayName = 'Selection'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clHighlightText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = clHighlight
-        FormatType = ftColor
-      end
-      item
         DisplayName = 'String'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clTeal
@@ -16300,23 +15963,6 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-      end
-      item
-        DisplayName = 'Variable within String'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = 4227327
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-        BgColor = 15658734
-      end
-      item
-        DisplayName = 'Tree'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold]
       end>
     TokenRules = <
       item
@@ -16476,7 +16122,6 @@ object SyntaxManager: TSyntaxManager
         DynHighlight = dhBound
         HighlightPos = cpBoundTag
         CollapseFmt = '%s0 %s-1'
-        TreeGroupStyle = 'Tree'
         TreeItemImage = 1
         TreeGroupImage = 1
         IgnoreAsParent = False
@@ -16509,7 +16154,6 @@ object SyntaxManager: TSyntaxManager
         DynHighlight = dhBound
         HighlightPos = cpBoundTag
         CollapseFmt = '%sz0'
-        TreeGroupStyle = 'Tree'
         TreeItemImage = 3
         TreeGroupImage = 1
         IgnoreAsParent = False
@@ -17121,115 +16765,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'DoWhile'
-        Description = 'Do While'
-        Code.Strings = (
-          '${Do}'
-          ''
-          '${LoopWhile} <caret>')
-        Advanced = True
-      end
-      item
-        Name = 'DoUntil'
-        Description = 'Do Until'
-        Code.Strings = (
-          '${Do}'
-          ''
-          '${LoopUntil} <caret>')
-        Advanced = True
-      end
-      item
-        Name = 'While'
-        Description = 'While'
-        Code.Strings = (
-          '${While} <caret>'
-          ''
-          '${EndWhile}')
-        Advanced = True
-      end
-      item
-        Name = 'Select'
-        Description = 'Select'
-        Code.Strings = (
-          '${Select} <caret>'
-          '    ${Case} 1'
-          '    '
-          '    ${Case} 2'
-          '        '
-          '    ${CaseElse}'
-          '    '
-          '${EndSelect}')
-        Advanced = True
-      end
-      item
-        Name = 'For'
-        Code.Strings = (
-          '${For} <caret>'
-          ''
-          '${Next}')
-        Advanced = True
-      end
-      item
-        Name = 'ForEach'
-        Description = 'For Each'
-        Code.Strings = (
-          '${ForEach} <caret>'
-          ''
-          '${Next}')
-        Advanced = True
-      end
-      item
-        Name = 'Switch'
-        Description = 'Switch'
-        Code.Strings = (
-          '${Switch} <caret>'
-          '    ${Case} 1'
-          '        ${Break}'
-          '    ${Case} 2        '
-          '        ${Break}'
-          '    ${Default}'
-          '        '
-          '${EndSwitch}')
-        Advanced = True
-      end
-      item
-        Name = 'If'
-        Code.Strings = (
-          '${If} <caret>'
-          '    '
-          '${EndIf}')
-        Advanced = True
-      end
-      item
-        Name = 'IfElse'
-        Description = 'If Else'
-        Code.Strings = (
-          '${If} <caret>'
-          ''
-          '${Else}'
-          '    '
-          '${EndIf}')
-        Advanced = True
-      end
-      item
-        Name = 'DoLoop'
-        Code.Strings = (
-          '${Do}'
-          '    ${If} <caret>'
-          '        ${ExitDo}'
-          '    ${Endif}'
-          '${Loop}')
-        Advanced = True
-      end
-      item
-        Name = 'MessageBox'
-        Description = 'Message Box'
-        Code.Strings = (
-          'MessageBox MB_OK "<caret>"')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '/***************************'
@@ -17303,7 +16839,6 @@ object SyntaxManager: TSyntaxManager
       'Number'
       'Preprocessor'
       'Constant')
-    MarkedBlockStyle = 'Selection'
     Extentions = 'nsh nsi'
     LexerName = 'NSIS'
     Notes.Strings = (
@@ -22483,245 +22018,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'be'
-        Description = 'begin end'
-        Code.Strings = (
-          'begin'
-          '  <caret>'
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'arrayd'
-        Description = 'array declaration (var)'
-        Code.Strings = (
-          'array[0..|] of ;')
-        Advanced = True
-      end
-      item
-        Name = 'arrayc'
-        Description = 'array declaration (const)'
-        Code.Strings = (
-          'array[0..|] of = ();')
-        Advanced = True
-      end
-      item
-        Name = 'cases'
-        Description = 'case statement'
-        Code.Strings = (
-          'case | of'
-          '  : ;'
-          '  : ;'
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'casee'
-        Description = 'case statement (with else)'
-        Code.Strings = (
-          'case | of'
-          '  : ;'
-          '  : ;'
-          'else ;'
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'classf'
-        Description = 'class declaration (all parts)'
-        Code.Strings = (
-          'T| = class(T)'
-          'private'
-          ''
-          'protected'
-          ''
-          'public'
-          ''
-          'published'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'classd'
-        Description = 'class declaration (no parts)'
-        Code.Strings = (
-          'T| = class(T)'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'classc'
-        Description = 'class declaration (with Create/Destroy overrides)'
-        Code.Strings = (
-          'T| = class(T)'
-          'private'
-          ''
-          'protected'
-          ''
-          'public'
-          '  constructor Create; override;'
-          '  destructor Destroy; override;'
-          'published'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'fors'
-        Description = 'for (no begin/end)'
-        Code.Strings = (
-          'for | :=  to  do')
-        Advanced = True
-      end
-      item
-        Name = 'forb'
-        Description = 'for statement'
-        Code.Strings = (
-          'for | :=  to  do'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'function'
-        Description = 'function declaration'
-        Code.Strings = (
-          'function |(): ;'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'ifs'
-        Description = 'if (no begin/end)'
-        Code.Strings = (
-          'if | then')
-        Advanced = True
-      end
-      item
-        Name = 'ifb'
-        Description = 'if statement'
-        Code.Strings = (
-          'if | then'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'ife'
-        Description = 'if then (no begin/end) else (no begin/end)'
-        Code.Strings = (
-          'if | then'
-          ''
-          'else')
-        Advanced = True
-      end
-      item
-        Name = 'ifeb'
-        Description = 'if then else'
-        Code.Strings = (
-          'if | then'
-          'begin'
-          ''
-          'end'
-          'else'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'procedure'
-        Description = 'procedure declaration'
-        Code.Strings = (
-          'procedure |();'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'trye'
-        Description = 'try except'
-        Code.Strings = (
-          'try'
-          '  |'
-          'except'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'tryf'
-        Description = 'try finally'
-        Code.Strings = (
-          'try'
-          '  |'
-          'finally'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'trycf'
-        Description = 'try finally (with Create/Free)'
-        Code.Strings = (
-          '|variable := typename.Create;'
-          'try'
-          ''
-          'finally'
-          '  variable.Free;'
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'whileb'
-        Description = 'while statement'
-        Code.Strings = (
-          'while | do'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'whiles'
-        Description = 'while (no begin)'
-        Code.Strings = (
-          'while | do')
-        Advanced = True
-      end
-      item
-        Name = 'withb'
-        Description = 'with statement'
-        Code.Strings = (
-          'with | do'
-          'begin'
-          ''
-          'end;')
-        Advanced = True
-      end
-      item
-        Name = 'withs'
-        Description = 'with (no begin)'
-        Code.Strings = (
-          'with | do')
-        Advanced = True
-      end
-      item
-        Name = 'prop'
-        Description = 'property'
-        Code.Strings = (
-          'property | read  write;')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <
       item
         DisplayName = 'asm section'
@@ -22796,7 +22093,7 @@ object SyntaxManager: TSyntaxManager
       ' = '#39'['#39' | <Identifier>; '#13#10#13#10'InheritedList = '#39'('#39' IdentList '#39')'#39';'#13#10'I' +
       'dentList = <Identifier> ('#39','#39' <Identifier>)*;'#13#10
     CurrentLineStyle = 'Current Line'
-    Extentions = 'pas inc dpr dpk lpr lpk p'
+    Extentions = 'pas inc dpr dpk lpr p pp'
     LexerName = 'Pascal'
     LineComment = '//'
     AlwaysSyncBlockAnal = True
@@ -23571,59 +22868,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'if'
-        Description = 'if ... then ... end'
-        Code.Strings = (
-          'if x ~= 0 then'
-          '  |'
-          'end')
-      end
-      item
-        Name = 'for'
-        Description = 'for ... do ... end'
-        Code.Strings = (
-          'for i = _start, _end, _step do'
-          '  |'
-          'end')
-      end
-      item
-        Name = 'while'
-        Description = 'while ... do ... end'
-        Code.Strings = (
-          'while x ~= 0 do'
-          '  |'
-          'end')
-      end
-      item
-        Name = 'rep'
-        Description = 'repeat ... until ...'
-        Code.Strings = (
-          'repeat'
-          '  |'
-          'until x == 0')
-      end
-      item
-        Name = 'forExt'
-        Description = 'for ... in ... do ... end'
-        Code.Strings = (
-          'for param, value in pairs(tbl) do'
-          '  |'
-          'end')
-      end
-      item
-        Name = 'ifelse'
-        Description = 'if ... then ... elseif ... then ... else ... end'
-        Code.Strings = (
-          'if x == 0 then'
-          '  |'
-          'elseif x == 1 then'
-          '  '
-          'else'
-          '  '
-          'end')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '--Str'
@@ -24684,439 +23929,7 @@ object SyntaxManager: TSyntaxManager
         NoEndRule = True
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'htm'
-        Code.Strings = (
-          '<html>'
-          '  <head>'
-          '    <title><caret></title>'
-          '  </head>'
-          '  <body>'
-          '    '
-          '  </body>'
-          '</html>')
-        Advanced = True
-      end
-      item
-        Name = 'body'
-        Code.Strings = (
-          '<body bgcolor=<caret> text= link= alink= vlink=>'
-          ''
-          '</body>')
-        Advanced = True
-      end
-      item
-        Name = 'head'
-        Code.Strings = (
-          '<head>'
-          '  <title><caret></title>'
-          '  <meta http-equiv="Content-Language" content="en">'
-          
-            '  <meta http-equiv="Content-Type" content="text/html; charset=wi' +
-            'ndows-1251">'
-          '  <meta name="author" content="">'
-          '  <meta name="generator" content="">'
-          '  <meta name="keywords" content="">'
-          '  <meta name="description" content="">'
-          '  <link rel="stylesheet" type="text/css" href="">'
-          '  <link rel="shortcut icon" type="image/x-icon" href="">'
-          '</head>')
-        Advanced = True
-      end
-      item
-        Name = 'linki'
-        Description = 'link to image'
-        Code.Strings = (
-          '<link rel="shortcut icon" type="image/x-icon" href="<caret>">')
-        Advanced = True
-      end
-      item
-        Name = 'link'
-        Description = 'hyperlink'
-        Code.Strings = (
-          '<link rel="stylesheet" type="text/css" href="<caret>">')
-        Advanced = True
-      end
-      item
-        Name = 'meta'
-        Code.Strings = (
-          '<meta http-equiv="Content-Language" content="en">'
-          
-            '<meta http-equiv="Content-Type" content="text/html; charset=wind' +
-            'ows-1251">'
-          '<meta name="author" content="<caret>">'
-          '<meta name="generator" content="">'
-          '<meta Name="keywords" Content="">'
-          '<meta Name="description" Content="">')
-        Advanced = True
-      end
-      item
-        Name = 'html'
-        Code.Strings = (
-          '<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.0  Transitional//EN"'
-          '"http://www.w3.org/TR/REC-html40/loose.dtd">'
-          '<html>'
-          '  <head>'
-          '    <title><caret></title>'
-          '    <meta http-equiv="Content-Language" content="en">'
-          
-            '    <meta http-equiv="Content-Type" content="text/html; charset=' +
-            'windows-1251">'
-          '    <meta name="author" content="">'
-          '    <meta name="generator" content="">'
-          '    <meta name="keywords" content="">'
-          '    <meta name="description" content="">'
-          '    <link rel="stylesheet" type="text/css" href="">'
-          '    <link rel="shortcut icon" type="image/x-icon" href="">'
-          '  </head>'
-          '  <body>'
-          ''
-          '  </body>'
-          '</html>')
-        Advanced = True
-      end
-      item
-        Name = '--'
-        Code.Strings = (
-          '<!-- <caret> -->')
-        Advanced = True
-      end
-      item
-        Name = '!doct'
-        Description = 'dtd html'
-        Code.Strings = (
-          '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"'
-          '"http://www.w3.org/TR/REC-html40/loose.dtd">'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = '!doctx'
-        Description = 'dtd xhtml'
-        Code.Strings = (
-          '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"'
-          '"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = 'a'
-        Code.Strings = (
-          '<a href="<caret>"></a>')
-        Advanced = True
-      end
-      item
-        Name = 'an'
-        Description = 'link in new window'
-        Code.Strings = (
-          '<a target="_blank" href="<caret>"></a>')
-        Advanced = True
-      end
-      item
-        Name = 'form'
-        Code.Strings = (
-          '<form action="<caret>" method="post">'
-          '</form>')
-        Advanced = True
-      end
-      item
-        Name = 'formi'
-        Description = 'form with input tags'
-        Code.Strings = (
-          '<form action="<caret>" method=get>'
-          '  <input name="" type=text>'
-          '  <input type=submit>'
-          '  <input type=reset>'
-          '</form>')
-        Advanced = True
-      end
-      item
-        Name = 'input'
-        Code.Strings = (
-          '<input name="<caret>" type="text">')
-        Advanced = True
-      end
-      item
-        Name = 'frameset'
-        Code.Strings = (
-          '<frameset cols="30%,*">'
-          '  <frame name="" src="<caret>.html">'
-          '  <frame name="" src=".html">'
-          '</frameset>')
-        Advanced = True
-      end
-      item
-        Name = 'img'
-        Code.Strings = (
-          '<img src="<caret>" alt="">')
-        Advanced = True
-      end
-      item
-        Name = 'js'
-        Code.Strings = (
-          
-            '<script src="<caret>.js" type="text/javascript" language="javasc' +
-            'ript"></script>')
-        Advanced = True
-      end
-      item
-        Name = 'script'
-        Code.Strings = (
-          '<script language="JavaScript" type="text/javascript">'
-          '<!--'
-          '  <caret>'
-          '//-->'
-          '</script>')
-        Advanced = True
-      end
-      item
-        Name = 'style'
-        Code.Strings = (
-          '<style type="text/css">'
-          '<!--'
-          '  <caret>'
-          '//-->'
-          '</style>')
-        Advanced = True
-      end
-      item
-        Name = 'table'
-        Code.Strings = (
-          '<table cellspacing=0 cellpadding=0 width="100%">'
-          '  <tr>'
-          '    <td><caret></td>'
-          '  </tr>'
-          '</table>')
-        Advanced = True
-      end
-      item
-        Name = 'tableh'
-        Description = 'table with header'
-        Code.Strings = (
-          
-            '<table align="left" border=0 cellspacing=0 cellpadding=0 width="' +
-            '100%">'
-          '  <tr align="left" valign="middle">'
-          '    <th><caret></th>'
-          '    <th></th>'
-          '  <tr align="left" valign=middle">'
-          '    <td></td>'
-          '    <td></td>'
-          '</table>')
-        Advanced = True
-      end
-      item
-        Name = 'tr'
-        Code.Strings = (
-          '<tr>'
-          '  <td><caret></td>'
-          '</tr>')
-        Advanced = True
-      end
-      item
-        Name = 'td'
-        Code.Strings = (
-          '<td><caret></td>')
-        Advanced = True
-      end
-      item
-        Name = 'ul'
-        Code.Strings = (
-          '<ul type=square>'
-          '  <li><caret>'
-          '</ul>')
-        Advanced = True
-      end
-      item
-        Name = 'ol'
-        Code.Strings = (
-          '<ol>'
-          '  <li><caret>'
-          '</ol>')
-        Advanced = True
-      end
-      item
-        Name = 'xml'
-        Code.Strings = (
-          '<?xml version="1.0" encoding="windows-1251"?>'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = 'xmlcss'
-        Code.Strings = (
-          '<?xml version="1.0" encoding="windows-1251"?>'
-          '<?xml-stylesheet type="text/css" href="<caret>"?>')
-        Advanced = True
-      end
-      item
-        Name = 'perl'
-        Description = 'perl header'
-        Code.Strings = (
-          '#!/usr/bin/perl'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = 'wml'
-        Code.Strings = (
-          '<?xml version="1.0"?>'
-          
-            '<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.' +
-            'wapforum.org/DTD/wml_1.2.xml">'
-          '<caret>')
-        Advanced = True
-      end
-      item
-        Name = 'if_else'
-        Code.Strings = (
-          'if (<caret>){'
-          ''
-          '}'
-          'else{'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'function'
-        Code.Strings = (
-          'function <caret>(){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'sub'
-        Code.Strings = (
-          'sub <caret> {'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'for'
-        Code.Strings = (
-          'for ($<caret>i = 0; $i < $n; $i++){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'while'
-        Code.Strings = (
-          'while (<caret>){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'do'
-        Code.Strings = (
-          'do{'
-          ''
-          '}'
-          'while (<caret>);')
-        Advanced = True
-      end
-      item
-        Name = 'switch'
-        Code.Strings = (
-          'switch ($<caret>i){'
-          '  case 0:'
-          ''
-          '    break;'
-          '  case 1:'
-          ''
-          '    break;'
-          '  case 2:'
-          ''
-          '    break;'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'print'
-        Description = 'function print'
-        Code.Strings = (
-          'print "<caret>";')
-        Advanced = True
-      end
-      item
-        Name = 'echo'
-        Code.Strings = (
-          'echo "<caret>";')
-        Advanced = True
-      end
-      item
-        Name = 'mail'
-        Description = 'function mail'
-        Code.Strings = (
-          'mail($<caret>email, $subject, $message, "From: $from_email");')
-        Advanced = True
-      end
-      item
-        Name = 'setcookie'
-        Code.Strings = (
-          'setcookie ("<caret>TestCookie", $value,time()+3600);')
-        Advanced = True
-      end
-      item
-        Name = 'mysql_con'
-        Code.Strings = (
-          
-            '$link = mysql_connect("<caret>mysql_host", "mysql_login", "mysql' +
-            '_password")'
-          '  or die ("Could not connect to MySQL");'
-          ''
-          'mysql_select_db("my_database")'
-          '  or die ("Could not select database");')
-        Advanced = True
-      end
-      item
-        Name = 'mysql_query'
-        Code.Strings = (
-          '$query = "<caret>SELECT * FROM my_table";'
-          '$result = mysql_query($query)'
-          '  or die("Query failed");'
-          ''
-          '// Output in HTML'
-          ''
-          'print "<table>\n";'
-          'while ($line = mysql_fetch_array($result))'
-          '{'
-          '  print "\t<tr>\n";'
-          '  while (list($col_name, $col_value) = each($line))'
-          '  {'
-          '    print "\t\t<td>$col_value</td>\n";'
-          '  }'
-          '  print "\t</tr>\n";'
-          '}'
-          'print "</table>\n";')
-        Advanced = True
-      end
-      item
-        Name = 'header'
-        Code.Strings = (
-          'Header("Content-type: <caret>image/png");')
-        Advanced = True
-      end
-      item
-        Name = 'location'
-        Code.Strings = (
-          'Header("Location: http://<caret>");')
-        Advanced = True
-      end
-      item
-        Name = 'fwrite'
-        Description = 'function fwrite'
-        Code.Strings = (
-          '$fp = fopen("<caret>file.txt", "w+");'
-          'fwrite($fp, "Test");'
-          'fclose($fp);')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <
       item
         DisplayName = 'Style sheet'
@@ -29704,171 +28517,7 @@ object SyntaxManager: TSyntaxManager
         NoEndRule = True
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'if'
-        Description = 'if ( ) {...}'
-        Code.Strings = (
-          'if (<caret>){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'func'
-        Description = 'function ( ) {...}'
-        Code.Strings = (
-          'function <caret>(){'
-          ''
-          '}'
-          '  ')
-        Advanced = True
-      end
-      item
-        Name = 'for'
-        Description = 'for($i=0; $i<x; $i++) {...}'
-        Code.Strings = (
-          'for($i=0; $i<<caret>; $i++){'
-          ''
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'while'
-        Description = 'while ( ) {...}'
-        Code.Strings = (
-          'while (<caret>){'
-          ''
-          '}'
-          '    ')
-        Advanced = True
-      end
-      item
-        Name = 'do'
-        Description = 'do {...} while'
-        Code.Strings = (
-          'do{'
-          ''
-          '}'
-          'while (<caret>);')
-        Advanced = True
-      end
-      item
-        Name = 'switch'
-        Description = 'swith...case'
-        Code.Strings = (
-          'switch ($<caret>i){'
-          '  case 0:'
-          ''
-          '    break;'
-          '  case 1:'
-          ''
-          '    break;'
-          '  case 2:'
-          ''
-          '    break;'
-          '}')
-        Advanced = True
-      end
-      item
-        Name = 'print'
-        Description = 'print " "'
-        Code.Strings = (
-          'print "<caret>";')
-        Advanced = True
-      end
-      item
-        Name = 'echo'
-        Description = 'echo " "'
-        Code.Strings = (
-          'echo "<caret>";')
-        Advanced = True
-      end
-      item
-        Name = 'mail'
-        Description = 'mail template'
-        Code.Strings = (
-          'mail($<caret>email, $subject, $message, "From: $from_email");')
-        Advanced = True
-      end
-      item
-        Name = 'setcookie'
-        Description = 'cookie for 1 hr'
-        Code.Strings = (
-          'setcookie ("<caret>", $value, time()+3600);')
-        Advanced = True
-      end
-      item
-        Name = 'mysql_con'
-        Description = 'connect to MySQL'
-        Code.Strings = (
-          
-            '$link = mysql_connect("<caret>mysql_host", "mysql_login", "mysql' +
-            '_password")'
-          '  or die ("Could not connect to MySQL");'
-          ''
-          'mysql_select_db("my_database")'
-          '  or die ("Could not select database");')
-        Advanced = True
-      end
-      item
-        Name = 'mysql_query'
-        Description = 'mysql query'
-        Code.Strings = (
-          '$query = "<caret>SELECT * FROM my_table";'
-          '$result = mysql_query($query)'
-          '  or die("Query failed");'
-          ''
-          '// Output in HTML'
-          ''
-          'print "<table>\n";'
-          'while ($line = mysql_fetch_array($result))'
-          '{'
-          '  print "\t<tr>\n";'
-          '  while (list($col_name, $col_value) = each($line))'
-          '  {'
-          '    print "\t\t<td>$col_value</td>\n";'
-          '  }'
-          '  print "\t</tr>\n";'
-          '}'
-          'print "</table>\n";')
-        Advanced = True
-      end
-      item
-        Name = 'header'
-        Description = 'header'
-        Code.Strings = (
-          'Header("Content-type: <caret>image/png");')
-        Advanced = True
-      end
-      item
-        Name = 'loc'
-        Description = 'loc'
-        Code.Strings = (
-          'Header("Location: http://<caret>");')
-        Advanced = True
-      end
-      item
-        Name = 'fwrite'
-        Description = 'file output template'
-        Code.Strings = (
-          '$fp = fopen("<caret>file.txt", "w+");'
-          'fwrite($fp, "Test");'
-          'fclose($fp);')
-        Advanced = True
-      end
-      item
-        Name = 'if_else'
-        Description = 'if...else'
-        Code.Strings = (
-          'if (<caret>){'
-          ''
-          '}'
-          'else{'
-          ''
-          '}')
-        Advanced = True
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <
       item
         DisplayName = 'PHP_dev_HTML'
@@ -32131,138 +30780,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpAny
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'tread'
-        Description = 'Read Table'
-        Code.Strings = (
-          't0 <- read.table("|", sep = "\t", header = FALSE)')
-      end
-      item
-        Name = 'func'
-        Description = 'Function'
-        Code.Strings = (
-          '| <- function() {'
-          ''
-          '}')
-      end
-      item
-        Name = 'if'
-        Description = 'If Statement'
-        Code.Strings = (
-          'if(|) {'
-          ''
-          '}')
-      end
-      item
-        Name = 'ifelse'
-        Description = 'If Else Statement'
-        Code.Strings = (
-          'if (|) {'
-          ''
-          '} else {'
-          ''
-          '}')
-      end
-      item
-        Name = 'ifel'
-        Description = 'IfElse Function'
-        Code.Strings = (
-          'ifelse(|, , )')
-      end
-      item
-        Name = 'forin'
-        Description = 'For In Statement'
-        Code.Strings = (
-          'for (| in ) {'
-          ''
-          '}')
-      end
-      item
-        Name = 'while'
-        Description = 'While Statement'
-        Code.Strings = (
-          'while(|) {'
-          ''
-          '}')
-      end
-      item
-        Name = 'repeat'
-        Description = 'Repeat Statement'
-        Code.Strings = (
-          'repeat(|) {'
-          ''
-          '}')
-      end
-      item
-        Name = 'switch'
-        Description = 'Switch Function'
-        Code.Strings = (
-          'switch(|, )')
-      end
-      item
-        Name = 'src'
-        Description = 'Load Source file'
-        Code.Strings = (
-          'source("|")')
-      end
-      item
-        Name = 'di'
-        Description = 'Import SPSS Data'
-        Code.Strings = (
-          
-            'library(foreign); Dataset <- read.spss("|", use.value.labels=TRU' +
-            'E, max.value.labels=Inf, to.data.frame=TRUE) ')
-      end
-      item
-        Name = 'cd'
-        Description = 'Change Working Directory'
-        Code.Strings = (
-          'setwd("|")')
-      end
-      item
-        Name = 'hs'
-        Description = 'Search for Help'
-        Code.Strings = (
-          'help.search("|")')
-      end
-      item
-        Name = 'ha'
-        Description = 'Apropos'
-        Code.Strings = (
-          'apropos("|")')
-      end
-      item
-        Name = 'lp'
-        Description = 'Load Package'
-        Code.Strings = (
-          
-            '{.pkg <- select.list(sort(.packages(all.available = TRUE))); if(' +
-            'nchar(.pkg)) library(.pkg, character.only=TRUE); rm(.pkg)}')
-      end
-      item
-        Name = 'ro'
-        Description = 'Remove all Objects'
-        Code.Strings = (
-          
-            '.ans <- winDialog('#39'yesno'#39', '#39'Are you sure?'#39'); if (.ans == '#39'YES'#39') ' +
-            'rm(list=ls(all=TRUE)) else rm(.ans)')
-      end
-      item
-        Name = 'ps'
-        Description = 'PostScript Output'
-        Code.Strings = (
-          'postscript(file = "|", width = 5,'
-          '  height = 5, horizontzal = FALSE, paper = "special",'
-          '  onefile = FALSE)')
-      end
-      item
-        Name = 'pdf'
-        Description = 'PDF Output'
-        Code.Strings = (
-          'pdf(file = "|", width = 5,'
-          '  height = 5, onefile = FALSE)')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       'n <- .1 + 1.2 + 1e2 + 1e-2 + 1.2L + 1e-2L'
@@ -33158,221 +31676,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpBound
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'be'
-        Description = 'begin end'
-        Code.Strings = (
-          'begin'
-          '  | '
-          'end;')
-      end
-      item
-        Name = 'arrayd'
-        Description = 'array declaration (var)'
-        Code.Strings = (
-          'array[0..|] of ;')
-      end
-      item
-        Name = 'arrayc'
-        Description = 'array declaration (const)'
-        Code.Strings = (
-          'array[0..|] of = ();')
-      end
-      item
-        Name = 'cases'
-        Description = 'case statement'
-        Code.Strings = (
-          'case | of'
-          '  : ;'
-          '  : ;'
-          'end;')
-      end
-      item
-        Name = 'casee'
-        Description = 'case statement (with else)'
-        Code.Strings = (
-          'case | of'
-          '  : ;'
-          '  : ;'
-          'else ;'
-          'end;')
-      end
-      item
-        Name = 'classf'
-        Description = 'class declaration (all parts)'
-        Code.Strings = (
-          'T| = class(T)'
-          'private'
-          ''
-          'protected'
-          ''
-          'public'
-          ''
-          'published'
-          ''
-          'end;')
-      end
-      item
-        Name = 'classd'
-        Description = 'class declaration (no parts)'
-        Code.Strings = (
-          'T| = class(T)'
-          ''
-          'end;')
-      end
-      item
-        Name = 'classc'
-        Description = 'class declaration (with Create/Destroy overrides)'
-        Code.Strings = (
-          'T| = class(T)'
-          'private'
-          ''
-          'protected'
-          ''
-          'public'
-          '  constructor Create; override;'
-          '  destructor Destroy; override;'
-          'published'
-          ''
-          'end;')
-      end
-      item
-        Name = 'fors'
-        Description = 'for (no begin/end)'
-        Code.Strings = (
-          'for | :=  to  do')
-      end
-      item
-        Name = 'forb'
-        Description = 'for statement'
-        Code.Strings = (
-          'for | :=  to  do'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'function'
-        Description = 'function declaration'
-        Code.Strings = (
-          'function |(): ;'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'ifs'
-        Description = 'if (no begin/end)'
-        Code.Strings = (
-          'if | then')
-      end
-      item
-        Name = 'ifb'
-        Description = 'if statement'
-        Code.Strings = (
-          'if | then'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'ife'
-        Description = 'if then (no begin/end) else (no begin/end)'
-        Code.Strings = (
-          'if | then'
-          ''
-          'else')
-      end
-      item
-        Name = 'ifeb'
-        Description = 'if then else'
-        Code.Strings = (
-          'if | then'
-          'begin'
-          ''
-          'end'
-          'else'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'procedure'
-        Description = 'procedure declaration'
-        Code.Strings = (
-          'procedure |();'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'trye'
-        Description = 'try except'
-        Code.Strings = (
-          'try'
-          '  |'
-          'except'
-          ''
-          'end;')
-      end
-      item
-        Name = 'tryf'
-        Description = 'try finally'
-        Code.Strings = (
-          'try'
-          '  |'
-          'finally'
-          ''
-          'end;')
-      end
-      item
-        Name = 'trycf'
-        Description = 'try finally (with Create/Free)'
-        Code.Strings = (
-          '|variable := typename.Create;'
-          'try'
-          ''
-          'finally'
-          '  variable.Free;'
-          'end;')
-      end
-      item
-        Name = 'whileb'
-        Description = 'while statement'
-        Code.Strings = (
-          'while | do'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'whiles'
-        Description = 'while (no begin)'
-        Code.Strings = (
-          'while | do')
-      end
-      item
-        Name = 'withb'
-        Description = 'with statement'
-        Code.Strings = (
-          'with | do'
-          'begin'
-          ''
-          'end;')
-      end
-      item
-        Name = 'withs'
-        Description = 'with (no begin)'
-        Code.Strings = (
-          'with | do')
-      end
-      item
-        Name = 'prop'
-        Description = 'property'
-        Code.Strings = (
-          'property | read  write;')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '{Syntax highlighting}'
@@ -35025,8 +33329,8 @@ object SyntaxManager: TSyntaxManager
     Formats = <
       item
         DisplayName = 'Text'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clSilver
         Font.Height = -12
         Font.Name = 'Lucida Console'
         Font.Style = []
@@ -36837,7 +35141,7 @@ object SyntaxManager: TSyntaxManager
       'line'
       'context'
       'default')
-    Extentions = 'diff patch'
+    Extentions = 'diff dif patch'
     LexerName = 'Diff'
     SkipSpaces = False
     Notes.Strings = (
@@ -37134,69 +35438,48 @@ object SyntaxManager: TSyntaxManager
   object SyntAnal67: TLibSyntAnalyzer
     Formats = <
       item
-        DisplayName = 'Text'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
-        DisplayName = 'Text-Italic'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsItalic]
-      end
-      item
-        DisplayName = 'Text-Bold'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold]
-      end
-      item
-        DisplayName = 'Text-Bold_Italic'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = [fsBold, fsItalic]
-      end
-      item
-        DisplayName = 'Link'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlue
-        Font.Height = -13
-        Font.Name = 'Courier New'
-        Font.Style = []
-      end
-      item
         DisplayName = 'Heading'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
+        Font.Color = clMaroon
         Font.Height = -19
-        Font.Name = 'Courier New'
+        Font.Name = 'Consolas'
         Font.Style = [fsBold]
         FormatType = ftCustomFont
       end
       item
-        DisplayName = 'Quote'
+        DisplayName = 'Comment'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = clGreen
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
       end
       item
-        DisplayName = 'Codeblock'
+        DisplayName = 'Quote'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clPurple
+        Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
+        BgColor = 12645824
+      end
+      item
+        DisplayName = 'Text'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Consolas'
+        Font.Style = []
+        FormatType = ftCustomFont
+      end
+      item
+        DisplayName = 'Codeblock'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BgColor = 15779980
       end
       item
         DisplayName = 'Block'
@@ -37205,92 +35488,246 @@ object SyntaxManager: TSyntaxManager
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = []
-        BgColor = clMoneyGreen
+        BgColor = 15779980
       end
       item
-        DisplayName = 'Comment'
+        DisplayName = 'Link'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clGray
+        Font.Color = 3289830
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Image'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 15086130
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Reference'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 13030
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Footnote'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 3277030
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'HTML Code'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 8404992
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Bold'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Italic'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
         Font.Height = -13
         Font.Name = 'Courier New'
         Font.Style = [fsItalic]
+      end
+      item
+        DisplayName = 'Bold-Italic'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold, fsItalic]
+      end
+      item
+        DisplayName = 'Definition'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+        BgColor = 14737357
+        BorderColorLeft = 16384
+      end
+      item
+        DisplayName = 'List'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BgColor = 16763594
+      end
+      item
+        DisplayName = 'Crossed out'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsStrikeOut]
       end>
     TokenRules = <
       item
-        DisplayName = 'Comment'
-        StyleName = 'Comment'
-        TokenType = 1
-        Expression = '(?s)\<!--.*?(--\>|\Z)'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'Text-Bold_Italic'
-        StyleName = 'Text-Bold_Italic'
-        TokenType = 1
+        DisplayName = 'Bold-Italic'
+        StyleName = 'Bold-Italic'
+        TokenType = 11
         Expression = '(\*\*\*|___).*?(\*\*\*|___|$)'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
-        DisplayName = 'Text-Bold'
-        StyleName = 'Text-Bold'
-        TokenType = 1
+        DisplayName = 'Bold'
+        StyleName = 'Bold'
+        TokenType = 9
         Expression = '(\*\*|__).*?(\*\*|__|$)'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
-        DisplayName = 'Text-Italic'
-        StyleName = 'Text-Italic'
-        TokenType = 1
+        DisplayName = 'Italic'
+        StyleName = 'Italic'
+        TokenType = 10
         Expression = '#char after * is non-space'#13#10'(\*|_) \S.*? (\*|_)'
-        ColumnFrom = 0
-        ColumnTo = 0
-      end
-      item
-        DisplayName = 'Link'
-        StyleName = 'Link'
-        TokenType = 1
-        Expression = '\[ .+? \]'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
         DisplayName = 'Heading'
         StyleName = 'Heading'
-        TokenType = 2
         Expression = '^\#.*|.*\z-{2,}|.*\z=+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment'
+        StyleName = 'Comment'
+        TokenType = 2
+        Expression = '(?s)\<!--.*?--\>  |'#13#10'(?s)/\*.*?\*/'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
         DisplayName = 'Quote'
         StyleName = 'Quote'
+        TokenType = 3
         Expression = '^>.*$'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'HTML Code'
+        StyleName = 'HTML Code'
+        TokenType = 8
+        Expression = '\&[^;]+\; |'#13#10'\<[^\>]+>'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Link'
+        StyleName = 'Link'
+        TokenType = 13
+        Expression = '\[[^\]]+\]\([^\)]+\)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Image'
+        StyleName = 'Image'
+        TokenType = 14
+        Expression = '!\[[^\]]+\]\([^\)]+\)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Footnote'
+        StyleName = 'Footnote'
+        TokenType = 7
+        Expression = '^\[\^[^\]\^]+\]:.*?($|\z) |'#13#10'\[\^[^\]]+\]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'List'
+        StyleName = 'List'
+        TokenType = 15
+        Expression = 
+          '^[\x20\x09]*(\d\.|\-\ |+\ |\*\ |\+\ |[\(]?[a-z\d]?[\.\)]{1})|'#13#10'^' +
+          '\(@[^\)]*\)#pandoc list'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Reference'
+        StyleName = 'Reference'
+        TokenType = 6
+        Expression = 
+          '^\[[^\]\^]+\]:.*?($|\z) |'#13#10'\[[^\]]+\]\[[^\]]+\] |'#13#10'\(@[^\)]*\) #' +
+          'pandoc list reference'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Definition'
+        StyleName = 'Definition'
+        TokenType = 13
+        Expression = 
+          '^[\x20\t]*?.+(\z)+?*?^[\x20\t]*?:\ \ \ '#13#10'# Pandoc Style (:\ \ \ ' +
+          ')'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
         DisplayName = 'Block'
         StyleName = 'Block'
-        Expression = '(?s)(```|`) .*? (\1|\Z)'
+        TokenType = 5
+        Expression = '(?s)(^```|`).*?(^```|`)|'#13#10'(?s)^~~~.*?^~~~)'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
         DisplayName = 'Codeblock'
         StyleName = 'Codeblock'
-        TokenType = 1
-        Expression = '^\x20{4}.*$'
+        TokenType = 4
+        Expression = '^[\x20\x09]{4,}.+$'#13#10'#Sometimes conflicts with Definition'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
-        DisplayName = 'Text'
-        StyleName = 'Text'
-        TokenType = 1
-        Expression = '(?r)[\w\.\,\:\+\-]+'
+        DisplayName = 'Crossed Out'
+        StyleName = 'Crossed out'
+        TokenType = 12
+        Expression = '(~~).*?(~~)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Footnote Inline'
+        StyleName = 'Footnote'
+        TokenType = 8
+        Expression = '\^\[.+?\] #Pandoc Inline-Style'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Wiki link'
+        StyleName = 'Link'
+        TokenType = 18
+        Expression = '\[.+?\] '
         ColumnFrom = 0
         ColumnTo = 0
       end>
@@ -37299,41 +35736,93 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Header'
         ConditionList = <
           item
-            TokenTypes = 4
+            TokenTypes = 1
           end>
         EndOfTextClose = True
-        NotCollapsed = True
-        HighlightPos = cpAny
+        NameFmt = '%s0'
+        HighlightPos = cpBound
+        CollapseFmt = '%s0'
         SelfClose = True
         IgnoreAsParent = False
       end>
     CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
-      'Header'
-      '======'
+      '# Header'
+      '<!-- This is a comment -->'
+      '/* This, too */'
       ''
-      '##Header too'
+      '`Inline Code` inside a paragraph with *italic*, '
+      '**bold** and ***bold italic***, [^footnote] and + '
+      '[reference][ref]. <HTML> syntax and special &harr; '
+      'chars are highlighted, [Hyperlink text](url "title") '
+      'and ![alternative text](image adress "title"). '
+      '~~Crossed out~~ is supported, too. '
+      ''
+      '~~~'
+      'Codeblocks'
+      '~~~'
+      ''
+      '    Codeblock by indention'
+      ''
+      #9'1. But not for numbered'
+      #9'-  or unordered lists'
+      '    '#9'+ with several indentions'
+      '        '#9'* leading digit, + - * '
+      '1. note: unordered needs a sign & blank'
+      #9'(a) extended Pandoc interpretation is supported'
+      '    '#9'i) with roman numbering (i)    '
+      ''
+      '(@) Pandoc Numbered example lists'
+      '(@ref) with or without reference, where (@ref) is'
+      'handled as reference'
+      ''
+      '> quoted text'
+      ''
+      'Definition lists'
+      ':   In a single line'
+      ''
+      '    indented definition lists'
+      ''
+      #9':   paragraph (blank line between)'
+      ''
+      '[ref]: url "title"'
+      '[^footnote]: this is a footnote *italic* '
+      ''
+      '/* Optional */'
+      'header'
+      '='
       ''
       '```'
-      'This is a block'
+      'codeblock'
       '```'
-      ''
-      '2nd paragraph. *Italic*, **bold**, ***bold-italic***.'
-      'Some `preformatted` text.'
-      'Some [not link]. Some [link](\www\www). '
-      ''
-      '> Block quotes are'
-      '> written like so.')
+      '    '
+      '    ')
     TokenTypeNames.Strings = (
-      'Line'
-      'Other'
-      'Header')
-    Extentions = 'md'
+      'Heading'
+      'Text'
+      'Comment'
+      'Quote'
+      'Codeblock'
+      'Block'
+      'Reference'
+      'Footnote'
+      'Footnote-Inline'
+      'HTML Code'
+      'Bold'
+      'Italic'
+      'Bold Italic'
+      'Crossed out'
+      'Definition'
+      'Link'
+      'Image'
+      'List'
+      'Wiki link')
+    Extentions = 'md markdown mkd'
     LexerName = 'Markdown'
     SkipSpaces = False
     Notes.Strings = (
-      'Author: Matthias030 (SynWrite admin)')
+      'by NoSi Version 1.0 (2014-01-20) ')
     Charset = DEFAULT_CHARSET
   end
   object SyntAnal68: TLibSyntAnalyzer
@@ -37813,10 +36302,10 @@ object SyntaxManager: TSyntaxManager
         ColumnTo = 0
       end
       item
-        DisplayName = 'Id'
-        StyleName = 'Id'
-        TokenType = 2
-        Expression = '[^\|]+'
+        DisplayName = 'Params( )'
+        StyleName = 'Params'
+        TokenType = 3
+        Expression = '\(.*?\)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -37824,7 +36313,15 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Params'
         StyleName = 'Params'
         TokenType = 3
-        Expression = '\(.*?(\)|$)'
+        Expression = '(?<=^\S+\s+\S+\s+) .+? (?=\|)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id'
+        StyleName = 'Id'
+        TokenType = 2
+        Expression = '[^\|\(\)]+?'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -37839,7 +36336,10 @@ object SyntaxManager: TSyntaxManager
     CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
-      'type Name(some params) |Comment')
+      'type Name (some params) |Comment'
+      'typ name%20name params |Comment'
+      'type name(params)'
+      'typ name')
     TokenTypeNames.Strings = (
       'Comment'
       'Type'
@@ -37968,7 +36468,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String '#39
         StyleName = 'String'
         TokenType = 4
-        Expression = #39' (\\\\|\\'#39'|.)*? ('#39'|$)'
+        Expression = '(?s)'#39' (\\.|.)*? ('#39'|$)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -37976,7 +36476,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'String "'
         StyleName = 'String'
         TokenType = 4
-        Expression = '" (\\\\|\\"|.)*? ("|$)'
+        Expression = '(?s)" (\\.|.)*? ("|$)'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -38251,88 +36751,7 @@ object SyntaxManager: TSyntaxManager
         NoEndRule = True
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'function'
-        Code.Strings = (
-          'def |():'
-          #9'pass')
-      end
-      item
-        Name = 'method'
-        Code.Strings = (
-          'def |(self):'
-          #9'pass')
-      end
-      item
-        Name = 'class'
-        Code.Strings = (
-          'class |(object):'
-          #9'"""docstring"""'
-          #9'def __init__(self, arg):'
-          #9#9'super(ClassName, self).__init__()'
-          #9#9'self.arg = arg')
-      end
-      item
-        Name = 'property'
-        Code.Strings = (
-          'def |foo():'
-          '    doc = "The foo property."'
-          '    def fget(self):'
-          '        return self._foo'
-          '    def fset(self, value):'
-          '        self._foo = value'
-          '    def fdel(self):'
-          '        del self._foo'
-          '    return locals()'
-          'foo = property(**foo())')
-      end
-      item
-        Name = 'if/__name__'
-        Code.Strings = (
-          'if __name__ == '#39'__main__'#39':'
-          #9'|')
-      end
-      item
-        Name = 'try/except'
-        Code.Strings = (
-          'try:'
-          #9'|pass'
-          'except Exception, e:'
-          #9'raise e')
-      end
-      item
-        Name = 'try/except/else'
-        Code.Strings = (
-          'try:'
-          #9'|pass'
-          'except Exception, e:'
-          #9'raise e'
-          'else:'
-          #9'pass')
-      end
-      item
-        Name = 'try/except/finally'
-        Code.Strings = (
-          'try:'
-          #9'|pass'
-          'except Exception, e:'
-          #9'raise e'
-          'finally:'
-          #9'pass')
-      end
-      item
-        Name = 'try/except/else/finally'
-        Code.Strings = (
-          'try:'
-          #9'|pass'
-          'except Exception, e:'
-          #9'raise'
-          'else:'
-          #9'pass'
-          'finally:'
-          #9'pass')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '#Comment'
@@ -38375,7 +36794,13 @@ object SyntaxManager: TSyntaxManager
     Notes.Strings = (
       'New Python lexer, by Alex (SynWrite)'
       'For indent-based folding lexer must be tweaked:'
-      'see SynWrite lexer documentation about these tweaks.')
+      'see SynWrite lexer documentation about these tweaks.'
+      ''
+      'Known issue: multiline function def not catched into tree, e.g.:'
+      'def nnn(test,'
+      '    test2, test3):'
+      '    '
+      '    ')
     LineComment = '#'
     Charset = DEFAULT_CHARSET
     Left = 144
@@ -40869,156 +39294,7 @@ object SyntaxManager: TSyntaxManager
         HighlightPos = cpBound
         IgnoreAsParent = False
       end>
-    CodeTemplates = <
-      item
-        Name = 'case'
-        Description = 'case'
-        Code.Strings = (
-          'case |_ => ')
-      end
-      item
-        Name = 'class'
-        Description = 'class block'
-        Code.Strings = (
-          'class (|) extends Any {'
-          #9
-          '}')
-      end
-      item
-        Name = 'enumeration'
-        Description = 'enumeration'
-        Code.Strings = (
-          'object |My extends Enumeration {'
-          '  type My = Value'
-          '  val MyEnumeration1, MyEnumeration2 = Value'
-          '}'
-          ''
-          'import My._')
-      end
-      item
-        Name = 'if'
-        Description = 'if block'
-        Code.Strings = (
-          'if(|){'
-          ''
-          '}')
-      end
-      item
-        Name = 'lambda'
-        Description = 'lambda'
-        Code.Strings = (
-          '(|) => {}')
-      end
-      item
-        Name = 'main'
-        Description = 'main function'
-        Code.Strings = (
-          'def main(args: Array[String]): Unit = {'
-          '  |'
-          '}')
-      end
-      item
-        Name = 'match'
-        Description = 'match block'
-        Code.Strings = (
-          'match {'
-          #9'case |_ => '
-          '}')
-      end
-      item
-        Name = 'method'
-        Description = 'method block'
-        Code.Strings = (
-          'def |name(arg: Type) = {'
-          #9
-          '}')
-      end
-      item
-        Name = 'object'
-        Description = 'object block'
-        Code.Strings = (
-          'object | extends Any {'
-          #9
-          '}')
-      end
-      item
-        Name = 'trait'
-        Description = 'trait'
-        Code.Strings = (
-          'trait | {'
-          #9
-          '}')
-      end
-      item
-        Name = 'ccase'
-        Description = 'case/class block'
-        Code.Strings = (
-          'case class |() extends Any {'
-          #9
-          '}')
-      end
-      item
-        Name = 'for'
-        Description = 'for block'
-        Code.Strings = (
-          'for( | <- 0 to 10) {'
-          #9
-          '}')
-      end
-      item
-        Name = 'fory'
-        Description = 'for yield'
-        Code.Strings = (
-          'for( | <- 0 to 10) yield ')
-      end
-      item
-        Name = 'script'
-        Description = 'shell script'
-        Code.Strings = (
-          '#!/bin/sh'
-          '  exec scala "$0" "$@"'
-          '!#'
-          ''
-          '|')
-      end
-      item
-        Name = 'tostr'
-        Description = 'toString'
-        Code.Strings = (
-          'override def toString(): String = |  ')
-      end
-      item
-        Name = 'objmain'
-        Description = 'object with main function'
-        Code.Strings = (
-          'object | {'
-          '  def main(args: Array[String]): Unit = {'
-          '    '
-          '  }'
-          '}')
-      end
-      item
-        Name = 'imp'
-        Description = 'import mutable/immutable'
-        Code.Strings = (
-          'import scala.collection.{ mutable, immutable, generic }|')
-      end
-      item
-        Name = 'try'
-        Description = 'try/catch'
-        Code.Strings = (
-          'try { '
-          '  |'
-          '} catch {'
-          '  case e: Exception => '
-          '}')
-      end
-      item
-        Name = 'env'
-        Description = '#!/usr/bin/env'
-        Code.Strings = (
-          '#!/usr/bin/env |')
-      end>
+    CodeTemplates = <>
     SubAnalyzers = <>
     SampleText.Strings = (
       '//Comment here'
@@ -42192,6 +40468,763 @@ object SyntaxManager: TSyntaxManager
     Extentions = 'synw-snippet'
     LexerName = 'SynWrite snippets'
     SkipSpaces = False
+    Charset = DEFAULT_CHARSET
+  end
+  object SyntAnal31: TLibSyntAnalyzer
+    Formats = <
+      item
+        DisplayName = 'Symbol'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Number'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'String'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Identifier'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Id Keyword'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Id Logical'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clPurple
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsBold]
+      end
+      item
+        DisplayName = 'Id brackets'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clPurple
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'Comment'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGray
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = [fsItalic]
+      end
+      item
+        DisplayName = 'Preprocessor'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clGreen
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+      end
+      item
+        DisplayName = 'C'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        BgColor = clCream
+        FormatType = ftBackGround
+      end>
+    TokenRules = <
+      item
+        DisplayName = 'String'
+        StyleName = 'String'
+        TokenType = 4
+        Expression = '("|'#39')(\\\1|\\\\|.)*?(\1|$)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Func begin'
+        StyleName = 'Id Keyword'
+        TokenType = 7
+        Expression = 
+          '\b(static\s+)? \b(function|func|procedure|proc|method \s+ proced' +
+          'ure|method|meth)\b'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id const'
+        StyleName = 'Id Logical'
+        TokenType = 2
+        Expression = '\.[TF]\.'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id brackets'
+        StyleName = 'Id brackets'
+        TokenType = 2
+        Expression = '\<[\w"]+\>'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Id'
+        StyleName = 'Identifier'
+        TokenType = 2
+        Expression = '[a-z_]\w*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Hex'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '0x[\da-f]*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Float'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = 
+          '#with exp. dot is optional '#13#10'(\d+ \.)? \d+ e [\+\-]? \d+ |'#13#10'#wit' +
+          'hout exp. dot is required'#13#10'\d+ \. \d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Integer'
+        StyleName = 'Number'
+        TokenType = 5
+        Expression = '(0d)?\d+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Shebang'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '^\#!.+$'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Preprocessor'
+        StyleName = 'Preprocessor'
+        TokenType = 6
+        Expression = '\#\w+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment /**/'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '(?s)/\*.*?(\*/|\Z)'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment //'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '//.*'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment &&'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '&&.*$'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Comment *'
+        StyleName = 'Comment'
+        TokenType = 1
+        Expression = '^\*.*$'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Single symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[\{\}\(\)\[\],;:\$@]'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end
+      item
+        DisplayName = 'Symbol'
+        StyleName = 'Symbol'
+        TokenType = 3
+        Expression = '[/\+\-\*=<>&/\|\^\.!\\\?%]+'
+        ColumnFrom = 0
+        ColumnTo = 0
+      end>
+    BlockRules = <
+      item
+        DisplayName = 'Keywords'
+        StyleName = 'Id Keyword'
+        BlockType = btTagDetect
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'announce'
+              'array'
+              'as'
+              'begin'
+              'break'
+              'case'
+              'class'
+              'continue'
+              'create'
+              'declare'
+              'define'
+              'do'
+              'dynamic'
+              'else'
+              'elseif'
+              'end'
+              'endcase'
+              'endclass'
+              'enddo'
+              'endif'
+              'endsequenc'
+              'endswitch'
+              'endtext'
+              'exit'
+              'exported'
+              'external'
+              'field'
+              'for'
+              'func'
+              'function'
+              'hidden'
+              'if'
+              'in'
+              'init'
+              'inline'
+              'len'
+              'list'
+              'local'
+              'logical'
+              'memvar'
+              'meth'
+              'method'
+              'next'
+              'nil'
+              'note'
+              'numeric'
+              'on'
+              'or'
+              'otherwise'
+              'parameters'
+              'private'
+              'proc'
+              'procedure'
+              'protected'
+              'public'
+              'recover'
+              'release'
+              'request'
+              'return'
+              'save'
+              'self'
+              'sequence'
+              'set'
+              'static'
+              'step'
+              'string'
+              'switch'
+              'text'
+              'then'
+              'to'
+              'using'
+              'var'
+              'virtual'
+              'while')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'func'
+        ConditionList = <
+          item
+            TokenTypes = 128
+            IgnoreCase = True
+          end>
+        BlockEnd = 'func end'
+        EndOfTextClose = True
+        NameFmt = 'func %sz-1'
+        RefToCondEnd = True
+        HighlightPos = cpBound
+        CollapseFmt = 'func %sz-1'
+        SelfClose = True
+        GrammaRuleName = 'Func'
+        IgnoreAsParent = True
+        AutoCloseText = '}'#13#10
+      end
+      item
+        DisplayName = 'func end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'create')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockOffset = 1
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Block comment'
+        BlockName = 'Block comment'
+        NotParent = True
+        AlwaysEnabled = True
+        ConditionList = <
+          item
+            TokenTypes = 2
+          end>
+        BlockEnd = 'Block comment end'
+        DisplayInTree = False
+        HighlightPos = cpBound
+        CollapseFmt = '{ ... }'
+        GrammaRuleName = 'comments'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'Block comment end'
+        BlockName = 'Block comment'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            CondType = tcNotEqual
+            TokenTypes = 2
+            IgnoreCase = True
+          end>
+        BlockOffset = 1
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '('
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '(')
+            TokenTypes = 8
+          end>
+        BlockEnd = ')'
+        NotCollapsed = True
+        DisplayInTree = False
+        DynHighlight = dhBound
+        HighlightPos = cpBoundTagBegin
+        DynSelectMin = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = ')'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ')')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '['
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '[')
+            TokenTypes = 8
+          end>
+        BlockEnd = ']'
+        NotCollapsed = True
+        DisplayInTree = False
+        DynHighlight = dhBound
+        HighlightPos = cpBoundTagBegin
+        DynSelectMin = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = ']'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ']')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpBound
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'if'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'if')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'if end'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'if end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'endif')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'do'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'do')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'do end'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'do end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'enddo')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'for'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'for')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'for end'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'for end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'next')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '{'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '{')
+            TokenTypes = 8
+          end>
+        BlockEnd = '}'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = '}'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              '}')
+            TokenTypes = 8
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'switch'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'switch')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'switch end'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'switch end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'endswitch')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'class'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'class')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              'create')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'class end'
+        NameFmt = 'class %s-1'
+        HighlightPos = cpAny
+        CollapseFmt = 'class %s-1'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'class end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'endclass')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'text'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'to')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              'text')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'text end'
+        DisplayInTree = False
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'text end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'endtext')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'case'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'case')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              'do')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'case end'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'case end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'endcase')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'seq'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'sequence')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              'begin')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        BlockEnd = 'seq end'
+        DisplayInTree = False
+        HighlightPos = cpAny
+        DrawStaple = True
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'seq end'
+        BlockType = btRangeEnd
+        ConditionList = <
+          item
+            TagList.Strings = (
+              'sequence')
+            TokenTypes = 4
+            IgnoreCase = True
+          end
+          item
+            TagList.Strings = (
+              'end')
+            TokenTypes = 4
+            IgnoreCase = True
+          end>
+        HighlightPos = cpAny
+        IgnoreAsParent = False
+      end>
+    CodeTemplates = <>
+    SubAnalyzers = <
+      item
+        DisplayName = 'C'
+        StyleName = 'C'
+        StartExpression = '\#pragma \s+ begindump'
+        EndExpression = '\#pragma \s+ enddump'
+        SyntAnalyzer = SyntAnal55
+        IncludeBounds = True
+      end>
+    SampleText.Strings = (
+      '/* Comment */'
+      '#if 0'
+      '  Nil: NIL; String: "hello", '#39'hello'#39
+      '  Date: 0d20100405; Logical: .T., .F.'
+      '#endif  '
+      ''
+      'FUNCTION Ending( cFile )'
+      '   LOCAL cLine'
+      '   FOR EACH cLine IN hb_ATokens( )'
+      '      IF Right( cLine, 100.00 ) == "www"'
+      '         RETURN .T.'
+      '      ENDIF'
+      '   NEXT'
+      '   RETURN .F.'
+      ''
+      'CREATE CLASS RemObject'
+      ''
+      'STATIC FUNCTION RemEnding( cFile, nErr )'
+      '   SWITCH nErr'
+      '   CASE BLAT_SUCCESS'
+      '      RETURN BLAT_TEXT_SUCCESS'
+      '   OTHERWISE'
+      '      RETURN BLAT_TEXT_ERR_UNKNOWN'
+      '   ENDSWITCH'
+      '       '
+      'ENDCLASS   ')
+    TokenTypeNames.Strings = (
+      'Unknown'
+      'Comment'
+      'Identifier'
+      'Symbol'
+      'String'
+      'Number'
+      'Preprocessor'
+      'FuncId')
+    Extentions = 'hb hbx prg'
+    LexerName = 'Harbour'
+    Notes.Strings = (
+      'Author: Alexey (SynWrite)')
+    LineComment = '//'
     Charset = DEFAULT_CHARSET
   end
 end

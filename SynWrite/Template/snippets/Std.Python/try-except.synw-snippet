@@ -1,8 +1,8 @@
 name=try/except
-id=try-e
+id=try.e
 lex=Python
 text=
 try:
 	${1:pass}
-except Exception as e:
-	${2:raise e}
+except ${2:Exception} as e:
+	${3:raise e}

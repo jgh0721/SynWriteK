@@ -1,0 +1,5 @@
+name=list-comprehension-if from list
+id=colist.if
+lex=Python
+text=
+[${1} for ${1} in ${2:src_list} if ${1}]

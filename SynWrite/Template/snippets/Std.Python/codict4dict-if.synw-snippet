@@ -1,0 +1,5 @@
+name=dict-comprehension-if from other dict
+id=codict.if
+lex=Python
+text=
+{(${1},${2}) for ${1},${2} in ${3:src_dict} if ${1}}

@@ -1,0 +1,8 @@
+name=elseif ...
+id=elseif
+lex=PHP,PHP (dev)
+text=
+elseif (${1:condition}) {
+	${0:# code...}
+}
+

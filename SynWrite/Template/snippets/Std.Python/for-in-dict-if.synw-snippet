@@ -1,0 +1,6 @@
+name=for-loop for each in dict if
+id=ford.if
+lex=Python
+text=
+for ${1:k,v} in {(${2},${3}) for ${2},${3} in ${4:src_dict} if ${2}}:
+	${0:pass}

@@ -1,0 +1,5 @@
+name=SESSION['...']
+id=$_
+lex=PHP,PHP (dev)
+text=
+$_SESSION['${1:variable}']

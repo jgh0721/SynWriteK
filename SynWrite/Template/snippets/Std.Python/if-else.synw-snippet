@@ -1,5 +1,5 @@
 name=if-else
-id=ifel
+id=ife
 lex=Python
 text=
 if ${1:what}:

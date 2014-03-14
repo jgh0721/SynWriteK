@@ -1,0 +1,8 @@
+name=try
+id=try
+lex=Python
+text=
+try:
+	${1:pass}
+except:
+	${2:pass}

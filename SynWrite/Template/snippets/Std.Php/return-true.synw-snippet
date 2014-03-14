@@ -1,0 +1,5 @@
+name=return true
+id=ret1
+lex=PHP,PHP (dev)
+text=
+return true;${0}
