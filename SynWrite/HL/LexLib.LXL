@@ -1630,7 +1630,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'HEX'
         StyleName = 'Number'
         TokenType = 7
-        Expression = '#Hex is started with $ sign'#13#10'\$[\da-f]+'
+        Expression = '&H[\da-f]+&?'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -8715,7 +8715,7 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'HEX'
         StyleName = 'Number'
         TokenType = 7
-        Expression = '#Hex is started with $ sign'#13#10'\$[\da-f]+'
+        Expression = '&H[\da-f]+&?'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -21011,6 +21011,7 @@ object SyntaxManager: TSyntaxManager
               'asm'
               'begin'
               'case'
+              'cdecl'
               'class'
               'const'
               'constructor'
@@ -35602,14 +35603,14 @@ object SyntaxManager: TSyntaxManager
         DisplayName = 'Italic'
         StyleName = 'Italic'
         TokenType = 10
-        Expression = '#char after * is non-space'#13#10'(\*|_) \S.*? (\*|_)'
+        Expression = '#char after * is non-space'#13#10'(\*|_) \S.*? (\*|_|")'
         ColumnFrom = 0
         ColumnTo = 0
       end
       item
         DisplayName = 'Heading'
         StyleName = 'Heading'
-        Expression = '^\#.*|.*\z-{2,}|.*\z=+'
+        Expression = '^\#.*|.*\z--[-\s\|]*|.*\z=+'
         ColumnFrom = 0
         ColumnTo = 0
       end
@@ -35751,6 +35752,8 @@ object SyntaxManager: TSyntaxManager
       '# Header'
       '<!-- This is a comment -->'
       '/* This, too */'
+      ''
+      '`get_prop` id "token_type"; optional `get_prop` param'
       ''
       '`Inline Code` inside a paragraph with *italic*, '
       '**bold** and ***bold italic***, [^footnote] and + '
@@ -36705,6 +36708,32 @@ object SyntaxManager: TSyntaxManager
         NameFmt = '%sz0'
         RefToCondEnd = True
         HighlightPos = cpAny
+        CancelNextRules = True
+        DrawStaple = True
+        GroupIndex = 20
+        CollapseFmt = '%s0 %s-1...'
+        IgnoreAsParent = False
+      end
+      item
+        DisplayName = 'block for tree (ex)'
+        ConditionList = <
+          item
+            TagList.Strings = (
+              ':')
+            TokenTypes = 8
+          end
+          item
+            CondType = tcSkip
+            TokenTypes = 1022
+          end
+          item
+            TokenTypes = 2048
+          end>
+        EndOfTextClose = True
+        NameFmt = '%sz0'
+        RefToCondEnd = True
+        HighlightPos = cpAny
+        CancelNextRules = True
         DrawStaple = True
         GroupIndex = 20
         CollapseFmt = '%s0 %s-1...'
@@ -36794,13 +36823,7 @@ object SyntaxManager: TSyntaxManager
     Notes.Strings = (
       'New Python lexer, by Alex (SynWrite)'
       'For indent-based folding lexer must be tweaked:'
-      'see SynWrite lexer documentation about these tweaks.'
-      ''
-      'Known issue: multiline function def not catched into tree, e.g.:'
-      'def nnn(test,'
-      '    test2, test3):'
-      '    '
-      '    ')
+      'see SynWrite lexer documentation about these tweaks.')
     LineComment = '#'
     Charset = DEFAULT_CHARSET
     Left = 144

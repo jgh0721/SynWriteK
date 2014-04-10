@@ -3,6 +3,22 @@ Legend:
  - fixed
  * changed
 
+6.4.810
++ add: project-specific external tools. See project's "gear" btn.
++ add: submenu "Tools - Project tools"
++ add: ext-tool variable {ProjectDir}
++ add: color picker inserts code formatted ok for C/C++/VB/JS/Asm/Pas (new section in Lexers.cfg)
+- fixes
+
+6.4.780
++ add: 4 commands in "Go to" group
++ adds/changes: API
+- fix: drop file on inactive view
+- fix: Py lexer (multiline "def" folding)
+
+6.4.760
++ add: item "Plugins" in context menu
+* changes: API
 
 6.4.750
 + add: click on line-number selects this line

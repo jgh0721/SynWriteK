@@ -26,15 +26,18 @@ CONSOLE_CLEAR = 1
 LOCK_STATUS   = 0
 UNLOCK_STATUS = 1
 
-LOG_CLEAR        = 0
-LOG_ADD          = 1
-LOG_SET_PANEL    = 2
-LOG_SET_REGEX    = 3
-LOG_SET_LINE_ID  = 4
-LOG_SET_COL_ID   = 5
-LOG_SET_NAME_ID  = 6
-LOG_SET_FILENAME = 7
-LOG_SET_ZEROBASE = 8
+LOG_CLEAR         = 0
+LOG_ADD           = 1
+LOG_SET_PANEL     = 2
+LOG_SET_REGEX     = 3
+LOG_SET_LINE_ID   = 4
+LOG_SET_COL_ID    = 5
+LOG_SET_NAME_ID   = 6
+LOG_SET_FILENAME  = 7
+LOG_SET_ZEROBASE  = 8
+LOG_CONSOLE_CLEAR = 20
+LOG_CONSOLE_ADD   = 21
+LOG_CONSOLE_GET   = 22
 
 LOG_PANEL_OUTPUT   = "0"
 LOG_PANEL_VALIDATE = "1"
@@ -55,9 +58,6 @@ GUTTER_ICON_MINUS  = 20
 GUTTER_ICON_CHECK  = 21
 GUTTER_ICON_ARROW  = 22
 
-LEXER_FOR_FILE  = -1
-LEXER_FOR_CARET = -2
-
 LEXER_GET_LIST    = 0
 LEXER_GET_ENABLED = 1
 LEXER_GET_EXT     = 2
@@ -71,6 +71,7 @@ LEXER_IMPORT      = 22
 LEXER_EXPORT      = 23
 LEXER_CONFIG      = 24
 LEXER_CONFIG_ALT  = 25
+LEXER_ACTIVATE    = 26
 
 FILENAME_CURRENT         = -1
 FILENAME_OPPOSITE        = -2
@@ -83,6 +84,12 @@ FILENAME_LEXLIB          = -20
 FILENAME_PATHS           = -21
 FILENAME_FAVS            = -22
 FILENAME_PROJECT_BASE    = 10000
+
+PROC_GET_CLIP      = 1
+PROC_SET_CLIP      = 2
+PROC_LOCK_STATUS   = 3
+PROC_UNLOCK_STATUS = 4
+PROC_SOUND         = 5
 
 PROP_NUMS        = 1
 PROP_EOL         = 2
@@ -104,6 +111,49 @@ PROP_LEFT        = 17
 PROP_TOP         = 18
 PROP_BOTTOM      = 19
 PROP_RULER       = 20
+PROP_TOKEN_TYPE  = 21
+PROP_LEXER_FILE  = 22
+PROP_LEXER_CARET = 23
+PROP_LEXER_POS   = 24
+
+PROP_COORD_WINDOW  = 100
+PROP_COORD_TREE    = 101
+PROP_COORD_CLIP    = 102
+PROP_COORD_OUT     = 103
+PROP_COORD_PRE     = 104
+
+PROP_DOCK_TREE     = 105
+PROP_DOCK_CLIP     = 106
+PROP_DOCK_OUT      = 107
+PROP_DOCK_PRE      = 108
+
+PROP_COORD_DESKTOP  = 120
+PROP_COORD_MONITOR  = 121
+PROP_COORD_MONITOR0 = 122
+PROP_COORD_MONITOR1 = 123
+PROP_COORD_MONITOR2 = 124
+PROP_COORD_MONITOR3 = 125
+
+PROP_SPLIT_MAIN_POS  = 130
+PROP_SPLIT_MAIN_HORZ = 131
+
+PROP_FILENAME_SESSION = 132
+PROP_FILENAME_PROJECT = 133
+
+PROP_RECENT_FILES    = 135
+PROP_RECENT_SESSIONS = 136
+PROP_RECENT_PROJECTS = 137
+PROP_RECENT_NEWDOC   = 138
+PROP_RECENT_COLORS   = 139
+
+DOCK_NONE    = ''
+DOCK_LEFT    = 'l'
+DOCK_LEFT1   = 'L'
+DOCK_RIGHT   = 'r'
+DOCK_RIGHT1  = 'R'
+DOCK_BOTTOM  = 'b'
+DOCK_BOTTOM1 = 'B'
+DOCK_TOP     = 't'
 
 EDITOR_CURR     = 0
 EDITOR_CURR_BRO = 1
@@ -141,8 +191,28 @@ def msg_box(id, text=''):
     return sw_api.msg_box(id, text)
 def msg_status(text):
     return sw_api.msg_status(text)
+
 def dlg_input(text, deftext, ini_fn, ini_section):
     return sw_api.dlg_input(text, deftext, ini_fn, ini_section)
+
+def dlg_input_memo(caption, label, deftext):
+    return sw_api.dlg_input_memo(caption, label, deftext)
+
+def dlg_input_ex(number, caption,
+                 label1   , text1='', label2='', text2='', label3='', text3='',
+                 label4='', text4='', label5='', text5='', label6='', text6='',
+                 label7='', text7='', label8='', text8='', label9='', text9='',
+                 label10='', text10=''):
+    result = sw_api.dlg_input_ex(number, caption,
+                                 label1, text1, label2, text2, label3, text3,
+                                 label4, text4, label5, text5, label6, text6,
+                                 label7, text7, label8, text8, label9, text9,
+                                 label10, text10)
+    if result is None:
+        return None
+    else:
+        return result.splitlines()
+
 def dlg_menu(id, caption, text):
     return sw_api.dlg_menu(id, caption, text)
 
@@ -159,17 +229,15 @@ def app_log(id, text):
 def app_lock(id):
     return sw_api.app_lock(id)
 
-def get_clip(len):
-    return sw_api.get_clip(len)
-def set_clip(text):
-    return sw_api.set_clip(text)
-def get_console():
-    return sw_api.get_console()
-def set_console(id, text):
-    return sw_api.set_console(id, text)
+def get_app_prop(id, value=''):
+    return sw_api.get_app_prop(id, value)
+def set_app_prop(id, value):
+    return sw_api.set_app_prop(id, value)
 
 def lexer_proc(id, text):
     return sw_api.lexer_proc(id, text)
+def app_proc(id, text=''):
+    return sw_api.app_proc(id, text)
 
 def ini_read(filename, section, key, value):
     return sw_api.ini_read(filename, section, key, value)
@@ -247,10 +315,8 @@ class Editor:
         return sw_api.ed_get_line_prop(self.h, num)
     def get_word(self, x, y):
         return sw_api.ed_get_word(self.h, x, y)
-    def get_lexer(self, pos):
-        return sw_api.ed_get_lexer(self.h, pos)
-    def get_prop(self, id):
-        return sw_api.ed_get_prop(self.h, id)
+    def get_prop(self, id, value=''):
+        return sw_api.ed_get_prop(self.h, id, value)
     def set_prop(self, id, value):
         return sw_api.ed_set_prop(self.h, id, value)
     def get_filename(self):

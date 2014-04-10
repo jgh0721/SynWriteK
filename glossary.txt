@@ -84,3 +84,6 @@ Project Manager,프로젝트 관리자
 word wrap,줄 바꿈
 Sort lines,줄 정렬
 Margin,여백
+Gutter, 구분막대
+Snippet, 코드 조각
+mark, 표식
