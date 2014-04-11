@@ -2,7 +2,7 @@
 <RadialixLocalizerProject>
   <Header FileVersion="19" Guid="{A5F52DDC-9426-4DC4-A2FE-ABAE21D90838}"/>
   <IDESettings ProjectItemPath="0.Syn.dklang (korean.lng).STRINGS.fmMain" SelectedTable="StringsTabSheet" SelectedVisualDesigner="">
-    <StringTableSettings FocusedValueID="fmMain.SyntKeyMapping.Items[407].Category" SortDirection="1" SortedColumnIndex="0"/>
+    <StringTableSettings FocusedValueID="fmMain.SyntKeyMapping.Items[115].DisplayName" SortDirection="1" SortedColumnIndex="0"/>
     <TextTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <AccelTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <ImageTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
@@ -15,14 +15,14 @@
     </Languages>
     <Info>
       <CreatedBy Date="2012-12-26T14-12-03">Radialix Version 3.00.00  Build 486</CreatedBy>
-      <ModifiedBy Date="2014-04-10T09-52-11">Radialix 버전 3.00.00  빌드 486</ModifiedBy>
+      <ModifiedBy Date="2014-04-11T14-43-57">Radialix 버전 3.00.00  빌드 486</ModifiedBy>
       <Author>DevTester</Author>
       <Organization/>
       <Comment/>
       <WebSite/>
       <ContactEMail/>
       <Copyright/>
-      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="1715" AutoIncrementBuildNumber="1"/>
+      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="1737" AutoIncrementBuildNumber="1"/>
     </Info>
     <Publisher>
       <ApplicationName>&lt;Title&gt; &lt;WinCode&gt;</ApplicationName>
@@ -2212,23 +2212,25 @@
           </Vl>
           <Vl Name="TBXItemHelpReadmeDir.Caption" Class="DKLANG_STRING">
             <Src>&amp;Browse Readme folder</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-42-31" State="Validated">
               <cur>Readme 폴더 찾아보기(&amp;B)</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemHelpReadmeDir.Hint" Class="DKLANG_STRING">
             <Src>Browse Readme folder contents</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-42-41" Translated="2014-04-11T14-42-41" State="Validated">
+              <cur>Readme 폴더 내용 찾아보기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemHelpAbout.Caption" Class="DKLANG_STRING">
             <Src>&amp;About...</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-55" State="Validated">
               <cur>정보(&amp;A)...</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemHelpAbout.Hint" Class="DKLANG_STRING">
             <Src>Dialog "About"</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-56" State="Validated">
               <cur>"정보" 대화상자</cur>
             </Trg>
           </Vl>
@@ -6917,7 +6919,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[396].DisplayName" Class="DKLANG_STRING">
             <Src>Insert image tag</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-11T14-43-26" Translated="2014-04-11T14-43-26" State="Validated">
+              <cur>이미지 태그 삽입</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[397].Category" Class="DKLANG_STRING">
             <Src>Split view</Src>
@@ -7396,7 +7400,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[433].DisplayName" Class="DKLANG_STRING">
             <Src>Show commands list</Src>
-            <Trg Created="2013-04-19T09-02-43"/>
+            <Trg Created="2013-04-19T09-02-43" Changed="2014-04-11T14-42-05" Translated="2014-04-11T14-42-05" State="Validated">
+              <cur>명령 목록 표시</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[434].Category" Class="DKLANG_STRING">
             <Src>Scrolling</Src>
@@ -8821,7 +8827,7 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[551].Category" Class="DKLANG_STRING">
             <Src>Projects</Src>
-            <Trg Created="2013-11-20T11-54-34" State="ForReview">
+            <Trg Created="2013-11-20T11-54-34" Translated="2014-04-11T14-43-34" State="Validated">
               <cur>프로젝트</cur>
             </Trg>
           </Vl>
@@ -9733,13 +9739,13 @@
           </Vl>
           <Vl Name="TBXItemHelpTopics.Caption" Class="DKLANG_STRING">
             <Src>&amp;Help topics</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-43" State="Validated">
               <cur>도움말(&amp;H)</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemHelpTopics.Hint" Class="DKLANG_STRING">
             <Src>Show help file</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-42" State="Validated">
               <cur>도움말 파일 표시</cur>
             </Trg>
           </Vl>
@@ -10208,7 +10214,7 @@
           </Vl>
           <Vl Name="TBXItemOutClear.Caption" Class="DKLANG_STRING">
             <Src>Clear</Src>
-            <Trg Created="2013-11-20T11-54-34" State="ForReview">
+            <Trg Created="2013-11-20T11-54-34" Translated="2014-04-11T14-41-29" State="Validated">
               <cur>초기화</cur>
             </Trg>
           </Vl>
@@ -10226,7 +10232,7 @@
           </Vl>
           <Vl Name="TBXItemOutCopyAll.Caption" Class="DKLANG_STRING">
             <Src>Copy all</Src>
-            <Trg Created="2013-11-20T11-54-34" State="ForReview">
+            <Trg Created="2013-11-20T11-54-34" Translated="2014-04-11T14-41-32" State="Validated">
               <cur>모두 복사</cur>
             </Trg>
           </Vl>
@@ -10618,13 +10624,13 @@
           </Vl>
           <Vl Name="TBXItemHelpDonate.Caption" Class="DKLANG_STRING">
             <Src>&amp;Donate...</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-46" State="Validated">
               <cur>기부(&amp;D)...</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemHelpDonate.Hint" Class="DKLANG_STRING">
             <Src>Show "Donate" help topic</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-47" State="Validated">
               <cur>도움말 "기부" 항목 표시</cur>
             </Trg>
           </Vl>
@@ -11002,7 +11008,7 @@
           </Vl>
           <Vl Name="TBXItemValClear.Caption" Class="DKLANG_STRING">
             <Src>Clear</Src>
-            <Trg Created="2013-11-20T11-54-34" State="ForReview">
+            <Trg Created="2013-11-20T11-54-34" Translated="2014-04-11T14-41-06" State="Validated">
               <cur>초기화</cur>
             </Trg>
           </Vl>
@@ -11282,13 +11288,13 @@
           </Vl>
           <Vl Name="TBXItemHelpKeymap.Caption" Class="DKLANG_STRING">
             <Src>Show &amp;keyboard mapping</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-49" State="Validated">
               <cur>키보드 매핑 표시(&amp;K)</cur>
             </Trg>
           </Vl>
           <Vl Name="TBXItemHelpKeymap.Hint" Class="DKLANG_STRING">
             <Src>Show keyboard mapping as HTML page</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-41-50" State="Validated">
               <cur>키보드 매핑을 HTML 페이지로 표시</cur>
             </Trg>
           </Vl>
@@ -11465,7 +11471,9 @@
           </Vl>
           <Vl Name="TBXItemHtmlInsImage.Caption" Class="DKLANG_STRING">
             <Src>Insert image tag...</Src>
-            <Trg Created="2013-08-01T14-17-38"/>
+            <Trg Created="2013-08-01T14-17-38" Changed="2014-04-11T14-43-02" Translated="2014-04-11T14-43-02" State="Validated">
+              <cur>이미지 태그 삽입...</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemHtmlInsImage.Hint" Class="DKLANG_STRING">
             <Src>Show file dialog for inserting &lt;img&gt; tag</Src>
@@ -11876,11 +11884,15 @@
           </Vl>
           <Vl Name="TBXItemHelpCommandList.Caption" Class="DKLANG_STRING">
             <Src>Show commands list</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-42-01" Translated="2014-04-11T14-42-01" State="Validated">
+              <cur>명령 목록 표시</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemHelpCommandList.Hint" Class="DKLANG_STRING">
             <Src>Dialog "Commands list"</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-42-13" Translated="2014-04-11T14-42-13" State="Validated">
+              <cur>"명령 목록" 대화상자</cur>
+            </Trg>
           </Vl>
           <Vl Name="TbxSubmenuCarets.Caption" Class="DKLANG_STRING">
             <Src>Multi-carets</Src>
@@ -12608,11 +12620,15 @@
           </Vl>
           <Vl Name="TbxItemHelpPyDir.Caption" Class="DKLANG_STRING">
             <Src>Browse Python-plugins folder</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-42-19" Translated="2014-04-11T14-42-19" State="Validated">
+              <cur>파이선 플러그인 폴더 찾아보기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TbxItemHelpPyDir.Hint" Class="DKLANG_STRING">
             <Src>Browse Python-plugins folder contents</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-42-30" Translated="2014-04-11T14-42-30" State="Validated">
+              <cur>파이선 플러그인 폴더 내용 찾아보기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TbxItemRunSnippets.Caption" Class="DKLANG_STRING">
             <Src>Snippets...</Src>
@@ -14886,13 +14902,15 @@
           </Vl>
           <Vl Name="cbCaretSmart.Caption" Class="DKLANG_STRING">
             <Src>Allow caret navigation in wrapped lines</Src>
-            <Trg Created="2013-08-01T14-17-38" Changed="2014-04-04T10-37-26">
+            <Trg Created="2013-08-01T14-17-38" Changed="2014-04-11T14-25-00" Translated="2014-04-11T14-25-00" State="Validated">
+              <cur>줄 바꿈내에서 캐럿 탐색 허용</cur>
               <prev>똑똑한 캐럿 동작</prev>
             </Trg>
           </Vl>
           <Vl Name="cbCaretSmart.Hint" Class="DKLANG_STRING">
             <Src>Changes caret up/down/home/end behaviour inside wrapped lines.</Src>
-            <Trg Created="2013-08-01T14-17-38" Changed="2014-04-04T10-37-26">
+            <Trg Created="2013-08-01T14-17-38" Changed="2014-04-11T14-24-50" Translated="2014-04-11T14-24-50" State="Validated">
+              <cur>줄 바꿈내에서 캐럿을 up/down/home/end 키의 동작 변경.</cur>
               <prev>캐럿이 이동할 때 동작( 위로, 아래로, 줄 처음, 줄 끝 ).</prev>
             </Trg>
           </Vl>
@@ -15218,25 +15236,25 @@
           </Vl>
           <Vl Name="LabelSpace.Caption" Class="DKLANG_STRING">
             <Src>Line spacing</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-30-57" State="Validated">
               <cur>줄 간격</cur>
             </Trg>
           </Vl>
           <Vl Name="LabelMargin.Caption" Class="DKLANG_STRING">
             <Src>Right margin</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-30-31" State="Validated">
               <cur>오른쪽 마진</cur>
             </Trg>
           </Vl>
           <Vl Name="LabelNums.Caption" Class="DKLANG_STRING">
             <Src>Line numbers</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-30-41" State="Validated">
               <cur>줄 번호</cur>
             </Trg>
           </Vl>
           <Vl Name="LabelStaple.Caption" Class="DKLANG_STRING">
             <Src>Block staples</Src>
-            <Trg Created="2014-01-10T10-41-03" State="ForReview">
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-36-14" State="Validated">
               <cur>블럭 스테이플스</cur>
             </Trg>
           </Vl>
@@ -15622,7 +15640,8 @@
           </Vl>
           <Vl Name="cbDrag.Hint" Class="DKLANG_STRING">
             <Src>Enables drag&amp;drop operation for selected text blocks.</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-01-10T10-41-03">
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-11T14-36-45" Translated="2014-04-11T14-36-45" State="Validated">
+              <cur>선택한 텍스트 블럭에 대해 끌어다 놓기 활성화(&amp;D).</cur>
               <prev>끌어다 놓기 기능으로 텍스트 이동 사용.</prev>
             </Trg>
           </Vl>
@@ -15821,33 +15840,41 @@
           </Vl>
           <Vl Name="edColorUnder.Hint" Class="DKLANG_STRING">
             <Src>Width of colored lines which are drawn below HTML color codes like #rrggbb. 0 - disabled.</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-40-09" Translated="2014-04-11T14-40-09" State="Validated">
+              <cur>#rrggbb 와 같은 HTML 색상 코드 밑에 해당 색상코드로 그려질 선의 두께. 0 - 사용안함.</cur>
+            </Trg>
           </Vl>
           <Vl Name="LabelUnderline.Caption" Class="DKLANG_STRING">
             <Src>Colored underlines size</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-40-35" Translated="2014-04-11T14-40-35" State="Validated">
+              <cur>색상알림 밑줄 두께</cur>
+            </Trg>
           </Vl>
           <Vl Name="TntLabel34.Caption" Class="DKLANG_STRING">
             <Src>Disable Tab for snippets for these file extensions:</Src>
-            <Trg Created="2013-02-19T11-23-01" Changed="2014-01-10T10-41-03">
+            <Trg Created="2013-02-19T11-23-01" Changed="2014-04-11T14-33-17" Translated="2014-04-11T14-33-17" State="Validated">
+              <cur>다음 확장자들에 대해서 코드조각의 Tab 비활성화:</cur>
               <prev>다음 파일 확장자에 대해 제와:</prev>
             </Trg>
           </Vl>
           <Vl Name="TntLabel28.Caption" Class="DKLANG_STRING">
             <Src>Sort for these file extensions</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-01-10T10-41-03">
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-11T14-33-27" Translated="2014-04-11T14-33-27" State="Validated">
+              <cur>다음 확장자들에 대해서 정렬</cur>
               <prev>블럭 스테이플스</prev>
             </Trg>
           </Vl>
           <Vl Name="cbScrollLast.Caption" Class="DKLANG_STRING">
             <Src>Last line shows on top</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-04T10-37-26">
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-11T14-29-25" Translated="2014-04-11T14-29-25" State="Validated">
+              <cur>마지막 줄을 최상단에 표시</cur>
               <prev>마지막 줄로 스크롤</prev>
             </Trg>
           </Vl>
           <Vl Name="cbScrollLast.Hint" Class="DKLANG_STRING">
             <Src>After scroll to EOF, last line appears on top instead of bottom.</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-04T10-37-26">
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-04-11T14-29-41" Translated="2014-04-11T14-29-41" State="Validated">
+              <cur>스크롤이 EOF 에 도달하면 마지막줄을 하단에 아닌 상단에 표시.</cur>
               <prev>이 항목이 설정되면 마지막 줄로 스크롤 되며, 그렇지 않으면 마지막 페이지로 스크롤합니다.</prev>
             </Trg>
           </Vl>
@@ -15857,7 +15884,13 @@
               <Data>Wrap text at right margin\r\n</Data>
               <Data>Don't wrap text\r\n</Data>
             </Src>
-            <Trg Created="2014-04-04T10-37-26"/>
+            <Trg Created="2014-04-04T10-37-26" Changed="2014-04-11T14-30-27" Translated="2014-04-11T14-30-27" State="Validated">
+              <cur>
+                <Data>편집기 경계에서 줄바꿈\r\n</Data>
+                <Data>오른쪽 여백에서 줄바꿈\r\n</Data>
+                <Data>줄바꿈 하지 않음\r\n</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="cbTreeExpand.Caption" Class="DKLANG_STRING">
             <Src>Auto expand</Src>
@@ -18039,33 +18072,49 @@
           </Vl>
           <Vl New="1" Name="zMProjNotAdded" Class="DKLANG_STRING">
             <Src>No files were added to project</Src>
-            <Trg Created="2014-04-10T09-45-47"/>
+            <Trg Created="2014-04-10T09-45-47" Changed="2014-04-11T14-17-08" Translated="2014-04-11T14-17-08" State="Validated">
+              <cur>프로젝트에 파일이 추가되지 않았습니다.\0x20</cur>
+            </Trg>
           </Vl>
           <Vl Name="zMPyBadName" Class="DKLANG_STRING">
             <Src>Incorrect module name: %s</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-22-03" Translated="2014-04-11T14-22-03" State="Validated">
+              <cur>잘못된 모듈 이름 :%s</cur>
+            </Trg>
           </Vl>
           <Vl Name="zMPyDirExists" Class="DKLANG_STRING">
             <Src>
               <Data>Folder already exists:\r\n</Data>
               <Data>%s</Data>
             </Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-22-21" Translated="2014-04-11T14-22-21" State="Validated">
+              <cur>
+                <Data>폴더가 이미 존재합니다:\r\n</Data>
+                <Data>%s</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="zMPyDirNotFound" Class="DKLANG_STRING">
             <Src>
               <Data>Cannot create folder:\r\n</Data>
               <Data>%s</Data>
             </Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-22-30" Translated="2014-04-11T14-22-30" State="Validated">
+              <cur>
+                <Data>폴더를 생성할 수 없습니다:\r\n</Data>
+                <Data>%s</Data>
+              </cur>
+            </Trg>
           </Vl>
           <Vl Name="zMPyDupName" Class="DKLANG_STRING">
             <Src>Module name already exists: %s</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-04-11T14-22-39" Translated="2014-04-11T14-22-39" State="Validated">
+              <cur>모듈 이름이 이미 존재합니다: %s</cur>
+            </Trg>
           </Vl>
           <Vl Name="zMPyNew" Class="DKLANG_STRING">
             <Src>\0x20e.g. my_sample:</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Translated="2014-04-11T14-22-44" State="Validated"/>
           </Vl>
           <Vl Name="zMRename" Class="DKLANG_STRING">
             <Src>Enter new file name:</Src>
