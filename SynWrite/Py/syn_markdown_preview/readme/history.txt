@@ -1,0 +1,7 @@
+
+1.0.2
++ added markdown.cfg file
++ added default option "support tables"
+
+1.0.0 (feb 2014)
+initial version

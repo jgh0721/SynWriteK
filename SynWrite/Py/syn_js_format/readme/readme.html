@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Readme</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>Plugin "JS Format"</h2>
+<p>This is command plugin for SynWrite editor.<br />
+It allows to format source code for lexers JavaScript and JSON, using Python engine from 
+<a href="http://jsbeautifier.org/" target="_blank">jsbeautifier.org</a>.
+If selection is made (only normal selection supported) then only selection is formatted,
+otherwise entire file is formatted.
+</p>
+
+<p>Plugin has few commands in SynWrite menu "Tools - Plugins". 
+</p>
+
+
+<h2>Configuration</h2>
+<p>Plugin has configuration file "jsformat.cfg", which can be edited using two "Configure" commands.
+</p>
+
+<ul>
+<li>"Configure" opens config-file from plugin's folder, which is used when local file doesn't exist.
+<li>"Configure (local)" opens config-file from the folder of currently active SynWrite file. 
+If local file doesn't exist, command suggests to copy global file into local name, and then opens it. 
+</ul>
+
+<font size=+1>
+<pre>
+indent_size                Indentation size [4]
+indent_char                Indentation character [" "]
+indent_with_tabs           Indent with tabs, overrides -s and -c
+preserve_newlines          Preserve line-breaks (--no-preserve-newlines disables)
+max_preserve_newlines      Number of line-breaks to be preserved in one chunk [10]
+space_in_paren             Add padding spaces within paren, ie. f( a, b )
+e4x                        Pass E4X xml literals through untouched
+jslint_happy               Enable jslint-stricter mode
+brace_style                [collapse|expand|end-expand] ["collapse"]
+keep_array_indentation     Preserve array indentation
+keep_function_indentation  Preserve function indentation
+unescape_strings           Decode printable characters encoded in xNN notation
+wrap_line_length           Wrap lines at next opportunity after N characters [0]
+break_chained_methods      Break chained method calls across subsequent lines
+</pre>
+</font>
+
+<h2>How to install</h2>
+<p>Just open plugin's zip-file in SynWrite, and confirm installation.<br />
+Default hotkey Ctrl+Alt+F can be changed using SynWrite command "Options - Advanced - Edit file SynPlugins.ini".
+</p>
+
+<h2>About</h2>
+<p>Author: Alexey T. (SynWrite author)</p>   
+
+</body>
+</html>

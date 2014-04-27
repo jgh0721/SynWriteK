@@ -1,0 +1,32 @@
+Legend:
++ added
+- fixed
+* changed
+? known problem
+
+0.82 (27 mar 2014)
+* adapt to api '1.0.123' (new lock and clip) 
+* use '_' like as 'abc012' 
+
+0.8 (18 feb 2014)
+* expand <>{}[] as ()
+* try expand quote marks (' or ") as brackets
+? deadlock if in file no balance of quote marks 
++ add: two new plugins -- auto-copy changed sel 
+
+0.7 (12 feb 2014)
+- fix: big reverse selection (from api_version='1.0.119')
+
+0.6 (11 feb 2014)
+* quicker on big text
+* expand blanks after all non-blanks
++ add: expand to full string literal
++ add: expand with full lines after all
+? slow big reverse selection (waiting SW)
+
+0.5 (31 jan 2014)
+* save direct|reverse state of selection
++ add: shink to caret
+
+0.1 (29 jan 2014)
++ Initial version

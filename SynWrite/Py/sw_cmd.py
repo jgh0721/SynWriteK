@@ -586,6 +586,7 @@ cmd_GotoNextOutputResult = 1052
 cmd_GotoPrevOutputResult = 1053
 cmd_GotoNextSearchOrOutputResult = 1054
 cmd_GotoPrevSearchOrOutputResult = 1055
+cmd_ToggleShowFoldersOnTabs = 1056
 
 cmd_TreeCollapseAll = 1090
 cmd_TreeExpandAll = 1091

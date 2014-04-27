@@ -273,8 +273,8 @@ class Editor:
         return sw_api.ed_set_caret_xy(self.h, x, y)
     def set_caret_pos(self, pos):
         return sw_api.ed_set_caret_pos(self.h, pos)
-    def add_caret_xy(self, x, y):
-        return sw_api.ed_add_caret_xy(self.h, x, y)
+    def add_caret_xy(self, x, y, len=0):
+        return sw_api.ed_add_caret_xy(self.h, x, y, len)
     def get_carets(self):
         return sw_api.ed_get_carets(self.h)
     def add_mark(self, start, len):

@@ -3,9 +3,23 @@ Legend:
  - fixed
  * changed
 
+6.5.900
++ added multi-selections (multi-carets were without selections). Very handy for HTML lists typing. See new help topic "Multi-selections".
++ add: ext-tool variable {SynDrive}
++ add/change: API
+* removed: cmd "Edit -- Fill block"
+- fixes
+
+6.4.830
+* changed: API for find-id and auto-complete plugins
+
+6.4.825
++ add: option "Tabs -- Show file+folder names on tabs", and command "Toggle..."
++ adds: API
+
 6.4.810
 + add: project-specific external tools. See project's "gear" btn.
-+ add: submenu "Tools - Project tools"
++ add: submenu "Tools -- Project tools"
 + add: ext-tool variable {ProjectDir}
 + add: color picker inserts code formatted ok for C/C++/VB/JS/Asm/Pas (new section in Lexers.cfg)
 - fixes

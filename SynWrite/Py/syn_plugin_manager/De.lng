@@ -1,0 +1,9 @@
+[L]
+MenuEdit=Plugin zum Bearbeiten auswählen
+MenuRemove=Plugin zum Entfernen auswählen
+CantCreTrash=Kann Verzeichnis für Papierkorb nicht erstellen
+CantMoveToTr=Kann Verzeichnis nicht in den Papierkorb bewegen
+CantFindFile=Datei nicht gefunden:
+CfmRemove=Soll das Plugin entfernt werden:
+Removed=Plugin gelöscht. SynWrite muss neu gestartet werden, um die Änderungen zu übernehmen.
+CantRemove=Kann Plugin-Dateien nicht entfernen

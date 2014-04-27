@@ -1,0 +1,9 @@
+[L]
+MenuEdit=Edit plugin
+MenuRemove=Remove plugin
+CantCreTrash=Could not create trash folder
+CantMoveToTr=Could not move folder to trash
+CantFindFile=Cannot find file:
+CfmRemove=Do you want to remove plugin:
+Removed=Plugin was removed. Restart SynWrite to apply changes.
+CantRemove=Could not remove plugin files

@@ -1,0 +1,10 @@
+﻿
+[L]
+MenuEdit=Редактировать плагин
+MenuRemove=Удалить плагин
+CantCreTrash=Не удалось создать папку trash
+CantMoveToTr=Не удалось переместить папку плагина в trash
+CantFindFile=Не найден файл:
+CfmRemove=Вы хотите удалить плагин:
+Removed=Плагин был удалён. Перезапустите SynWrite для применения изменений.
+CantRemove=Не удалось удалить плагин

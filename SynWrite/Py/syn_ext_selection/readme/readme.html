@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Expand/Shrink Selection</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>Expand/Shrink Selection</h2>
+<p>This is command plugin for SynWrite editor. It gives two commands: "expand selection", "shrink selection".
+First one makes selection wider, another makes selection smaller. 
+This is lexer-independant, but works better on Python lexer.
+</p>
+
+<p>Selection is extented in this order: <br />
+caret -- word -- phrase inside syntax quotes -- phrase with syntax quotes -- phrase inside brackets -- phrase with brackets -- ...
+</p>
+
+<p>Plugin commands are in SynWrite menu "Tools - Plugins".</p>
+
+<h2>Example</h2>
+<p>("|" means initial caret position)</p>
+
+<p>
+<tt><font size="4">
+v = fun('smt an|d oth', par) <br />
+v = fun('smt <u>and</u> oth', par) <br />
+v = fun('<u>smt and oth</u>', par) <br />
+v = fun(<u>'smt and oth'</u>, par) <br />
+v = fun(<u>'smt and oth', par</u>) <br />
+v = fun<u>('smt and oth', par)</u> <br />
+v = <u>fun('smt and oth', par)</u> <br />
+</font></tt>
+</p>
+
+<h2>How to install</h2>
+<p>Just open zip-file with plugin in SynWrite, and confirm installation.<br />
+You may change plugin hotkeys in "SynPlugins.ini", using SynWrite command "Options - Advanced - Edit file SynPlugins.ini".
+</p>
+
+<h2>About</h2>
+<p>Author: kvichans (SynWrite forum)</p>   
+
+</body>
+</html>

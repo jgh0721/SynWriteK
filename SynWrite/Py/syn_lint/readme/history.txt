@@ -1,0 +1,13 @@
+
+1.0.3
+- fix: new Synw
+
+1.0.2
++ gutter icons have hints (needs Synwrite update)
+
+1.0.1
++ compat with PhpLint
++ allows N lexers for single linter
+
+1.0.0 (mar 2014)
+initial version

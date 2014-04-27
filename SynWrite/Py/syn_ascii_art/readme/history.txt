@@ -1,0 +1,9 @@
+
+1.0.3
+* config filename changed to plugin dir
+
+1.0.2
++ ini file, new command
+
+1.0.0 (mar 2014)
+initial version

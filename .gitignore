@@ -164,3 +164,8 @@ pip-log.txt
 
 *.rdlp~
 SynWrite/SynHistoryStates.ini
+SynWrite/SynHistory.ini
+SynWrite/SynState.ini
+SynWrite/bugreport.txt
+SynWrite/Tools/error.log
+SynWrite/(default).syn

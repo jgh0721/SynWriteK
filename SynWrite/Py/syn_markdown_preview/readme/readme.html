@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Readme</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>Plugin "Markdown Preview"</h2>
+<p>This is command plugin for SynWrite editor.<br />
+It converts Markdown text to HTML (using <a href="https://pypi.python.org/pypi/Markdown" target="_blank">this Python library</a>), and then opens HTML file in browser.
+If selection is made then only selection is processed, otherwise entire file is processed.
+</p>
+
+<p>Plugin has command in SynWrite menu "Tools - Plugins". 
+</p>
+
+<h2>Config file</h2>
+<p>You can use file "markdown.cfg" to init set of Markdown extensions.
+Possible quoted values (comma-separated) are:
+</p>
+
+<ul>
+<li> Extra - 'extra'
+<li> Abbreviations - 'abbr'
+<li> Attribute Lists - 'attr_list'
+<li> Definition Lists - 'def_list'
+<li> Fenced Code Blocks - 'fenced_code'
+<li> Footnotes - 'footnotes'
+<li> Tables - 'tables'
+<li> Smart Strong - 'smart_strong'
+<li> Admonition - 'admonition'
+<li> CodeHilite - 'codehilite'
+<li> HeaderId - 'headerid'
+<li> Meta-Data - 'meta'
+<li> New Line to Break - 'nl2br'
+<li> Sane Lists - 'sane_lists'
+<li> SmartyPants - 'smarty'
+<li> Table of Contents - 'toc'
+<li> WikiLinks - 'wikilinks'
+</ul>
+
+<h2>How to install</h2>
+<p>Just open plugin's zip-file in SynWrite, and confirm installation.<br />
+Default hotkey can be changed using SynWrite command "Options - Advanced - Edit file SynPlugins.ini".
+</p>
+
+<h2>About</h2>
+<p>Author: Alexey T. (SynWrite author)</p>   
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>Readme</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>Plugin "SynLint"</h2>
+<p>This is command+event plugin for SynWrite editor.<br />
+It allows to check/validate syntax of  current file, for many lexers.
+Each lexer/language must be supported with additionally installed subplugins:
+</p>
+
+<ul>
+<li>JavaScript supported with subplugin based on JSLint tool,
+<li>HTML supported with subplugin based on HTML Tidy tool,
+<li>CSS supported with subplugin based on CSSLint tool,
+<li>etc...
+</ul>
+
+<p>You will find all subplugins at our
+<a href="https://sourceforge.net/projects/synwrite-addons/files/PyPlugins/" target="_blank">Plugins site</a>.
+Just download needed subplugin, install its zip-file (by opening zip-file in SynWrite),
+and see its readme - maybe EXE and DLL files are needed for this subplugin - these files need to be copied into
+subfolder "PyTools" of SynWrite install folder.
+</p>
+
+<p>To call validation, use "SynLint" command in "Tools - Plugins" menu.
+You will see status-bar message, which tells how much errors validation found.
+For each found error, you'll see yellow or red bookmark on error line (these are usual unnumbered bookmarks, so use standard commands to work with them).
+Plugin also shows "Validation" panel if errors found, so you can jump to them by dbl-click.
+</p>
+
+<p>Also, validation can be called automatically by events: on opening file,
+on saving file, on changing text. SynLint is not configured for these events by default (to not slowdown usual work). 
+</p>
+
+
+<br />
+<h2>How to install</h2>
+<p>Just open zip-file with plugin in SynWrite, and confirm installation.<br />
+</p>
+
+<h4>To assign hotkey for validation:</h4> 
+
+<ul>
+<li>call menu command "Options - Advanced - Edit file SynPlugins.ini";
+<li>search for SynLint line in section [Commands], and add hotkey, example for Alt+A:<br />
+<textarea cols="75" rows="1" readonly="readonly">
+SynLint=py:syn_lint;run;;Alt+A;
+</textarea>
+<li>restart SynWrite.
+</ul>
+
+<h4>To make SynLint active for editor events (mentioned above):</h4>
+
+<ul>
+<li>call menu "Options - Advanved - Edit file SynPlugins.ini", file SynPlugins.ini will open;
+<li>search for section [Events] or add it; add line in this section with comma-separated list of any of these event ids: on_open, on_save, on_change_slow; example: 
+<br />
+<textarea cols="80" rows="1" readonly="readonly">
+SynLint=py:syn_lint;on_open,on_save,on_change_slow;;
+</textarea>
+<li>you may adjust above line with lexer names, for which events will be handled; example for lexers CSS and HTML:
+<br />
+<textarea cols="80" rows="1" readonly="readonly">
+SynLint=py:syn_lint;on_open,on_save,on_change_slow;HTML documents,Style sheets;
+</textarea>
+<li>restart SynWrite.
+</ul>
+
+<p>Tech note:<br />
+all subplugins folders must be named as "syn_lint_nnnnn" (where "nnnnn" is any name), otherwise
+subplugin will not be found by SynLint.</p>
+
+<br />
+<h2>About</h2>
+<p>Authors: Thomas Beutlich (tbeu) / Alexey Torgashin.</p>
+
+<p>SynLint uses code portions from the <a href="https://github.com/SublimeLinter/SublimeLinter3" target="_blank">SublimeLinter 3</a>
+project.</p>
+
+</body>
+</html>
