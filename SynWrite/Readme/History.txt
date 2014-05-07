@@ -3,6 +3,18 @@ Legend:
  - fixed
  * changed
 
+6.5.950
+- fixed much Ruby lexer
+
+6.5.940
++ add: snippets' "mirror tabstops" can have default text now (you may improve snippets)
++ add: auto-joining of mul-selections (for Shift+arrows)
++ add: Find dialog: "Select results" flag (makes mul-selections)
++ add: HTML lexer: added non-standard tags (marquee, bgsound, etc)
+* reworked: Goto dialog
+* change: option "Disable lexer for ... size" moved to "New/Open" group
+- fixes
+
 6.5.900
 + added multi-selections (multi-carets were without selections). Very handy for HTML lists typing. See new help topic "Multi-selections".
 + add: ext-tool variable {SynDrive}

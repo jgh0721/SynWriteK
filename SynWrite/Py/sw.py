@@ -11,6 +11,7 @@ BEEP_WARN  = 4
 BEEP_ERROR = 5
 
 CUR_LINE = -1
+COLOR_NONE = 0x1FFFFFFF
 
 SEL_NORMAL = 0
 SEL_COLUMN = 1
@@ -186,6 +187,10 @@ TOKENS_STR        = 2
 TOKENS_CMT_STR    = 3
 TOKENS_NO_CMT_STR = 4
 
+
+def ed_handles():
+    r0, r1 = sw_api.ed_handles()
+    return range(r0, r1+1)
 
 def msg_box(id, text=''):
     return sw_api.msg_box(id, text)
@@ -375,8 +380,8 @@ class Editor:
         return sw_api.ed_find(self.h, action, opt, tokens, sfind, sreplace)
 
 #----------------------------------------
-# objects
 
+# objects
 ed        = Editor(EDITOR_CURR)
 ed_bro    = Editor(EDITOR_CURR_BRO)
 ed_op     = Editor(EDITOR_OPP)
