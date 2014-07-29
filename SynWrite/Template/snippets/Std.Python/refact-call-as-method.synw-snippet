@@ -2,6 +2,6 @@ name=refactoring: wrap selection as method & call
 id=
 lex=Python
 text=
-self.${1}(${2:what})
-def ${1}(self, ${3:arg}):
+self.${1:fun}(${2:what})
+def ${1:fun}(self, ${3:arg}):
 	${sel}

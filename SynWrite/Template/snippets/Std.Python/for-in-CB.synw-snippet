@@ -1,0 +1,6 @@
+name=for-loop for each in CB
+id=forp
+lex=Python
+text=
+for ${1:i} in ${cp}:
+	${0:pass}

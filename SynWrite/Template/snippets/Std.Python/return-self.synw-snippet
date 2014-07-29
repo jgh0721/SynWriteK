@@ -1,5 +1,5 @@
 name=return self.smth
-id=rets
+id=ret.
 lex=Python
 text=
 return self.

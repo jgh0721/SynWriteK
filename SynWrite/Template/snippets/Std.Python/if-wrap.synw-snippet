@@ -1,6 +1,0 @@
-name=if-wrap
-id=ifw
-lex=Python
-text=
-if ${1:what}:
-	${sel}	

@@ -1,6 +1,6 @@
 name=function
-id=fun
+id=def
 lex=Python
 text=
 def ${1:fname}(${2:arg}):
-	${3:pass}
+	${0:pass}

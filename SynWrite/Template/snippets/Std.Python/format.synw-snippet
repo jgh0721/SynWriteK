@@ -1,0 +1,5 @@
+name=format
+id=.f
+lex=Python
+text=
+.format(${cp})

@@ -1,0 +1,22 @@
+SynWrite
+
+SynWrite Plugins
+
+    SynFTP
+        0.2.4.0
+    Explorer
+    SynCodeIntel
+        0.9.1
+    SynJedi
+        1.0.5
+    SynSharp
+        1.1.2
+
+    Python
+        Plugin Manager
+            0.2.3
+        Markdown Preview
+            1.0.2
+        SynLint
+            1.0.3                        
+    

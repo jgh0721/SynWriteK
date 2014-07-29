@@ -1,5 +1,5 @@
 { replace all occurence of "MyObject" with your object name }
-unit {Unit_name};
+unit UnitName;
 
 interface
 
@@ -11,9 +11,9 @@ type
   private
     { Private declarations }
   public
+    { Public declarations }
     constructor Create;
     destructor Destroy; override;
-    { Public declarations }
   end;
 
 var

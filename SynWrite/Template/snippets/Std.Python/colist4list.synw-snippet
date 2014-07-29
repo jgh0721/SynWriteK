@@ -2,4 +2,4 @@ name=list-comprehension from list
 id=colist
 lex=Python
 text=
-[${1} for ${1} in ${2:src_list}]
+[${2:k}${0:?} for ${2:k} in ${1:src_list}]

@@ -2,5 +2,5 @@ name=for-loop for each in dict
 id=ford
 lex=Python
 text=
-for ${1:k,v} in ${2:src_dict}:
-	${3:pass}
+for ${2:k},${3:v} in ${1:src_dict}:
+	${0:pass}

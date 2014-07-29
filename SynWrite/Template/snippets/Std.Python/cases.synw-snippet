@@ -2,7 +2,7 @@ name=cases
 id=cases
 lex=Python
 text=
-if 0:pass
+if 0:pass # cases
 elif ${1:case1}:
 	${2:pass}
 elif ${3:case2}:

@@ -2,4 +2,4 @@ name=dict-comprehension-if from other dict
 id=codict.if
 lex=Python
 text=
-{(${1},${2}) for ${1},${2} in ${3:src_dict} if ${1}}
+{(${2:k},${3:v}) for ${2:k},${3:v} in ${1:src_dict} if ${2:k}${4:?}}

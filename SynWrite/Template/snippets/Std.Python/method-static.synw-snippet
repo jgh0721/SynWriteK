@@ -1,7 +1,7 @@
 name=@staticmethod
-id=cfuns
+id=csdef
 lex=Python
 text=
 @staticmethod
 def ${1:fname}(${2:arg}):
-	${3:pass}
+	${0:pass}

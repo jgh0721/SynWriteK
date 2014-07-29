@@ -2,7 +2,7 @@
 {                                                                             }
 {   Created by:                                                               }
 {   Short description                                                         }
-{   Last update:                                                 }
+{   Last update:                                                              }
 {   Copyright ...                                                             }
 {                                                                             }
 { *************************************************************************** }

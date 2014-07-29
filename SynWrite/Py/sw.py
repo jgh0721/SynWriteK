@@ -10,22 +10,26 @@ BEEP_INFO  = 3
 BEEP_WARN  = 4
 BEEP_ERROR = 5
 
-CUR_LINE = -1
 COLOR_NONE = 0x1FFFFFFF
 
 SEL_NORMAL = 0
 SEL_COLUMN = 1
 SEL_LINES  = 2
 
+GROUPING_ONE    = 1
+GROUPING_2HORZ  = 2
+GROUPING_2VERT  = 3
+GROUPING_3HORZ  = 4
+GROUPING_3VERT  = 5
+GROUPING_3AS1P2 = 6
+GROUPING_4HORZ  = 7
+GROUPING_4VERT  = 8
+GROUPING_4GRID  = 9
+GROUPING_6GRID  = 10
+
 MENU_SIMPLE = 0
 MENU_DOUBLE = 1
 MENU_STD    = 2
-
-CONSOLE_ADD   = 0
-CONSOLE_CLEAR = 1
-
-LOCK_STATUS   = 0
-UNLOCK_STATUS = 1
 
 LOG_CLEAR         = 0
 LOG_ADD           = 1
@@ -116,6 +120,7 @@ PROP_TOKEN_TYPE  = 21
 PROP_LEXER_FILE  = 22
 PROP_LEXER_CARET = 23
 PROP_LEXER_POS   = 24
+PROP_COLOR       = 25
 
 PROP_COORD_WINDOW  = 100
 PROP_COORD_TREE    = 101
@@ -135,8 +140,9 @@ PROP_COORD_MONITOR1 = 123
 PROP_COORD_MONITOR2 = 124
 PROP_COORD_MONITOR3 = 125
 
-PROP_SPLIT_MAIN_POS  = 130
-PROP_SPLIT_MAIN_HORZ = 131
+PROP_SPLIT_MAIN_POS = 129
+PROP_GROUP_MODE     = 130
+PROP_GROUP_INDEX    = 131
 
 PROP_FILENAME_SESSION = 132
 PROP_FILENAME_PROJECT = 133
@@ -186,6 +192,36 @@ TOKENS_CMT        = 1
 TOKENS_STR        = 2
 TOKENS_CMT_STR    = 3
 TOKENS_NO_CMT_STR = 4
+
+PROP_COLOR_TEXT                  = 'text'
+PROP_COLOR_TEXT_BG               = 'text_bg'
+PROP_COLOR_SELECTION_TEXT        = 'sel_text'
+PROP_COLOR_SELECTION_BG          = 'sel_bg'
+PROP_COLOR_CURRENT_LINE_TEXT     = 'curline_text'
+PROP_COLOR_CURRENT_LINE_BG       = 'curline_bg'
+PROP_COLOR_LINE_NUMBERS_TEXT     = 'numbers_text'
+PROP_COLOR_LINE_NUMBERS_BG       = 'numbers_bg'
+PROP_COLOR_COLLAPSE_LINE         = 'collapse_line'
+PROP_COLOR_COLLAPSE_MARK_TEXT    = 'collapse_mark_text'
+PROP_COLOR_COLLAPSE_MARK_BG      = 'collapse_mark_bg'
+PROP_COLOR_FOLDING_LINES         = 'folding_lines'
+PROP_COLOR_FOLDING_BAR_BG        = 'folding_bar_bg'
+PROP_COLOR_MARGIN                = 'margin'
+PROP_COLOR_HINTS_TEXT            = 'hints_text'
+PROP_COLOR_HINTS_BG              = 'hints_bg'
+PROP_COLOR_NONPRINTABLE_TEXT     = 'nonprint_text'
+PROP_COLOR_NONPRINTABLE_BG       = 'nonprint_bg'
+PROP_COLOR_INDENT_STAPLES        = 'indent_staples'
+PROP_COLOR_RULER_TEXT            = 'ruler_text'
+PROP_COLOR_RULER_BG              = 'ruler_bg'
+PROP_COLOR_MARKS_TEXT            = 'marks_text'
+PROP_COLOR_MARKS_BG              = 'marks_bg'
+PROP_COLOR_LINE_STATE_MODIFIED   = 'state_mod'
+PROP_COLOR_LINE_STATE_NEW        = 'state_new'
+PROP_COLOR_LINE_STATE_SAVED      = 'state_saved'
+PROP_COLOR_LINE_STATE_UNCHANGED  = 'state_unchanged'
+PROP_COLOR_LINE_STATE_DEFAULT    = 'state_def'
+PROP_COLOR_SYNCEDIT_BG           = 'syncedit_bg'
 
 
 def ed_handles():
@@ -332,9 +368,9 @@ class Editor:
         return sw_api.ed_set_alerts(self.h, value)
 
     def get_top(self):
-        return sw_api.ed_get_prop(self.h, PROP_TOP)
+        return sw_api.ed_get_prop(self.h, PROP_TOP, '')
     def get_left(self):
-        return sw_api.ed_get_prop(self.h, PROP_LEFT)
+        return sw_api.ed_get_prop(self.h, PROP_LEFT, '')
     def set_top(self, num):
         return sw_api.ed_set_prop(self.h, PROP_TOP, str(num))
     def set_left(self, num):
@@ -376,6 +412,8 @@ class Editor:
         return sw_api.ed_get_bk(self.h, id)
     def set_bk(self, id, pos, icon=-1, color=-1, hint=''):
         return sw_api.ed_set_bk(self.h, id, pos, icon, color, hint)
+    def get_staple(self, posx, posy):
+        return sw_api.ed_get_staple(self.h, posx, posy)
     def find(self, action, opt, tokens, sfind, sreplace):
         return sw_api.ed_find(self.h, action, opt, tokens, sfind, sreplace)
 

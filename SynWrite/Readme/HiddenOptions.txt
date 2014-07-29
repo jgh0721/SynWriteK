@@ -1,5 +1,5 @@
 This file lists SynWrite hidden options, i.e. options not visible in the Options dialog.
-They must be set in file "Syn.ini" in section [Setup]. 
+They must be set in file "Syn.ini" in section [Setup].
 Use menu command "Options -- Advanced -- Edit file Syn.ini".
 Bool values have only two possible values: 0 means "off", 1 means "on".
 
@@ -56,3 +56,15 @@ Delays (in msec) for Python plugins on_change_slow event.
 --------------------
 HintScroll=0
 Bool. Enables hint "Line NNNN" for editor vertical scrollbar, when scrollbar thumb is dragged.
+
+--------------------
+[ACP]
+HintDelay=1500
+Delay (in msec) of editor hints of auto-completion feature.
+
+--------------------
+Items of command-plugins can be hidden in editor context menu (not in the main menu "Tools"). To do this, add "-" char after ";" char at end of lines in [Commands] section of SynPlugins.ini file (use command "Options - Advanced - Edit file SynPlugins.ini").
+Example:
+  Plugin Manager\Edit plugin...=py:syn_plugin_manager;menu_edit;;;-
+
+--------------------

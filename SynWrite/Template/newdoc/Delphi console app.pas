@@ -2,26 +2,26 @@
 {                                                                             }
 {   Created by:                                                               }
 {   Short description                                                         }
-{   Last update:                                                 }
+{   Last update:                                                              }
 {   Copyright ...                                                             }
 {                                                                             }
 { *************************************************************************** }
 
-program MyProg;
+program MyApp;
 
 {$APPTYPE CONSOLE}
 
 uses Classes, Windows, SysUtils;
 
-{ variable definition here }
 var
+  { variable definitions }
 
-function Init()
+procedure Init;
 begin
-  { init kode here or delete it :-) }
+  { init code here }
 end;
 
 begin
   Init;
   { program code here }
-end;
+end.

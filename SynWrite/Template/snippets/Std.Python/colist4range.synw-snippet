@@ -2,4 +2,4 @@ name=list-comprehension from range
 id=colistr
 lex=Python
 text=
-[${1} for ${1} in range(${2:max+1})]
+[${2:k}${0:?} for ${2:k} in range(${1:last}+1)]

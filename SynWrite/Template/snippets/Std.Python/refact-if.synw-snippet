@@ -2,5 +2,5 @@ name=refactoring: if over selection
 id=
 lex=Python
 text=
-if ${1:when}:
+if ${1:?}:
 	${sel}

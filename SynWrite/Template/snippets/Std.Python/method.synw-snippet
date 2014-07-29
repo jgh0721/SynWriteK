@@ -1,6 +1,6 @@
 name=method
-id=cfun
+id=cdef
 lex=Python
 text=
 def ${1:fname}(self${2:, arg}):
-	${3:pass}
+	${0:pass}
