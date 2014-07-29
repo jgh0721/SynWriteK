@@ -2,7 +2,7 @@
 <RadialixLocalizerProject>
   <Header FileVersion="19" Guid="{A5F52DDC-9426-4DC4-A2FE-ABAE21D90838}"/>
   <IDESettings ProjectItemPath="0.Syn.dklang (korean.lng).STRINGS.fmMain" SelectedTable="StringsTabSheet" SelectedVisualDesigner="">
-    <StringTableSettings FocusedValueID="fmMain.TBXItemSSelBrackets.Caption" SortDirection="1" SortedColumnIndex="0"/>
+    <StringTableSettings FocusedValueID="fmMain.tbTabsOut.tbTabsOutToolbar.Caption" SortDirection="1" SortedColumnIndex="0"/>
     <TextTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <AccelTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
     <ImageTableSettings FocusedValueID="" SortDirection="0" SortedColumnIndex="-1"/>
@@ -15,14 +15,14 @@
     </Languages>
     <Info>
       <CreatedBy Date="2012-12-26T14-12-03">Radialix Version 3.00.00  Build 486</CreatedBy>
-      <ModifiedBy Date="2014-07-29T09-38-29">Radialix Version 3.00.00  Build 486</ModifiedBy>
+      <ModifiedBy Date="2014-07-29T16-37-47">Radialix Version 3.00.00  Build 486</ModifiedBy>
       <Author>DevTester</Author>
       <Organization/>
       <Comment/>
       <WebSite/>
       <ContactEMail/>
       <Copyright/>
-      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="1910" AutoIncrementBuildNumber="1"/>
+      <Version MajorNumber="1" MinorNumber="0" Revision="0" Build="1952" AutoIncrementBuildNumber="1"/>
     </Info>
     <Publisher>
       <ApplicationName>&lt;Title&gt; &lt;WinCode&gt;</ApplicationName>
@@ -3454,7 +3454,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[140].Caption" Class="DKLANG_STRING">
             <Src>Back Delete Word</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-29-13" Translated="2014-07-29T16-29-13" State="Validated">
+              <cur>이전 단어 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[140].Category" Class="DKLANG_STRING">
             <Src>Deleting text</Src>
@@ -3464,11 +3466,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[140].DisplayName" Class="DKLANG_STRING">
             <Src>Delete from caret to start of word</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-05-16T09-08-22"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-29-26" Translated="2014-07-29T16-29-26" State="Validated">
+              <cur>캐럿에서 단어의 시작까지 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[141].Caption" Class="DKLANG_STRING">
             <Src>Delete to Line Begin</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-29-38" Translated="2014-07-29T16-29-38" State="Validated">
+              <cur>줄 시작까지 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[141].Category" Class="DKLANG_STRING">
             <Src>Deleting text</Src>
@@ -3478,11 +3484,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[141].DisplayName" Class="DKLANG_STRING">
             <Src>Delete from caret to beginning of line</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-05-16T09-08-22"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-29-43" Translated="2014-07-29T16-29-43" State="Validated">
+              <cur>캐럿에서 줄 시작까지 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[142].Caption" Class="DKLANG_STRING">
             <Src>Delete to Line End</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-29-46" Translated="2014-07-29T16-29-46" State="Validated">
+              <cur>줄 끝까지 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[142].Category" Class="DKLANG_STRING">
             <Src>Deleting text</Src>
@@ -3492,7 +3502,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[142].DisplayName" Class="DKLANG_STRING">
             <Src>Delete from caret to end of line</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-05-16T09-08-22"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-29-50" Translated="2014-07-29T16-29-50" State="Validated">
+              <cur>캐럿에서 줄 끝까지 삭제</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[143].Caption" Class="DKLANG_STRING">
             <Src>Delete Line</Src>
@@ -5324,7 +5336,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[262].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[262].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Tree panel focus</Src>
@@ -5332,7 +5346,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[263].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[263].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Clipboard panel focus</Src>
@@ -5368,7 +5384,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[267].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[267].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Output panel focus</Src>
@@ -5396,7 +5414,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[26].Caption" Class="DKLANG_STRING">
             <Src>Auto Complete Popup</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-06" Translated="2014-07-29T14-22-06" State="Validated">
+              <cur>자동완성 팝업</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[26].Category" Class="DKLANG_STRING">
             <Src>Hints</Src>
@@ -5406,7 +5426,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[26].DisplayName" Class="DKLANG_STRING">
             <Src>Auto-complete popup</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-05-16T09-08-22"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-10" Translated="2014-07-29T14-22-10" State="Validated">
+              <cur>자동완성 팝업</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[270].Category" Class="DKLANG_STRING">
             <Src>Clipboard operations</Src>
@@ -5446,7 +5468,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[273].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-13" Translated="2014-07-29T14-22-13" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[273].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Search Results panel focus</Src>
@@ -5460,7 +5484,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[274].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle live spelling</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-39" Translated="2014-07-29T14-22-39" State="Validated">
+              <cur>실시간 철자법 점검 전환</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[275].Category" Class="DKLANG_STRING">
             <Src>Miscellaneous</Src>
@@ -5470,7 +5496,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[275].DisplayName" Class="DKLANG_STRING">
             <Src>Perform spell check</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-42" Translated="2014-07-29T14-22-42" State="Validated">
+              <cur>철자법 점검 수행</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[276].Category" Class="DKLANG_STRING">
             <Src>Miscellaneous</Src>
@@ -5516,11 +5544,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[279].DisplayName" Class="DKLANG_STRING">
             <Src>Preview selected HTML code</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-51" Translated="2014-07-29T14-22-51" State="Validated">
+              <cur>선택한 HTML 코드 미리보기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[27].Caption" Class="DKLANG_STRING">
             <Src>Parameters Popup</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-54" Translated="2014-07-29T14-22-54" State="Validated">
+              <cur>매개변수 팝업</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[27].Category" Class="DKLANG_STRING">
             <Src>Hints</Src>
@@ -5530,7 +5562,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[27].DisplayName" Class="DKLANG_STRING">
             <Src>Function parameters popup</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-15T10-47-33"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-57" Translated="2014-07-29T14-22-57" State="Validated">
+              <cur>함수 매개변수 팝업</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[280].Category" Class="DKLANG_STRING">
             <Src>Macros</Src>
@@ -5654,7 +5688,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[28].Caption" Class="DKLANG_STRING">
             <Src>Template Popup</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-23-02" Translated="2014-07-29T14-23-02" State="Validated">
+              <cur>템플릿 팝업</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[28].Category" Class="DKLANG_STRING">
             <Src>Hints</Src>
@@ -5664,7 +5700,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[28].DisplayName" Class="DKLANG_STRING">
             <Src>Code template popup (obsolete)</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-01-10T10-41-03"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-23-16" Translated="2014-07-29T14-23-16" State="Validated">
+              <cur>코드 템플릿 팝업( 구식 )</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[290].Category" Class="DKLANG_STRING">
             <Src>Bookmarks</Src>
@@ -5764,7 +5802,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[298].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[298].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle groups focus</Src>
@@ -5778,11 +5818,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[299].DisplayName" Class="DKLANG_STRING">
             <Src>Copy current line to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-23-46" Translated="2014-07-29T14-23-46" State="Validated">
+              <cur>클립보드로 현재 줄 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[29].Caption" Class="DKLANG_STRING">
             <Src>Context Help</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-23-26" Translated="2014-07-29T14-23-26" State="Validated">
+              <cur>상황 도움말</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[29].Category" Class="DKLANG_STRING">
             <Src>Hints</Src>
@@ -5792,7 +5836,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[29].DisplayName" Class="DKLANG_STRING">
             <Src>Context help</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-05-16T09-08-22"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-23-28" Translated="2014-07-29T14-23-28" State="Validated">
+              <cur>상황 도움말</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[2].Caption" Class="DKLANG_STRING">
             <Src>Open File</Src>
@@ -5820,7 +5866,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[300].DisplayName" Class="DKLANG_STRING">
             <Src>Cut current line to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-24-03" Translated="2014-07-29T14-24-03" State="Validated">
+              <cur>클립보드로 현재 줄을 잘라내기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[301].Category" Class="DKLANG_STRING">
             <Src>Run</Src>
@@ -5830,7 +5878,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[301].DisplayName" Class="DKLANG_STRING">
             <Src>HTML Tidy - validate</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-24-15" Translated="2014-07-29T14-24-15" State="Validated">
+              <cur>HTML Tidy - 유효성 점검</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[302].Category" Class="DKLANG_STRING">
             <Src>Run</Src>
@@ -5840,11 +5890,15 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[302].DisplayName" Class="DKLANG_STRING">
             <Src>HTML Tidy - configure</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-24-20" Translated="2014-07-29T14-24-20" State="Validated">
+              <cur>HTML Tidy - 환경설정</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[303].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[303].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Validation panel focus</Src>
@@ -6304,7 +6358,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[336].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[336].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Minimap panel focus</Src>
@@ -7022,7 +7078,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[395].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[395].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Project panel focus</Src>
@@ -7053,7 +7111,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[398].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[398].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle editor master/slave focus</Src>
@@ -7205,7 +7265,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[408].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[408].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Text Clips panel focus</Src>
@@ -7400,7 +7462,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[423].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[423].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Tabs panel focus</Src>
@@ -7762,7 +7826,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[455].DisplayName" Class="DKLANG_STRING">
             <Src>Add current project to Favorites</Src>
-            <Trg Created="2013-05-16T09-08-22"/>
+            <Trg Created="2013-05-16T09-08-22" Changed="2014-07-29T16-35-34" Translated="2014-07-29T16-35-34" State="Validated">
+              <cur>즐겨찾기에 현재 프로젝트 추가</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntKeyMapping.Items[456].Category" Class="DKLANG_STRING">
             <Src>Miscellaneous</Src>
@@ -8962,7 +9028,9 @@
           </Vl>
           <Vl Name="SyntKeyMapping.Items[552].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[552].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Console panel focus</Src>
@@ -9186,7 +9254,9 @@
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[571].Category" Class="DKLANG_STRING">
             <Src>Focusing</Src>
-            <Trg Created="2014-07-28T10-41-03"/>
+            <Trg Created="2014-07-28T10-41-03" Changed="2014-07-29T14-22-20" Translated="2014-07-29T14-22-20" State="Validated">
+              <cur>포커싱</cur>
+            </Trg>
           </Vl>
           <Vl New="1" Name="SyntKeyMapping.Items[571].DisplayName" Class="DKLANG_STRING">
             <Src>Toggle Bookmarks panel focus</Src>
@@ -10513,7 +10583,7 @@
           </Vl>
           <Vl Name="ecSentCase.Caption" Class="DKLANG_STRING">
             <Src>Sentence case</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2014-07-29T16-28-26" State="Validated"/>
           </Vl>
           <Vl Name="TBXItemZOther.Caption" Class="DKLANG_STRING">
             <Src>Custom zoom...</Src>
@@ -11149,7 +11219,9 @@
           </Vl>
           <Vl Name="TBXItemECutLine.Hint" Class="DKLANG_STRING">
             <Src>Cut current line to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-24-06" Translated="2014-07-29T14-24-06" State="Validated">
+              <cur>클립보드로 현재 줄을 잘라내기</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXItemECopyLine.Caption" Class="DKLANG_STRING">
             <Src>Copy current line</Src>
@@ -11157,7 +11229,9 @@
           </Vl>
           <Vl Name="TBXItemECopyLine.Hint" Class="DKLANG_STRING">
             <Src>Copy current line to clipboard</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-23-51" Translated="2014-07-29T14-23-51" State="Validated">
+              <cur>클립보드로 현재 줄 복사</cur>
+            </Trg>
           </Vl>
           <Vl Name="TBXSubmenuItemTidy.Caption" Class="DKLANG_STRING">
             <Src>&amp;HTML Tidy</Src>
@@ -17949,13 +18023,18 @@
           </Vl>
           <Vl Name="re_NW" Class="DKLANG_STRING">
             <Src>non-alphanumeric char</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-53-38" Translated="2014-07-29T14-53-38" State="Validated">
+              <cur>알파벳 및 숫자를 제외한 문자</cur>
+            </Trg>
           </Vl>
           <Vl Name="re_r" Class="DKLANG_STRING">
             <Src>
               <Data>carriage return (\\x0D)</Data>
             </Src>
-            <Trg Created="2013-03-16T23-05-27" Changed="2014-04-04T10-37-26">
+            <Trg Created="2013-03-16T23-05-27" Changed="2014-07-29T14-57-12" Translated="2014-07-29T14-57-12" State="Validated">
+              <cur>
+                <Data>캐리지 리턴 (\\x0D)</Data>
+              </cur>
               <prev>
                 <Data>캐리지 리턴 (\\x0D)</Data>
               </prev>
@@ -18013,7 +18092,9 @@
           </Vl>
           <Vl Name="re_W" Class="DKLANG_STRING">
             <Src>any alphanumeric char</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-53-23" Translated="2014-07-29T14-53-23" State="Validated">
+              <cur>모든 알파벳 및 숫자</cur>
+            </Trg>
           </Vl>
           <Vl Name="re_z" Class="DKLANG_STRING">
             <Src>
@@ -18101,7 +18182,7 @@
           </Vl>
           <Vl New="1" Name="Split_h" Class="DKLANG_STRING">
             <Src>Split horizontally</Src>
-            <Trg Created="2014-07-28T10-41-03" State="ForReview">
+            <Trg Created="2014-07-28T10-41-03" Translated="2014-07-29T14-53-47" State="Validated">
               <cur>가로로 분리</cur>
             </Trg>
           </Vl>
@@ -18203,7 +18284,9 @@
           </Vl>
           <Vl Name="typed" Class="DKLANG_STRING">
             <Src>text</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-03T11-47-49"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T16-30-57" Translated="2014-07-29T16-30-57" State="Validated">
+              <cur>텍스트</cur>
+            </Trg>
           </Vl>
           <Vl Name="Untitled" Class="DKLANG_STRING">
             <Src>(Untitled)</Src>
@@ -20681,7 +20764,9 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.GroupBox1.Caption" Class="DKLANG_STRING">
             <Src>Font style</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-02-47" Translated="2014-07-29T15-02-47" State="Validated">
+              <cur>글꼴 스타일</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.GroupBox1.Hint" Class="DKLANG_STRING">
             <Src>Specifies which properties of the style should be used.</Src>
@@ -20689,8 +20774,8 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox2.Caption" Class="DKLANG_STRING">
             <Src>Bo&amp;ld</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-05-07T10-51-33" Translated="2014-05-07T10-51-33" State="Validated">
-              <cur>굵게(&amp;L</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-32" Translated="2014-07-29T15-00-32" State="Validated">
+              <cur>굵게(&amp;L)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox2.Hint" Class="DKLANG_STRING">
@@ -20701,8 +20786,8 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox3.Caption" Class="DKLANG_STRING">
             <Src>&amp;Italic</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-05-07T10-52-06" Translated="2014-05-07T10-52-06" State="Validated">
-              <cur>기울임(&amp;I</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-34" Translated="2014-07-29T15-00-34" State="Validated">
+              <cur>기울임(&amp;I)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox3.Hint" Class="DKLANG_STRING">
@@ -20725,11 +20810,15 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox5.Caption" Class="DKLANG_STRING">
             <Src>S&amp;trike out</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-02" Translated="2014-07-29T15-00-02" State="Validated">
+              <cur>취소선(&amp;T)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox5.Hint" Class="DKLANG_STRING">
             <Src>Specifies whether StrikeOut font style is used.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-18" Translated="2014-07-29T15-00-18" State="Validated">
+              <cur>취소선 글꼴스타일 사용여부.</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.ComboBox1.Hint" Class="DKLANG_STRING">
             <Src>Specifies style properties that can be applied to the Canvas.</Src>
@@ -20758,11 +20847,15 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox1.Caption" Class="DKLANG_STRING">
             <Src>&amp;Hidden</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-28" Translated="2014-07-29T15-00-28" State="Validated">
+              <cur>숨김(&amp;H)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox1.Hint" Class="DKLANG_STRING">
             <Src>Specifies whether hidden attribute is used.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-59-52" Translated="2014-07-29T14-59-52" State="Validated">
+              <cur>숨김속성 사용여부 설정.</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.GroupBox2.Caption" Class="DKLANG_STRING">
             <Src>Borders ...</Src>
@@ -21013,7 +21106,9 @@
           </Vl>
           <Vl Name="CheckBox27.Caption" Class="DKLANG_STRING">
             <Src>Always enabled</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-01-39" Translated="2014-07-29T15-01-39" State="Validated">
+              <cur>항상 활성화됨</cur>
+            </Trg>
           </Vl>
           <Vl Name="Edit10.Text" Class="DKLANG_STRING">
             <Src>Edit10</Src>
@@ -21170,7 +21265,9 @@
           </Vl>
           <Vl Name="CheckBox26.Caption" Class="DKLANG_STRING">
             <Src>Always enabled</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-01-39" Translated="2014-07-29T15-01-39" State="Validated">
+              <cur>항상 활성화됨</cur>
+            </Trg>
           </Vl>
           <Vl Name="ComboBox18.Items" Class="DKLANG_STRING">
             <Src>
@@ -21409,7 +21506,9 @@
           </Vl>
           <Vl Name="TabSheet8.Caption" Class="DKLANG_STRING">
             <Src>Sub lexers</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-01-13" Translated="2014-07-29T15-01-13" State="Validated">
+              <cur>하위 분석기</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntColFrame4.SpeedButton1.Hint" Class="DKLANG_STRING">
             <Src>Move Down</Src>
@@ -21491,7 +21590,9 @@
           </Vl>
           <Vl Name="CheckBox25.Caption" Class="DKLANG_STRING">
             <Src>Always enabled</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-01-35" Translated="2014-07-29T15-01-35" State="Validated">
+              <cur>항상 활성화됨</cur>
+            </Trg>
           </Vl>
           <Vl Name="CheckBox29.Caption" Class="DKLANG_STRING">
             <Src>Include bound text</Src>
@@ -21565,8 +21666,8 @@
           </Vl>
           <Vl Name="SyntCodeTemplFrame1.Button6.Caption" Class="DKLANG_STRING">
             <Src>&amp;Delete</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2013-09-06T18-39-56" Translated="2013-09-06T18-39-56" State="Validated">
-              <cur>삭제(&amp;D</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-49" Translated="2014-07-29T15-00-49" State="Validated">
+              <cur>삭제(&amp;D)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntCodeTemplFrame1.Button5.Caption" Class="DKLANG_STRING">
@@ -22529,7 +22630,9 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.GroupBox1.Caption" Class="DKLANG_STRING">
             <Src>Font style</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-02-50" Translated="2014-07-29T15-02-50" State="Validated">
+              <cur>글꼴 스타일</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.GroupBox1.Hint" Class="DKLANG_STRING">
             <Src>Specifies which properties of the style should be used.</Src>
@@ -22561,8 +22664,8 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox4.Caption" Class="DKLANG_STRING">
             <Src>&amp;Underline</Src>
-            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-28T11-51-17" Translated="2014-07-28T11-51-17" State="Validated">
-              <cur>밑줄(&amp;U</cur>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-02-04" Translated="2014-07-29T15-02-04" State="Validated">
+              <cur>밑줄(&amp;U)</cur>
             </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox4.Hint" Class="DKLANG_STRING">
@@ -22573,11 +22676,15 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox5.Caption" Class="DKLANG_STRING">
             <Src>S&amp;trike out</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-02-06" Translated="2014-07-29T15-02-06" State="Validated">
+              <cur>취소선(&amp;T)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox5.Hint" Class="DKLANG_STRING">
             <Src>Specifies whether StrikeOut font style is used.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T15-00-22" Translated="2014-07-29T15-00-22" State="Validated">
+              <cur>취소선 글꼴스타일 사용여부.</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.ComboBox1.Hint" Class="DKLANG_STRING">
             <Src>Specifies style properties that can be applied to the Canvas.</Src>
@@ -22606,11 +22713,15 @@
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox1.Caption" Class="DKLANG_STRING">
             <Src>&amp;Hidden</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-58-44" Translated="2014-07-29T14-58-44" State="Validated">
+              <cur>숨김(&amp;H)</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.CheckBox1.Hint" Class="DKLANG_STRING">
             <Src>Specifies whether hidden attribute is used.</Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Changed="2014-07-29T14-59-20" Translated="2014-07-29T14-59-20" State="Validated">
+              <cur>숨김속성 사용여부 설정.</cur>
+            </Trg>
           </Vl>
           <Vl Name="SyntStyleFrame1.GroupBox2.Caption" Class="DKLANG_STRING">
             <Src>Borders ...</Src>
@@ -22789,7 +22900,7 @@
               <Data>Char const\r\n</Data>
               <Data>Preprocessor\r\n</Data>
             </Src>
-            <Trg Created="2012-12-26T14-19-02"/>
+            <Trg Created="2012-12-26T14-19-02" Translated="2014-07-29T16-34-16" State="Validated"/>
           </Vl>
         </Resource>
         <Resource Name="fmExtract" Class="DKLangResource" Type="DKLangResource">
@@ -24985,15 +25096,21 @@
           </Vl>
           <Vl Name="labId.Caption" Class="DKLANG_STRING">
             <Src>Alias for Tab key (optional, no spaces):</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-07-29T16-34-04" Translated="2014-07-29T16-34-04" State="Validated">
+              <cur>탭 키에 대한 별칭( 선택, 공백없음 ):</cur>
+            </Trg>
           </Vl>
           <Vl Name="labText.Caption" Class="DKLANG_STRING">
             <Src>Text:</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-07-29T16-30-47" Translated="2014-07-29T16-30-47" State="Validated">
+              <cur>텍스트:</cur>
+            </Trg>
           </Vl>
           <Vl Name="labLex.Caption" Class="DKLANG_STRING">
             <Src>Lexers (optional, comma-separated):</Src>
-            <Trg Created="2014-01-10T10-41-03"/>
+            <Trg Created="2014-01-10T10-41-03" Changed="2014-07-29T16-30-40" Translated="2014-07-29T16-30-40" State="Validated">
+              <cur>분석기( 선택, 콤마 구분 ):</cur>
+            </Trg>
           </Vl>
           <Vl Name="bOk.Caption" Class="DKLANG_STRING">
             <Src>OK</Src>
@@ -25426,7 +25543,7 @@
         <Header Value="1"/>
         <Errors Value="1"/>
       </ReportOptions>
-      <IDESettings FocusedValueID="#49" SortDirection="0" SortedColumnIndex="0">
+      <IDESettings FocusedValueID="#67" SortDirection="0" SortedColumnIndex="0">
         <Column Width="-1" Position="-1" Visible="1"/>
         <Column Width="-1" Position="-1" Visible="1"/>
         <Column Width="-1" Position="-1" Visible="1"/>
