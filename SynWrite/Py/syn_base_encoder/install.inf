@@ -1,0 +1,75 @@
+[info]
+title=Base Encoder
+desc=Allows to encode/decode text in Base64, Base32, Base16, Quoted-Printable, Unicode-Escape
+type=py-plugin
+subdir=syn_base_encoder
+
+[ini]
+section=Commands
+id=Base Encoder\Base64 encode
+params=base64_encode;;
+
+[ini1]
+section=Commands
+id=Base Encoder\Base64 decode
+params=base64_decode;;
+
+[ini2]
+section=Commands
+id=Base Encoder\-1
+params=nnn;;
+
+[ini3]
+section=Commands
+id=Base Encoder\Base32 encode
+params=base32_encode;;
+
+[ini4]
+section=Commands
+id=Base Encoder\Base32 decode
+params=base32_decode;;
+
+[ini5]
+section=Commands
+id=Base Encoder\-2
+params=nnn;;
+
+[ini6]
+section=Commands
+id=Base Encoder\Base16 encode
+params=base16_encode;;
+
+[ini7]
+section=Commands
+id=Base Encoder\Base16 decode
+params=base16_decode;;
+
+[ini8]
+section=Commands
+id=Base Encoder\-3
+params=nnn;;
+
+[ini9]
+section=Commands
+id=Base Encoder\Quoted-printable encode
+params=quotedpri_encode;;
+
+[ini10]
+section=Commands
+id=Base Encoder\Quoted-printable decode
+params=quotedpri_decode;;
+
+[ini11]
+section=Commands
+id=Base Encoder\-4
+params=nnn;;
+
+[ini12]
+section=Commands
+id=Base Encoder\Unicode-Escape encode
+params=uniescape_encode;;
+
+[ini13]
+section=Commands
+id=Base Encoder\Unicode-Escape decode
+params=uniescape_decode;;

@@ -1,7 +1,0 @@
-name=@staticmethod
-id=csdef
-lex=Python
-text=
-@staticmethod
-def ${1:fname}(${2:arg}):
-	${0:pass}

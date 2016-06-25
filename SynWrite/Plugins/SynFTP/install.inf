@@ -1,0 +1,10 @@
+[info]
+title=SynFTP
+type=plugin
+subdir=SynFTP
+
+[ini]
+section=Panels
+id=SynFTP
+file=SynFTP.dll
+params=-

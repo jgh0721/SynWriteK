@@ -1,5 +1,0 @@
-name=Resize-array
-id=ReDim
-lex=AutoIt
-text=
-ReDim ${1:$aArray}[${2:$iDimension}]

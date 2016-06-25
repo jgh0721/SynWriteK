@@ -1,7 +1,0 @@
-name=method (main)
-id=main
-lex=Java
-text=
-public static void main(String[] args) {
-	${0}
-}

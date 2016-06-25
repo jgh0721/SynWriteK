@@ -1,0 +1,15 @@
+[info]
+title=Hex Dump
+desc=Shows text in hex-dump format
+type=py-plugin
+subdir=syn_hex_dump
+
+[ini]
+section=Commands
+id=Hex Dump\Dump Unicode
+params=dump_unicode;;
+
+[ini1]
+section=Commands
+id=Hex Dump\Dump Dos
+params=dump_dos;;

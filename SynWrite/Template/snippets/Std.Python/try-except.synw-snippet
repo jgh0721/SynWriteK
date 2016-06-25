@@ -1,8 +1,0 @@
-name=try/except
-id=try.e
-lex=Python
-text=
-try:
-	${1:pass}
-except ${2:Exception} as e:
-	${3:raise e}

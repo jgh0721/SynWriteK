@@ -1,0 +1,10 @@
+[info]
+title=Python Intel
+desc=Supports intel commands for Python lexer: auto-completion (Ctrl+Space), goto-definition (Ctrl+Alt+click), function-hint (Ctrl+Shift+Space). Based on Jedi library.
+type=py-plugin
+subdir=syn_python_intel
+
+[ini]
+section=Events
+id=PythonIntel
+params=on_complete,on_goto_def,on_func_hint;Python;

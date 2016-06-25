@@ -1,0 +1,10 @@
+[info]
+title=Xml Tidy
+desc=Formats/indents XML code (using xml.dom library)
+type=py-plugin
+subdir=syn_xml_tidy
+
+[ini]
+section=Commands
+id=XML Tidy
+params=run;XML;;

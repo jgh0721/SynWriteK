@@ -1,5 +1,0 @@
-name=list-comprehension-if from list
-id=colist.if
-lex=Python
-text=
-[${2:k} for ${2:k} in ${1:src_list} if ${2:k}${0:?}]

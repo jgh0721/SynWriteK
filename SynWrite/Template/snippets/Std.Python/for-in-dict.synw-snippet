@@ -1,6 +1,0 @@
-name=for-loop for each in dict
-id=ford
-lex=Python
-text=
-for ${2:k},${3:v} in ${1:src_dict}:
-	${0:pass}

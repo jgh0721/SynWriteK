@@ -1,5 +1,6 @@
 [info]
 title=SynSharp
+desc=Intelligent auto-completion for C# lexer
 type=plugin
 subdir=SynSharp
 

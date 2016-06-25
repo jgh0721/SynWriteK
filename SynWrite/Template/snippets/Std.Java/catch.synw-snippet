@@ -1,7 +1,0 @@
-name=catch
-id=ca
-lex=Java
-text=
-catch (${1:Exception} ${2:e}) {
-	${0}
-}

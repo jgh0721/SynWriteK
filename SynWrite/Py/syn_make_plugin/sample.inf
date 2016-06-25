@@ -1,0 +1,20 @@
+[info]
+title=MyName
+desc=Adds this feature
+type=py-plugin
+subdir={subdir}
+
+[ini]
+section=Commands
+id={menuitem}
+params=run;
+
+;[ini1]
+;section=Commands
+;id=MyName\Run 2
+;params=run_2;
+
+;[ini2]
+;section=Commands
+;id=MyName\Run 3
+;params=run_3;

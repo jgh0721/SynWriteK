@@ -16,20 +16,38 @@ SEL_NORMAL = 0
 SEL_COLUMN = 1
 SEL_LINES  = 2
 
-GROUPING_ONE    = 1
-GROUPING_2HORZ  = 2
-GROUPING_2VERT  = 3
-GROUPING_3HORZ  = 4
-GROUPING_3VERT  = 5
-GROUPING_3AS1P2 = 6
-GROUPING_4HORZ  = 7
-GROUPING_4VERT  = 8
-GROUPING_4GRID  = 9
-GROUPING_6GRID  = 10
+EDENC_ANSI       = 0
+EDENC_OEM        = 1 
+EDENC_MAC        = 2 
+EDENC_UTF8_BOM   = -1 
+EDENC_UTF8_NOBOM = -2 
+EDENC_UTF16_LE   = -3 
+EDENC_UTF16_BE   = -4 
+
+GROUPING_ONE     = 1
+GROUPING_2VERT   = 2
+GROUPING_2HORZ   = 3
+GROUPING_3VERT   = 4
+GROUPING_3HORZ   = 5
+GROUPING_1P2VERT = 6
+GROUPING_1P2HORZ = 7
+GROUPING_4VERT   = 8
+GROUPING_4HORZ   = 9
+GROUPING_4GRID   = 10
+GROUPING_6GRID   = 11
 
 MENU_SIMPLE = 0
 MENU_DOUBLE = 1
 MENU_STD    = 2
+
+ATTRIB_CLEAR_ALL       = -1
+ATTRIB_CLEAR_SELECTION = -2
+ATTRIB_COLOR_FONT      = 0
+ATTRIB_COLOR_BG        = 1
+ATTRIB_SET_BOLD        = 2
+ATTRIB_SET_ITALIC      = 3
+ATTRIB_SET_UNDERLINE   = 4
+ATTRIB_SET_STRIKEOUT   = 5
 
 LOG_CLEAR         = 0
 LOG_ADD           = 1
@@ -58,18 +76,19 @@ GUTTER_ICON_STOP   = 15
 GUTTER_ICON_WARN   = 16
 GUTTER_ICON_ERROR  = 17
 GUTTER_ICON_ERROR2 = 18
-GUTTER_ICON_PLUS   = 19
-GUTTER_ICON_MINUS  = 20
-GUTTER_ICON_CHECK  = 21
-GUTTER_ICON_ARROW  = 22
+GUTTER_ICON_CHECK  = 19
+GUTTER_ICON_ARROW  = 20
 
 LEXER_GET_LIST    = 0
 LEXER_GET_ENABLED = 1
 LEXER_GET_EXT     = 2
 LEXER_GET_MOD     = 3
+LEXER_GET_LINKS   = 4
+LEXER_GET_STYLES  = 5
 LEXER_SET_NAME    = 10
 LEXER_SET_ENABLED = 11
 LEXER_SET_EXT     = 12
+LEXER_SET_LINKS   = 13
 LEXER_SAVE_LIB    = 20
 LEXER_DELETE      = 21
 LEXER_IMPORT      = 22
@@ -85,73 +104,94 @@ FILENAME_PROJECT         = -10
 FILENAME_PROJECT_MAIN    = -11
 FILENAME_PROJECT_WORKDIR = -12
 FILENAME_PROJECT_SESSION = -13
+FILENAME_PROJECT_FILES   = -14
 FILENAME_LEXLIB          = -20
 FILENAME_PATHS           = -21
 FILENAME_FAVS            = -22
-FILENAME_PROJECT_BASE    = 10000
 
-PROC_GET_CLIP      = 1
-PROC_SET_CLIP      = 2
-PROC_LOCK_STATUS   = 3
-PROC_UNLOCK_STATUS = 4
-PROC_SOUND         = 5
+PROC_GET_CLIP         = 1
+PROC_SET_CLIP         = 2
+PROC_LOCK_STATUS      = 3
+PROC_UNLOCK_STATUS    = 4
+PROC_SOUND            = 5
+PROC_COLOR_PICKER     = 6
+PROC_ADD_RECENT_COLOR = 7
+PROC_GET_COMMAND      = 8
+PROC_ADD_GUTTER_ICON  = 9
+PROC_GET_ESCAPE       = 10
+PROC_SET_ESCAPE       = 11
 
-PROP_NUMS        = 1
-PROP_EOL         = 2
-PROP_WRAP        = 3
-PROP_RO          = 4
-PROP_MARGIN      = 5
-PROP_FOLDING     = 6
-PROP_NON_PRINTED = 7
-PROP_TAB_SPACES  = 8
-PROP_TAB_SIZE    = 9
-PROP_COL_MARKERS = 10
-PROP_TEXT_EXTENT = 11
-PROP_ZOOM        = 12
-PROP_INSERT      = 13
-PROP_MODIFIED    = 14
-PROP_VIS_LINES   = 15
-PROP_VIS_COLS    = 16
-PROP_LEFT        = 17
-PROP_TOP         = 18
-PROP_BOTTOM      = 19
-PROP_RULER       = 20
-PROP_TOKEN_TYPE  = 21
-PROP_LEXER_FILE  = 22
-PROP_LEXER_CARET = 23
-PROP_LEXER_POS   = 24
-PROP_COLOR       = 25
+PROP_NUMS           = 1
+PROP_EOL            = 2
+PROP_WRAP           = 3
+PROP_RO             = 4
+PROP_MARGIN         = 5
+PROP_FOLDING        = 6
+#free               = 7
+PROP_TAB_SPACES     = 8
+PROP_TAB_SIZE       = 9
+PROP_COL_MARKERS    = 10
+PROP_TEXT_EXTENT    = 11
+PROP_ZOOM           = 12
+PROP_INSERT         = 13
+PROP_MODIFIED       = 14
+PROP_VIS_LINES      = 15
+PROP_VIS_COLS       = 16
+PROP_LEFT           = 17
+PROP_TOP            = 18
+PROP_BOTTOM         = 19
+PROP_RULER          = 20
+PROP_TOKEN_TYPE     = 21
+PROP_LEXER_FILE     = 22
+PROP_LEXER_CARET    = 23
+PROP_LEXER_POS      = 24
+PROP_COLOR          = 25
+PROP_NON_PRINTED         = 26
+PROP_NON_PRINTED_SPACES  = 27
+PROP_NON_PRINTED_ENDS    = 28
+PROP_NON_PRINTED_ENDS_EX = 29
+PROP_TAG                 = 30
+PROP_LINE_STATE          = 31
+PROP_KEEP_TRAIL_BLANKS   = 32
+PROP_KEEP_CARET_IN_TEXT  = 33
+PROP_AUTO_INDENT         = 34
+PROP_LAST_LINE_SHOW      = 35
+PROP_TAB_FILL            = 36
+PROP_WRAP_AT_MARGIN      = 37
 
 PROP_COORD_WINDOW  = 100
 PROP_COORD_TREE    = 101
 PROP_COORD_CLIP    = 102
 PROP_COORD_OUT     = 103
 PROP_COORD_PRE     = 104
-
 PROP_DOCK_TREE     = 105
 PROP_DOCK_CLIP     = 106
 PROP_DOCK_OUT      = 107
 PROP_DOCK_PRE      = 108
-
 PROP_COORD_DESKTOP  = 120
 PROP_COORD_MONITOR  = 121
 PROP_COORD_MONITOR0 = 122
 PROP_COORD_MONITOR1 = 123
 PROP_COORD_MONITOR2 = 124
 PROP_COORD_MONITOR3 = 125
-
 PROP_SPLIT_MAIN_POS = 129
 PROP_GROUP_MODE     = 130
 PROP_GROUP_INDEX    = 131
-
 PROP_FILENAME_SESSION = 132
 PROP_FILENAME_PROJECT = 133
-
 PROP_RECENT_FILES    = 135
 PROP_RECENT_SESSIONS = 136
 PROP_RECENT_PROJECTS = 137
 PROP_RECENT_NEWDOC   = 138
 PROP_RECENT_COLORS   = 139
+PROP_EVENTS          = 140
+PROP_EDITOR_BY_INDEX = 141
+PROP_GROUPS          = 142
+
+LINESTATE_NORMAL   = 0
+LINESTATE_MODIFIED = 1
+LINESTATE_NEW      = 2
+LINESTATE_SAVED    = 3
 
 DOCK_NONE    = ''
 DOCK_LEFT    = 'l'
@@ -167,25 +207,24 @@ EDITOR_CURR_BRO = 1
 EDITOR_OPP      = 2
 EDITOR_OPP_BRO  = 3
 
-ACT_FIND_NEXT    = 0
-ACT_FIND_ALL     = 1
-ACT_COUNT        = 3
-ACT_REPLACE_NEXT = 5
-ACT_REPLACE_ALL  = 6
+FIND_ACTION_FIND_NEXT    = 0
+FIND_ACTION_FIND_ALL     = 1
+FIND_ACTION_COUNT        = 3
+FIND_ACTION_REPLACE_NEXT = 5
+FIND_ACTION_REPLACE_ALL  = 6
 
-FIND_CASE     = 1 << 0
-FIND_WORDS    = 1 << 1
-FIND_BACK     = 1 << 2
-FIND_SELONLY  = 1 << 3
-FIND_ENTIRE   = 1 << 4
-FIND_REGEX    = 1 << 5
-FIND_REGEX_S  = 1 << 6
-#FIND_REGEX_M  = 1 << 7
-FIND_PROMPT   = 1 << 8
-FIND_WRAP     = 1 << 9
-FIND_SKIPCOL  = 1 << 10
-FIND_BOOKMARK = 1 << 14
-FIND_EXTSEL   = 1 << 15
+FIND_OP_CASE     = 1 << 0
+FIND_OP_WORDS    = 1 << 1
+FIND_OP_BACK     = 1 << 2
+FIND_OP_SELONLY  = 1 << 3
+FIND_OP_ENTIRE   = 1 << 4
+FIND_OP_REGEX    = 1 << 5
+FIND_OP_REGEX_S  = 1 << 6
+FIND_OP_PROMPT   = 1 << 8
+FIND_OP_WRAP     = 1 << 9
+FIND_OP_SKIPCOL  = 1 << 10
+FIND_OP_BOOKMARK = 1 << 14
+FIND_OP_EXTSEL   = 1 << 15
 
 TOKENS_ALL        = 0
 TOKENS_CMT        = 1
@@ -227,13 +266,13 @@ PROP_COLOR_SYNCEDIT_BG           = 'syncedit_bg'
 def ed_handles():
     r0, r1 = sw_api.ed_handles()
     return range(r0, r1+1)
-
+    
 def msg_box(id, text=''):
     return sw_api.msg_box(id, text)
 def msg_status(text):
     return sw_api.msg_status(text)
 
-def dlg_input(text, deftext, ini_fn, ini_section):
+def dlg_input(text, deftext, ini_fn='', ini_section=''):
     return sw_api.dlg_input(text, deftext, ini_fn, ini_section)
 
 def dlg_input_memo(caption, label, deftext):
@@ -254,8 +293,20 @@ def dlg_input_ex(number, caption,
     else:
         return result.splitlines()
 
-def dlg_menu(id, caption, text):
-    return sw_api.dlg_menu(id, caption, text)
+def dlg_menu(id, caption, text, focused=0):
+    return sw_api.dlg_menu(id, caption, text, focused)
+def dlg_file(is_open, filename, folder, filters):
+    return sw_api.dlg_file(is_open, filename, folder, filters)
+def dlg_folder(caption, folder):
+    return sw_api.dlg_folder(caption, folder)
+def dlg_snippet(name, alias, lexers, text):
+    return sw_api.dlg_snippet(name, alias, lexers, text)
+def dlg_checklist(caption, columns, items, size_x, size_y):
+    items = sw_api.dlg_checklist(caption, columns, items, size_x, size_y)
+    return [(s=='1') for s in items]
+    
+def dlg_custom(caption, size_x, size_y, text, focused=-1):
+    return sw_api.dlg_custom(caption, size_x, size_y, text, focused)    
 
 def app_version():
     return sw_api.app_version()
@@ -285,8 +336,8 @@ def ini_read(filename, section, key, value):
 def ini_write(filename, section, key, value):
     return sw_api.ini_write(filename, section, key, value)
 
-def file_open(filename):
-    return sw_api.file_open(filename)
+def file_open(filename, params=''):
+    return sw_api.file_open(filename, params)
 def file_save():
     return sw_api.file_save()
 def file_get_name(id):
@@ -366,6 +417,17 @@ class Editor:
         return sw_api.ed_get_alerts(self.h)
     def set_alerts(self, value):
         return sw_api.ed_set_alerts(self.h, value)
+    def get_tabcolor(self):
+        return sw_api.ed_get_tabcolor(self.h)
+    def set_tabcolor(self, value):
+        return sw_api.ed_set_tabcolor(self.h, value)
+    def get_indexes(self):
+        return sw_api.ed_get_indexes(self.h)
+
+    def get_enc(self):
+        return sw_api.ed_get_enc(self.h)
+    def set_enc(self, value):
+        return sw_api.ed_set_enc(self.h, value)
 
     def get_top(self):
         return sw_api.ed_get_prop(self.h, PROP_TOP, '')
@@ -380,8 +442,8 @@ class Editor:
         return sw_api.ed_replace(self.h, start, len, text)
     def insert(self, text):
         return sw_api.ed_insert(self.h, text)
-    def insert_snippet(self, text, sel=''):
-        return sw_api.ed_insert_snippet(self.h, text, sel)
+    def insert_snippet(self, text, sel='', fname=''):
+        return sw_api.ed_insert_snippet(self.h, text, sel, fname)
     def set_text_all(self, text):
         return sw_api.ed_set_text_all(self.h, text)
     def set_text_line(self, num, text):
@@ -414,6 +476,10 @@ class Editor:
         return sw_api.ed_set_bk(self.h, id, pos, icon, color, hint)
     def get_staple(self, posx, posy):
         return sw_api.ed_get_staple(self.h, posx, posy)
+    def set_attr(self, id, color):
+        return sw_api.ed_set_attr(self.h, id, color)
+    def get_attr(self):
+        return sw_api.ed_get_attr(self.h)
     def find(self, action, opt, tokens, sfind, sreplace):
         return sw_api.ed_find(self.h, action, opt, tokens, sfind, sreplace)
 

@@ -1,0 +1,10 @@
+[info]
+title=Image Tag
+desc=Inserts IMG tag (or CSS lines) with info about selected image file (jpg, gif, png)
+type=py-plugin
+subdir=syn_image_tag
+
+[ini]
+section=Commands
+id=Image Tag
+params=run;

@@ -1,0 +1,10 @@
+
+1.0.4 (dec 2014)
++ considers current EOL chars and Tab size
++ refactor
+
+1.0.1 (May 2014)
++ validate XML
+
+1.0.0 (April 2014)
+initial version

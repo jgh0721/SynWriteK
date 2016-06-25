@@ -1,7 +1,0 @@
-name=case
-id=cs
-lex=Java
-text=
-case ${1}:
-	${2}
-${0}

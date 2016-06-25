@@ -1,0 +1,22 @@
+[L]
+k1=smth
+msg-only-normal=No variants. Only for Normal mode of selection
+msg-only-single=No variants. Only for single caret or selection
+msg-need-sp-sel=No variants: need space after selection
+msg-need-sp-crt=No variants: need space after caret
+msg-need-word-expr=No variants: select word/expr or place caret after word/expr
+msg-no-prps=No variants to suggest
+msg-no-more=No more variants
+
+cfgm-order-norm=N&ormal order of variants: top down
+cfgm-order-up-dn=&Inverted order for upper variants and normal for lower ones
+cfgm-order-up=Inv&erted order for upper variants and skip lower ones
+cfgm-wrap=Wra&p suggestions
+cfgm-nm-lnm=Show &line numbers
+cfgm-ext-wrd=Word-chars are common [a-zA-Z0-9_] and extra [{}]. Change e&xtra...
+cfgi-ext-wrd=Extra word-chars 
+cfgm-mn-block=Menu block size is 4x{}. Cha&nge...
+cfgi-mn-block=Menu block size
+cfgm-nm-pop=Variants as pop&up menu
+cfgm-nm-dlg=Variants as &dialog 
+cfgm-nm-mix=Variants as popup if a few, other&wize as dialog

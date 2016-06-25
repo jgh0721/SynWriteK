@@ -1,6 +1,0 @@
-name=for-loop for range
-id=forr
-lex=Python
-text=
-for ${2:i} in range(${1:last}+1):
-	${0:pass}

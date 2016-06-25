@@ -1,7 +1,0 @@
-name=class
-id=cl
-lex=Java
-text=
-class ${1:Name} ${2:extends Parent} ${4:implements Interface}{
-	${0}
-}

@@ -1,7 +1,0 @@
-name=else if
-id=elif
-lex=Java
-text=
-else if (${1}) {
-	${0}
-}

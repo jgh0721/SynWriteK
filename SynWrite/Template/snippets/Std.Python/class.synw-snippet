@@ -1,9 +1,0 @@
-name=new class
-id=class
-lex=Python
-text=
-class ${1:MyClass}(object):
-	"""${2:doc for class}"""
-	def __init__(self, ${3:arg}):
-	#	super().__init__(${3:arg})
-	#	self.${3:arg} = ${3:arg}

@@ -1,5 +1,0 @@
-name=return false
-id=ret0
-lex=PHP,PHP (dev)
-text=
-return false;${0}

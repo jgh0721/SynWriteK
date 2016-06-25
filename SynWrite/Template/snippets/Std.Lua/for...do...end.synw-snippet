@@ -1,7 +1,0 @@
-name=for...do...end
-id=for
-lex=Lua
-text=
-for ${1:i} = ${2:_start}, ${3:_end}, ${4:_step} do
-	${0}${sel}
-end

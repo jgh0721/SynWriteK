@@ -1,7 +1,0 @@
-name=switch
-id=sw
-lex=Java
-text=
-switch (${1}) {
-	${0}
-}

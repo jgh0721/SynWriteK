@@ -1,0 +1,10 @@
+[info]
+title=Explorer
+type=plugin
+subdir=Explorer
+
+[ini]
+section=Panels
+id=Explorer
+file=Explorer.dll
+params=-

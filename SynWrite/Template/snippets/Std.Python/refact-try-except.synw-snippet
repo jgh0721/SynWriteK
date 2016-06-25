@@ -1,8 +1,0 @@
-name=refactoring: try/except over selection 
-id=
-lex=Python
-text=
-try:
-	${sel}
-except ${1:Exception} as e:
-	${2:raise e}

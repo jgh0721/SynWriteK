@@ -1,5 +1,6 @@
 [info]
 title=SynCodeIntel
+desc=Intelligent auto-completion for several lexers, using CodeIntel library
 type=plugin
 subdir=SynCodeIntel
 
@@ -7,10 +8,10 @@ subdir=SynCodeIntel
 section=Complete
 id=SynCodeIntel
 file=SynCodeIntel.dll
-params=PHP,PHP (dev),Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;
+params=PHP,PHP_,Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;
 
 [ini1]
 section=FindID
 id=SynCodeIntel
 file=SynCodeIntel.dll
-params=PHP,PHP (dev),Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;
+params=PHP,PHP_,Perl,Ruby,JavaScript,SCSS,LESS,XML,XSLT,Tcl;

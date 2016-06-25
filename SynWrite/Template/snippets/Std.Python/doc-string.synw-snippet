@@ -1,6 +1,0 @@
-name=doc string
-id=doc
-lex=Python
-text=
-""" ${0:?}
-"""

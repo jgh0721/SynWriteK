@@ -1,7 +1,0 @@
-name=method
-id=m
-lex=Java
-text=
-${1:void} ${2:method}(${3}) throws ${5} }{
-	${0}
-}

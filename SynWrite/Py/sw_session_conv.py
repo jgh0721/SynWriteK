@@ -1,6 +1,14 @@
 # coding: cp1251
 
+# Author: Andrey Kvichansky	<kvichans@mail.ru>
+# Revision:	0.8
+# Last modification: 31 jul 2014
+
 import	configparser
+
+# Logging
+#import 	inspect	# stack
+#log_gap	= ''	# use only into log()
 
 def convert(sOldFile='', sNewFile=''):
 	""" Перенос данных из старого формата сессии в новый.
@@ -77,6 +85,7 @@ def convert(sOldFile='', sNewFile=''):
 		colmark=				Col markers (строка та же)
 		folded=					2 строки через ";" - collapsed ranges для master, slave
 	"""
+	#pass;						log('sOldFile, sNewFile={}',(sOldFile, sNewFile))
 	# Подготовка
 	cfgOld = configparser.ConfigParser()
 	cfgOld.read(sOldFile, encoding='utf-8')
@@ -99,20 +108,31 @@ def convert(sOldFile='', sNewFile=''):
 	for n,sN in ((n,'{}'.format(n)) for n in range(nFs)):
 		cfgNew['f'+sN]	= {}
 		scNFn			= cfgNew['f'+sN]
-		scNFn['gr']		= icase(n<=int(scOIni['PageCount']), '1', '2')
 		scNFn['fn']		= cfgOld['FN'][sN]
-		scNFn['color']	= cfgOld['Color'][sN]
-		scNFn['colmark']= cfgOld['ColMarkers'][sN]
-		scNFn['top']	= cfgOld['Top'][sN]			+','+	cfgOld['Top2'][sN]
-		scNFn['caret']	= cfgOld['Cur'][sN]			+','+	cfgOld['Cur2'][sN]
-		scNFn['wrap']	= cfgOld['Wrap'][sN]		+','+	cfgOld['Wrap2'][sN]
-		scNFn['folded']	= cfgOld['Collapsed'][sN]	+';'+	cfgOld['Collapsed2'][sN]
-		scNFn['prop']	= '{},{},{},{}'.format(
-								cfgOld['RO'][sN]
-							,	cfgOld['Line'][sN]
-							,	{'0':'1','1':'0'}[cfgOld['Fold'][sN]]
-							,	cfgOld['SelMode'][sN]
-							)
+		scNFn['gr']		= icase(n<=int(scOIni['PageCount']), '1', '2')
+
+		sColor			= cfgOld['Color'][sN] 		if cfgOld.has_section('Color') 		else ''
+		sColMarkers		= cfgOld['ColMarkers'][sN]	if cfgOld.has_section('ColMarkers')	else ''
+		sTop			= cfgOld['Top'][sN] 		if cfgOld.has_section('Top') 		else '0'
+		sTop2			= cfgOld['Top2'][sN] 		if cfgOld.has_section('Top2') 		else '0'
+		sCur			= cfgOld['Cur'][sN] 		if cfgOld.has_section('Cur') 		else '0'
+		sCur2			= cfgOld['Cur2'][sN] 		if cfgOld.has_section('Cur2') 		else '0'
+		sWrap			= cfgOld['Wrap'][sN] 		if cfgOld.has_section('Wrap') 		else '0'
+		sWrap2			= cfgOld['Wrap2'][sN] 		if cfgOld.has_section('Wrap2') 		else '0'
+		sCollapsed		= cfgOld['sCollapsed'][sN] 	if cfgOld.has_section('sCollapsed')  else ''
+		sCollapsed2		= cfgOld['sCollapsed2'][sN] if cfgOld.has_section('sCollapsed2') else ''
+		sRO				= cfgOld['RO'][sN] 			if cfgOld.has_section('RO') 		else '0'
+		sLine			= cfgOld['Line'][sN] 		if cfgOld.has_section('Line') 		else '0'
+		sFold			= cfgOld['Fold'][sN] 		if cfgOld.has_section('Fold') 		else '0'
+		sSelMode		= cfgOld['SelMode'][sN] 	if cfgOld.has_section('SelMode')	else '0'
+		
+		scNFn['color']	= sColor
+		scNFn['colmark']= sColMarkers
+		scNFn['top']	= sTop		+','+sTop2
+		scNFn['caret']	= sCur		+','+sCur2
+		scNFn['wrap']	= sWrap		+','+sWrap2
+		scNFn['folded']	= sCollapsed+';'+sCollapsed2
+		scNFn['prop']	= '{},{},{},{}'.format(sRO, sLine, {'0':'1','1':'0'}[sFold], sSelMode)
 
 	# Сохранение
 	with open(sNewFile,'w',encoding='utf-8') as out:
@@ -120,6 +140,57 @@ def convert(sOldFile='', sNewFile=''):
 	#def sessOld2New
 
 #######################################################
+#def log(msg='', *args):
+#	""" en:
+#		Light print-logger. Commands are included into msg:  
+#			>> << {{	Expand/Narrow/Cancel gap 
+#		Execute msg.format(*args).  So you can insert Format String Syntax into msg.
+#		Replace '¬' to chr(9), '¶'to chr(10).
+#		ru:
+#		Легкий pring-логгер. Управляющие команды внутри msg:
+#			>> << {{	Увеличить/Уменьшить/Отменить отступ 
+#		Выполняет msg.format(*args). Поэтому в msg можно использовать Format String Syntax.
+#		Заменяет '¬' на chr(9), '¶'на chr(10).
+#
+#		Example.
+#		1	class C:
+#		2		def m(): 
+#		3			log('qwerty') 
+#		4			log('>>more gap here') 
+#		5			log('v1={}¶v2,v3¬{}',12,('ab',{})) 
+#		6			log('<<less gap at next') 
+#		7			log('QWERTY') 
+#		output 
+#			C.m:3 qwerty
+#				C.m:4 >>more gap here
+#				C.m:5 v1=12
+#			v2,v3	('ab', {}) 
+#				C.m:6 <<less gap at next
+#			C.m:7 QWERTY
+#	"""
+#	global log_gap
+#	lctn	= ''
+#	if -1==-1: # add "location"
+#		frCaller= inspect.stack()[1]	# 0-log, 1-need func
+#		try:
+#			cls	= frCaller[0].f_locals['self'].__class__.__name__ + '.'
+#		except:
+#			cls	= ''
+#		fun,ln	= (cls + frCaller[3]).replace('.__init__','()'), frCaller[2]
+#		lctn	= '{}:{} '.format(fun, ln)
+#
+#	if 0<len(args):
+#		msg	= msg.format(*args) 
+#	log_gap = log_gap + (chr(9) if '>>' in msg else '')
+#	msg		= log_gap + lctn + msg.replace('¬',chr(9)).replace('¶',chr(10))
+#		
+#	print(msg)
+#	
+#	log_gap = icase('<<' in msg, log_gap[:-1]
+#				,	'{{' in msg, ''
+#				,				 log_gap )
+	#def log
+
 def icase(*pars):
 	""" en:
 		Params	cond1,val1[, cond2,val2, ...[, valElse]...]

@@ -1,0 +1,17 @@
+[info]
+title=Speech
+desc=Speaks text via MS Text-To-Speech service
+type=plugin
+subdir=Speech
+
+[ini]
+section=Commands
+id=Speech\Speak
+file=Speech.dll
+params=say;;;
+
+[ini1]
+section=Commands
+id=Speech\Configure...
+file=Speech.dll
+params=options;;;

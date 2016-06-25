@@ -1,3 +1,0 @@
-
-1.0.0 (feb 2014)
-initial version

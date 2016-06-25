@@ -1,6 +1,0 @@
-name=for-loop for xrange (py2)
-id=forx
-lex=Python
-text=
-for ${2:i} in xrange(${1:last}+1):
-	${0:pass}

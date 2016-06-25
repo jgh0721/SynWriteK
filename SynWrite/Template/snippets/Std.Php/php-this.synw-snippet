@@ -1,5 +1,0 @@
-name=<?php this->... ?>
-id=this
-lex=HTML documents,PHP_dev_HTML
-text=
-<?php this->${0} ?>

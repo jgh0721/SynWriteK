@@ -1,0 +1,25 @@
+[info]
+title=Extend Selection
+desc=Adds lexer-independant commands: "Expand selection", "Shrink selection"
+type=py-plugin
+subdir=syn_ext_selection
+
+[ini]
+section=Commands
+id=Extend Selection\Expand selection
+params=expand;;Ctrl+';
+
+[ini1]
+section=Commands
+id=Extend Selection\Shrink selection
+params=narrow;;;
+
+[ini2]
+section=Commands
+id=Extend Selection\Expand+Copy selection
+params=expandAndCopy;;;
+
+[ini3]
+section=Commands
+id=Extend Selection\Shrink+Copy selection
+params=narrowAndCopy;;;

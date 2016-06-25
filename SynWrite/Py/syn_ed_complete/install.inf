@@ -1,0 +1,30 @@
+[info]
+title=EdComplete
+desc=Auto-completes text with parts of current document
+type=py-plugin
+subdir=syn_ed_complete
+
+[ini]
+section=Commands
+id=EdComplete\Suggest first or next variant
+params=next;;;
+
+[ini1]
+section=Commands
+id=EdComplete\Suggest last or previos variant
+params=prev;;;
+
+[ini2]
+section=Commands
+id=EdComplete\Suggest more complex variant
+params=wider;;;
+
+[ini3]
+section=Commands
+id=EdComplete\Show all variants
+params=view;;;
+
+[ini4]
+section=Commands
+id=EdComplete\Configure
+params=config;;;

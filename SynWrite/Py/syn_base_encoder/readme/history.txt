@@ -1,0 +1,6 @@
+
+0.4.0
++ unicode-escape coding: "\uNNNN\uMMMM"
+
+0.3.0
++ quoted-printable enc

@@ -116,7 +116,6 @@ cmd_UpperCaseBlock  = 365 # Upper case to current selection or current char
 cmd_LowerCaseBlock  = 366 # Lower case to current selection or current char
 cmd_ToggleCaseBlock = 367 # Toggle case to current selection or current char
 cmd_TitleCaseBlock  = 368 # Title case to current selection or current char
-cmd_SentCaseBlock = 369 #AT
 
 cmd_InsertMode      = 371  # Set insert mode
 cmd_OverwriteMode   = 372  # Set overwrite mode
@@ -170,14 +169,11 @@ cmd_ToggleWordWrap   = 531
 cmd_ToggleFolding    = 532
 cmd_ToggleLineNumbersVisible = 533
 
-cmd_IncrementalSearch = 550 # Incremental Search
-
 cmd_CommentLines    = 560  # Comments selected lines
 cmd_UncommentLines  = 561  # Uncomments selected lines
 cmd_SortAscending   = 562  # Ascending sort of selected lines
 cmd_SortDescending  = 563  # Descending sort of selected lines
 cmd_GotoLine        = 564  # Go to line number
-cmd_AlignTokens     = 565  # Aligns tokens in selected lines
 cmd_MoveLinesUp     = 566  # Moves selected lines one line up
 cmd_MoveLinesDown   = 567  # Moves selected lines one line down
 cmd_DuplicateLine   = 568  # Duplicates current line
@@ -222,7 +218,7 @@ cmd_SearchMarkNext  = 641 # Go to next search mark
 cmd_SearchMarkPrev  = 642 # Go to previous search mark
 
 #-----------------------------------
-# Below are constants from "unCmds.pas".
+# Constants from "unCmds.pas"
 
 cmd_CaretsRemoveLeaveFirst    = 2000
 cmd_CaretsRemoveLeaveLast     = 2001
@@ -244,6 +240,7 @@ cmd_CopyAsHtml = 309
 cmd_CopyAsRtf = 310
 
 cmd_ReplaceInFiles = 617
+cmd_ReplaceInProject = 618
 cmd_ListerFindDialog = 620
 cmd_ListerFindNext = 621
 cmd_ListerFindPrev = 622
@@ -257,7 +254,6 @@ cmd_FileExportRtf = 704
 cmd_FileExportHtml = 705
 cmd_FileSaveAs = 706
 cmd_FileReopen = 707
-cmd_FileProps = 708
 
 cmd_OptSetup = 709
 cmd_OptSetupLexer = 710
@@ -287,8 +283,6 @@ cmd_OptFolding = 732
 cmd_OptNonPrint = 733
 cmd_ToggleFocusTree = 734
 cmd_ToggleFocusClip = 735
-cmd_Emmet_Expand = 736
-cmd_Emmet_Wrap = 737
 cmd_ToggleLineComment = 738
 cmd_ToggleFocusOutput = 739
 
@@ -301,7 +295,6 @@ cmd_FileExit = 745
 cmd_FileCloseAndDelete = 746
 cmd_FileMoveToOtherView = 747
 cmd_FileRenameDialog = 748
-cmd_ColumnMarkers = 749
 
 cmd_FileBackup = 750
 cmd_ToggleStreamComment = 751
@@ -335,13 +328,8 @@ cmd_ToggleSmartHl = 777
 cmd_DropPortableBk = 778
 cmd_GotoPortableBk = 779
 cmd_IndentLike1st = 780
-cmd_JumpColumnMarkerLeft = 781
-cmd_JumpColumnMarkerRight = 782
 cmd_PasteNoCursorChange = 783
-cmd_JumpMixedCaseLeft = 784
-cmd_JumpMixedCaseRight = 785
 cmd_CancelSelection = 786
-cmd_CenterLines = 787
 cmd_ExtendSelByLine = 788
 cmd_SelectBrackets = 789
 cmd_CollapseParent = 790
@@ -351,26 +339,17 @@ cmd_PasteToColumn1 = 793
 cmd_CommandsList = 794
 cmd_ScrollToSel = 795
 cmd_ProjectList = 796
-cmd_AlignWithSeparator = 797
 cmd_ToggleShowGroup2 = 798
 cmd_PasteAsColumnBlock = 799
 
-cmd_Encoding_Ansi = 800
-cmd_Encoding_Oem = 801
-cmd_Encoding_Utf8 = 802
-cmd_Encoding_Unicode = 803
-cmd_Encoding_UnicodeBE = 804
-cmd_Encoding_Utf8NoBom = 805
-cmd_Encoding_Koi8 = 806
-cmd_Encoding_Mac = 807
-cmd_Menu_Encodings = 810
+cmd_Menu_EncodingsConvert = 809
+cmd_Menu_EncodingsChange = 810
 cmd_Menu_Lexers = 811
 cmd_Menu_LineEnds = 812
 
 cmd_ClearFilesHistory = 813
 cmd_QuickSearch = 814
 cmd_InsertDateTime = 815
-cmd_ExtractTextDialog = 816
 cmd_GotoNextFindResult = 817
 cmd_GotoPrevFindResult = 818
 cmd_ToggleSyncEditing = 819
@@ -379,23 +358,15 @@ cmd_SyncScrollHorz = 821
 cmd_SyncScrollVert = 822
 cmd_ShowOnTop = 823
 cmd_FillBlockDialog = 824
-cmd_InsertTextDialog = 825
-cmd_SpellLive = 826
-cmd_SpellCheck = 827
 cmd_JoinLines = 828
 cmd_SplitLines = 829
 
-cmd_OpenFirefox = 830
-cmd_OpenMSIE = 831
-cmd_OpenChrome = 832
-cmd_OpenSafari = 833
+cmd_OpenBrowserFirefox = 830
+cmd_OpenBrowserIE = 831
+cmd_OpenBrowserChrome = 832
+cmd_OpenBrowserSafari = 833
 cmd_OpenCurrentFolder = 834
-cmd_OpenPhp = 835
-cmd_OpenGoogle = 836
-cmd_OpenWiki = 837
-cmd_OpenMsdn = 838
 cmd_MacrosDialog = 839
-cmd_OpenBrowserPreview = 840
 
 cmd_BookmarksClear = 841
 cmd_BookmarksToggle = 842
@@ -410,8 +381,6 @@ cmd_BookmarksInverse = 850
 
 cmd_RemoveDupsAll = 851
 cmd_ConvertSpacesToTabsLeading = 852
-cmd_TidyValidate = 853
-cmd_TidyConfig = 854
 cmd_RemoveDupsAdjacent = 855
 cmd_RemoveBlanks = 856
 cmd_TrimLeading = 857
@@ -438,18 +407,11 @@ cmd_FindPrevAndExtendSel = 876
 cmd_JumpToLastMarker = 877
 cmd_OpenCurrentFile = 878
 cmd_SelectToken = 879
-cmd_InsertColor = 880
 cmd_GotoSelectionStartEnd = 881
 cmd_ReplaceFromClip = 882 #not used
 cmd_ReplaceFromClipAll = 883
 cmd_RereadOutputPanel = 884
-cmd_InsertImage = 885
-cmd_OpenHTML4Help = 886
-cmd_OpenHTML5Help = 887
-cmd_LoremIpsumDialog = 888
 cmd_NumericConverterDialog = 889
-cmd_EncodeHtmlChars = 890
-cmd_SortDialog = 891
 cmd_ToggleLineCommentAlt = 892
 cmd_SelectionExtend = 893
 cmd_SelectionShrink = 894
@@ -457,7 +419,6 @@ cmd_ReverseLines = 895
 cmd_DeleteToFileBegin = 896
 cmd_DeleteToFileEnd = 897
 cmd_ShuffleLines = 898
-cmd_EncodeHtmlChars2 = 899
 
 cmd_MacroRepeat = 900
 cmd_Macro1 = 901
@@ -549,7 +510,6 @@ cmd_EditSynPluginsIni = 1011
 cmd_EditSynIni = 1012
 cmd_OpenBySelection = 1013
 cmd_CustomizeStylesDialog = 1014
-cmd_CustomizeSpellCheckDialog = 1015
 
 cmd_CopySearchMarks = 1020
 cmd_OpenProject = 1021
@@ -576,7 +536,6 @@ cmd_ScrollCurrentLineToBottom = 1041
 cmd_ScrollCurrentLineToMiddle = 1042
 cmd_SaveProject = 1043
 cmd_ToggleFocusConsole = 1044
-cmd_NewPythonPluginDialog = 1045
 cmd_NewSnippetDialog = 1046
 cmd_SnippetsDialog = 1047
 cmd_HelpFileContents = 1048
@@ -594,6 +553,20 @@ cmd_FileCloseOthersAllGroups = 1059
 cmd_MoveCurrentTabToNextGroup = 1060
 cmd_MoveCurrentTabToPrevGroup = 1061
 cmd_ToggleFocusBookmarks = 1062
+cmd_PrintNowAll = 1063
+cmd_PrintNowSelection = 1064
+
+cmd_GotoNextModifiedLine = 1065
+cmd_GotoPrevModifiedLine = 1066
+cmd_GotoNextModifiedOrSavedLine = 1067
+cmd_GotoPrevModifiedOrSavedLine = 1068
+
+cmd_OpenEntireFolder = 1069
+cmd_SentenceCaseBlock = 1070
+cmd_RandomCaseBlock = 1071
+cmd_RestartProgram = 1072
+cmd_RemoveDupsAndOrigins = 1073
+cmd_ExtractUniqueLines = 1074
 
 cmd_TreeCollapseAll = 1090
 cmd_TreeExpandAll = 1091
@@ -607,16 +580,6 @@ cmd_TreeLevel8 = 1098
 cmd_TreeLevel9 = 1099
 
 cmd_TabColorDefault = 1100
-cmd_TabColor1 = 1101
-cmd_TabColor2 = 1102
-cmd_TabColor3 = 1103
-cmd_TabColor4 = 1104
-cmd_TabColor5 = 1105
-cmd_TabColor6 = 1106
-cmd_TabColor7 = 1107
-cmd_TabColor8 = 1108
-cmd_TabColor9 = 1109
-cmd_TabColor10 = 1110
 cmd_TabColorCustom = 1111
 
 cmd_OptionsTab_ProgramOpt = 1115
@@ -635,8 +598,27 @@ cmd_OptionsTab_History = 1127
 cmd_OptionsTab_SessionsProject = 1128
 cmd_OptionsTab_AutoComplete = 1129
 cmd_OptionsTab_AutoSave = 1130
-cmd_OptionsTab_SpellChecker = 1131
 cmd_OptionsTab_Paths = 1132
 cmd_OptionsTab_EditorUndo = 1135
 cmd_OptionsTab_EditorInsertFmt = 1136
 cmd_OptionsTab_NewOpen = 1137
+
+cmd_AddonsManager_Install = 1150
+cmd_AddonsManager_Remove = 1151
+cmd_AddonsManager_Edit = 1152
+cmd_AddonsManager_Update = 1153
+cmd_AddonsManager_SaveAll = 1154
+
+cmd_EncodingChange_Ansi = 1200
+cmd_EncodingChange_Oem = 1201
+cmd_EncodingChange_Utf8Bom = 1202
+cmd_EncodingChange_Utf8NoBom = 1203
+cmd_EncodingChange_Utf16LE = 1204
+cmd_EncodingChange_Utf16BE = 1205
+
+cmd_EncodingConvert_Ansi = 1210
+cmd_EncodingConvert_Oem = 1211
+cmd_EncodingConvert_Utf8Bom = 1212
+cmd_EncodingConvert_Utf8NoBom = 1213
+cmd_EncodingConvert_Utf16LE = 1214
+cmd_EncodingConvert_Utf16BE = 1215

@@ -1,7 +1,0 @@
-name=while-loop
-id=while
-lex=Python
-text=
-while ${1:True}:
-#	if ${2:?}: break
-	${0:pass}

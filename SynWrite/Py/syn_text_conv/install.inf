@@ -1,0 +1,25 @@
+[info]
+title=Text Converter
+desc=Gives standard "Text converter" menu as plugin 
+type=py-plugin
+subdir=syn_text_conv
+
+[ini]
+section=Commands
+id=Text Converter\Menu
+params=run_menu;
+
+[ini1]
+section=Commands
+id=Text Converter\-
+params=-;
+
+[ini2]
+section=Commands
+id=Text Converter\Encode HTML chars - all
+params=run_encode1;
+
+[ini3]
+section=Commands
+id=Text Converter\Encode HTML chars - except < > ' "
+params=run_encode2;

@@ -1,6 +1,0 @@
-name=method
-id=cdef
-lex=Python
-text=
-def ${1:fname}(self${2:, arg}):
-	${0:pass}

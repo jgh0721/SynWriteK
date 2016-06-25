@@ -1,0 +1,10 @@
+[info]
+title=Show Keymapping
+desc=Shows all hotkeys in editor, as HTML page
+type=py-plugin
+subdir=syn_show_keymapping
+
+[ini]
+section=Commands
+id=Show Keymapping
+params=run;

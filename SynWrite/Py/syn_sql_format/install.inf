@@ -1,0 +1,20 @@
+[info]
+title=SQL Format
+desc=Formats SQL code (using sqlparse library)
+type=py-plugin
+subdir=syn_sql_format
+
+[ini]
+section=Commands
+id=SQL Format\Format
+params=run;SQL;;
+
+[ini1]
+section=Commands
+id=SQL Format\Configure
+params=config_global;;;
+
+[ini2]
+section=Commands
+id=SQL Format\Configure (local)
+params=config_local;;;

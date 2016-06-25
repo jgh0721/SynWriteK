@@ -1,5 +1,0 @@
-name=list-comprehension-if from range
-id=colistr.if
-lex=Python
-text=
-[${2:k} for ${2:k} in range(${1:last}+1) if ${2:k}${0:?}]

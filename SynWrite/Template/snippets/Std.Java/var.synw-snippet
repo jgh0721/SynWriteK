@@ -1,5 +1,0 @@
-name=variable
-id=v
-lex=Java
-text=
-${1:String} ${2:var} = ${0:null};

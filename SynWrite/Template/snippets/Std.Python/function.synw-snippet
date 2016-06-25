@@ -1,6 +1,0 @@
-name=function
-id=def
-lex=Python
-text=
-def ${1:fname}(${2:arg}):
-	${0:pass}

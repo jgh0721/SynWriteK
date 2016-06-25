@@ -1,7 +1,0 @@
-name=refactoring: wrap selection as function & call
-id=
-lex=Python
-text=
-${1:fun}(${2:what})
-def ${1:fun}(${3:arg}):
-	${sel}

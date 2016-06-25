@@ -1,6 +1,0 @@
-name=for-loop for each in CB if
-id=forp.if
-lex=Python
-text=
-for ${1:i} in [${1:k} for ${1:k} in ${cp} if ${1:k}${2:?}]:
-	${0:pass}

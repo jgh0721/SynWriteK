@@ -1,7 +1,0 @@
-name=test
-id=t
-lex=Java
-text=
-public void test${1:Name}() throws Exception {
-	${0}
-}

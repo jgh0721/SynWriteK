@@ -1,0 +1,118 @@
+;ROTX
+;Author Stefan109
+;Version 1.0, 2004-11-11
+;
+;Convert text with ROT13 algorythm and vice versa
+;
+;Save as ROTX.txt in your SynWrite\Template\conv\ folder
+;
+; This RotX.ini converts text with ROT13 like algorythm and vice versa.
+; This rotation is randomnized generated!!! no strict x-time rotation like ROT13, ROT5 or ROT47!!!
+; So the text is not recoverable if you don?t have this algorythem from this very ini with same version number as above!!!
+; (If you want to be compatible with the standard, please use ROT13, or perhaps ROT47, not RotX !)
+;
+; e.g. " The brown fox jump over the lazy dog 21.06-2004 " will be converted to:
+; " 7pY Bnc.r kc3 ^;+h cQYn qpY zPlD =c4 12w{]K1{{g " and back by second time converting
+;
+; Use RotX.ini for encoding your mail excange with your friends
+; or for encrypt your notes/remarks which are not dedicated for other eyes. Enjoy.
+;
+;For furter info see e.g.
+;http://encyclopedia.thefreedictionary.com/Rot13
+;http://en.wikipedia.org/wiki/ROT13
+;http://rot47.net/rot13.html
+;
+! ?
+" 124
+# M
+$ R
+% \
+& ~
+' 8
+( X
+) L
+* S
++ m
+, >
+- K
+. w
+/ 2
+0 {
+1 u
+2 /
+3 x
+4 g
+5 E
+6 ]
+7 T
+8 '
+9 ;
+: W
+; 9
+< `
+= d
+> ,
+? !
+@ i
+A N
+B b
+C J
+D y
+E 5
+F _
+G I
+H }
+I G
+J C
+K -
+L )
+M #
+N A
+O U
+P a
+Q v
+R $
+S *
+T 7
+U O
+V Z
+W :
+X (
+Y e
+Z V
+[ s
+\ %
+] 6
+^ j
+_ F
+` <
+a P
+b B
+c o
+d =
+e Y
+f k
+g 4
+h p
+i @
+j ^
+k f
+l z
+m +
+n r
+o c
+p h
+q t
+r n
+s [
+t q
+u 1
+v Q
+w .
+x 3
+y D
+z l
+{ 0
+124 "
+} H
+~ &

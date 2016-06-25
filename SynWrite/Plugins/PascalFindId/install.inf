@@ -1,0 +1,10 @@
+[info]
+title=PascalFindId
+type=plugin
+subdir=PascalFindId
+
+[ini]
+section=FindId
+id=PascalFindId
+file=FindIdPas.dll
+params=Pascal,Pascal script;

@@ -1,0 +1,71 @@
+;ROT47
+;Author: Stefan109
+;Convert text with ROT13/ROT47 algorythm and vice versa
+;Save as ROT47.txt in your SynWrite\Template\conv\  folder
+;For furter info see e.g.
+;http://encyclopedia.thefreedictionary.com/Rot13
+;http://en.wikipedia.org/wiki/ROT13
+;http://rot47.net/
+;
+1 `
+2 a
+3 b
+4 c
+5 d
+6 e
+7 f
+8 g
+9 h
+0 _
+a 2
+b 3
+c 4
+d 5
+e 6
+f 7
+g 8
+h 9
+i :
+j ;
+k <
+l =
+m >
+n ?
+o @
+p A
+q B
+r C
+s D
+t E
+u F
+v G
+w H
+x I
+y J
+z K
+A p
+B q
+C r
+D s
+E t
+F u
+G v
+H w
+I x
+J y
+K z
+L {
+M |
+N }
+O ~
+P !
+Q "
+R #
+S $
+T %
+U &
+V '
+W (
+X )
+Y *
+Z +

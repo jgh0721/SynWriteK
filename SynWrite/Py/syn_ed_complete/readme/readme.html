@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title>Readme</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Plugin EdComplete: Complete fragment with parts of full text</h1>
+<p>This is command plugin for SynWrite editor. It gives five commands: <br/>
+<ul>
+	<li><b>next</b> - Suggest next variant (or first for new variants). <br/>
+	<li><b>prev</b> - Suggest previos variant (or last for new variants). <br/>
+	<li><b>wider</b> - Suggest more complex variants. <br/>
+	<li><b>view</b> - Show variants in popup menu (it appears at screen center) or dialog menu (it restores position and size). <br/>
+	<li><b>config</b> - Configure plugin.<br/>
+</ul>
+	This is lexer-independant. 
+</p>
+
+<p>Fragment for completion is selected expression (limited types) or a word before caret.<br/>
+
+<h2>Commands details</h2>
+<h3>Commands "next"/"prev"</h3>
+<p>If fragment is a word, then these commands suggest to complete this fragment to longer word. 
+(Examples below show "|" char for caret position and <u>underline</u> for selected text.)
+<pre>Initial text:	str11 st| str22
+1st <b>next</b>:	str11 str11| str22
+2nd <b>next</b>:	str11 str22| str22
+</pre></p>
+<p>If the selected fragment is like "fun(" or "smth[", then these commands suggest to complete to end of expression.
+<pre>Initial text:	fun(11) <u>fun(</u>| fun(22,'')
+1st <b>next</b>:	fun(11) <u>fun(11)</u>| fun(22,'')   
+2nd <b>next</b>:	fun(22) <u>fun(22,'')</u>| fun(22,'')
+</pre></p>
+
+<h3>Command "wider"</h3>
+<p> This command tries to find complex variants for completion. <br/>
+<b>wider</b> suggests only first of found variants. Others are suggested by commands <b>next</b> / <b>prev</b> / <b>view</b>.
+<pre>Initial text:	fun(0) fun| fun(0,'')
+call <b>wider</b>:	fun(0) fun(0)| fun(0,'') fun()
+1st <b>next</b>:	fun(0) fun(0,'')| fun(0,'') fun()
+2nd <b>next</b>:	fun(0) fun()| fun(0,'') fun()
+</pre></p>
+
+<h3>Command "view"</h3>
+<p><b>view</b> shows full list or subset of variants which are found with commands <b>next</b>/<b>prev</b> or <b>wider</b>.<br/>
+If variants are not found yet then it uses default command <b>next</b>.</p>
+
+<p>There are two methods for view the list - in popup menu or in dialog menu. 
+Default method is popup and it can be changed with command <b>config</b>.</p>
+
+<p><i>Popup method.</i> If too much variants then it shows four series: some at top, some around last shown, some around caret, some at bottom.<br/>
+Size of series (block) by default is 3 and may be changed with command <b>config</b>.
+<pre>Start text:	s1 s22 s333 s44 s555 s| s66 s7777
+1st <b>next</b>:	s1 s22 s333 s44 s555 s1| s66 s7777
+2nd <b>next</b>:	s1 s22 s333 s44 s555 s22| s66 s7777
+3rd <b>next</b>:	s1 s22 s333 s44 s555 s333| s66 s7777
+call <b>view</b>:	  1. s1      (at top, block=1)
+		  --------
+		&radic; 3. s333    (around the last, block=1, "&radic;" points to last used variant)
+		  --------
+		  5. s555    (around caret, block=1)
+		  --------
+		  7. s7777   (at bottom, block=1)
+</pre></p>
+<p><i>Dialog method.</i> It shows all found variants.</p>
+
+<h3>Command "config"</h3>
+<p><b>config</b> shows popup menu to change some plugin constants.
+<pre>&#8226; Normal order of variants: top down
+  Inverted order for upper variants and normal for lower ones
+  Inverted order for upper variants and skip lower ones
+  -----------------
+&radic; Wrap suggestions
+  Show line numbers
+  Word-chars are common [a-zA-Z0-9_] and extra [.]. Change extra...
+  Menu block size is 4x3. Change...
+  -----------------
+&#8226; Variants as popup menu
+  Variants as dialog 
+  Variants as popup if a few, otherwize as dialog
+</pre>
+<ul>
+<li>Orders.<br/>
+	First setting is simple - all variants from top to bottom.<br/>
+	Second to begin from nearest upper variants.<br/>
+	Third to use only upper variants from nearest</li>
+<li>Wrap.<br/>
+	If set ON then <b>next</b> shows the first variant after the last one, <b>prev</b> vice versa.</li>
+<li>Line numbers.<br/>
+	If set ON then in menu/dialog (and in status) will be shown variant line numbers.</li>
+<li>List of characters for words [a-zA-Z0-9_] and [.] can be changed with the item of menu.</li>
+<li>View/set block size (count of variants in each series of popup menu).</li>
+<li>Format for view all variants.<br/>
+	Popup always<br/>
+	Dialog always<br/>
+	Mix. For a few variants use popup, for much - dialog.</li>
+</ul>
+</p>
+
+<h1>How to install</h1>
+<p>Just open zip-file with plugin in SynWrite, and confirm installation.<br/>
+You may change plugin hotkeys in "SynPlugins.ini", using SynWrite command "Options - Advanced - Edit file SynPlugins.ini".
+</p>
+<p>Example:
+<pre>EdCompleteNext=py:syn_ed_complete;next;;Alt+0;
+EdCompletePrev=py:syn_ed_complete;prev;;Alt+9;
+EdCompleteWider=py:syn_ed_complete;wider;;Shift+Alt+0;
+EdCompleteView=py:syn_ed_complete;view;;Shift+Alt+9;
+EdCompleteConfig=py:syn_ed_complete;config;;;</pre>
+</p>
+
+<h1>About</h1>
+<p>Author: kvichans (SynWrite forum)</p>
+<p>License: MIT.</p>   
+
+</body>
+</html>

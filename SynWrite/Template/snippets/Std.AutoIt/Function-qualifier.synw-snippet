@@ -1,7 +1,0 @@
-name=Function-qualifier
-id=Volatile
-lex=AutoIt
-text=
-Volatile Func ${1:_FuncName}(${2})
-	${0}${sel}
-EndFunc

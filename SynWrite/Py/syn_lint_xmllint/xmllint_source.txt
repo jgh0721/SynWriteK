@@ -1,2 +1,0 @@
-Source code for xmllint tool:
-http://code.google.com/p/xmllint/

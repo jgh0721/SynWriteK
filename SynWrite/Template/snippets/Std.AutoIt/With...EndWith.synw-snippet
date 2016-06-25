@@ -1,7 +1,0 @@
-name=With...EndWith
-id=With
-lex=AutoIt
-text=
-With ${1:$oObject}.${2:attr}
-	${0}${sel}
-EndWith

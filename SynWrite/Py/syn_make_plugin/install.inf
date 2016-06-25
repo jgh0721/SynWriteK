@@ -1,0 +1,10 @@
+[info]
+title=Make Plugin
+desc=Creates new plugin placeholder
+type=py-plugin
+subdir=syn_make_plugin
+
+[ini]
+section=Commands
+id=Make Plugin
+params=run;

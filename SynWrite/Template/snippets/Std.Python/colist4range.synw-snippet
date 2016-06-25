@@ -1,5 +1,0 @@
-name=list-comprehension from range
-id=colistr
-lex=Python
-text=
-[${2:k}${0:?} for ${2:k} in range(${1:last}+1)]

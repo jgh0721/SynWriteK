@@ -1,8 +1,0 @@
-name=if-else
-id=ife
-lex=Python
-text=
-if ${1:what}:
-	${2:pass}	
-else:
-	${3:pass}	

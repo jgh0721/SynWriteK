@@ -1,0 +1,8 @@
+Legend:
++ added
+- fixed
+* changed
+? known problem
+
+0.5 (14 may 2014)
++ Initial version

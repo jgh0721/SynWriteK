@@ -1,0 +1,10 @@
+[info]
+title=Markdown Preview
+desc=Previews Markdown text as HTML page in browser
+type=py-plugin
+subdir=syn_markdown_preview
+
+[ini]
+section=Commands
+id=Markdown preview
+params=run;Markdown;;

@@ -1,7 +1,0 @@
-name=interface
-id=in
-lex=Java
-text=
-interface ${1:Name} extends ${2:Parent} {
-	${0}
-}

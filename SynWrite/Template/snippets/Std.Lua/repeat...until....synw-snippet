@@ -1,7 +1,0 @@
-name=repeat...until...
-id=rep
-lex=Lua
-text=
-repeat
-	${0}${sel}
-until ${1:true}

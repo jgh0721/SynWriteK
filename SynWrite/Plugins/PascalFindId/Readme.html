@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>FindIdPas</title>    
+</head>
+<body>
+
+<h1>FindIdPas plugin</h1>
+<p>
+FindIdPas is find-id plugin for <a href="http://www.uvviewsoft.com/synwrite/" target="_blank">SynWrite</a>
+text editor, i.e. it can find declaration of identifiers for Pascal lexer.
+Activate Pascal lexer, right-click any id in the source code, and in the context menu call item "Find ID". 
+Plugin will open location of clicked id declaration (if it can find such declaration).
+</p>
+
+<p>Code of id search engine is rough and unreliable, it often makes mistakes.
+This plugin is written mainly for demo purposes.
+</p>
+
+<h2>How to install</h2>
+<ul>
+<li>Unpack plugin files into "Plugins\FindIdPas" subfolder of SynWrite install folder
+<li>Open SynWrite, call menu item "Options -- Advanced -- Edit file SynPlugins.ini" 
+<li>In opened editor of SynPlugins.ini file add line in section [FindID]:
+<pre>
+[FindID]
+pas=FindIdPas\FindIDPas.dll;Pascal,Pascal script;
+</pre>
+<li> Adjust lexers list in the above line, if needed
+<li> Restart program
+</ul>
+
+<h2>About</h2>
+<p>
+FindIdPas plugin &copy; Alexey Torgashin.<br />
+Id search code is written by user RamSoft from wincmd.ru forum.<br />
+</p>    
+</body>
+</html>

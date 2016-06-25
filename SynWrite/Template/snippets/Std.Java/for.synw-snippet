@@ -1,7 +1,0 @@
-name=for
-id=for
-lex=Java
-text=
-for (${1}; ${2}; ${3}) {
-	${0}
-}

@@ -1,0 +1,22 @@
+[info]
+title=HTML Tidy
+desc=Integrates HTML Tidy tool, allows to format/validate HTML code
+type=py-plugin
+subdir=syn_html_tidy
+
+[ini]
+section=Commands
+id=HTML Tidy\Menu
+params=menu;
+[ini1]
+section=Commands
+id=HTML Tidy\Validate document
+params=validate;
+[ini2]
+section=Commands
+id=HTML Tidy\Browse configs
+params=configs;
+[ini3]
+section=Commands
+id=HTML Tidy\Web site
+params=web;

@@ -1,0 +1,10 @@
+[info]
+title=HTML Preview Selection
+desc=Copies selection into temporary HTML file and opens it in browser
+type=py-plugin
+subdir=syn_html_preview_sel
+
+[ini]
+section=Commands
+id=HTML Preview Selection
+params=run;HTML,HTML_,PHP,PHP_;;

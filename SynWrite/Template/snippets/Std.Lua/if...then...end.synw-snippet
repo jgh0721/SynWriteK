@@ -1,7 +1,0 @@
-name=if...then...end
-id=if
-lex=Lua
-text=
-if ${1:true} then
-	${0}${sel}
-end

@@ -1,5 +1,0 @@
-name=POST['...']
-id=$_
-lex=PHP,PHP (dev)
-text=
-$_POST['${1:variable}']

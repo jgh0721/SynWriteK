@@ -1,4 +1,4 @@
-This file lists SynWrite hidden options, i.e. options not visible in the Options dialog.
+This file lists SynWrite hidden options, i.e. flags not visible in the Options dialog.
 They must be set in file "Syn.ini" in section [Setup].
 Use menu command "Options -- Advanced -- Edit file Syn.ini".
 Bool values have only two possible values: 0 means "off", 1 means "on".
@@ -20,16 +20,8 @@ MaxWordLen=100
 Maximal length of text, which is handled by commands "Find current word next/ prior".
 
 --------------------
-TabFontSize=0
-If not 0, specifies font size for tabs headers.
-
---------------------
 MarkDeletedModified=1
 Bool. Enables, when auto-reload in on, to mark deleted file as modified ("*" char in tab caption).
-
---------------------
-SyncEditIcon=1
-Bool. Enables greenish gutter icon for command "Toggle SyncEditing mode".
 
 --------------------
 KeyComboIgnoreCtrl=1
@@ -45,11 +37,6 @@ SessionMaxFiles=0
 If set to positive value N, then additional confirmation will be shown on session saving/loading: "Session contains many files (more than N). Are you sure you want to save/load it?"
 
 --------------------
-[Tree]
-Click=2
-Sets action for dbl-click of syntax-tree nodes. 0: none, 1: expand/collapse node, 2: put caret at range start, 3: select entire range.
-
---------------------
 PyChangeDelay=3000
 Delays (in msec) for Python plugins on_change_slow event.
 
@@ -58,13 +45,24 @@ HintScroll=0
 Bool. Enables hint "Line NNNN" for editor vertical scrollbar, when scrollbar thumb is dragged.
 
 --------------------
-[ACP]
-HintDelay=1500
-Delay (in msec) of editor hints of auto-completion feature.
-
---------------------
 Items of command-plugins can be hidden in editor context menu (not in the main menu "Tools"). To do this, add "-" char after ";" char at end of lines in [Commands] section of SynPlugins.ini file (use command "Options - Advanced - Edit file SynPlugins.ini").
 Example:
   Plugin Manager\Edit plugin...=py:syn_plugin_manager;menu_edit;;;-
+
+--------------------
+MinimapFont=1
+Font size (pix) for minimap. Default is like Sublime.
+
+--------------------
+StapleOffset=1
+Offset of "block staples" (indentation guide) lines to the left. If set to -1, staple will offset to right, w/o edges at top/bottom.
+
+--------------------
+CaretInd=2
+Indicating of multi-carets. 0: none, 1: by line bg color (if "draw current line bg" enabled), 2: by gutter bg color.
+
+--------------------
+MenuSize=520,320
+Width and height of menu dialogs, e.g. "Commands list", "Snippets".
 
 --------------------

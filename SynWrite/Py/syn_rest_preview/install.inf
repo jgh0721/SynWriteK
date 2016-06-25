@@ -1,0 +1,10 @@
+[info]
+title=reStructuredText Preview
+desc=Previews reStructuredText file as HTML page in browser
+type=py-plugin
+subdir=syn_rest_preview
+
+[ini]
+section=Commands
+id=reStructuredText Preview
+params=run;reStructuredText;

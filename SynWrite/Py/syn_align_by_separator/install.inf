@@ -1,0 +1,10 @@
+[info]
+title=Align by Separator
+desc=For selection, makes lines aligned by some separator-char, e.g. "="
+type=py-plugin
+subdir=syn_align_by_separator
+
+[ini]
+section=Commands
+id=Align by Separator
+params=run;

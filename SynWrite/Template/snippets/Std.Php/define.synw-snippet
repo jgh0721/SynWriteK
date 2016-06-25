@@ -1,6 +1,0 @@
-name=define(..., ...)
-id=def
-lex=PHP,PHP (dev)
-text=
-define('${1}', '${2}');
-${0}
